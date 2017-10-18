@@ -1,0 +1,436 @@
+
+
+Started GET "/" for ::1 at 2017-10-18 16:02:31 -0400
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+
+
+
+Started POST "/__better_errors/a752dcf9ee564090/variables" for ::1 at 2017-10-18 16:02:31 -0400
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateBlogs (20150720013124)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "blogs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150720013124"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateImpressionsTable (20150720014431)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /Users/steph/Documents/ArchitectureWebCnesst/ArchWebCnesst/db/migrate/20150720014431_create_impressions_table.rb:15)
+  [1m[35m (0.3ms)[0m  CREATE TABLE "impressions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "impressionable_type" varchar, "impressionable_id" integer, "user_id" integer, "controller_name" varchar, "action_name" varchar, "view_name" varchar, "request_hash" varchar, "ip_address" varchar, "session_hash" varchar, "message" text, "referrer" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "impressionable_type_message_index" ON "impressions" ("impressionable_type", "message", "impressionable_id")[0m
+  [1m[35m (0.4ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "poly_request_index" ON "impressions" ("impressionable_type", "impressionable_id", "request_hash")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "poly_ip_index" ON "impressions" ("impressionable_type", "impressionable_id", "ip_address")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "poly_session_index" ON "impressions" ("impressionable_type", "impressionable_id", "session_hash")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "controlleraction_request_index" ON "impressions" ("controller_name", "action_name", "request_hash")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_request_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "controlleraction_ip_index" ON "impressions" ("controller_name", "action_name", "ip_address")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "controlleraction_session_index" ON "impressions" ("controller_name", "action_name", "session_hash")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_session_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_impressions_on_user_id" ON "impressions" ("user_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150720014431"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_impressions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_impressions_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_session_index' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_ip_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='controlleraction_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='controlleraction_request_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_session_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_session_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_ip_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_ip_index' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='poly_request_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='poly_request_index' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='impressionable_type_message_index' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.1ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (4.1ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 5360ms (Views: 5343.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/about" for ::1 at 2017-10-18 16:03:52 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for ::1 at 2017-10-18 16:03:53 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"contact"}
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 70ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for ::1 at 2017-10-18 16:03:54 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for ::1 at 2017-10-18 16:03:54 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"contact"}
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for ::1 at 2017-10-18 16:03:55 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:55 -0400
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 101ms (Views: 99.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/about" for ::1 at 2017-10-18 16:03:57 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/contact" for ::1 at 2017-10-18 16:03:58 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"contact"}
+  Rendered pages/contact.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for ::1 at 2017-10-18 16:03:58 -0400
+Processing by PagesController#show as HTML
+  Parameters: {"id"=>"about"}
+  Rendered pages/about.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-10-18 16:03:59 -0400
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 87ms (Views: 86.4ms | ActiveRecord: 0.2ms)
