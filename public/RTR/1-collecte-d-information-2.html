@@ -51,14 +51,14 @@
 	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="active first-child"><a href="#"><i>1</i><span>Collecte d'information</span></a></li>
-			<li><a href="#"><i>2</i></a></li>
-			<li><a href="#"><i>3</i></a></li>
-			<li><a href="#"><i>4</i></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
+			<li class="active first-child"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span>Collecte d'information</span></a></li>
+			<li><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+			<li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​sur l'événement</span></a></li>
+			<li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
+			<li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Renseignements nécessaires</span></a></li>
+			<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
+			<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+			<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
 		</ul>
 
 		<div class="strong">
@@ -72,7 +72,7 @@
 
 					<div class="content">
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
 						</div>
 
 						<div class="box2">
@@ -80,23 +80,23 @@
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-										<label class="radiobutton">
-										   <input data-show="#option-1" type="radio" name="mode" value="create">
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-show="#option-1" type="radio" name="mode" value="create">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide="#option-1" type="radio" name="mode" value="create">
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-hide="#option-1" type="radio" name="mode" value="create">
 										   <i>Non</i>
 										</label>
 
 								   </div>
-								</label>
+								</div>
 							</div>
 						</div>
 
@@ -105,9 +105,9 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Numéro de référence de l'avis de l'employeur et demande de ​​​​​​​remboursement</label>
+									<label for="inp3"><span class="rft">*</span> Numéro de référence de l'avis de l'employeur et demande de ​​​​​​​remboursement</label>
 									<p class="clarification">(Ce numéro est inscrit en haut à gauche du document.)</p>
-									<input type="text" name="montant">
+									<input id="inp3" type="text" name="montant">
 									<img alt="" src="../../images/pages/image-cnesst-reference-avis.png">
 								</div>
 
@@ -119,23 +119,23 @@
 							<h3>Document remis par le médecin</h3>
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG2">Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
-										<label class="radiobutton">
-										   <input data-show="#option-2" type="radio" name="mode2" value="create">
+										<label for="inp4" class="radiobutton">
+										   <input id="inp4" data-show="#option-2" type="radio" name="mode2" value="create">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide="#option-2" type="radio" name="mode2" value="create">
+										<label for="inp5" class="radiobutton">
+										   <input id="inp5" data-hide="#option-2" type="radio" name="mode2" value="create">
 										   <i>Non</i>
 										</label>
 
 								   </div>
-								</label>
+								</div>
 							</div>
 						</div>
 
@@ -145,9 +145,9 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Numéro de référence de l'attestation médicale</label>
+									<label for="inp6"> <span class="rft">*</span> Numéro de référence de l'attestation médicale</label>
 									<p class="clarification">(Ce numéro est inscrit en haut à gauche du document.)</p>
-									<input type="text" name="montant">
+									<input id="inp6" type="text" name="montant">
 									<img alt="" src="../../images/pages/image-cnesst-reference-avis-2-a.png">
 								</div>
 

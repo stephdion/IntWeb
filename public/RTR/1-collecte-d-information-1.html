@@ -51,14 +51,14 @@
 	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="active first-child"><a href="#"><i>1</i><span>Collecte d'information</span></a></li>
-			<li><a href="#"><i>2</i></a></li>
-			<li><a href="#"><i>3</i></a></li>
-			<li><a href="#"><i>4</i></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
+			<li class="active first-child"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span>Collecte d'information</span></a></li>
+			<li><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+			<li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​sur l'événement</span></a></li>
+			<li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
+			<li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Renseignements nécessaires</span></a></li>
+			<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
+			<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+			<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
 		</ul>
 
 		<div class="strong">
@@ -77,29 +77,30 @@
 
 					<div class="content">
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+</p>
 						</div>
 
 						<div class="box2">
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-										<label class="radiobutton">
-										   <input data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
 										   <i>Non</i>
 										</label>
 
 								   </div>
-								</label>
+								</div>
 							</div>
 						</div>
 
@@ -109,25 +110,25 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Date de l'événement</label>
+									<label for="inp3"> <span class="rft">*</span> Date de l'événement</label>
 									<p class="clarification">(Récidive, rechute ou aggravation.)</p>
 									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
+										<input id="inp3" type="text" class="datepicker form-control" value="">
 									</div>
 									<p class="clarification">aaaa-mm-jj</p>
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Date à laquelle la lésion professionnelle a été déclarée la première fois </label>
+									<label for="inp4"> <span class="rft">*</span> Date à laquelle la lésion professionnelle a été déclarée la première fois </label>
 									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
+										<input id="inp4" type="text" class="datepicker form-control" value="">
 									</div>
 									<p class="clarification">aaaa-mm-jj</p>
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Numéro de dossier à la CNESST</label>
-									<input type="text" name="montant" data-characters="9">
+									<label for="inp5"> <span class="rft">*</span> Numéro de dossier à la CNESST</label>
+									<input id="inp5" type="text" name="montant" data-characters="9">
 									<p class="clarification">9 chiffres</p>
 								</div>
 
@@ -140,10 +141,10 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Date d'événement d'origine</label>
+									<label for="inp6"> <span class="rft">*</span> Date d'événement d'origine</label>
 									<p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
 									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
+										<input id="inp6" type="text" class="datepicker form-control" value="">
 									</div>
 									<p class="clarification">aaaa-mm-jj</p>
 								</div>
@@ -157,14 +158,14 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Numéro d'assurance maladie (NAM)</label>
-									<input type="text" name="montant" data-characters="12">
+									<label for="inp7"> <span class="rft">*</span> Numéro d'assurance maladie (NAM)</label>
+									<input id="inp7" type="text" name="montant" data-characters="12">
 									<p class="clarification">12 caractères</p>
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Numéro d'assurance sociale (NAS)</label>
-									<input type="text" name="montant" data-characters="9">
+									<label for="inp8"> <span class="rft">*</span> Numéro d'assurance sociale (NAS)</label>
+									<input id="inp8" type="text" name="montant" data-characters="9">
 									<p class="clarification">9 chiffres</p>
 								</div>
 

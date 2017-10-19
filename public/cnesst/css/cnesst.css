@@ -15,14 +15,17 @@ ol, ul {
 .nav-wizard > li.active > a, .nav-wizard > li.active > a:hover, .nav-wizard > li.active > a:focus {
     color: #fff;
     background-color: #006a08;
+
+    border-width: 10px !important;
+    border-color: yellow !important;
 }
 .nav-wizard > li:first-child > a {
     padding-left: 1.2rem;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 .nav-wizard > li:not(:last-child) > a {
-    margin-right: 0.05rem;
+    margin-right: 0;
 }
 .nav-wizard > li > a {
     position: relative;
@@ -80,7 +83,7 @@ ol, ul {
     background: #fff;
 }
 .nav-wizard > li.active > a:after {
-    border-left-color: #006a08;
+    border-left-color: #006a08 !important;
 }
 .nav-wizard > li:not(:first-child) > a:before {
     width: 0px;
@@ -159,7 +162,8 @@ ol, ul {
   padding: 0rem 0rem 0.1rem 0rem;
   margin-bottom: 1.5rem;
   border-bottom: solid;
-  border-width: 2px;
+  border-width: 1px;
+  border-color: #3f3f3f;
   text-transform: inherit;
 }
 
@@ -169,7 +173,7 @@ h1 .number {
     padding: 0.1rem 0.68rem;
     width: 2.2rem;
     height: 2.1rem;
-    background: #3a3839;
+    background: #3f3f3f;
     color: #fff;
     font-size: 1.6rem;
     line-height: 1.9rem;
@@ -260,4 +264,45 @@ nav.top-menu ul li a:focus
 
 nav.top-menu ul li {
     border-left: 0;
+}
+
+.infobox5 {
+    background: inherit;
+    color: #3f3f3f;
+    padding: 0;
+    margin-bottom: 1rem;
+    border-radius: 0rem;
+    line-height: inherit;
+}
+
+
+p.obligatoire::before {
+    content: "*";
+    color: #d20008;
+    position: relative;
+    left: -0.2rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.obligatoire::before {
+  content: "*";
+  color: #d20008;
+  position: absolute;
+  left: -0.1rem;
+  font-size: 1.5rem;
+  top: 0.5rem;
+}
+p.obligatoire::before {
+    position: relative;
+    left: -0.2rem;
+}
+
+.required:after {
+    content: '*';
+    position: absolute;
+    top: 0.5rem;
+    left: 0rem;
+    color: red;
+    font-size: 1.5rem;
 }

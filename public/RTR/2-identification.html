@@ -50,15 +50,16 @@
 
 	<main class="container" id="content">
 
+
 		<ul class="nav nav-wizard">
-			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
-			<li class="active"><a href="#"><i>2</i><span>Identification</span></a></li>
-			<li><a href="#"><i>3</i></a></li>
-			<li><a href="#"><i>4</i></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
+			<li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span class="hors-ecran">Collecte d'information</span></a></li>
+			<li class="active"><a role="button" href="2-identification.html"><i>2</i><span>Identification</span></a></li>
+			<li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​sur l'événement</span></a></li>
+			<li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
+			<li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Renseignements nécessaires</span></a></li>
+			<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
+			<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+			<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
 		</ul>
 
 		<div class="strong">
@@ -77,7 +78,7 @@
 
 					<div class="content">
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
 						</div>
 
 						<div class="box2">
@@ -85,38 +86,38 @@
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Sexe</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Sexe</i>
 
-								   <div class="radiobuttons">
+								  <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode" value="create">
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" type="radio" name="mode" value="create">
 										   <i>Féminin</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode" value="create">
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" type="radio" name="mode" value="create">
 										   <i>Masculin</i>
 										</label>
 
 								   </div>
-								</label>
-
-								<div class="control-group">
-									<label><span class="rft">*</span> Nom </label>
-									<input type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Prénom</label>
-									<input type="text" name="montant">
+									<label for="inp3"> <span class="rft">*</span> Nom </label>
+									<input id="inp3" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Date de naissance</label>
+									<label for="inp4"> <span class="rft">*</span> Prénom</label>
+									<input id="inp4" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp5"> <span class="rft">*</span> Date de naissance</label>
 									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
+										<input id="inp5" type="text" class="datepicker form-control" value="">
 									</div>
 									<p class="clarification">aaaa-mm-jj</p>
 								</div>
@@ -131,39 +132,39 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Adresse  </label>
-									<input type="text" name="montant">
+									<label for="inp6"> <span class="rft">*</span> Adresse  </label>
+									<input id="inp6" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Ville  </label>
-									<input type="text" name="montant">
+									<label for="inp7"> <span class="rft">*</span> Ville  </label>
+									<input id="inp7" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Province  </label>
-									<input type="text" name="montant">
+									<label for="inp8"> <span class="rft">*</span> Province  </label>
+									<input id="inp8" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Pays  </label>
-									<input type="text" name="montant">
+									<label for="inp9"> <span class="rft">*</span> Pays  </label>
+									<input id="inp9" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Code postal  </label>
-									<input type="text" name="montant">
+									<label for="inp10"> <span class="rft">*</span> Code postal  </label>
+									<input id="inp10" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label>T&eacute;l&eacute;phone (résidence)</label>
-									<input type="tel" name="tel">
+									<label for="inp11"> T&eacute;l&eacute;phone (résidence)</label>
+									<input id="inp11" type="tel" name="tel">
 									<p class="clarification">(xxx) xxx-xxxx</p>
 								</div>
 
 								<div class="control-group">
-									<label>T&eacute;l&eacute;phone (autre)</label>
-									<input type="tel" name="tel">
+									<label for="inp12"> T&eacute;l&eacute;phone (autre)</label>
+									<input id="inp12" type="tel" name="tel">
 									<p class="clarification">(xxx) xxx-xxxx</p>
 								</div>
 
@@ -178,14 +179,14 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Nom de l'employeur</label>
-									<input type="text" name="montant">
+									<label for="inp13"> <span class="rft">*</span> Nom de l'employeur</label>
+									<input id="inp13" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Adresse de l'établissement  </label>
+									<label for="inp14"> <span class="rft">*</span> Adresse de l'établissement  </label>
 									<p class="clarification">(Votre lieu de travail habituel.)</p>
-									<input type="text" name="montant">
+									<input id="inp14" type="text" name="montant">
 								</div>
 
 

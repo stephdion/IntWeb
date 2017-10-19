@@ -51,14 +51,14 @@
 	<main class="container" id="content">
 
 		<ul class="nav nav-wizard">
-			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
-			<li class="completed"><a href="#"><i>2</i></a></li>
-			<li class="active"><a href="#"><i>3</i><span>Renseignements ​sur l'événement</span></a></li>
-			<li><a href="#"><i>4</i></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
+			<li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span class="hors-ecran">Collecte d'information</span></a></li>
+			<li class="completed"><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+			<li class="active"><a role="button" href="3-renseignements-evenement.html"><i>3</i><span>Renseignements ​sur l'événement</span></a></li>
+			<li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
+			<li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Renseignements nécessaires</span></a></li>
+			<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
+			<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+			<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
 		</ul>
 
 		<div class="strong">
@@ -73,7 +73,7 @@
 
 					<div class="content">
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
 						</div>
 
 						<div class="box2">
@@ -81,56 +81,56 @@
 
 							<div class="text">
 
-								<label class="radiobutton required">
-								   <i>Indiquez le lieu de l'événement</i>
+								<div class="radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Indiquez le lieu de l'événement</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-										<label class="radiobutton">
-										   <input data-show="#option-1" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-show="#option-1" data-hide=".os-1" type="radio" name="mode">
 										   <i>Au Québec</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-show="#option-2" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-show="#option-2" data-hide=".os-1" type="radio" name="mode">
 										   <i>Hors du Québec, mais au Canada</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-show="#option-3" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp3" class="radiobutton">
+										   <input id="inp3" data-show="#option-3" data-hide=".os-1" type="radio" name="mode">
 										   <i>Hors du Canada</i>
 										</label>
 
 								   </div>
-								</label>
+								</div>
 
 
 
 								<div id="option-1" class="os-1 hide">
 
 
-									<label class="radiobutton required">
-									   <i>Précisez le lieu de l'événement</i>
+									<div class="radiobutton required">
+									   <i class="obligatoire" tabindex="-1" id="naRG2">Précisez le lieu de l'événement</i>
 
-									   <div class="radiobuttons">
+									   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
-											<label class="radiobutton">
-											   <input type="radio" name="mode">
+											<label for="inp4" class="radiobutton">
+											   <input id="inp4" type="radio" name="mode">
 											   <i>Lieu de travail habituel</i>
 											</label>
 
-											<label class="radiobutton">
-											   <input type="radio" name="mode">
+											<label for="inp5" class="radiobutton">
+											   <input id="inp5" type="radio" name="mode">
 											   <i>Ailleurs dans l'établissement (Stationnement, cafétéria, etc.)</i>
 											</label>
 
-											<label class="radiobutton">
-											   <input type="radio" name="mode">
+											<label for="inp6" class="radiobutton">
+											   <input id="inp6" type="radio" name="mode">
 											   <i>À l'extérieur du lieu de travail ​​​​​​​(Sur la route, chez un client, etc.)</i>
 											</label>
 
 									   </div>
-									</label>
+									</div>
 
 								</div>
 
@@ -138,8 +138,8 @@
 
 
 									<div class="control-group">
-										<label><span class="rft">*</span> Indiquez la province ou le territoire du Canada </label>
-										<input type="text" name="montant">
+										<label for="inp7"> <span class="rft">*</span> Indiquez la province ou le territoire du Canada </label>
+										<input id="inp7" type="text" name="montant">
 									</div>
 
 								</div>
@@ -148,8 +148,8 @@
 
 
 									<div class="control-group">
-										<label><span class="rft">*</span> Indiquez le pays </label>
-										<input type="text" name="montant">
+										<label for="inp8"> <span class="rft">*</span> Indiquez le pays </label>
+										<input id="inp8" type="text" name="montant">
 									</div>
 
 								</div>
@@ -166,34 +166,34 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label>Votre employeur a décrit comment s'est produit l'accident ​​​​​​​ou la maladie professionnelle</label>
+									<label for="inp"> Votre employeur a décrit comment s'est produit l'accident ​​​​​​​ou la maladie professionnelle</label>
 									<p class="clarification">(Ex. : les opérations effectuées, les équipements utilisés, les mouvements et les gestes exécutés, les parties du corps touchées, etc.)</p>
-									<textarea></textarea>
+									<textarea for="inp"></textarea>
 								</div>
 
-								<label class="radiobutton required inline">
-								   <i>Votre version est-elle différente de celle décrite par votre employeur?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG3">Votre version est-elle différente de celle décrite par votre employeur?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2" data-show="#option-4">
+										<label for="inp9" class="radiobutton">
+										   <input id="inp9" type="radio" name="mode2" data-show="#option-4">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2" data-hide="#option-4">
+										<label for="inp10" class="radiobutton">
+										   <input id="inp10" type="radio" name="mode2" data-hide="#option-4">
 										   <i>Non</i>
 										</label>
 
 								   </div>
-								</label>
+								</div >
 
 
 								<div id="option-4" class="box2 hide">
 									<div class="control-group">
-										<label>Décrivez, en vos propres mots, votre version de l'accident ou la maladie professionnelle</label>
-										<textarea data-characters="3000"></textarea>
+										<label for="inp10b"> Décrivez, en vos propres mots, votre version de l'accident ou la maladie professionnelle</label>
+										<textarea 11="10b" data-characters="3000"></textarea>
 										<p class="clarification">Maximum de 3000 caractères</p>
 									</div>
 								</div>
@@ -207,23 +207,23 @@
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Réclamez-vous pour une orthèse ou une prothèse endommagée lors de l'accident?</i>
+								<div  class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG4">Réclamez-vous pour une orthèse ou une prothèse endommagée lors de l'accident?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode3" data-show="#option-5">
+										<label for="inp11" class="radiobutton">
+										   <input id="inp11" type="radio" name="mode3" data-show="#option-5">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode3" data-hide="#option-5">
+										<label for="inp12" class="radiobutton">
+										   <input id="inp12" type="radio" name="mode3" data-hide="#option-5">
 										   <i>Non</i>
 										</label>
 
 								   </div>
-								</label>
+								</div >
 
 
 								<div id="option-5" class="box2 hide">
@@ -239,8 +239,8 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Quel est le métier ou la profession exercé lors de l'accident ou de la maladie professionnelle ?</label>
-									<input type="text" name="a">
+									<label for="inp"> <span class="rft">*</span> Quel est le métier ou la profession exercé lors de l'accident ou de la maladie professionnelle ?</label>
+									<input id="inp13" type="text" name="a">
 								</div>
 
 							</div>
