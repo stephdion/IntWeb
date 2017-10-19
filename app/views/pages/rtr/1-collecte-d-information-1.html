@@ -1,0 +1,125 @@
+
+
+<%= render 'composantes/naviguation' %>
+
+		<div class="strong">
+			<div class="mcl2">
+
+				<div class="step-info">
+
+					<h1><span class="number">1</span><span class="h1"><span class="h1">Collecte d'information (1 de 2)<span></h1>
+				</div>
+
+				<div class="infobox5 sp-xl">
+					<p>Les renseignements suivants permettent à la CNESST de valider si elle détient de l'information sur l'événement. Si c'est le cas, des champs du formulaires seront pré remplis. Cela facilitera votre déclaration.</p>
+				</div>
+
+				<div class="form-cont">
+
+					<div class="content">
+						<div class="text sp-s">
+							<p><span class="rft">*</span> Obligatoire</p>
+						</div>
+
+						<div class="box2">
+							<div class="text">
+
+								<label class="radiobutton required inline">
+								   <i>Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
+
+								   <div class="radiobuttons">
+
+										<label class="radiobutton">
+										   <input data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
+										   <i>Oui</i>
+										</label>
+
+										<label class="radiobutton">
+										   <input data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+								</label>
+							</div>
+						</div>
+
+
+						<div id="option-1" class="hide box2 sp-s">
+							<h3>Événement</h3>
+							<div class="text">
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Date de l'événement</label>
+									<p class="clarification">(Récidive, rechute ou aggravation.)</p>
+									<div class="date-icon">
+										<input type="text" class="datepicker form-control" value="">
+									</div>
+									<p class="clarification">aaaa-mm-jj</p>
+								</div>
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Date à laquelle la lésion professionnelle a été déclarée la première fois </label>
+									<div class="date-icon">
+										<input type="text" class="datepicker form-control" value="">
+									</div>
+									<p class="clarification">aaaa-mm-jj</p>
+								</div>
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Numéro de dossier à la CNESST</label>
+									<input type="text" name="montant" data-characters="9">
+									<p class="clarification">9 chiffres</p>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div id="option-2" class="hide box2 sp-s">
+							<h3>Événement</h3>
+							<div class="text">
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Date d'événement d'origine</label>
+									<p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
+									<div class="date-icon">
+										<input type="text" class="datepicker form-control" value="">
+									</div>
+									<p class="clarification">aaaa-mm-jj</p>
+								</div>
+
+							</div>
+						</div>
+
+
+						<div class="box2 sp-s">
+							<h3>Numéro d'identification</h3>
+							<div class="text">
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Numéro d'assurance maladie (NAM)</label>
+									<input type="text" name="montant" data-characters="12">
+									<p class="clarification">12 caractères</p>
+								</div>
+
+								<div class="control-group">
+									<label><span class="rft">*</span> Numéro d'assurance sociale (NAS)</label>
+									<input type="text" name="montant" data-characters="9">
+									<p class="clarification">9 chiffres</p>
+								</div>
+
+							</div>
+						</div>
+
+
+					</div>
+					<div class="btns">
+						<a role="button" class="btn btn7" href="0-avant-de-debuter.html">Pr&eacute;c&eacute;dent</a>
+						<a role="button" class="btn btn3" href="1-collecte-d-information-2.html">Suivant</a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
