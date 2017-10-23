@@ -1,144 +1,152 @@
+<ul class="nav nav-wizard">
+		<li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html">
+			<i>1</i><span class="hors-ecran">Collecte <br/>d'information</span></a></li>
+		<li class="completed"><a role="button" href="2-identification.html">
+			<i>2</i><span class="hors-ecran">Identification</span></a></li>
+		<li class="completed"><a role="button" href="3-renseignements-evenement.html">
+			<i>3</i><span class="hors-ecran">Renseignements ​<br/>sur l'événement</span></a></li>
+		<li class="completed"><a role="button" href="4-renseignements-arret-retour-travail.html">
+			<i>4</i><span class="hors-ecran">Arrêt et retour <br/>au travail</span></a></li>
+		<li class="active"><a role="button" href="5-renseignements-calcul-versement.html">
+			<i>5</i><span>Indemnité de <br/>remplacement du revenu</span></a></li>
+		<li><a role="button" href="6-transmettre.html">
+			<i>6</i><span class="hors-ecran">Transmettre <br/>des documents</span></a></li>
+		<li><a role="button" href="7-autorisation.html">
+			<i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+		<li class="last-child"><a role="button" href="8-resume.html">
+			<i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
+	</ul>
 
-
-		<ul class="nav nav-wizard">
-			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
-			<li class="completed"><a href="#"><i>2</i></a></li>
-			<li class="completed"><a href="#"><i>3</i></a></li>
-			<li class="completed"><a href="#"><i>4</i></a></li>
-			<li class="active"><a href="#"><i>5</i><span>Renseignements nécessaires</span></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
-		</ul>
-
-		<div class="strong">
+	<div class="strong">
 			<div class="mcl2">
 
 				<div class="step-info">
+				<h1> <span class="number">5</span><span class="h1">Indemnité de remplacement du revenu<span></h1>
+				</div>
 
-					<h1> <span class="number">5</span><span class="h1">Renseignements nécessaires au calcul et au versement de l'indemnité de remplacement du revenu<span></h1>
+				<div class="infobox5 sp-xl">
+					<p>Renseignements nécessaires au calcul et au versement de l'indemnité de remplacement du revenu</p>
 				</div>
 
 				<div class="form-cont sp-xl">
 
 					<div class="content">
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+													<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
 						</div>
-
 						<div class="box2">
-							<h3>Statut d'emploi</h3>
+							<h2 class="h4">Statut d'emploi</h2>
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Lors de l'accident de travail ou de la maladie professionnelle, étiez-vous un employé salarié?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Lors de l'accident de travail ou de la maladie professionnelle, étiez-vous un employé salarié?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-										<label class="radiobutton">
-										   <input data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
 										   <i>Non</i>
 										</label>
 
 								   </div>
 
-								</label>
+								</div>
 
 
 
-								<label class="hide os-1 os-1-1 radiobutton required">
-								   <i>Quel était votre statut d'emploi?</i>
+								<div class="os-1 os-1-1 radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG2">Quel était votre statut d'emploi?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp3" class="radiobutton">
+										   <input id="inp3" type="radio" name="mode2">
 										   <i>Travailleur de la construction</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp4" class="radiobutton">
+										   <input id="inp4" type="radio" name="mode2">
 										   <i>À l'emploi du gouvernement du Québec ou du Canada</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp5" class="radiobutton">
+										   <input id="inp5" type="radio" name="mode2">
 										   <i>À l'emploi d'un service des incendies ou pompier volontaire</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp6" class="radiobutton">
+										   <input id="inp6" type="radio" name="mode2">
 										   <i>Travailleur incarcéré </i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp7" class="radiobutton">
+										   <input id="inp7" type="radio" name="mode2">
 										   <i>Camelot</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp8" class="radiobutton">
+										   <input id="inp8" type="radio" name="mode2">
 										   <i>À l'emploi d'une entreprise à juridiction fédérale</i>
 										   <p class="clarification">(Banque, aviation, maritime, ferroviaire.) </p>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode2">
+										<label for="inp9" class="radiobutton">
+										   <input id="inp9" type="radio" name="mode2">
 										   <i>Autre</i>
 										</label>
 
 
 								   </div>
 
-								</label>
+								</div>
 
 
 
-								<label class="hide os-1 os-1-2 radiobutton required">
-								   <i>Quel était votre statut d'emploi?</i>
+								<div class="os-1 os-1-2 radiobutton required hide">
+								   <i class="obligatoire" tabindex="-1" id="naRG3">Quel était votre statut d'emploi?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
 
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode3">
+										<label for="inp10" class="radiobutton">
+										   <input id="inp10" data-hide=".os-4" type="radio" name="mode3">
 										   <i>Travailleur autonome</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode3">
+										<label for="inp11" class="radiobutton">
+										   <input id="inp11" data-hide=".os-4" type="radio" name="mode3">
 										   <i>Propriétaire, dirigeant, membre du conseil d'administration</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode3">
+										<label for="inp12" class="radiobutton">
+										   <input id="inp12" data-hide=".os-4" type="radio" name="mode3">
 										   <i>Bénévole</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode3">
+										<label for="inp13" class="radiobutton">
+										   <input id="inp13" data-hide=".os-4" type="radio" name="mode3">
 										   <i>Domestique</i>
 										</label>
 
 
-										<label class="radiobutton">
-										   <input data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode3">
+										<label for="inp14" class="radiobutton">
+										   <input id="inp14" data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode3">
 										   <i>Autre (Ex. : étudiant à temps plein.)</i>
 										</label>
 
 
 										<div class="control-group os-4-1 os-4 hide">
-											<label><span class="rft">*</span> Précisez </label>
-											<input type="text" value="">
+											<label for="inp15"  tabindex="-1" class="obligatoire"> Précisez <span class="hors-ecran"> Obligatoire </span>
+											<input id="inp15" type="text" value="">
 										</div>
 								   </div>
 
-								</label>
+								</div>
 
 							</div>
 						</div>
@@ -146,63 +154,71 @@
 
 
 						<div class="box2">
-							<h3>Situation familiale déclarée ​​​​​​​selon les lois sur l'impôt</h3>
+							<h2>Situation familiale déclarée selon les lois sur l'impôt</h2>
 
 							<div class="text">
 
-								<label class="radiobutton required">
-								   <i>Situation familiale</i>
+								<div class="radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG4">Situation familiale<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
 
-										<label class="radiobutton">
-										   <input data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode4">
+										<div class="radiobutton">
+											 <label for="inp16" class="radiobutton">
+										   <input id="inp16" data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode4">
 										   <i>Avec conjoint</i>
+										 </label>
 
-											<label class="radiobutton inline hide os-2 os-2-1">
-											   <i><span class="rft">*</span> Votre conjoint est-il à votre charge?</i>
+											<div class="radiobutton inline os-2 os-2-1 os-2-1a os-2-1b">
+											   <i  tabindex="-1" class="obligatoire"> Votre conjoint est-il à votre charge?<span class="hors-ecran"> Obligatoire </span></i>
 
-											   <div class="radiobuttons">
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG">
 
-													<label class="radiobutton">
-													   <input type="radio" name="mode5">
+													<label for="inp17" class="radiobutton">
+													   <input id="inp17" type="radio" name="mode5" data-hide=".os-2a" data-show=".os-2-1a">
 													   <i>Oui</i>
 													</label>
 
-													<label class="radiobutton">
-													   <input type="radio" name="mode5">
+													<label for="inp18" class="radiobutton">
+													   <input id="inp18" type="radio" name="mode5" data-hide=".os-2a" data-show=".os-2-1b">
 													   <i>Non</i>
 													</label>
 
 												</div>
-											</label>
+											</div>
 
-										</label>
+										</div>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-2" type="radio" name="mode4">
+										<label for="inp19" class="radiobutton">
+										   <input id="inp19" data-hide=".os-2" data-show=".os-2-2" type="radio" name="mode4">
 										   <i>Monoparentale</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-2" type="radio" name="mode4">
+										<label for="inp20" class="radiobutton">
+										   <input id="inp20" data-hide=".os-2" data-show=".os-2-3" type="radio" name="mode4">
 										   <i>Célibataire</i>
 										</label>
 
 								   </div>
 
-								</label>
-
-
-								<div class="control-group">
-									<label><span class="rft">*</span> Nombre de personnes mineures (-18 ans) à votre charge</label>
-									<input type="text" class="amount" name="montant">
 								</div>
 
 
-								<div class="control-group">
-									<label><span class="rft">*</span> Autre que votre conjoint, nombre de personnes majeures (18 ans et + à votre charge)</label>
-									<input type="text" class="amount" name="montant">
+								<div class="control-group os-2a os-2-1a os-2-1b os-2-2 os-2-3 os-2 hide">
+									<label for="inp21"  tabindex="-1" class="obligatoire"> Nombre de personnes mineures (-18 ans) à votre charge<span class="hors-ecran"> Obligatoire </span>
+									<input id="inp21" type="text" class="amount" name="montant">
+								</div>
+
+
+								<div class="control-group os-2a os-2-1b os-2-2 os-2-3 os-2 hide">
+									<label for="inp22"  tabindex="-1" class="obligatoire"> Nombre de personnes majeures (18 ans et +) à votre charge<span class="hors-ecran"> Obligatoire </span>
+									<input id="inp22" type="text" class="amount" name="montant">
+								</div>
+
+
+								<div class="control-group os-2a os-2-1a os-2 hide">
+									<label for="inp23"  tabindex="-1" class="obligatoire"> Autre que votre conjoint, nombre de personnes majeures (18 ans et + à votre charge)<span class="hors-ecran"> Obligatoire </span>
+									<input id="inp23" type="text" class="amount" name="montant">
 								</div>
 
 
@@ -212,94 +228,94 @@
 
 
 						<div class="box2">
-							<h3>Revenu annuel</h3>
+							<h2>Revenu annuel</h2>
 
 							<div class="text">
 
 								<div class="control-group">
-									<label><span class="rft">*</span> Quel est votre revenu annuel brut?</label>
+									<label for="inp24"tabindex="-1" class="obligatoire"> Quel est votre revenu annuel brut?<span class="hors-ecran"> Obligatoire </span>
 									<p class="clarification">(Vous devez y ajouter les montants tels que les bonis, les primes, les pourboires, les commissions, les heures supplémentaires, etc.)</p>
-									<input type="text" class="amount" name="montant"> $
+									<input id="inp24" type="text" class="amount" name="montant"> $
 								</div>
 
 								<div class="control-group">
-									<label>Décrivez quels types de montant vous avez ajoutés à votre revenu annuel</label>
-									<textarea></textarea>
+									<label for="inp25">Décrivez quels types de montant vous avez ajoutés à votre revenu annuel<span class="hors-ecran"> Obligatoire </span>
+									<textarea id="inp25"></textarea>
 								</div>
 
 
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre employeur continue à vous payer après les ​​​​​​​14 premiers jours d'incapacité à travailler?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG5">Est-ce que votre employeur continue à vous payer après les 14 premiers jours d'incapacité à travailler?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG5">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
+										<label for="inp26" class="radiobutton">
+										   <input id="inp26" type="radio" name="mode5">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
+										<label for="inp27" class="radiobutton">
+										   <input id="inp27" type="radio" name="mode5">
 										   <i>Non</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
+										<label for="inp28" class="radiobutton">
+										   <input id="inp28" type="radio" name="mode5">
 										   <i>Je ne sais pas</i>
 										</label>
 
 								   </div>
 
-								</label>
+								</div>
 
 
 							</div>
 						</div>
 
 						<div class="box2">
-							<h3>Autre emploi</h3>
+							<h2>Autre emploi</h2>
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i>Occupez-vous plus d'un emploi?</i>
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG6">Occupez-vous plus d'un emploi?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG6">
 
-										<label class="radiobutton">
-										   <input data-show=".os-3-1" data-hide=".os-3" type="radio" name="mod6">
+										<label for="inp29" class="radiobutton">
+										   <input id="inp29" data-show=".os-3-1" data-hide=".os-3" type="radio" name="mod6">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input data-hide=".os-3" type="radio" name="mod6">
+										<label for="inp30" class="radiobutton">
+										   <input id="inp30" data-hide=".os-3" type="radio" name="mod6">
 										   <i>Non</i>
 										</label>
 
 								   </div>
 
-								</label>
+								</div>
 
 
 
-								<label class="radiobutton required inline hide os-3 os-3-1">
-								   <i>Est-ce que votre accident de travail ou votre maladie professionnelle vous empêche d'occuper vos ​​​​​​​autres emplois?</i>
+								<div class="radiobutton required inline os-3 os-3-1 hide">
+								   <i class="obligatoire" tabindex="-1" id="naRG7">Est-ce que votre accident de travail ou votre maladie professionnelle vous empêche d'occuper vos autres emplois?<span class="hors-ecran"> Obligatoire </span></i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG7">
 
-										<label class="radiobutton">
-										   <input type="radio" name="mod7">
+										<label for="inp31" class="radiobutton">
+										   <input id="inp31" type="radio" name="mod7">
 										   <i>Oui</i>
 										</label>
 
-										<label class="radiobutton">
-										   <input  type="radio" name="mod7">
+										<label for="inp32" class="radiobutton">
+										   <input id="inp32" type="radio" name="mod7">
 										   <i>Non</i>
 										</label>
 
 								   </div>
 
-								</label>
+								</div>
 
 
 							</div>
@@ -308,17 +324,15 @@
 
 					</div>
 					<div class="btns">
-						<a role="button" class="btn btn7" href="4-renseignements-arret-retour-travail.html">Pr&eacute;c&eacute;dent</a>
-						<a role="button" class="btn btn3" href="6-transmettre.html">Suivant</a>
+						<a class="btn btn7" href="4-renseignements-arret-retour-travail.html">Précédent</a>
+						<a class="btn btn3" href="6-depot-direct.html">Suivant</a>
 					</div>
 				</div>
 
 				<div class="btns">
-					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
-					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+					<a class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
 				</div>
 
 			</div>
 		</div>
-
-	

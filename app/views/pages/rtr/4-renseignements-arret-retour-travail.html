@@ -1,233 +1,173 @@
-
-
-		<ul class="nav nav-wizard">
-			<li class="completed first-child-completed"><a href="#"><i>1</i></a></li>
-			<li class="completed"><a href="#"><i>2</i></a></li>
-			<li class="completed"><a href="#"><i>3</i></a></li>
-			<li class="active"><a href="#"><i>4</i><span>Arrêt et retour au travail</span></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
-		</ul>
-
-		<div class="strong">
-			<div class="mcl2">
-
-				<div class="step-info">
-
-					<h1><span class="number">4</span><span class="h1">Renseignements ​​​​​​​sur l'arrêt et le retour au travail <span></h1>
-				</div>
-
-				<div class="form-cont sp-xl">
-
-					<div class="content">
-						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
-						</div>
-
-						<div class="box2">
-							<h3>Arrêt de travail</h3>
-
-							<div class="text">
-
-								<label class="radiobutton required inline">
-								   <i>Êtes-vous actuellement ou ​​​​​​​avez-vous été en arrêt de travail?</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
-										   <i>Non</i>
-										</label>
-
-								   </div>
-
+<ul class="nav nav-wizard">
+  <li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span class="hors-ecran">Collecte<br/>d'information</span></a></li>
+  <li class="completed"><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+  <li class="completed"><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​<br/>sur l'événement</span></a></li>
+  <li class="active"><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span>Arrêt et retour<br/>au travail</span></a></li>
+  <li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Indemnité de remplacement <br/>du revenu</span></a></li>
+  <li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre <br/>des documents</span></a></li>
+  <li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+  <li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
+</ul>
+<div class="strong">
+  <div class="mcl2">
+    <div class="step-info">
+      <h1 id="h1"><span class="number">4</span> <span class="h1">Renseignements sur l'arrêt et le retour au travail </span></h1>
+    </div>
+    <div class="form-cont sp-xl">
+      <div class="content">
+        <div class="text sp-s">
+          <p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+        </div>
+        <div class="box2">
+          <h2>Arrêt de travail</h2>
+          <div class="text">
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG1">Êtes-vous actuellement ou avez-vous été en arrêt de travail?<span class="hors-ecran"> Obligatoire </span></i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+                <label for="inp1" class="radiobutton">
+										 <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										 <i>Oui</i>
+									</label>
+                <label for="inp2" class="radiobutton">
+										 <input id="inp2" data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
+										 <i>Non</i>
+									</label>
+              </div>
+            </div>
+            <div class="control-group os-1-1 os-1 hide">
+              <label for="inp3" class="obligatoire"> Date de votre dernier jour travaillé
+									<span class="hors-ecran"> Obligatoire </span>
 								</label>
-
-
-								<div class="control-group os-1-1 os-1 hide">
-									<label><span class="rft">*</span> Date de votre dernier jour travaillé </label>
-									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
-									</div>
-									<p class="clarification">aaaa-mm-jj</p>
-								</div>
-
-
-							</div>
-
-
-						</div>
-
-
-						<div class="box2 os-1-1 os-1 hide">
-							<h3>Retour au travail</h3>
-
-							<div class="text">
-
-								<label class="radiobutton required inline">
-								   <i>Êtes-vous actuellement de retour au travail?</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode2">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-show=".os-2-2" data-hide=".os-2" type="radio" name="mode2">
-										   <i>Non</i>
-										</label>
-
-								   </div>
-
-								</label>
-
-
-								<div class="control-group os-2-1 os-2 hide">
-									<label><span class="rft">*</span> Date de votre retour </label>
-									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
-									</div>
-									<p class="clarification">aaaa-mm-jj</p>
-								</div>
-
-
-								<div class="control-group os-2-2 os-2 hide">
-									<label><span class="rft">*</span> Date prévue de votre retour </label>
-									<p class="clarification">(Si elle est connue.) </p>
-									<div class="date-icon">
-										<input type="text" class="datepicker form-control" value="">
-									</div>
-									<p class="clarification">aaaa-mm-jj</p>
-								</div>
-
-
-							</div>
-						</div>
-
-
-						<div class="box2 os-2-1 os-1-2 os-1 os-2 hide">
-							<h3>Au travail</h3>
-
-							<div class="text">
-
-								<label class="radiobutton required inline">
-								   <i>Occupez-vous le même emploi qu'avant l'accident de travail ou la maladie professionnelle? </i>
-								   <p class="clarification">(Mêmes tâches, même horaire et mêmes conditions.)</p>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-hide=".os-3" type="radio" name="mode3">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-show=".os-3-2" data-hide=".os-3" type="radio" name="mode3">
-										   <i>Non</i>
-										</label>
-
-								   </div>
-
-								</label>
-
-
-								<label class="hide os-3 os-3-2 radiobutton required">
-								   <i>Précisez votre emploi</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode4">
-										   <i>Assignation temporaire ​​​​​​​(temps plein)</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode4">
-										   <i>Assignation temporaire(temps partiel)</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode4">
-										   <i>Travail allégé (temps plein)</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode4">
-										   <i>Retour progressif</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide=".os-4" type="radio" name="mode4">
-										   <i>Chez un autre employeur</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode4">
-										   <i>Autre</i>
-										</label>
-
-
-										<div class="control-group os-4-1 os-4 hide">
-											<label><span class="rft">*</span> Précisez </label>
-											<input type="text" value="">
-										</div>
-								   </div>
-
-								</label>
-
-
-
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre employeur continue à payer votre salaire ​​​​​​​en totalité?</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
-										   <i>Non</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input type="radio" name="mode5">
-										   <i>Je ne sais pas</i>
-										</label>
-
-								   </div>
-
-								</label>
-
-
-
-							</div>
-						</div>
-
-					</div>
-					<div class="btns">
-						<a role="button" class="btn btn7" href="3-renseignements-evenement.html">Pr&eacute;c&eacute;dent</a>
-						<a role="button" class="btn btn3" href="5-renseignements-calcul-versement.html">Suivant</a>
-					</div>
-				</div>
-
-				<div class="btns">
-					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
-					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
-				</div>
-
-			</div>
-		</div>
-
-	
+              <div class="date-icon">
+                <input id="inp3" type="text" class="datepicker form-control" value="" aria-describedby="daFdate">
+              </div>
+              <p class="clarification">aaaa-mm-jj</p>
+            </div>
+          </div>
+        </div>
+        <div class="box2 os-1-1 os-1 hide">
+          <h2>Retour au travail</h2>
+          <div class="text">
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG2">Êtes-vous actuellement de retour au travail?
+                <span class="hors-ecran"> Obligatoire </span>
+                </i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+                <label for="inp4" class="radiobutton">
+										 <input id="inp4" data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode2">
+										 <i>Oui</i>
+									</label>
+                <label for="inp5" class="radiobutton">
+										 <input id="inp5" data-show=".os-2-2" data-hide=".os-2" type="radio" name="mode2">
+										 <i>Non</i>
+									</label>
+              </div>
+            </div>
+            <div class="control-group os-2-1 os-2 hide">
+              <label for="inp6" class="obligatoire"> Date de votre retour
+									<span class="hors-ecran"> Obligatoire </span></label>
+              <div class="date-icon">
+                <input id="inp6" type="text" class="datepicker form-control" value="" aria-describedby="daFdate">
+              </div>
+              <p class="clarification">aaaa-mm-jj</p>
+            </div>
+            <div class="control-group os-2-2 os-2 hide">
+              <label for="inp7" class="obligatoire"> Date prévue de votre retour
+                <span class="clarification">(Si elle est connue.) </span>
+                  <span class="hors-ecran"> Obligatoire </span>
+                </label>
+              <div class="date-icon">
+                <input id="inp7" type="text" class="datepicker form-control" value="" aria-describedby="daFdate">
+              </div>
+              <p class="clarification">aaaa-mm-jj</p>
+            </div>
+          </div>
+        </div>
+        <div class="box2 os-2-1 os-1-2 os-1 os-2 hide">
+          <h2>Au travail</h2>
+          <div class="text">
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG3">Occupez-vous le même emploi qu'avant l'accident de travail ou la maladie professionnelle?
+                  <span class="hors-ecran"> Obligatoire </span>
+                </i>
+              <p class="clarification" id="daRG3" tabindex="-1">(Mêmes tâches, même horaire et mêmes conditions.)</p>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG3" aria-describedby="daRG3">
+                <label for="inp8" class="radiobutton">
+										 <input id="inp8" data-hide=".os-3" type="radio" name="mode3">
+										 <i>Oui</i>
+									</label>
+                <label for="inp9" class="radiobutton">
+										 <input id="inp9" data-show=".os-3-2" data-hide=".os-3" type="radio" name="mode3">
+										 <i>Non</i>
+									</label>
+              </div>
+            </div>
+            <div class="hide os-3 os-3-2 radiobutton required">
+              <i class="obligatoire" tabindex="-1" id="naRG4">Précisez votre emploi<span class="hors-ecran"> Obligatoire </span></i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG4">
+                <label for="inp10" class="radiobutton">
+										 <input id="inp10" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Assignation temporaire (temps plein)</i>
+									</label>
+                <label for="inp11" class="radiobutton">
+										 <input id="inp11" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Assignation temporaire(temps partiel)</i>
+									</label>
+                <label for="inp12" class="radiobutton">
+										 <input id="inp12" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Travail allégé (temps plein)</i>
+									</label>
+                <label for="inp13" class="radiobutton">
+										 <input id="inp13" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Retour progressif</i>
+									</label>
+                <label for="inp14" class="radiobutton">
+										 <input id="inp14" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Chez un autre employeur</i>
+									</label>
+                <label for="inp15" class="radiobutton">
+										 <input id="inp15" data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode4">
+										 <i>Autre</i>
+									</label>
+                <div class="control-group os-4-1 os-4 hide">
+                  <label for="inp16" class="obligatoire"><span class="hors-ecran"> Si autre, </span>Précisez <span class="hors-ecran"> Obligatoire </span></label>
+                  <input id="inp16" type="text" value="">
+                </div>
+              </div>
+            </div>
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG5">Est-ce que votre employeur continue à payer votre salaire en totalité?<span class="hors-ecran"> Obligatoire </span></i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG5">
+                <label for="inp17" class="radiobutton">
+										 <input id="inp17" type="radio" name="mode5">
+										 <i>Oui</i>
+									</label>
+                <label for="inp18" class="radiobutton">
+										 <input id="inp18" type="radio" name="mode5">
+										 <i>Non</i>
+									</label>
+                <label for="inp19" class="radiobutton">
+										 <input id="inp19" type="radio" name="mode5">
+										 <i>Je ne sais pas</i>
+									</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <a role="button" class="btn btn7" href="3-renseignements-evenement.html">Pr&eacute;c&eacute;dent</a>
+        <a role="button" class="btn btn3" href="5-renseignements-calcul-versement.html">Suivant</a>
+      </div>
+    </div>
+    <div class="btns">
+      <a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+      <a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+    </div>
+  </div>
+</div>
+<!-- Format de saisi générique -->
+<div class="hide">
+  <div tabindex="-1" id="daFdate">a a a a - m m - j j</div>
+</div>
+<!-- /Format de saisi générique -->

@@ -1,120 +1,85 @@
+<ul class="nav nav-wizard">
+  <li class="active first-child"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span>Collecte<br/>d'information</span></a></li>
+  <li><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+  <li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements<br/>sur l'événement</span></a></li>
+  <li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour<br/>au travail</span></a></li>
+  <li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Indemnité de remplacement<br/>du revenu</span></a></li>
+  <li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre<br/>des documents</span></a></li>
+  <li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+  <li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
+</ul>
+<div class="strong">
+  <div class="mcl2">
+    <div class="step-info">
+      <h1 id="h1"><span class="number">1</span><span class="h1">Collecte d'information (2 de 2)</span></h1>
+    </div>
+    <div class="form-cont sp-xl">
+      <div class="content">
+        <div class="text sp-s">
+          <p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+        </div>
+        <div class="box2">
+          <h2>Document remis par l'employeur</h2>
+          <div class="text">
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG1">Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+                <label for="inp1" class="radiobutton">
+										 <input id="inp1" data-show="#option-1" type="radio" name="mode" value="create">
+										 <i>Oui</i>
+									</label>
+                <label for="inp2" class="radiobutton">
+										 <input id="inp2" data-hide="#option-1" type="radio" name="mode" value="create">
+										 <i>Non</i>
+									</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="option-1" class="hide box2 sp-s">
+          <div class="text">
 
-
-		<ul class="nav nav-wizard">
-			<li class="active first-child"><a href="#"><i>1</i><span>Collecte d'information</span></a></li>
-			<li><a href="#"><i>2</i></a></li>
-			<li><a href="#"><i>3</i></a></li>
-			<li><a href="#"><i>4</i></a></li>
-			<li><a href="#"><i>5</i></a></li>
-			<li><a href="#"><i>6</i></a></li>
-			<li><a href="#"><i>7</i></a></li>
-			<li class="last-child"><a href="#"><i>8</i></a></li>
-		</ul>
-
-		<div class="strong">
-			<div class="mcl2">
-
-				<div class="step-info">
-					<h1><span class="number">1</span><span class="h1">Collecte d'information (2 de 2)<span><span></h1>
-				</div>
-
-				<div class="form-cont sp-xl">
-
-					<div class="content">
-						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
-						</div>
-
-						<div class="box2">
-							<h3>Document remis par ​​​​​​​l'employeur</h3>
-
-							<div class="text">
-
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-show="#option-1" type="radio" name="mode" value="create">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide="#option-1" type="radio" name="mode" value="create">
-										   <i>Non</i>
-										</label>
-
-								   </div>
-								</label>
-							</div>
-						</div>
-
-
-						<div id="option-1" class="hide box2 sp-s">
-							<div class="text">
-
-								<div class="control-group">
-									<label><span class="rft">*</span> Numéro de référence de l'avis de l'employeur et demande de ​​​​​​​remboursement</label>
-									<p class="clarification">(Ce numéro est inscrit en haut à gauche du document.)</p>
-									<input type="text" name="montant">
-									<img alt="" src="../../images/pages/image-cnesst-reference-avis.png">
-								</div>
-
-							</div>
-						</div>
-
-
-						<div class="box2">
-							<h3>Document remis par le médecin</h3>
-							<div class="text">
-
-								<label class="radiobutton required inline">
-								   <i>Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
-
-								   <div class="radiobuttons">
-
-										<label class="radiobutton">
-										   <input data-show="#option-2" type="radio" name="mode2" value="create">
-										   <i>Oui</i>
-										</label>
-
-										<label class="radiobutton">
-										   <input data-hide="#option-2" type="radio" name="mode2" value="create">
-										   <i>Non</i>
-										</label>
-
-								   </div>
-								</label>
-							</div>
-						</div>
-
-
-
-						<div id="option-2" class="hide box2 sp-s">
-							<div class="text">
-
-								<div class="control-group">
-									<label><span class="rft">*</span> Numéro de référence de l'attestation médicale</label>
-									<p class="clarification">(Ce numéro est inscrit en haut à gauche du document.)</p>
-									<input type="text" name="montant">
-									<img alt="" src="../../images/pages/image-cnesst-reference-avis-2-a.png">
-								</div>
-
-							</div>
-						</div>
-
-
-
-					</div>
-					<div class="btns">
-						<a role="button" class="btn btn7" href="1-collecte-d-information-1.html">Pr&eacute;c&eacute;dent</a>
-						<a role="button" class="btn btn3" href="2-identification.html">Suivant</a>
-					</div>
-				</div>
-
-
-			</div>
-		</div>
-
-	
+            <div class="control-group">
+              <label for="inp3" class="obligatoire"> Numéro de référence de l'avis de l'employeur et demande de remboursement</label>
+              <p class="clarification" id="daInp3" tabindex="-1">Ce numéro est inscrit en haut à gauche du document.</p>
+              <input id="inp3" type="text" name="montant" aria-describedby="daInp3">
+              <img alt="" src="../../images/pages/image-cnesst-reference-avis.png">
+            </div>
+          </div>
+        </div>
+        <div class="box2">
+          <h2>Document remis par le médecin</h2>
+          <div class="text">
+            <div class="radiobutton required inline">
+              <i class="obligatoire" tabindex="-1" id="naRG2">Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
+              <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+                <label for="inp4" class="radiobutton">
+										 <input id="inp4" data-show="#option-2" type="radio" name="mode2" value="create">
+										 <i>Oui</i>
+									</label>
+                <label for="inp5" class="radiobutton">
+										 <input id="inp5" data-hide="#option-2" type="radio" name="mode2" value="create">
+										 <i>Non</i>
+									</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="option-2" class="hide box2 sp-s">
+          <div class="text">
+            <div class="control-group">
+              <label for="inp6" class="obligatoire"> Numéro de référence de l'attestation médicale<span class="hors-ecran"> Obligatoire </span></label>
+              <p class="clarification" id="daInp6" tabindex="-1">Ce numéro est inscrit en haut à gauche du document.</p>
+              <input id="inp6" type="text" name="montant" aria-describedby="daInp6">
+              <img alt="" src="../../images/pages/image-cnesst-reference-avis-2-a.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btns">
+        <a role="button" class="btn btn7" href="1-collecte-d-information-1.html">Pr&eacute;c&eacute;dent</a>
+        <a role="button" class="btn btn3" href="2-identification.html">Suivant</a>
+      </div>
+    </div>
+  </div>
+</div>

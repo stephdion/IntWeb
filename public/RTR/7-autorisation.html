@@ -75,24 +75,40 @@
 
 						<div class="box2">
 							<h3>Autorisation</h3>
-							<div class="text">
 
-								<label>J'autorise :</label>
 
-								<ul class="bullets1">
-									<li>tout médecin, professionnel ou intervenant de la santé</li>
-									<li>tout établissement de la santé et des services sociaux</li>
-									<li>toute clinique</li>
-									<li>à communiquer les renseignements relatifs à mon état de santé concernant le traitement de ma réclamation à la Commission des normes, de l'équité, de la santé et de la sécurité du travail (CNESST).</li>
-								</ul>
+								<!-- Ajout tabindex="-1" pour s'assurer que cette zone sera également annoncé par NVDA dans Internet Explorer -->
+<div id="na2" tabindex="-1" class="text">
+	<p>
+		J’autorise :
+	</p>
+	 <!-- Ajout role="presentation" pour s'assurer le nom accessible de la case à cocher n'annonce pas les "puce" au focus sur la case à cocher -->
+	<ul role="presentation" class="bullets1">
+		<li>
+			tout médecin, professionnel ou intervenant de la santé
+		</li>
+		<li>
+			tout établissement de la santé et des services sociaux
+		</li>
+		<li>
+			toute clinique
+		</li>
+		<li>
+			à communiquer les renseignements relatifs à mon état de santé concernant le traitement de ma réclamation à la Commission des normes, de l'équité, de la santé et de la sécurité du travail (CNESST).
+		</li>
 
-								<label for="inp" class="radiobutton">
-								   <input id="inp1" type="checkbox" name="mode" value="create">
-								   <i><strong>En cochant cette case,  je donne mon autorisation.</strong></i>
-								</label>
+	</ul>
+</div>
+<p class="obligatoire">
+	<input type="checkbox" value="2" id="g1c2" aria-labelledby="na1 na2 na3" class="radiobutton">
+	<!-- Ajout tabindex="-1" pour s'assurer que cette zone sera également annoncée par NVDA dans Internet Explorer -->
+	<label for="g1c2"><span id="na1" tabindex="-1">En cochant cette case,</span> <span id="na3"> je donne mon autorisation <span class="hors-ecran"> Obligatoire</span></span>
+</label>
+</p>
+
 
 							</div>
-						</div>
+
 
 
 					</div>

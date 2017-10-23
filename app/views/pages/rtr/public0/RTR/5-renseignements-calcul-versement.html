@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Étape 5 - Indemnité de remplacement du revenu - Réclamation du travailleur - CNESST</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<!-- <link rel="stylesheet" href="/cnesst/js/bootstrap-reboot.min.css"> -->
+	<link rel="stylesheet" href="/cnesst/js/bootstrap-grid.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="/cnesst/css/components2.css">
+	<link rel="stylesheet" type="text/css" href="/cnesst/css/styleguide.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" type="text/css" href="/cnesst/js/jquery.qtip.min.css">
+<link rel="stylesheet" type="text/css" href="/cnesst/css/cnesst.css">
+</head>
+<body>
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
+		<div class="row no-gutters">
+			<div class="col-auto">
+				<div class="logo">
+					<img alt="" src="../../images/logo.png" alt="C N E S S T">
+				</div>
+			</div>
+		    <div class="col align-self-end">
+		    	<nav class="top-menu">
+		    		<ul>
+		    			<li>
+			    			<a href="#">
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Retour à Mon espace travailleur</span>
+			    			</a>
+		    			</li>
+		    			<li>
+			    			<a href="#">
+			    				<img alt="" src="../../images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
+			    			</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    </div>
+		</div>
+		<div class="no-menu">
+			<span id="naHeader">Réclamation du travailleur</span>
+		</div>
+	</header>
+
+	<main class="container" id="content">
+
+		<ul class="nav nav-wizard">
+			<li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span class="hors-ecran">Collecte d'information</span></a></li>
+			<li class="completed"><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+			<li class="completed"><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​sur l'événement</span></a></li>
+			<li class="completed"><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
+			<li class="active"><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span>Renseignements nécessaires</span></a></li>
+			<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
+			<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+			<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
+		</ul>
+
+		<div class="strong">
+			<div class="mcl2">
+
+				<div class="step-info">
+
+					<h1> <span class="number">5</span><span class="h1">Renseignements nécessaires au calcul et au versement de l'indemnité de remplacement du revenu<span></h1>
+				</div>
+
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+						<div class="text sp-s">
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+						</div>
+
+						<div class="box2">
+							<h3>Statut d'emploi</h3>
+
+							<div class="text">
+
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG1">Lors de l'accident de travail ou de la maladie professionnelle, étiez-vous un employé salarié?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-show=".os-1-2" data-hide=".os-1" type="radio" name="mode">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+
+								<div class="hide os-1 os-1-1 radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG2">Quel était votre statut d'emploi?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+
+										<label for="inp3" class="radiobutton">
+										   <input id="inp3" type="radio" name="mode2">
+										   <i>Travailleur de la construction</i>
+										</label>
+
+										<label for="inp4" class="radiobutton">
+										   <input id="inp4" type="radio" name="mode2">
+										   <i>À l'emploi du gouvernement du Québec ou du Canada</i>
+										</label>
+
+										<label for="inp5" class="radiobutton">
+										   <input id="inp5" type="radio" name="mode2">
+										   <i>À l'emploi d'un service des incendies ou pompier volontaire</i>
+										</label>
+
+										<label for="inp6" class="radiobutton">
+										   <input id="inp6" type="radio" name="mode2">
+										   <i>Travailleur incarcéré </i>
+										</label>
+
+										<label for="inp7" class="radiobutton">
+										   <input id="inp7" type="radio" name="mode2">
+										   <i>Camelot</i>
+										</label>
+
+										<label for="inp8" class="radiobutton">
+										   <input id="inp8" type="radio" name="mode2">
+										   <i>À l'emploi d'une entreprise à juridiction fédérale</i>
+										   <p class="clarification">(Banque, aviation, maritime, ferroviaire.) </p>
+										</label>
+
+										<label for="inp9" class="radiobutton">
+										   <input id="inp9" type="radio" name="mode2">
+										   <i>Autre</i>
+										</label>
+
+
+								   </div>
+
+								</div>
+
+
+
+								<div class="hide os-1 os-1-2 radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG3">Quel était votre statut d'emploi?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
+
+										<label for="inp10" class="radiobutton">
+										   <input id="inp10" data-hide=".os-4" type="radio" name="mode3">
+										   <i>Travailleur autonome</i>
+										</label>
+
+										<label for="inp11" class="radiobutton">
+										   <input id="inp11" data-hide=".os-4" type="radio" name="mode3">
+										   <i>Propriétaire, dirigeant, membre du conseil d'administration</i>
+										</label>
+
+										<label for="inp12" class="radiobutton">
+										   <input id="inp12" data-hide=".os-4" type="radio" name="mode3">
+										   <i>Bénévole</i>
+										</label>
+
+										<label for="inp13" class="radiobutton">
+										   <input id="inp13" data-hide=".os-4" type="radio" name="mode3">
+										   <i>Domestique</i>
+										</label>
+
+
+										<label for="inp14" class="radiobutton">
+										   <input id="inp14" data-show=".os-4-1" data-hide=".os-4" type="radio" name="mode3">
+										   <i>Autre (Ex. : étudiant à temps plein.)</i>
+										</label>
+
+
+										<div class="control-group os-4-1 os-4 hide">
+											<label for="inp"> <span class="rft">*</span> Précisez </label>
+											<input id="inp15" type="text" value="">
+										</div>
+								   </div>
+
+								</div>
+
+							</div>
+						</div>
+
+
+
+						<div class="box2">
+							<h3>Situation familiale déclarée ​​​​​​​selon les lois sur l'impôt</h3>
+
+							<div class="text">
+
+								<div class="radiobutton required">
+								   <i class="obligatoire" tabindex="-1" id="naRG4">Situation familiale</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
+
+										<label for="inp16" class="radiobutton">
+										   <input id="inp16" data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode4">
+										   <i>Avec conjoint</i>
+
+											<div class="radiobutton inline hide os-2 os-2-1">
+											   <i class="obligatoire" tabindex="-1" id="naRG5"><span class="rft">*</span> Votre conjoint est-il à votre charge?</i>
+
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
+
+													<label for="inp17" class="radiobutton">
+													   <input id="inp17" type="radio" name="mode5">
+													   <i>Oui</i>
+													</label>
+
+													<label for="inp18" class="radiobutton">
+													   <input id="inp18" type="radio" name="mode5">
+													   <i>Non</i>
+													</label>
+
+												</div>
+											</div>
+
+										</div>
+
+										<label for="inp19" class="radiobutton">
+										   <input id="inp19" data-hide=".os-2" type="radio" name="mode4">
+										   <i>Monoparentale</i>
+										</label>
+
+										<label for="inp20" class="radiobutton">
+										   <input id="inp20" data-hide=".os-2" type="radio" name="mode4">
+										   <i>Célibataire</i>
+										</label>
+
+								   </div>
+
+								</label>
+
+
+								<div class="control-group">
+									<label for="inp"> <span class="rft">*</span> Nombre de personnes mineures (-18 ans) à votre charge</label>
+									<input id="inp21" type="text" class="amount" name="montant">
+								</div>
+
+
+								<div class="control-group">
+									<label for="inp"> <span class="rft">*</span> Autre que votre conjoint, nombre de personnes majeures (18 ans et + à votre charge)</label>
+									<input id="inp22" type="text" class="amount" name="montant">
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+						<div class="box2">
+							<h3>Revenu annuel</h3>
+
+							<div class="text">
+
+								<div class="control-group">
+									<label for="inp"> <span class="rft">*</span> Quel est votre revenu annuel brut?</label>
+									<p class="clarification">(Vous devez y ajouter les montants tels que les bonis, les primes, les pourboires, les commissions, les heures supplémentaires, etc.)</p>
+									<input id="inp23" type="text" class="amount" name="montant"> $
+								</div>
+
+								<div class="control-group">
+									<label for="inp"> Décrivez quels types de montant vous avez ajoutés à votre revenu annuel</label>
+									<textarea></textarea>
+								</div>
+
+
+								<divclass="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG6">Est-ce que votre employeur continue à vous payer après les ​​​​​​​14 premiers jours d'incapacité à travailler?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG6">
+
+										<label for="inp24" class="radiobutton">
+										   <input id="inp24" type="radio" name="mode5">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp25" class="radiobutton">
+										   <input id="inp25" type="radio" name="mode5">
+										   <i>Non</i>
+										</label>
+
+										<label for="inp26" class="radiobutton">
+										   <input id="inp26" type="radio" name="mode5">
+										   <i>Je ne sais pas</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="box2">
+							<h3>Autre emploi</h3>
+
+							<div class="text">
+
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" tabindex="-1" id="naRG7">Occupez-vous plus d'un emploi?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG7">
+
+										<label for="inp27" class="radiobutton">
+										   <input id="inp27" data-show=".os-3-1" data-hide=".os-3" type="radio" name="mod6">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp28" class="radiobutton">
+										   <input id="inp28" data-hide=".os-3" type="radio" name="mod6">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+
+								<div class="radiobutton required inline hide os-3 os-3-1">
+								   <i class="obligatoire" tabindex="-1" id="naRG8">Est-ce que votre accident de travail ou votre maladie professionnelle vous empêche d'occuper vos ​​​​​​​autres emplois?</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG8">
+
+										<label for="inp29" class="radiobutton">
+										   <input id="inp29" type="radio" name="mod7">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp30" class="radiobutton">
+										   <input id="inp30" type="radio" name="mod7">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+							</div>
+						</div>
+
+
+					</div>
+					<div class="btns">
+						<a role="button" class="btn btn7" href="4-renseignements-arret-retour-travail.html">Pr&eacute;c&eacute;dent</a>
+						<a role="button" class="btn btn3" href="6-transmettre.html">Suivant</a>
+					</div>
+				</div>
+
+				<div class="btns">
+					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="container footer">
+		<div class="row no-gutters">
+			<div class="col">
+				<ul class="footer-menu">
+					<li><a href="#" target="_blank">Accessibilit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+          <li><a href="#" target="_blank">Plan du site
+            <img
+                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+                 src="../../images/blank.svg">
+            </a></li>
+				</ul>
+			</div>
+			<div class="col right">
+				<p>
+          <span>Renseignements g&eacute;n&eacute;raux : </span>
+          <span><a href="tel:18448380808" aria-label="Téléphone Renseignements généraux 1 844 838-0808">1 844 838-0808</a></span>
+        </p>
+				<img alt="C N E S S T" src="../../images/logo_footer.png">
+			</div>
+		</div>
+		<div class="row no-gutters bottom">
+			&copy; CNESST, 2017
+		</div>
+
+	</footer>
+
+
+
+
+
+	<script src="/cnesst/js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.fr.min.js"></script>
+	<script src="/cnesst/js/jquery.qtip.min.js"></script>
+
+	<script>
+		$( function() {
+			$( ".datepicker" ).datepicker({
+				format: "yyyy-mm-dd",
+    			language: 'fr'
+			});
+		});
+
+
+		$(document).ready(function() {
+		    $(".amount").keydown(function (e) {
+		        // Allow: backspace, delete, tab, escape, enter and .
+		        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+		             // Allow: Ctrl/cmd+A
+		            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+C
+		            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+X
+		            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: home, end, left, right
+		            (e.keyCode >= 35 && e.keyCode <= 39)) {
+		                 // let it happen, don't do anything
+		                 return;
+		        }
+		        // Ensure that it is a number and stop the keypress
+		        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+		            e.preventDefault();
+		        }
+		    });
+
+
+		    $('[title!=""]').qtip({
+		    	content: {
+		    		button: true
+		    	},
+			    show: {
+			        event: 'click',
+
+			    },
+			    hide: {
+			        event: 'click'
+			    }
+		    });
+
+			$('.hasTooltip').each(function() { // Notice the .each() loop, discussed below
+			    $(this).qtip({
+			    	content: {
+			    		button: true,
+			            text: $(this).next('div').html() // Use the "div" element next to this for the content
+			    	},
+				    show: {
+				        event: 'click',
+
+				    },
+				    hide: {
+				        event: 'click'
+				    }
+			    });
+			});
+
+
+		    $('[data-hide!=""]').on('click', function(event) {
+		    	$($(this).data('hide')).addClass('hide');
+
+		    	// $($(this).data('hide')).find('input[type="radio"]').prop('checked', false);
+		    	$($(this).data('hide')).each(function(index, el) {
+		    		// $(el).find('input[type="radio"]').eq(0).trigger('click');
+		    		$(el).find('input[type="radio"]').prop('checked', false);
+		    	});
+		    });
+
+		    $('[data-show!=""]').on('click', function(event) {
+		    	$($(this).data('show')).removeClass('hide');
+		    });
+
+		    $('[data-characters!=""]').keyup(function(){
+			        var text = $(this).val();
+			        var maxlength = $(this).data('characters');
+
+			        if(maxlength > 0)
+			        {
+			                $(this).val(text.substr(0, maxlength));
+			        }
+			});
+
+		});
+	</script>
+
+</body>
+</html>

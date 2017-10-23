@@ -1,133 +1,103 @@
 <ul class="nav nav-wizard">
-	<li class="active first-child"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span>Collecte d'information</span></a></li>
-	<li><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
-	<li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​sur l'événement</span></a></li>
-	<li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour au travail</span></a></li>
-	<li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Renseignements nécessaires</span></a></li>
-	<li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre des documents</span></a></li>
-	<li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
-	<li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
+  <li class="active first-child"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span>Collecte<br/>d'information</span></a></li>
+  <li><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+  <li><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements<br/>sur l'événement</span></a></li>
+  <li><a role="button" href="4-renseignements-arret-retour-travail.html"><i>4</i><span class="hors-ecran">Arrêt et retour<br/>au travail</span></a></li>
+  <li><a role="button" href="5-renseignements-calcul-versement.html"><i>5</i><span class="hors-ecran">Indemnité de remplacement<br/>du revenu</span></a></li>
+  <li><a role="button" href="6-transmettre.html"><i>6</i><span class="hors-ecran">Transmettre<br/>des documents</span></a></li>
+  <li><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+  <li class="last-child"><a role="button" href="8-resume.html"><i>8</i><span class="hors-ecran">R&eacute;sum&eacute;</span></a></li>
 </ul>
-
 <div class="strong">
 	<div class="mcl2">
-
 		<div class="step-info">
-
-			<h1><span class="number">1</span><span class="h1"><span class="h1">Collecte d'information (1 de 2)<span></h1>
+			<h1 id="h1"><span class="number">1</span><span class="h1">Collecte d'information (1 de 2)</span></h1>
 		</div>
-
 		<div class="infobox5 sp-xl">
 			<p>Les renseignements suivants permettent à la CNESST de valider si elle détient de l'information sur l'événement. Si c'est le cas, des champs du formulaires seront pré remplis. Cela facilitera votre déclaration.</p>
 		</div>
-
 		<div class="form-cont">
-
 			<div class="content">
 				<div class="text sp-s">
 					<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
 </p>
 				</div>
-
 				<div class="box2">
 					<div class="text">
-
 						<div class="radiobutton required inline">
 							 <i class="obligatoire" tabindex="-1" id="naRG1">Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
-
 							 <div class="radiobuttons" role="group" aria-labelledby="naRG1">
-
 								<label for="inp1" class="radiobutton">
 									 <input id="inp1" data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
 									 <i>Oui</i>
 								</label>
-
 								<label for="inp2" class="radiobutton">
 									 <input id="inp2" data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
 									 <i>Non</i>
 								</label>
-
 							 </div>
 						</div>
 					</div>
 				</div>
-
-
 				<div id="option-1" class="hide box2 sp-s">
-					<h3>Événement</h3>
+					<h2>Événement</h2>
 					<div class="text">
-
 						<div class="control-group">
-							<label for="inp3"> <span class="rft">*</span> Date de l'événement</label>
+							<label for="inp3" class="obligatoire">Date de l'événement<span class="hors-ecran"> Obligatoire </span></label>
 							<p class="clarification">(Récidive, rechute ou aggravation.)</p>
 							<div class="date-icon">
 								<input id="inp3" type="text" class="datepicker form-control" value="">
 							</div>
 							<p class="clarification">aaaa-mm-jj</p>
 						</div>
-
 						<div class="control-group">
-							<label for="inp4"> <span class="rft">*</span> Date à laquelle la lésion professionnelle a été déclarée la première fois </label>
+							<label for="inp4" class="obligatoire"> Date à laquelle la lésion professionnelle a été déclarée la première fois
+							<span class="hors-ecran"> Obligatoire </span></label>
 							<div class="date-icon">
 								<input id="inp4" type="text" class="datepicker form-control" value="">
 							</div>
 							<p class="clarification">aaaa-mm-jj</p>
 						</div>
-
 						<div class="control-group">
-							<label for="inp5"> <span class="rft">*</span> Numéro de dossier à la CNESST</label>
+							<label for="inp5" class="obligatoire"> Numéro de dossier à la CNESST<span class="hors-ecran"> Obligatoire </span></label>
 							<input id="inp5" type="text" name="montant" data-characters="9">
 							<p class="clarification">9 chiffres</p>
 						</div>
-
 					</div>
 				</div>
-
-
 				<div id="option-2" class="hide box2 sp-s">
-					<h3>Événement</h3>
+					<h2>Événement</h2>
 					<div class="text">
-
 						<div class="control-group">
-							<label for="inp6"> <span class="rft">*</span> Date d'événement d'origine</label>
+							<label for="inp6" class="obligatoire"> Date d'événement d'origine<span class="hors-ecran"> Obligatoire </span></label>
 							<p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
 							<div class="date-icon">
 								<input id="inp6" type="text" class="datepicker form-control" value="">
 							</div>
 							<p class="clarification">aaaa-mm-jj</p>
 						</div>
-
 					</div>
 				</div>
-
-
 				<div class="box2 sp-s">
-					<h3>Numéro d'identification</h3>
+					<h2>Numéro d'identification</h2>
 					<div class="text">
-
 						<div class="control-group">
-							<label for="inp7"> <span class="rft">*</span> Numéro d'assurance maladie (NAM)</label>
+							<label for="inp7" class="obligatoire"> Numéro d'assurance maladie (NAM)<span class="hors-ecran"> Obligatoire </span></label>
 							<input id="inp7" type="text" name="montant" data-characters="12">
 							<p class="clarification">12 caractères</p>
 						</div>
-
 						<div class="control-group">
-							<label for="inp8"> <span class="rft">*</span> Numéro d'assurance sociale (NAS)</label>
+							<label for="inp8" class="obligatoire"> Numéro d'assurance sociale (NAS)<span class="hors-ecran"> Obligatoire </span></label>
 							<input id="inp8" type="text" name="montant" data-characters="9">
 							<p class="clarification">9 chiffres</p>
 						</div>
-
 					</div>
 				</div>
-
-
 			</div>
 			<div class="btns">
-				<a role="button" class="btn btn7" href="0-avant-de-debuter.html">Pr&eacute;c&eacute;dent</a>
+				<a role="button" class="btn btn7" href="index.html">Pr&eacute;c&eacute;dent</a>
 				<a role="button" class="btn btn3" href="1-collecte-d-information-2.html">Suivant</a>
 			</div>
 		</div>
-
-
 	</div>
 </div>

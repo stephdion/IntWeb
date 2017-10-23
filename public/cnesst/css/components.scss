@@ -358,7 +358,7 @@ footer.footer{
 		z-index: 2;
 		right: 6%;
 		margin-top: -6.5px;
-		background-image: url('../images/icone-cnesst-icone-fleche-hover.png');
+		background-image: url('/images/icone-cnesst-icone-fleche-hover.png');
 		background-size: 9px;
 		width: 9px;
 		height: 13px;
@@ -367,7 +367,7 @@ footer.footer{
 	&:hover{
 
 		&:after{
-			background-image: url('../images/icone-cnesst-icone-fleche.png');
+			background-image: url('/images/icone-cnesst-icone-fleche.png');
 		}
 	}
 
@@ -453,7 +453,7 @@ footer.footer{
 		position: absolute;
 		top: 50%;
 		left: 5%;
-		background-image: url('../images/icone-cnesst-icone-poubelle.png');
+		background-image: url('/images/icone-cnesst-icone-poubelle.png');
 		background-size: 25px;
 		width: 25px;
 		height: 25px;
@@ -489,7 +489,7 @@ footer.footer{
 		left: 6%;
 		margin-top: -6.5px;
 		background-size: 9px;
-		background-image: url('../images/icone-cnesst-icone-fleche2-hover.png');
+		background-image: url('/images/icone-cnesst-icone-fleche2-hover.png');
 		width: 9px;
 		height: 13px;
 	}
@@ -500,7 +500,7 @@ footer.footer{
 		background: #e2ebde;
 
 		// &:after{
-		// 	background-image: url('../images/icone-cnesst-icone-fleche2.png');
+		// 	background-image: url('/images/icone-cnesst-icone-fleche2.png');
 		// }
 	}
 
@@ -523,7 +523,7 @@ a.btn8{
 		z-index: 2;
 		left: 0;
 		margin-top: -6.5px;
-		background-image: url('../images/icone-cnesst-icone-fleche.png');
+		background-image: url('/images/icone-cnesst-icone-fleche.png');
 		background-size: 9px;
 		width: 9px;
 		height: 13px;
@@ -600,7 +600,7 @@ a.btn8{
 		left: 6%;
 		margin-top: -6.5px;
 		background-size: 9px;
-		background-image: url('../images/icone-cnesst-icone-fleche2.png');
+		background-image: url('/images/icone-cnesst-icone-fleche2.png');
 		width: 9px;
 		height: 13px;
 	}
@@ -611,7 +611,7 @@ a.btn8{
 		background: #e2ebde;
 
 		&:after{
-			background-image: url('../images/icone-cnesst-icone-fleche2-hover.png');
+			background-image: url('/images/icone-cnesst-icone-fleche2-hover.png');
 		}
 	}
 
@@ -1004,7 +1004,7 @@ table.table2{
 			left: 0.35rem;
 			width: 22px;
 			height: 22px;
-			background-image: url('../images/icone-cnesst-fleche-droite.png');
+			background-image: url('/images/icone-cnesst-fleche-droite.png');
 			background-size: 22px;
 		}
 	}
@@ -1049,7 +1049,7 @@ table.table2{
 			left: 0.35rem;
 			width: 22px;
 			height: 22px;
-			background-image: url('../images/icone-cnesst-fleche-droite.png');
+			background-image: url('/images/icone-cnesst-fleche-droite.png');
 			background-size: 22px;
 
 		}
@@ -1216,7 +1216,7 @@ ul.arrow1{
 			height: 13px;
 			margin-top: -7px;
 			background-size: 9px;
-			background-image: url('../images/icone-cnesst-icone-fleche.png');
+			background-image: url('/images/icone-cnesst-icone-fleche.png');
 
 
 		}
@@ -1318,7 +1318,7 @@ ul.arrow2{
 			height: 13px;
 			margin-top: -7px;
 			background-size: 9px;
-			background-image: url('../images/icone-cnesst-icone-fleche.png');
+			background-image: url('/images/icone-cnesst-icone-fleche.png');
 		}
 	}
 }
@@ -1813,7 +1813,7 @@ div.strong{
 				width: 34px;
 				height: 100%;
 				background: #e9e8e7;
-				background-image: url('../images/icone-cnesst-icone-calendrier.png');
+				background-image: url('/images/icone-cnesst-icone-calendrier.png');
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: 27px;
@@ -1845,7 +1845,7 @@ div.strong{
 				right: 1%;
 				width: 24px;
 				height: 24px;
-				background-image: url('../images/icone-cnesst-icone-connexion.png');
+				background-image: url('/images/icone-cnesst-icone-connexion.png');
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: 24px;
@@ -2054,7 +2054,7 @@ div.space{
 /* Icons */
 
 .icon-dialog{
-	background-image: url('../images/icon-dialog.png');
+	background-image: url('/images/icon-dialog.png');
 	background-size: 60px;
 	width: 60px;
 	height: 60px;
@@ -2064,7 +2064,7 @@ div.space{
 
 
 .icon-download{
-	background-image: url('../images/icon-download.png');
+	background-image: url('/images/icon-download.png');
 	background-size: 30px;
 	width: 30px;
 	height: 30px;
@@ -2073,7 +2073,7 @@ div.space{
 
 
 .icon-check{
-	background-image: url('../images/icon-check.png');
+	background-image: url('/images/icon-check.png');
 	background-size: 100px;
 	width: 100px;
 	height: 100px;
@@ -2083,13 +2083,13 @@ div.space{
 
 .icon-timer{
 	background-color: #5d5d5d;
-	background-image: url('../images/icone-cnesst-icone-timer.png');
+	background-image: url('/images/icone-cnesst-icone-timer.png');
 	background-size: 90px;
 }
 
 i.icon-help{
 	display: inline-block;
-	background-image: url('../images/icon-aide.png');
+	background-image: url('/images/icon-aide.png');
 	width: 20px;
 	height: 20px;
 	background-size: 20px;
@@ -2106,7 +2106,7 @@ i.icon-help:hover{
 	margin-left: -10px;
 	margin-right: 5px;
 	display: inline-block;
-	background-image: url('../images/icone-cnesst-icone-sauvergarder-vert.png');
+	background-image: url('/images/icone-cnesst-icone-sauvergarder-vert.png');
 	width: 20px;
 	height: 20px;
 	background-size: 20px;
@@ -2114,7 +2114,7 @@ i.icon-help:hover{
 }
 
 a.btn:hover .icon-save{
-	background-image: url('../images/icone-cnesst-icone-sauvergarder-blanc.png');
+	background-image: url('/images/icone-cnesst-icone-sauvergarder-blanc.png');
 }
 
 
@@ -2124,7 +2124,7 @@ a.btn:hover .icon-save{
 	margin-left: -10px;
 	margin-right: 5px;
 	display: inline-block;
-	background-image: url('../images/icone-cnesst-icone-supprimer-vert.png');
+	background-image: url('/images/icone-cnesst-icone-supprimer-vert.png');
 	width: 20px;
 	height: 20px;
 	background-size: 20px;
@@ -2132,7 +2132,7 @@ a.btn:hover .icon-save{
 }
 
 a.btn:hover .icon-delete{
-	background-image: url('../images/icone-cnesst-icone-supprimer-blanc.png');
+	background-image: url('/images/icone-cnesst-icone-supprimer-blanc.png');
 }
 
 
@@ -2144,7 +2144,7 @@ input[type="radio"]{
 	cursor: pointer;
     margin:0 0.1rem 0 0;
     padding:0;
-    background-image: url('../images/form-ui.png');
+    background-image: url('/images/form-ui.png');
     background-position: -2px -2px;
     width: 16px;
     height: 16px;
@@ -2167,7 +2167,7 @@ input[type="checkbox"]{
 	cursor: pointer;
     margin:0 0.1rem 0 0;
     padding:0;
-    background-image: url('../images/form-ui.png');
+    background-image: url('/images/form-ui.png');
     background-position: -2px -22px;
     width: 16px;
     height: 16px;
