@@ -22,7 +22,7 @@
           <h2>Lieu de l'événement</h2>
           <div class="text">
             <div class="radiobutton required">
-              <i class="obligatoire" tabindex="-1" id="naRG1">Indiquez le lieu de l'événement<span class="hors-ecran"> Obligatoire </span></i>
+              <i class="obligatoire" id="naRG1">Indiquez le lieu de l'événement<span class="hors-ecran"> Obligatoire </span></i>
               <div class="radiobuttons" role="group" aria-labelledby="naRG1">
                 <label for="inp1" class="radiobutton">
 										 <input id="inp1" data-show="#option-1" data-hide=".os-1" type="radio" name="mode">
@@ -40,7 +40,7 @@
             </div>
             <div id="option-1" class="os-1 hide">
               <div class="radiobutton required">
-                <i class="obligatoire" tabindex="-1" id="naRG2">Précisez le lieu de l'événement<span class="hors-ecran"> Obligatoire </span></i>
+                <i class="obligatoire" id="naRG2">Précisez le lieu de l'événement<span class="hors-ecran"> Obligatoire </span></i>
                 <div class="radiobuttons" role="group" aria-labelledby="naRG2">
                   <label for="inp4" class="radiobutton">
 											 <input id="inp4" type="radio" name="mode">
@@ -80,7 +80,7 @@
               <textarea id="inp8b"></textarea>
             </div>
             <div class="radiobutton required inline">
-              <i class="obligatoire" tabindex="-1" id="naRG3">Votre version est-elle différente de celle décrite par votre employeur?<span class="hors-ecran"> Obligatoire </span></i>
+              <i class="obligatoire" id="naRG3">Votre version est-elle différente de celle décrite par votre employeur?<span class="hors-ecran"> Obligatoire </span></i>
               <div class="radiobuttons" role="group" aria-labelledby="naRG3">
                 <label for="inp9" class="radiobutton">
 										 <input id="inp9" type="radio" name="mode2" data-show="#option-4">
@@ -96,7 +96,7 @@
               <div class="control-group">
                 <label for="inp10b"> Décrivez, en vos propres mots, votre version de l'accident ou la maladie professionnelle</label>
                 <textarea id="inp10b" data-characters="3000" aria-describedby="dainp10b"></textarea>
-                <p class="clarification" id="dainp10b" tabindex="-1">Maximum de 3000 caractères </p>
+                <p class="clarification" id="dainp10b">Maximum de 3000 caractères </p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
           <h2>Orthèse ou prothèse</h2>
           <div class="text">
             <div class="radiobutton required inline">
-              <i class="obligatoire" tabindex="-1" id="naRG4">Réclamez-vous pour une orthèse ou une prothèse endommagée lors de l'accident?<span class="hors-ecran"> Obligatoire </span></i>
+              <i class="obligatoire" id="naRG4">Réclamez-vous pour une orthèse ou une prothèse endommagée lors de l'accident?<span class="hors-ecran"> Obligatoire </span></i>
               <div class="radiobuttons" role="group" aria-labelledby="naRG4">
                 <label for="inp11" class="radiobutton">
 										 <input id="inp11" type="radio" name="mode3" data-show="#option-5">
@@ -143,3 +143,10 @@
     </div>
   </div>
 </div>
+
+<!-- Format de saisi générique -->
+<div class="hide">
+  <div tabindex="-1" id="daFdate">a a a a - m m - j j</div>
+  <div tabindex="-1" id="daFtel">10 chiffres</div>
+</div>
+<!-- /Format de saisi générique -->

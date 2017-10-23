@@ -19,43 +19,189 @@
 				<p>V&eacute;rifiez les renseignements qui seront transmise &agrave; la CNESST.</p>
 			</div>
 		</div>
-
-			<div class="form-cont">
+		<!--
+		TODO
+		- ajouter une ancre en fin de chaque section modifiable
+		- Au clic sur le lien, donner le focus au bouton Modifier de la section
+		 -->
+<!-- Étape 1 (1 de 2 ) -->
+			<div class="form-cont" id="se1">
 				<div class="header">
-					<a href="#" class="edit">Modifier</a>
-					<h2>Identification</h2>
+					<h2 id="e1">Identification</h2>
+					<a id="btnMe1" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e1">Modifier</a>
 				</div>
 				<div class="content">
 					<div class="box2">
-						<h3 class="h2">Renseignements sur vous</h3>
-						<div class="text">
-							<p><strong>Pr&eacute;nom,nom :</strong> Monsieur Fabien Bertrand</p>
-							<br>
-							<p><strong>Date de naissance :</strong> 1975-06-02</p>
-							<br>
-							<p><strong>Adresse :</strong> 345 rue de la Falaise, Qu&eacute;bec, QC G1K 7E2</p>
-						</div>
-					</div>
-					<br>
+	          <div class="text">
+	            <div class="radiobutton required inline">
+	              <i id="naRG1">Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
+	              <div class="radiobuttons" role="radiogroup" aria-labelledby="naRG1" aria-readonly="true">
+									<!-- TODO : aria-readonly n'est pas valide sur un groupe de bouton radio ni sur un bouton radio
+											- À tester le résultat communiqué et la doc pour voir si c'est un bug du validateur ou si c'est le cas!
+								  -->
+
+									<!-- TODO:
+
+									- Ajouter une classe hide au bouton radio+étiquette et case à cocher+étiquette non sélecitonné
+									- Placer toute liste de case à cocher dans une liste à puce.
+									- placer hors-ecran les boutons radio ou case à cocher pour ne garder que leur étiquette de champ visible
+								-->
+	                <label for="inp1" class="radiobutton">
+										 <input id="inp1" data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
+										 <i>Oui</i>
+									</label>
+	                <label for="inp2" class="radiobutton">
+										 <input id="inp2" data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
+										 <i>Non</i>
+									</label>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div id="option-1" class="hide box2 sp-s">
+	          <h2>Événement</h2>
+	          <div class="text">
+	            <div class="control-group">
+	              <label for="inp3">Date de l'événement</label>
+	              <p class="clarification">(Récidive, rechute ou aggravation.)</p>
+	              <div class="date-icon">
+	                <input aria-readonly="true" id="inp3" type="text" class="datepicker form-control" value="">
+	              </div>
+
+	            </div>
+	            <div class="control-group">
+	              <label for="inp4"> Date à laquelle la lésion professionnelle a été déclarée la première fois
+								</label>
+	              <div class="date-icon">
+	                <input id="inp4" type="text" class="datepicker form-control" value="">
+	              </div>
+	            </div>
+	            <div class="control-group readonly">
+	              <label for="inp5"> Numéro de dossier à la CNESST</label>
+	              <input aria-readonly="true" id="inp5" type="text" name="montant" data-characters="9">
+	            </div>
+	          </div>
+	        </div>
+	        <div id="option-2" class="hide box2 sp-s">
+	          <h2>Événement</h2>
+	          <div class="text">
+	            <div class="control-group readonly">
+	              <label for="inp6"> Date d'événement d'origine</label>
+	              <p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
+	              <div class="date-icon">
+	                <input aria-readonly="true" id="inp6" type="text" class="datepicker form-control" value="2017-08-01">
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="box2 sp-s">
+	          <h2>Numéro d'identification</h2>
+	          <div class="text">
+	            <div class="control-group readonly">
+	              <label for="inp7"> Numéro d'assurance maladie (NAM)</label>
+	              <input aria-readonly="true" id="inp7" type="text" name="montant" data-characters="12">
+	            </div>
+	            <div class="control-group readonly">
+	              <label for="inp8"> Numéro d'assurance sociale (NAS)</label>
+	              <input aria-readonly="true" id="inp8" type="text" name="montant" data-characters="9">
+	            </div>
+	          </div>
+	        </div>
+				</div>
+			</div>
+<a id="ancreSe1" href="#se1" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe1 e1">Haut</a>
+<!-- / Étape 1 (1 de 2 ) -->
+<!-- Étape 1 (2 de 2 ) -->
+			<div class="form-cont" id="se1b">
+				<div class="header">
+					<h2 id="e1b">Collecte d'information (2 de 2)</h2>
+					<a id="btnMe1b" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1b e1b">Modifier</a>
+				</div>
+				<div class="content">
 					<div class="box2">
-						<h2>Lorem ipsum dolor sit amet</h2>
-						<div class="text">
-							<p><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor.</p>
-							<br>
-							<p><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor.</p>
-							<br>
-							<p><strong>Lorem ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor.</p>
-						</div>
+						<h3 class="h2">À venir...</h3>
 					</div>
 				</div>
 			</div>
+<a id="ancreSe1b" href="#se1b" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe1b e1b">Haut</a>
+<!-- / Étape 1 (2 de 2 ) -->
+<!-- Étape 2 -->
+			<div class="form-cont" id="se2">
+				<div class="header">
+					<h2 id="e2">Identification</h2>
+					<a id="btnMe2" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e2">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<a id="ancreSe2" href="#se2" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe2 e2">Haut</a>
+<!-- / Étape 2 -->
+<!-- Étape 4 -->
+			<div class="form-cont" id="se4">
+				<div class="header">
+					<h2 id="e4">Arrêt et retour au travail</h2>
+					<a id="btnMe4" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e4">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<a id="ancreSe4" href="#se4" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe4 e4">Haut</a>
+<!-- / Étape 4 -->
+<!-- Étape 5 -->
+			<div class="form-cont" id="se5">
+				<div class="header">
+					<h2 id="e5">Indemnité de remplacement du revenu</h2>
+					<a id="btnMe5" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e5">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<a id="ancreSe5" href="#se5" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe5 e5">Haut</a>
+<!-- / Étape 5 -->
+<!-- Étape 6 -->
+			<div class="form-cont" id="se6">
+				<div class="header">
+					<h2 id="e6">Transmettre des documents</h2>
+					<a id="btnMe6" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e6">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<a id="ancreSe6" href="#se6" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe6 e6">Haut</a>
+<!-- / Étape 6 -->
+<!-- Étape 7 -->
+			<div class="form-cont" id="se7">
+				<div class="header">
+					<h2 id="e7">Autorisation</h2>
+					<a id="btnMe7" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e7">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<a id="ancreSe7" href="#se7" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe7 e7">Haut</a>
+<!-- / Étape 7 -->
+
+			<!-- TODO Créer un script pour ajouter par programmation un attribut tabindex="-1" dans ie pour NVDA (bug) sur les nom et description accessible n'ayant pas rôle natif-->
+			<!-- TODO Ajouter une dectection au survol des éléments ayant un tabindex="-1", leur ajouter au survol une classe outlineOffOver-->
 			<div class="btns2">
-				<p class="clarification">En cliquant sur <strong>transmettre</strong>, vous certifiez que les renseignements sont exacts.</p>
+				<p id="daTransmettre" class="clarification jsTnada">En cliquant sur <strong>transmettre</strong>, vous certifiez que les renseignements sont exacts.</p>
 				<a role="button" class="btn btn7" href="7-autorisation.html">Pr&eacute;c&eacute;dent</a>
-				<a role="button" class="btn btn4" href="9-accuse-de-reception.html">Transmettre</a>
+				<a role="button" class="btn btn4" href="9-accuse-de-reception.html" aria-describedby="daTransmettre">Transmettre</a>
 			</div>
 		</div>
 	</div>

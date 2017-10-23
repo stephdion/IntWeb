@@ -296,7 +296,13 @@ footer.footer{
 			display: table;
 		}
 
+		.btn::before,
+    .btn::after
+		 {
 
+		    border-style: none!important;
+
+	}
 
 /* Button V1, V2, V3 */
 .btn3{

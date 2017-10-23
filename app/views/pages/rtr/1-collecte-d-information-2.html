@@ -22,7 +22,7 @@
           <h2>Document remis par l'employeur</h2>
           <div class="text">
             <div class="radiobutton required inline">
-              <i class="obligatoire" tabindex="-1" id="naRG1">Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
+              <i class="obligatoire" id="naRG1">Est-ce que votre employeur vous a remis une copie du document Avis de l'employeur et demande de remboursement?</i>
               <div class="radiobuttons" role="group" aria-labelledby="naRG1">
                 <label for="inp1" class="radiobutton">
 										 <input id="inp1" data-show="#option-1" type="radio" name="mode" value="create">
@@ -41,7 +41,7 @@
 
             <div class="control-group">
               <label for="inp3" class="obligatoire"> Numéro de référence de l'avis de l'employeur et demande de remboursement</label>
-              <p class="clarification" id="daInp3" tabindex="-1">Ce numéro est inscrit en haut à gauche du document.</p>
+              <p class="clarification" id="daInp3">Ce numéro est inscrit en haut à gauche du document.</p>
               <input id="inp3" type="text" name="montant" aria-describedby="daInp3">
               <img alt="" src="../../images/pages/image-cnesst-reference-avis.png">
             </div>
@@ -51,7 +51,7 @@
           <h2>Document remis par le médecin</h2>
           <div class="text">
             <div class="radiobutton required inline">
-              <i class="obligatoire" tabindex="-1" id="naRG2">Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
+              <i class="obligatoire" id="naRG2">Est-ce que votre médecin vous a remis une copie du document   Attestation médicale?</i>
               <div class="radiobuttons" role="group" aria-labelledby="naRG2">
                 <label for="inp4" class="radiobutton">
 										 <input id="inp4" data-show="#option-2" type="radio" name="mode2" value="create">
@@ -69,9 +69,9 @@
           <div class="text">
             <div class="control-group">
               <label for="inp6" class="obligatoire"> Numéro de référence de l'attestation médicale<span class="hors-ecran"> Obligatoire </span></label>
-              <p class="clarification" id="daInp6" tabindex="-1">Ce numéro est inscrit en haut à gauche du document.</p>
+              <p class="clarification" id="daInp6">Ce numéro est inscrit en haut à gauche du document.</p>
               <input id="inp6" type="text" name="montant" aria-describedby="daInp6">
-              <img alt="" src="../../images/pages/image-cnesst-reference-avis-2-a.png">
+              <img alt="Exemple de formulaire d'attestation médicale" src="/images/pages/image-cnesst-reference-avis-2-a.png">
             </div>
           </div>
         </div>
@@ -83,3 +83,10 @@
     </div>
   </div>
 </div>
+
+<!-- Format de saisi générique -->
+<div class="hide">
+  <div tabindex="-1" id="daFdate">a a a a - m m - j j</div>
+  <div tabindex="-1" id="daFtel">10 chiffres</div>
+</div>
+<!-- /Format de saisi générique -->

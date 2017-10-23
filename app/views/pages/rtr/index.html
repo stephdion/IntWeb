@@ -7,9 +7,15 @@
       <div class="row-b">
         <div class="cl">
           <div class="box">
+            <!--
             <div class="title-w-icon">
               <i class="icon icon-timer"></i>
               <h2>Votre demande compte <strong>9 étapes</strong> et dure <strong>15 minutes.</strong></h2>
+            </div>
+          -->
+          <!-- Version avec l'icône incluse dans le h2 - Permet d'avoir le fond de l'icône qui s'ajuste à la hauteur du h2-->
+            <div class="title-w-icon2">
+              <h2 class="icon icon-timer"><span>Votre demande compte <strong>8 étapes</strong> et dure <strong>15 minutes.</strong></span></h2>
             </div>
             <div class="w-padd2">
               <div class="text">
@@ -18,7 +24,7 @@
               </div>
               <h3 class="style1">Besoin d'aide</h3>
           <div class="text">
-                <p>Vous pouvez obtenir de l'aide à tout moment en cliquant sur l'icône. <a href="#" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat ni."><i class="icon-help"></i></a></p>
+                <p>Vous pouvez obtenir de l'aide à tout moment en cliquant sur l'icône. <a href="#" role="button" aria-label="Aide" title="Le texte dans l’infobulle va vous permettre d’avoir de l’information supplémentaire"><i class="icon-help"></i></a></p>
 
               </div>
             </div>
@@ -35,13 +41,13 @@
               <h3>Renseignements sur vous</h3>
               <ul>
                 <li>Numéro d'assurance maladie (NAM)</li>
-                <li>Numéro d'assurance sociale (NAS)</li>
-                <li>Coordonnées bancaires pour l'inscription au dépôt direct</li>
+                <li>Numéro d'assurance sociale (NAS) Numéro d'assurance sociale (NAS)</li>
+                <li>Coordonnées bancaires pour l'inscription au dépôt direct.</li>
               </ul>
             </div>
 
 
-            <div class="list2">
+            <div class="list1">
               <h3>Renseignements sur votre employeur</h3>
               <ul>
                 <li>Coordonnées de votre employeur</li>
@@ -52,9 +58,13 @@
       </div>
 
       <div class="btns">
+        <!--
+        Le bouton d'aide devrait être balisé comme tel -
+        L'attribut title est par défaut ici sa decription acessible et ne peut servir de source de contenu pour la fenêtre d'aide.
+        TODO: Intéger plutôt la soultion du SD.
+      -->
         <a role="button" class="btn btn3" href="1-collecte-d-information-1.html">Suivant</a>
       </div>
-
 
     </div>
   </div>

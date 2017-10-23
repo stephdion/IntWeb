@@ -222,7 +222,11 @@ ol, ul {
 
 
 
-
+.mcl {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto 1.5rem auto;
+}
 
 
 /*test*/
@@ -406,7 +410,7 @@ h1 .number {
   position: relative;
   bottom: -0.5rem;
   bottom: 0.5rem;/*toto*/
-  left: 0.3rem;
+  left: 1.3rem;
 }
 
 
@@ -454,6 +458,15 @@ h1 {
   -ms-transition: all 0.10s ease-in-out;
   -o-transition: all 0.10s ease-in-out;
 }
+
+/* Pour éviter le outline sur les éléments de formulaire avec cet attribut ajouté pour corriger un bug dans ie + NVDA
+[tabindex="-1"]:focus
+{
+ outline: 0 solid #5e89eb;
+  outline-offset: 0;
+  text-decoration: none;
+}*/
+
 
 footer.footer a[target="_blank"] img {
     margin: 0.1rem 0.1rem 0.2rem 0.1rem;
@@ -639,12 +652,15 @@ input[type="text"]{
     margin: 0.5rem;
 }
 
+
+
 .btns2 .btn {
     margin: 0 0.5rem;
     min-width: 20rem;
 }
 
 .form-cont .btns .btn,
+.btn3,
 .btn4a,
 .btn4,
 .btn7,
@@ -659,6 +675,7 @@ input[type="text"]{
     line-height: 6rem;
     padding: 0 4rem;
 }
+.btn3,
 .btn4a,
 .btn4,
 .btn7
@@ -672,20 +689,49 @@ input[type="text"]{
     cursor: pointer;
     padding: 0 2rem;
 }
+
+.btn3{
+	background: #006c08;
+	color: #fff;
+
+}
+
+	.btn3:after{
+		content: ' ';
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		right: 6%;
+		margin-top: -1.5rem;
+		background-image: url('/images/icone-cnesst-icone-fleche-hover.png');
+		background-size: 1.8rem;
+		width: 1.8rem;
+		height: 2.6rem;
+	}
+
+
+
+	.btn3:hover:after{
+			background-image: url('/images/icone-cnesst-icone-fleche.png');
+		}
+
+
+
+
 .btn4 {
   color: #fff;
   /*
     position: relative;
     display: inline-block;
     padding: 0.7rem 1.5rem;
-    border: 2px solid #128915;
+    border: 2px solid #006c08;
     border-radius: 0.2rem;
 
     font-size: 0.95rem;
     min-width: 12%;
     text-align: center;
     font-weight: 700;
-    background: #128915;
+    background: #006c08;
     cursor: pointer;
     min-width: 9rem;
     */
@@ -713,22 +759,24 @@ input[type="text"]{
     top: 18%;
     z-index: 3;
     left: 8%;
-    border-right: 0.7rem solid #f0f0f0;
-    border-top: 0.7rem solid transparent;
-    border-bottom: 0.7rem solid transparent;
+    border-right: 0.0rem solid #f0f0f0;
+    border-top: 0.0rem solid transparent;
+    border-bottom: 0.0rem solid transparent;
 }
-.btn7::after {
-    content: ' ';
-    position: absolute;
-    top: 50%;
-    z-index: 2;
-    left: 6%;
-    margin-top: -6.5px;
-    background-size: 2rem;
-    background-image: url('/images/icone-cnesst-icone-fleche2-hover.png');
-    width: 9px;
-    height: 13px;
-}
+
+  .btn7::after {
+      content: ' ';
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      left: 6%;
+      margin-top: -1.5rem;
+      background-size: 2rem;
+      background-image: url('/images/icone-cnesst-icone-fleche2-hover.png');
+      width: 1.8rem;
+      height: 2.6rem;
+  }
+
 
 a.btn8 {
   position: relative;
@@ -822,7 +870,7 @@ footer.footer .row {
 
 
 h1.main-title {
-    color: #128915;
+    color: #006c08;
     font-size: 3.2rem;
     line-height: 1.7rem;
     font-weight: 700;
@@ -935,6 +983,260 @@ h1.main-title {
     padding-right: 0;
     padding-left: 0;
 }
+
+/* Avant de débuter */
+.title-w-icon {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.title-w-icon .icon {
+    display: table-cell;
+    vertical-align: top;
+    float: left;
+    width: 9rem;
+    height: 9rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+i.icon-timer {
+    background-color: #5d5d5d;
+    background-image: url(/images/icone-cnesst-icone-timer.png);
+    background-size: 90px;
+}
+.title-w-icon2 h2.icon-timer {
+  background-color: #5d5d5d;
+  background-image: url(/images/icone-cnesst-icone-timer.png);
+  background-repeat: no-repeat;
+  background-size: 9rem;
+  width: 100%;
+  min-height: 9rem;
+   padding-left: 9rem;
+}
+.title-w-icon2 h2.icon-timer span {
+    display: inline-block;
+    vertical-align: top;
+    background: #008a00;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 2.2rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.title-w-icon h2 {
+    display: table-cell;
+    vertical-align: top;
+    background: #008a00;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 2.2rem;
+    padding: 1.5rem 2.5rem;
+}
+
+.title-w-icon h2 strong,
+.title-w-icon2 h2 strong
+ {
+    color: inherit;
+    font-weight: 700;
+}
+
+.row-b .w-padd2 {
+    padding: 2rem;
+}
+.row-b .text {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: #414141;
+    padding: 0rem;
+}
+
+
+h3.style1 {
+    position: relative;
+    color: #006c08;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 1.2rem;
+}
+h3.style1:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #006c08;
+}
+
+
+i.icon-help {
+
+    display: inline-block;
+    background-image: url(/images/icon-aide.png);
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: 2.4rem;
+    vertical-align: middle;
+    position: relative;
+    top: -0.2rem;
+
+}
+
+
+.list2 h3, .list1 h3
+
+{
+    background: #5d5d5d;
+    color: #fff;
+    padding: 0.8rem 1.2rem;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+}
+
+.list2 ul, .list1 ul {
+    padding: 0.4rem 0;
+}
+
+.list2 ul li, .list1 ul li {
+    display: block;
+    position: relative;
+    margin: 1.5rem 1.0rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #414141;
+}
+
+.list2 ul li:after, .list1 ul li:after {
+    content: ' ';
+    position: absolute;
+    top: 0.5rem;
+    left: 0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: #118915;
+}
+
+/* / Avant de débuter */
+/* Étape 1a */
+
+
+.jsbtn-date-picker{
+top: 0;
+right: 0;
+width: 4rem;
+height: 4rem;
+background: #e8e8e8;
+  background-image: none;
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+background-image: none;
+background-repeat: repeat;
+background-position-x: 0%;
+background-position-y: 0%;
+background-size: auto auto;
+background-image: url("/images/icone-cnesst-icone-calendrier.svg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 50%;
+border: 1px solid #a8a8a8;
+pointer-events: none;
+display: inline-block;
+}
+.jsbtn-date-picker img
+{
+display: none;
+
+}
+
+.form-cont .control-group .date-icon::after {
+
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 100%;
+    background: #e8e8e8;
+        background-image: none;
+        background-repeat: repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-size: auto auto;
+    background-image: url("/images/icone-cnesst-icone-calendrier.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    border: 1px solid #a8a8a8;
+    pointer-events: none;
+
+}
+
+.datepicker {
+
+    padding: 4px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    direction: ltr;
+
+}
+
+.datepicker.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 8rem;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+    color: #333;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.datepicker.datepicker-inline td, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
+    padding: 4px 5px;
+}
+.datepicker td, .datepicker th {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+
+/* / Étape 1a */
+
 
 @media (min-width: 1200px){
   .container {
