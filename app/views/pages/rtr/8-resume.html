@@ -1,5 +1,6 @@
 
-	<ul class="nav nav-wizard">
+<nav id="navEtape" aria-label="Liste des étapes à compléter">
+<ul class="nav nav-wizard">
 		<li class="completed first-child-completed"><a role="button" href="1-collecte-d-information-1.html"><i>1</i><span class="hors-ecran">Collecte <br/>d'information</span></a></li>
 		<li class="completed"><a role="button" href="2-identification.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
 		<li class="completed"><a role="button" href="3-renseignements-evenement.html"><i>3</i><span class="hors-ecran">Renseignements ​<br/>sur l'événement</span></a></li>
@@ -9,7 +10,7 @@
 		<li class="completed"><a role="button" href="7-autorisation.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
 		<li class="active last-child"><a role="button" href="8-resume.html"><i>8</i><span>R&eacute;sum&eacute;</span></a></li>
 	</ul>
-
+</nav>
 	<div class="strong">
 		<div class="mcl2">
 		<div class="step-info">
@@ -25,7 +26,7 @@
 		- Au clic sur le lien, donner le focus au bouton Modifier de la section
 		 -->
 <!-- Étape 1 (1 de 2 ) -->
-			<div class="form-cont" id="se1">
+			<div class="form-cont resume" id="se1">
 				<div class="header">
 					<h2 id="e1">Identification</h2>
 					<a id="btnMe1" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e1">Modifier</a>
@@ -33,63 +34,54 @@
 				<div class="content">
 					<div class="box2">
 	          <div class="text">
-	            <div class="radiobutton required inline">
+	            <div class="radiobutton inline">
 	              <i id="naRG1">Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
-	              <div class="radiobuttons" role="radiogroup" aria-labelledby="naRG1" aria-readonly="true">
-									<!-- TODO : aria-readonly n'est pas valide sur un groupe de bouton radio ni sur un bouton radio
-											- À tester le résultat communiqué et la doc pour voir si c'est un bug du validateur ou si c'est le cas!
-								  -->
+	              <div class="radiobuttons" role="radiogroup" aria-labelledby="naRG1">
 
-									<!-- TODO:
-
-									- Ajouter une classe hide au bouton radio+étiquette et case à cocher+étiquette non sélecitonné
-									- Placer toute liste de case à cocher dans une liste à puce.
-									- placer hors-ecran les boutons radio ou case à cocher pour ne garder que leur étiquette de champ visible
-								-->
 	                <label for="inp1" class="radiobutton">
-										 <input id="inp1" data-hide="#option-2" data-show="#option-1" type="radio" name="mode" value="oui">
+										 <input id="inp1" readonly  data-hide="#option-2" aria-labelldby="naRG1" data-show="#option-1" type="text" name="mode" value="Oui">
 										 <i>Oui</i>
 									</label>
-	                <label for="inp2" class="radiobutton">
-										 <input id="inp2" data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
+                   <label for="inp2" class="radiobutton hide">
+										 <input id="inp2" disabled data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
 										 <i>Non</i>
 									</label>
 	              </div>
 	            </div>
 	          </div>
 	        </div>
-	        <div id="option-1" class="hide box2 sp-s">
+	        <div id="option-1" class="box2 sp-s">
 	          <h2>Événement</h2>
 	          <div class="text">
 	            <div class="control-group">
 	              <label for="inp3">Date de l'événement</label>
 	              <p class="clarification">(Récidive, rechute ou aggravation.)</p>
-	              <div class="date-icon">
-	                <input aria-readonly="true" id="inp3" type="text" class="datepicker form-control" value="">
+	              <div class="">
+                <input readonly  id="inp3" type="text" class="form-control" value="2017-10-23 s">
 	              </div>
 
 	            </div>
 	            <div class="control-group">
 	              <label for="inp4"> Date à laquelle la lésion professionnelle a été déclarée la première fois
 								</label>
-	              <div class="date-icon">
-	                <input id="inp4" type="text" class="datepicker form-control" value="">
+	              <div class="">
+	                <input readonly id="inp4" type="text" class="form-control" value="lorem ipsum">
 	              </div>
 	            </div>
 	            <div class="control-group readonly">
 	              <label for="inp5"> Numéro de dossier à la CNESST</label>
-	              <input aria-readonly="true" id="inp5" type="text" name="montant" data-characters="9">
+	              <input readonly id="inp5" type="text" name="montant" data-characters="9" value="lorem ipsum">
 	            </div>
 	          </div>
 	        </div>
-	        <div id="option-2" class="hide box2 sp-s">
+	        <div id="option-2" class="box2 sp-s">
 	          <h2>Événement</h2>
 	          <div class="text">
 	            <div class="control-group readonly">
 	              <label for="inp6"> Date d'événement d'origine</label>
 	              <p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
-	              <div class="date-icon">
-	                <input aria-readonly="true" id="inp6" type="text" class="datepicker form-control" value="2017-08-01">
+	              <div class="">
+	                <input readonly id="inp6" type="text" class="form-control" value="2017-08-01">
 	              </div>
 	            </div>
 	          </div>
@@ -99,11 +91,11 @@
 	          <div class="text">
 	            <div class="control-group readonly">
 	              <label for="inp7"> Numéro d'assurance maladie (NAM)</label>
-	              <input aria-readonly="true" id="inp7" type="text" name="montant" data-characters="12">
+	              <input readonly id="inp7" type="text" name="montant" data-characters="12" value="lorem ipsum">
 	            </div>
 	            <div class="control-group readonly">
 	              <label for="inp8"> Numéro d'assurance sociale (NAS)</label>
-	              <input aria-readonly="true" id="inp8" type="text" name="montant" data-characters="9">
+	              <input readonly id="inp8" type="text" name="montant" data-characters="9" value="lorem ipsum">
 	            </div>
 	          </div>
 	        </div>
