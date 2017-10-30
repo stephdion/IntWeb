@@ -92,10 +92,10 @@
 
 							<div class="text">
 
-								<label for="inp" class="radiobutton required inline">
-								   <i>Avez-vous des frais liés à la présence d'une personne qui vous a accompagné?</i>
+								<div for="inp" class="radiobutton required inline">
+								   <i id="naRG1">Avez-vous des frais liés à la présence d'une personne qui vous a accompagné?</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
 										<label for="inp" class="radiobutton">
 										   <input id="inp" type="radio" name="mode3" data-show=".os-1-1" data-hide=".os-1">
@@ -109,7 +109,7 @@
 
 								   </div>
 
-								</label>
+								</div>
 
 								<p class="note hide os-1 os-1-1"><strong>Note:</strong>Vous devez avoir une ordonnance médicale autorisant l'accompagnateur.</p>
 
@@ -122,10 +122,10 @@
 
 							<div class="text">
 
-								<label for="inp" class="radiobutton required inline">
-								   <i>Sexe</i>
+								<div for="inp" class="radiobutton required inline">
+								   <i ="naRG2">Sexe</i>
 
-								   <div class="radiobuttons">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
 										<label for="inp" class="radiobutton">
 										   <input id="inp" type="radio" name="mode" value="create">
@@ -138,7 +138,7 @@
 										</label>
 
 								   </div>
-								</label>
+								</div>
 
 								<div class="control-group">
 									<label for="inp"><span class="rft">*</span>Nom</label>
