@@ -1,3 +1,15 @@
-<%# add navigation links to this file %>
-<li><%= link_to 'About', page_path('about') %></li>
-<li><%= link_to 'Contact', page_path('contact') %></li>
+
+
+<% if user_signed_in? %>
+
+<li><a href="/sd" >Exemples controles du SD</a></li>
+
+<li><a href="/pages/rtr/index">Réclamation du travail</a></li>
+
+<li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+</li>
+<% else %>
+<li><a href="/sd" >Exemples controles du SD</a></li>
+
+<li><a href="/pages/rtr/index">Réclamation du travail</a></li>
+<% end %>
