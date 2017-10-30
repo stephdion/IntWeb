@@ -1,0 +1,178 @@
+
+<nav id="navEtape" aria-label="Liste des étapes à compléter">
+		<ul class="nav nav-wizard">
+					<li class="active first-child">
+						<a role="button" href="M0-avant-de-debuter.html">
+							<i>1</i><span>Identification</span></a></li>
+					<li>
+						<a role="button" href="M2-medicaments.html">
+							<i>2<span class="hors-ecran">Médicaments</span></i></a></li>
+					<li>
+						<a role="button" href="M3-vetements.html">
+							<i>3<span class="hors-ecran">Identification</span></i></a></li>
+					<li>
+						<a role="button" href="M4-autre-frais.html">
+							<i>4<span class="hors-ecran">Vêtements</span></i></a></li>
+					<li>
+						<a role="button" href="M5-resume.html">
+							<i>5<span class="hors-ecran">Autres frais</span></i></a></li>
+					<li class="last-child">
+						<a role="button" href="#"><i>6<span class="hors-ecran">Résumé </span></i></a></li>
+			</ul>
+</nav>
+		<div class="strong">
+			<div class="mcl2">
+				<div class="step-info">
+		      <h1 id="h1"><span class="number">1</span><span class="h1">Collecte d'information (1 de 2)</span></h1>
+		    </div>
+				<div class="step-info">
+					<p class="number">1</p>
+					<h1>Identification</h1>
+				</div>
+
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+						<div class="text sp-s">
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+						</div>
+
+						<div class="box2">
+							<h3>Renseignements sur vous</h3>
+							<div class="text">
+								<p><strong>Prénom,nom :</strong>Jean-Pierre Bertrand</p>
+							</div>
+						</div>
+
+						<div class="box2">
+							<h3>Événements</h3>
+							<div class="text">
+								<p><strong>Numéro de dossier à la CNESST</strong>9 5678 345 6</p>
+								<br>
+								<p><strong>Date de l'événement pour laquelle les frais sont demandés</strong>2016-12-05 (Rechute, récidive ou aggravation)</p>
+							</div>
+						</div>
+
+						<div class="box2">
+							<h3>Accompagnateur</h3>
+
+							<div class="text">
+
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" id="naRG1">Avez-vous des frais liés à la présence d'une personne qui vous a accompagné?<span class="hors-ecran"> Obligatoire </span></i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" type="radio" name="mode3" data-show=".os-1-1" data-hide=".os-1">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" type="radio" name="mode3" data-hide=".os-1">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+								<p class="note hide os-1 os-1-1"><strong>Note:</strong>Vous devez avoir une ordonnance médicale autorisant l'accompagnateur.</p>
+
+							</div>
+
+						</div>
+
+						<div class="box2 hide os-1 os-1-1">
+							<h3>Renseignements sur l'accompagnateur</h3>
+
+							<div class="text">
+
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" id="naRG2">Sexe<span class="hors-ecran"> Obligatoire </span></i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" type="radio" name="mode" value="create">
+										   <i>Féminin</i>
+										</label>
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" type="radio" name="mode" value="create">
+										   <i>Masculin</i>
+										</label>
+
+								   </div>
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire">Nom<span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Prénom <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="box2 hide os-1 os-1-1">
+							<h3>Coordonnées de l'accompagnateur</h3>
+
+							<div class="text">
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Adresse  <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Ville  <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Province  <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Code postal  <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp1" class="obligatoire"> Téléphone principal <span class="hors-ecran"> Obligatoire </span></label>
+									<input id="inp1" type="tel" name="tel">
+									<p class="clarification">(xxx) xxx-xxxx</p>
+								</div>
+
+								<div class="control-group">
+									<label for="inp1">Téléphone secondaire</label>
+									<input id="inp1" type="tel" name="tel">
+									<p class="clarification">(xxx) xxx-xxxx</p>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="btns">
+						<a role="button" class="btn btn7" href="M0-avant-de-debuter.html">Précédent</a>
+						<a role="button" class="btn btn3" href="M2-medicaments.html">Suivant</a>
+					</div>
+				</div>
+
+				<div class="btns">
+					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+				</div>
+
+			</div>
+		</div>

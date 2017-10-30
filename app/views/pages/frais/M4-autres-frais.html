@@ -1,0 +1,202 @@
+
+<nav id="navEtape" aria-label="Liste des étapes à compléter">
+		<ul class="nav nav-wizard">
+					<li class="completed first-child-completed">
+						<a role="button" href="M0-avant-de-debuter.html">
+							<i>1<span class="hors-ecran">Identification</span></i></a></li>
+					<li class="completed">
+						<a role="button" href="M2-medicaments.html">
+							<i>2<span class="hors-ecran">Médicaments</span></i></a></li>
+					<li class="completed">
+						<a role="button" href="M3-vetements.html">
+							<i>3<span class="hors-ecran">Autres frais</span></i></a></li>
+					<li class="active">
+						<a role="button" href="M4-autre-frais.html">
+							<i>4</i><span>Autres frais</span></a></li>
+			    <li>
+						<a role="button" href="M5-resume.html">
+						  <i>5<span class="hors-ecran">Résumé </span></i></a></li>
+		</ul>
+</nav>
+
+		<div class="strong">
+			<div class="mcl2">
+				<div class="step-info">
+		      <h1 id="h1"><span class="number">4</span><span class="h1">Autres frais</span></h1>
+		    </div>
+				<div class="step-info">
+					<p class="number">4</p>
+					<h1>Autres frais</h1>
+				</div>
+
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+
+						<div class="text sp-s">
+							<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+						</div>
+
+
+						<div class="box2">
+
+							<div class="text">
+
+								<div class="radiobutton required inline">
+								   <i class="obligatoire" id="naRG1">Avez-vous d'autres frais (produits ou services) à vous faire rembourser<span class="hors-ecran"> Obligatoire </span></i>
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1"data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1"data-hide=".os-1" type="radio" name="mode">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+								<div class="os-1-1 os-1 hide">
+									<p class="note"><strong>Note:</strong> Les autres frais ne doivent pas etre des frais de médicaments, de vêtements, de déplacements, d'hébergement ou de repas. Ces frais doivent etre regroupés par reçu.</p>
+								</div>
+
+							</div>
+
+
+							<div class="hide os-1-1 os-1">
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h3><span class="number">1</span> - Reçu du <div class="date-icon"><input id="inp1" type="text" class="datepicker form-control" value=""></div></h3>
+										</div>
+										<div class="sub-cont">
+
+											<div class="multiblocks">
+												<div class="sub-block">
+													<div class="header">
+														<h3>Frais <span class="number">1</span></h3>
+													</div>
+													<div class="sub-cont">
+
+														<div class="control-group">
+															<label for="inp1" class="obligatoire"> Description du produit ou service<span class="hors-ecran"> Obligatoire </span></label>
+															<input id="inp1" type="text" name="a">
+														</div>
+
+														<div class="control-group">
+															<label for="inp1" class="obligatoire"> Fournisseur du produit ou du service<span class="hors-ecran"> Obligatoire </span></label>
+															<input id="inp1" type="text" name="a">
+														</div>
+
+														<div class="control-group">
+															<label for="inp1" class="obligatoire"> Montant (avant taxes)<span class="hors-ecran"> Obligatoire </span></label>
+															<input id="inp1" type="text" name="a" class="amount"> $
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="btns3">
+												<a role="button" href="#" class="btn4 btn-add" data-block=".block-frais"><i class="icon-add"></i><span>Ajouter un frais</span></a>
+											</div>
+
+											<div class="control-group">
+												<label for="inp1">Copie du reçu</label>
+												<p class="clarification" class="obligatoire">Veuillez joindre une copie du reçu.</p>
+												<br>
+												<div class="file">
+													<label for="inp1" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+													<input id="inp1" type="file" name="file">
+													<a role="button" href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<div class="detail"><i class="icon-file"></i><span></span></div>
+												</div>
+											</div>
+
+
+											<div class="radiobutton required inline sp-s">
+												<p><strong>Ordonnance médicale</strong></p><br>
+											   	<i class="obligatoire" id="naRG2">Avez-vous reçu une ordonnance médicale pour ce frais?<span class="hors-ecran"> Obligatoire </span></i>
+												<div class="radiobuttons" role="group" aria-labelledby="naRG2">
+
+													<label for="inp1" class="radiobutton">
+														<input id="inp1" data-show=".os-8-1" data-hide=".os-8" type="radio" name="mode8">
+														<i>Oui</i>
+													</label>
+
+													<label for="inp1" class="radiobutton">
+														<input id="inp1"data-hide=".os-8" type="radio" name="mode8">
+														<i>Non</i>
+													</label>
+
+												</div>
+
+											</div>
+
+
+											<div class="radiobutton required inline hide os-8 os-8-1">
+											   <i class="obligatoire" id="naRG1">Avez-vous déjà faire parvenir cette ordonnance médicale à la CNESST?<span class="hors-ecran"> Obligatoire </span></i>
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+													<label for="inp1" class="radiobutton">
+													   <input id="inp1"data-hide=".os-7" type="radio" name="mod7">
+													   <i>Oui</i>
+													</label>
+
+													<label for="inp1" class="radiobutton">
+													   <input id="inp1"data-show=".os-7-1" data-hide=".os-7" type="radio" name="mod7">
+													   <i>Non</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+
+											<div class="control-group hide os-7 os-7-1">
+												<label for="inp1">Copie du reçu</label>
+												<p class="clarification" class="obligatoire">Veuillez joindre une copie du reçu.</p>
+												<br>
+												<div class="file">
+													<label for="inp1" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+													<input id="inp1" type="file" name="file">
+													<a role="button" href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<div class="detail"><i class="icon-file"></i><span></span></div>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a role="button" href="#" class="btn4 btn-add" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter un reçu</span></a>
+								</div>
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+					<div class="btns">
+						<a role="button" class="btn btn7" href="M3-vetements.html">Précédent</a>
+						<a role="button" class="btn btn3" href="M5-resume.html">Suivant</a>
+					</div>
+				</div>
+
+				<div class="btns">
+					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+				</div>
+
+			</div>
+		</div>

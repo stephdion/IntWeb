@@ -1,18 +1,20 @@
-/* Taille du texte 5 */
+/* Taille du texte 5 - 30 */
 html {
   font: 62.5% Arial, Helvetica, sans-serif;
-  color: #3f3f3f;
+  color: #414141;
   padding: 0;
 }
 
 body {
   line-height: 1.8rem;
   font-size: 2rem;
+  color: #414141;
 }
 
 div.strong {
     padding: 3rem 0 4rem 0;
 }
+
 
 
 /* placer d'icône hors écran pour l'afficher en background du lien */
@@ -137,8 +139,9 @@ ul {
 
 .text {
   text-align: left;
-  color: inherit;
+  color: #414141;
   line-height: inherit;
+
 }
 
 /* barre de progression version rem */
@@ -464,7 +467,7 @@ h1 {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 #skip {
@@ -564,6 +567,12 @@ i.obligatoire {
 .radiobutton,
 label {
   line-height: 2.3rem;
+  color: #414141;
+}
+.radiobuttons .radiobutton i{
+  padding-right: 1rem;
+  min-width: 8rem;
+  display: inline-block;
 }
 
 .box2 > h2,
@@ -577,13 +586,25 @@ label {
   border-bottom: 1px solid #5d5d5d;
 }
 
-.box2 > h3 {
+.box2 > h3,
+h2.style2,
+.box > h3,
+
+ {
   font-size: 2.2rem;
   color: #414141;
   padding: 0.3rem 0;
   margin-bottom: 0.3rem;
   border-bottom: 0px solid #ddd;
 }
+
+h2.style2,
+h3.style2
+ {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 
 .box2,
 .text {
@@ -597,6 +618,14 @@ label {
   line-height: 3rem;
   padding: 2rem 3rem;
 }
+
+.box2 .text p {
+    margin-top: 2rem;
+}
+.box2 .text p:first-of-type {
+    margin-top: 0;
+}
+
 
 .form-cont .control-group label {
   font-size: inherit;
