@@ -44,6 +44,14 @@ footer.footer ul li a {
   padding: 0 10px;
   border-right: 1px solid #fff;
 }
+footer.footer ul li a:visited {
+  color: #fff;
+}
+footer.footer ul li a:hover,
+footer.footer ul li a:focus
+{
+  background-color: inherit;
+}
 
 footer.footer .footer-menu li:last-of-type a {
   min-width: 18.1rem;
@@ -575,7 +583,36 @@ label {
   display: inline-block;
 }
 
+
+/* Ajustement des bouton radio imbriqué dans un label*/
+.radiobuttons
+label i{
+  display: inline-block;
+}
+
+.radiobuttons
+label {
+  display: inline-block;
+  margin-left: 1.2rem;
+  margin-right: 2rem
+  }
+
+
+.radiobuttons label input{
+  position: absolute;
+  left: -2rem;
+  top: 0.8rem;
+}
+
+.radiobutton  .radiobuttons label.radiobutton {
+  position: relative;
+  margin: 0 1rem 1rem 0;
+}
+
+
+/* */
 .box2 > h2,
+.box2 summary,
 .box2 > h3.h2 {
   font-weight: 700;
   font-size: 2.4rem;
@@ -588,14 +625,16 @@ label {
 
 .box2 > h3,
 h2.style2,
-.box > h3,
-
- {
+.box > h3,{
   font-size: 2.2rem;
   color: #414141;
   padding: 0.3rem 0;
   margin-bottom: 0.3rem;
   border-bottom: 0px solid #ddd;
+}
+.box2 summary> h2
+{
+  display: inline-block;
 }
 
 h2.style2,
@@ -754,6 +793,10 @@ a.ancreHS:focus {
   margin-bottom: 2rem;
   margin-left: 0.5rem;
 }
+
+
+
+
 /* /Page résumé*/
 
 .radiobutton .radiobuttons {
@@ -806,7 +849,7 @@ a.ancreHS:focus {
   color: #fff;
 }
 
-.btn3 a:visited {
+.btn3:visited {
   color: #fff;
 }
 

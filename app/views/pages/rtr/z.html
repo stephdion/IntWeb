@@ -1,14 +1,77 @@
-<!-- Étape 7 -->
-			<div class="form-cont" id="se7">
-				<div class="header">
-					<h2 id="e7">Autorisation</h2>
-					<a id="btnMe7" role="button" href="#" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 e7">Modifier</a>
-				</div>
-				<div class="content">
-					<div class="box2">
-						<h3 class="h2">À venir...</h3>
-					</div>
-				</div>
-			</div>
-<a id="ancreSe7" href="#se7" class="ancreHS" aria-label="Haut de section" aria-labelledby="ancreSe7 e7">Haut</a>
-<!-- / Étape 7 -->
+
+<!-- SF1 -->
+						<div class="box2 sf1">
+							<details>
+							<summary><h2>Situation familiale déclarée selon les lois sur l'impôt</h2></summary>
+
+
+							<div class="text">
+
+								<div class="radiobutton required">
+								   <i class="obligatoire" id="naRG4">Situation familiale<span class="hors-ecran"> Obligatoire </span></i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
+
+										<div class="radiobutton">
+											 <label for="inp16" class="radiobutton">
+										   <input id="inp16" data-show=".os-2-1" data-hide=".os-2" type="radio" name="mode4">
+										   <i>Avec conjoint</i>
+										 </label>
+
+											<div class="radiobutton inline os-2 os-2-1 os-2-1a os-2-1b">
+											   <i  class="obligatoire" id="naRG4b"> Votre conjoint est-il à votre charge?<span class="hors-ecran"> Obligatoire </span></i>
+
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG4b">
+
+													<label for="inp17" class="radiobutton">
+													   <input id="inp17" type="radio" name="mode5" data-hide=".os-2a" data-show=".os-2-1a">
+													   <i>Oui</i>
+													</label>
+
+													<label for="inp18" class="radiobutton">
+													   <input id="inp18" type="radio" name="mode5" data-hide=".os-2a" data-show=".os-2-1b">
+													   <i>Non</i>
+													</label>
+
+												</div>
+											</div>
+
+										</div>
+
+										<label for="inp19" class="radiobutton">
+										   <input id="inp19" data-hide=".os-2" data-show=".os-2-2" type="radio" name="mode4">
+										   <i>Monoparentale</i>
+										</label>
+
+										<label for="inp20" class="radiobutton">
+										   <input id="inp20" data-hide=".os-2" data-show=".os-2-3" type="radio" name="mode4">
+										   <i>Célibataire</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+								<div class="control-group os-2a os-2-1a os-2-1b os-2-2 os-2-3 os-2 hide">
+									<label for="inp21"  class="obligatoire"> Nombre de personnes mineures (-18 ans) à votre charge<span class="hors-ecran"> </span></label>
+									<input id="inp21" type="text" class="amount" name="montant">
+								</div>
+
+
+								<div class="control-group os-2a os-2-1b os-2-2 os-2-3 os-2 hide">
+									<label for="inp22"  class="obligatoire"> Nombre de personnes majeures (18 ans et +) à votre charge<span class="hors-ecran"> </span></label>
+									<input id="inp22" type="text" class="amount" name="montant">
+								</div>
+
+
+								<div class="control-group os-2a os-2-1a os-2 hide">
+									<label for="inp23"  class="obligatoire"> Autre que votre conjoint, nombre de personnes majeures (18 ans et + à votre charge)<span class="hors-ecran"> </span></label>
+									<input id="inp23" type="text" class="amount" name="montant">
+								</div>
+
+
+							</div>
+							</details>
+						</div>
+<!-- SF1 -->
