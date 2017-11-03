@@ -109,7 +109,11 @@ body {
       font-size: 1.7vw !important;
       }
 
+
+
 } /* /@media (min-width: 990px)*/
+
+
 
 /********** Fin container **********/
 /********** Deb nav-tabs **********/
@@ -527,7 +531,10 @@ h1 span.soustitre{
     margin-left: -25rem;*/
 }
 
-#met #myNavbar .navbar-nav > .active > a {
+#met #myNavbar .navbar-nav > .active > a,
+#met #myNavbar .navbar-nav a:hover,
+#met #myNavbar .navbar-nav a:focus
+ {
     background-color: #606060;
 }
 #met #myNavbar .navbar-nav a {
@@ -578,7 +585,7 @@ footer p.tel
    position: absolute;
    right: 1rem;
    padding: 1rem 2rem 4rem 1rem;
-   margin: -1rem 2rem 2rem 1rem;
+   margin: -2rem 2rem 2rem 1rem;
 
 }
 .navbar-inverse .navbar-nav > li.logo img
