@@ -518,7 +518,7 @@ h1 span.soustitre{
     background: url("images/ic_Services_en_ligne.svg") no-repeat top left;
 }
 #myNavbar .im_Mon_Dossier a {
-    background: url("images/ic_Mon_Dossier.svg") no-repeat top left;
+    background: url("/sd/Style/images/ic_Mon_Dossier.svg") no-repeat top left;
 }
 #myNavbar .im_Mes_Documents a {
     background: url("images/ic_Mes_Documents.svg") no-repeat top left;
