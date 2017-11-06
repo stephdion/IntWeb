@@ -45,16 +45,19 @@ body {
     background-color: yellow;
   }
   .navbar div.first {
-    height: 11vw !important;
+     height: 12vw !important;
 }
+
+
+
   #met .navbar-brand div.logo{
      background-color: #008a00 !important;
-     border-bottom: solid #539F1B 1rem;
+     border-bottom: solid #539F1B 1vw !important;
       width: auto;
       height: auto;
       z-index: 2000 !important;
-      padding: 1.4rem 2.4rem 2.6rem 1.4rem;
-      margin: -1.5rem 2rem 2rem 1rem;
+      padding: 1.4vw 2.4vw 2.6vw 1.4vw!important;
+      margin: -1.5vw 2vw 2vw 1vw!important;
 
   }
 
@@ -105,7 +108,7 @@ body {
       display: inline-block;
       position: absolute;
       right: 1rem;
-      top: 4.1vw!important;
+      top: 0 important;
       font-size: 1.7vw !important;
       }
 
@@ -297,7 +300,7 @@ h1 span.soustitre{
 {
     .logo
     {
-        display:none;
+        display: inline-block;
     }
 }
 
@@ -427,11 +430,14 @@ h1 span.soustitre{
   background-color: #ffffff;
   display: inline-block;
   margin: 1rem;
+  line-height: 2.0rem;
 
 }
 
 #myNavbar2 .im_Mon_Profil a{
   background-image: url("images/ic_Mon_Profil.svg");
+  border-right: solid 2px #878787;
+  padding-right: 2.4rem;
 }
 #myNavbar2 .im_Deconnection a{
   background-image: url("images/ic_Deconnection.svg");
@@ -585,7 +591,7 @@ footer p.tel
    position: absolute;
    right: 1rem;
    padding: 1rem 2rem 4rem 1rem;
-   margin: -2rem 2rem 2rem 1rem;
+   margin: 0rem 2rem 2rem 1rem;
 
 }
 .navbar-inverse .navbar-nav > li.logo img

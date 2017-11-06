@@ -189,6 +189,19 @@ span.format {
     width: 13rem;
 }
 
+.no-menu{
+
+    height: 5rem;
+}
+.no-menu span {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 0 15vw;
+    height: 5rem;
+}
+
+#barre-bas-header::before
 
 
 #met #myNavbar a:hover, #met #myNavbar a:focus, #met #myNavbar .navbar-nav > .active > a {
@@ -268,4 +281,21 @@ footer ul{
             float:none;
             top: -0.1rem;
         }
+  }
+
+
+  @media screen and (max-width: 770px)
+  {
+    .no-menu{
+        display: inline-block;
+    }
+    .no-menu span {
+        font-size: 2.2rem;
+        /*text-transform: uppercase;
+        color: #fff;
+        margin: -1vw 0 0 15vw;
+        height: auto;
+        width: 100%;
+        background-color: yellow;*/
+    }
   }
