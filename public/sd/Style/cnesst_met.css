@@ -119,7 +119,18 @@ div.form-group:last-child {
     font-family: Arial, Helvetica, sans-serif;
 }
 input {
-    border-color: #499ac4;
+    border-color: #a8a8a8;
+}
+
+input[type="text"]
+ {
+    width: 100%;
+    max-width: 450px;
+    padding: 0.5rem;
+    border: 1px solid #a8a8a8;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -171,7 +182,235 @@ input {
     border-radius: 0;
     margin-left: 1rem;
 }
-span.format {
+
+/******** / form *********/
+/******** cc et radio *******/
+
+
+/* Radiobuttons and Checkbox */
+
+input[type="radio"] {
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0.1rem 0 0;
+  padding: 0;
+  background-image: url('images/ic_radio_button_unchecked.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-size: 2.5rem 2.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="radio"]:checked {
+  background-image: url('images/ic_radio_button_checked.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-size: 2.5rem 2.5rem;
+}
+input[type="checkbox"] {
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 0.1rem 0 0;
+  padding: 0;
+  background-image: url('images/ic_check_box_unchecked.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-size: 2.5rem 2.5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type="checkbox"]:active, input[type="checkbox"]:checked {
+  background-image: url('images/ic_check_box_checked.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-size: 2.5rem 2.5rem;
+  }
+/******** / cc et radio *******/
+
+/******** boutons d'action ***********/
+.btn-default {
+    background-image: none;
+    background-color: #f0f0f0;
+    border: 0.1rem solid #006c08;
+    color: #006c08;
+    border-radius: 0;
+    filter: initial;
+    text-shadow: none;
+}
+.btn-default:hover,
+.btn-default:focus
+ {
+    background-image: none;
+    background-color: #dbdbdb;
+    border: 0.1rem solid #003d04;
+    color: #003d04 !important;
+}
+
+
+.form-group .action .btn {
+  min-width: 20rem;
+  min-height: 6rem;
+  font-size: inherit;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 6rem;
+  padding: 0 4rem;
+  position: relative;
+  border: 2px solid #006c08;
+  border-radius: 0.2rem;
+  margin: 1rem 2rem;
+
+}
+
+.btn-default {
+
+}
+
+
+
+.btn-suivant::after
+ {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    right: 6%;
+    margin-top: -1.3rem;
+    background-image: url("/images/icone-cnesst-icone-fleche-hover.png");
+    background-size: 1.8rem;
+    width: 1.8rem;
+    height: 2.6rem;
+}
+
+.btn-precedent::after
+ {
+
+    content: " ";
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    left: 6%;
+    margin-top: -1.5rem;
+    background-size: 2rem;
+    background-image: url("/images/icone-cnesst-icone-fleche2-hover.png");
+
+    width: 1.8rem;
+    height: 2.6rem;
+
+}
+
+.btn4:hover,
+.btn4:focus,
+.btn-suivant:hover,
+.btn-suivant:focus {
+  color: #fff !important;
+  background-color: #005106;
+  border-color: #003d04;
+}
+
+
+
+a.btn:hover .icon-save,
+a.btn:focus .icon-save {
+  background-image: url("/images/icone-cnesst-icone-sauvergarder-vert2.svg");
+}
+
+
+
+.icon-save,
+.icon-delete
+ {
+  position: relative;
+  top: 1.5rem;
+  margin-left: -2rem;
+  margin-right: 5px;
+  display: inline-block;
+  background-image: url("/images/icone-cnesst-icone-sauvergarder-vert.svg");
+  width: 3rem;
+  height: 3rem;
+  background-size: 3rem;
+  vertical-align: top;
+}
+.icon-save
+ {
+  position: relative;
+  top: 1.5rem;
+  margin-left: -2.8rem;
+  margin-right: 1rem;
+  display: inline-block;
+  background-image: url("/images/icone-cnesst-icone-sauvergarder-vert.svg");
+  width: 3rem;
+  height: 3rem;
+  background-size: 3rem;
+  vertical-align: top;
+}
+
+a.btn:hover .icon-delete,
+a.btn:focus .icon-delete {
+  background-image: url("/images/icone-cnesst-icone-supprimer-vert2.svg");
+}
+
+.icon-delete {
+  position: relative;
+  top: 1.5rem;
+  margin-left: -2.8rem;
+  margin-right: 1rem;
+  display: inline-block;
+  background-image: url("/images/icone-cnesst-icone-supprimer-vert.svg");
+  width: 3rem;
+  height: 3rem;
+  background-size: 3rem;
+  vertical-align: top;
+}
+
+/******** /boutons d'action ***********/
+/******** pied de formulaire  ***********/
+.panel-footer,
+.panel
+ {
+    border-radius: 0px !important;
+    border-radius: 0px !important;
+    border: none;
+
+}
+.form-footer{
+    background-color: #f4f4f4;
+    padding: 3rem 0 1.5rem 0;
+    position: relative;
+    top: -2rem;
+}
+.form-footer .action .btn {
+  min-width: 20rem;
+  padding: 0 4rem
+}
+
+.form-footer-brouillon{
+    background-color: inherit;
+}
+.form-footer-brouillon .action .btn {
+  min-width: 30rem;
+  padding: 0 4rem
+}
+
+/******** / pied de formulaire  ***********/
+
+
+
+
+
     padding: 0.6rem 1.2rem;
     font-size: 1.8rem;
     font-weight: 400;

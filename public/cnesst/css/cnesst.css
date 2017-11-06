@@ -884,18 +884,10 @@ a.ancreHS:focus {
   border-color: #003d04;
 }
 
-.btn7::before {
-  content: " ";
-  position: absolute;
-  top: 18%;
-  z-index: 3;
-  left: 8%;
-  border-right: 0rem solid #f0f0f0;
-  border-top: 0rem solid transparent;
-  border-bottom: 0rem solid transparent;
-}
 
-.btn7::after {
+.btn7::after,
+.btn-precedent::after
+ {
   content: " ";
   position: absolute;
   top: 50%;
