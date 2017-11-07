@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr"  xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Champ de saisie de type "Date"</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="Style/jquery-ui/core.css" />
+    <link rel="stylesheet" href="Style/jquery-ui/datepicker.css" />
+    <link rel="stylesheet" href="Style/jquery-ui/theme.cnesst.css" />
+    <link rel="stylesheet" href="Style/cnesst_met.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="Scripts/Jquery-ui-cnesst.js"></script>
+    <script src="Scripts/jquery.ui.datepicker-fr.js"></script>
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+  <!-- id="met" -->
+
+
+  <div id="met">
+    <header>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid first">
+        <a class="navbar-brand" href="index.html" aria-label="C N E S S T Mon espace travailleur">
+
+          <div class="logo">
+            <img src="style/images/logo.svg" alt="C N E S S T">
+          </div>
+
+
+          <div class="logo-texte">Mon espace <span>travailleur</span></div>
+
+        </a>
+        <ul id="myNavbar2" class="nav navbar-nav navbar-center">
+          <li class="im_Mon_Profil"><a href="#" aria-label="Mon profil"><span>Mon profil</span></a></li>
+          <li class="im_Deconnection"><a href="#" aria-label="Me déconnecter"><span>Me déconnecter</span></a>
+        </ul>
+      </div>
+      <div class="container-fluid" id="barre-bas-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+        </div>
+
+
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav mx-auto">
+            <li class="active im_Service_en_ligne"><a href="#">Service en ligne</a></li>
+            <li class="im_Mon_Dossier"><a href="#">Mon dossier</a></li>
+            <li class="im_Mes_Documents"><a href="#">Mes documents</a></li>
+            <li class="im_Mes_Depot_direct"><a href="#">Mes dépôts directs</a></li>
+            <li class="im_Ma_Messagerie"><a href="#">Ma messagerie</a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </header>
+    <main class="container" id="content">
+
+
+        <div class="step-info">
+          <h1 id="h1"><span class="number">5</span><span class="h1">Champ de saisie de type "Date"</span></h1>
+          <p class="requis sans-recul">
+              <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+          </p>
+        </div>
+          <span id="dateformat" class="hidden" aria-hidden="true">,Format requis,a a a a,tiret,m m,tiret,j j</span>
+
+
+        <span id="dateformat" class="hidden" aria-hidden="true">,Format requis,a a a a,tiret,m m,tiret,j j</span>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de champs de type « Date » disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="date1">Une date simple </label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date1" aria-describedby="dateformat" class="datepicker form-control" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question requis jsRequis control-label">Intervalle de dates </legend>
+                            <div class="reponse">
+                                <div class="input-group input-group-first">
+                                    <label for="date2" class="input-group-addon addon-left intervalle">Du</label>
+                                    <input id="date2" class="datepicker form-control" aria-label="Date de début" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="date3" class="input-group-addon addon-left intervalle">au</label>
+                                    <input id="date3" class="datepicker form-control" aria-label="Date de fin" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                    <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Exemple de champ de type « Date » non disponible</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="date4">Un champ date désactivé</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date4" class="datepicker form-control" aria-describedby="dateformat" disabled="" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="date41">Une date en affichage seulement</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date41" class="datepickerReadOnly form-control" readonly="readonly" value="2016-05-03" type="text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Appellations contrôlées</h2>
+                </div>
+                <div class="panel-body">
+                    <h3>Date simple</h3>
+                    <div class="form-group">
+                        <label class="question control-label" for="date5">Date de naissance</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date5" class="datepicker form-control" aria-describedby="dateformat" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="date6">Date de l'événement</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date6" class="datepicker form-control" aria-describedby="dateformat" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="date7">Date de l'événement d'origine</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date7" class="datepicker form-control" aria-describedby="dateformat" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="date8">Date de la récidive, rechute ou aggravation</label>
+                        <div class="reponse">
+                            <div class="input-group">
+                                <input id="date8" class="datepicker form-control" aria-describedby="dateformat" autocomplete="off" type="text">
+                                <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                <span class="input-group-addon addon-left format">aaaa-mm-jj</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <h3>Intervalle de date</h3>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Date de création</legend>
+                            <div class="reponse">
+                                <div class="input-group input-group-first">
+                                    <label for="date9" class="input-group-addon addon-left intervalle">Du</label>
+                                    <input id="date9" class="datepicker form-control" aria-label="Date de début" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="date10" class="input-group-addon addon-left intervalle">au</label>
+                                    <input id="date10" class="datepicker form-control" aria-label="Date de fin" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend class="question control-label">Événements inclus dans la période</legend>
+                            <div class="reponse">
+                                <div class="input-group input-group-first">
+                                    <label for="date11" class="input-group-addon addon-left intervalle">Du</label>
+                                    <input id="date11" class="datepicker form-control" aria-label="Date de début" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                </div>
+                                <div class="input-group">
+                                    <label for="date12" class="input-group-addon addon-left intervalle">au</label>
+                                    <input id="date12" class="datepicker form-control" aria-label="Date de fin" aria-describedby="dateformat" autocomplete="off" type="text">
+                                    <span class="input-group-addon addon-left jsbtn-date-picker" aria-hidden="true"></span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="form-footer">
+            <div class="form-group">
+                <div class="action center-block text-center">
+                    <a role="button" href="CaseACocher.html"  class="btn btn-default btn-precedent">Précédent</a>
+                    <a role="button" href="ChampMontant.html"  class="btn btn-primary btn-suivant">Suivant</a>
+                </div>
+            </div>
+        </div>
+      </main>
+
+
+      <footer class="container-fluid navbar-inverse">
+            <div>
+            <ul class="nav navbar-nav">
+              <li><a href="#" target="_blank">Accessibilité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li><a href="#" target="_blank">Politique de confidentialité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li><a href="#" target="_blank">Plan du site<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li class="tel"><a href="#">Renseignement généraux : 1 844 838-0808</a></li>
+              <li class="logo"><img src="style/images/logo.svg" alt=""></li>
+            </ul>
+            <p> CNESST </p>
+            </div>
+            <p class="copyright navbar">© CNESST, 2017</p>
+
+          </footer>
+      </div>
+
+      <!-- / id="met" -->
+</body>
+</html>

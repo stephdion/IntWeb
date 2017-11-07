@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Messages fonctionnels</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <link rel="stylesheet" href="Style/cnesst_met.css" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="Scripts/Jquery-ui-cnesst.js"></script>
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+  <!-- id="met" -->
+
+
+  <div id="met">
+    <header>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid first">
+        <a class="navbar-brand" href="index.html" aria-label="C N E S S T Mon espace travailleur">
+
+          <div class="logo">
+            <img src="style/images/logo.svg" alt="C N E S S T">
+          </div>
+
+
+          <div class="logo-texte">Mon espace <span>travailleur</span></div>
+
+        </a>
+        <ul id="myNavbar2" class="nav navbar-nav navbar-center">
+          <li class="im_Mon_Profil"><a href="#" aria-label="Mon profil"><span>Mon profil</span></a></li>
+          <li class="im_Deconnection"><a href="#" aria-label="Me déconnecter"><span>Me déconnecter</span></a>
+        </ul>
+      </div>
+      <div class="container-fluid" id="barre-bas-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+        </div>
+
+
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav mx-auto">
+            <li class="active im_Service_en_ligne"><a href="#">Service en ligne</a></li>
+            <li class="im_Mon_Dossier"><a href="#">Mon dossier</a></li>
+            <li class="im_Mes_Documents"><a href="#">Mes documents</a></li>
+            <li class="im_Mes_Depot_direct"><a href="#">Mes dépôts directs</a></li>
+            <li class="im_Ma_Messagerie"><a href="#">Ma messagerie</a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </header>
+    <main class="container" id="content">
+
+        <div class="step-info">
+          <h1 id="h1"><span class="number">12</span><span class="h1">Messages fonctionnels</span></h1>
+          <p class="requis sans-recul">
+              <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+          </p>
+        </div>
+          <span id="dateformat" class="hidden" aria-hidden="true">,Format requis,a a a a,tiret,m m,tiret,j j</span>
+
+
+            <section class="alert alert-success alert-non-dismissible" aria-label="Confirmation" aria-describedby="msgConfirmation1" tabindex="-1">
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                <span class="alert-message" id="msgConfirmation1">Message de confirmation</span>
+            </section>
+
+            <section class="alert alert-success alert-dismissible" aria-label="Confirmation">
+                <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+                <button id="btnFermerConfirmation" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgConfirmation2 btnFermerConfirmation">×</button>
+                <span class="alert-message" id="msgConfirmation2">Message de confirmation pouvant être fermé</span>
+            </section>
+
+            <section class="alert alert-info alert-non-dismissible" aria-label="Information" aria-describedby="msgInfo1" tabindex="-1">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <span id="msgInfo1">Message d'information</span>
+            </section>
+
+            <section class="alert alert-info alert-dismissible" aria-label="Information">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <button id="btnFermerInfo" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgInfo2 btnFermerInfo">×</button>
+                <span class="alert-message" id="msgInfo2">Message d'information pouvant être fermer</span>
+            </section>
+
+            <section class="alert alert-warning alert-non-dismissible" aria-label="Attention" aria-describedby="msgAlerte1" id="idAlerte2" tabindex="-1">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span id="msgAlerte1">Message d'avertissement</span>
+            </section>
+
+            <section class="alert alert-warning alert-dismissible" aria-label="Attention">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <button id="btnFermerAvertissement" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgAlerte2 btnFermerAvertissement">×</button>
+                <span class="alert-message" id="msgAlerte2">Message d'avertissement pouvant être fermé</span>
+            </section>
+
+            <section class="alert alert-danger alert-non-dismissible" aria-label="Erreur" aria-describedby="msgErreur1" tabindex="-1">
+                <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                <span class="alert-message" id="msgErreur1">Message d'erreur</span>
+            </section>
+
+            <section class="alert alert-danger alert-dismissible" aria-label="Erreur">
+                <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                <button id="btnFermerErreur" type="button" class="close" data-dismiss="alert" aria-label="Ne plus afficher ce message" aria-labelledby="msgErreur2 btnFermerErreur">×</button>
+                <span class="alert-message" id="msgErreur2">Message d'erreur pouvant être fermé</span>
+            </section>
+            <div class="form-footer">
+                <div class="form-group">
+                    <div class="action center-block text-center">
+                        <a role="button" href="ListesDeroulantes.html"  class="btn btn-default btn-precedent">Précédent</a>
+                        <a role="button" href="Accordion.html"  class="btn btn-primary btn-suivant">Suivant</a>
+                    </div>
+                </div>
+            </div>
+          </main>
+
+
+          <footer class="container-fluid navbar-inverse">
+                <div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#" target="_blank">Accessibilité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+                  <li><a href="#" target="_blank">Politique de confidentialité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+                  <li><a href="#" target="_blank">Plan du site<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+                  <li class="tel"><a href="#">Renseignement généraux : 1 844 838-0808</a></li>
+                  <li class="logo"><img src="style/images/logo.svg" alt=""></li>
+                </ul>
+                <p> CNESST </p>
+                </div>
+                <p class="copyright navbar">© CNESST, 2017</p>
+
+              </footer>
+          </div>
+
+          <!-- / id="met" -->
+</body>
+</html>

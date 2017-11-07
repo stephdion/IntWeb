@@ -886,7 +886,7 @@ a.ancreHS:focus {
 
 
 .btn7::after,
-.btn-precedent::after
+.btn-prece::after
  {
   content: " ";
   position: absolute;

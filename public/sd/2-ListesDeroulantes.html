@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Listes déroulantes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/bootstrap.cnesst.css" />
+    <link rel="stylesheet" href="Style/cnesst_met.css" />
+    <script src="Scripts/cnesst-sd-commun.js"></script>
+</head>
+<body>
+  <!-- id="met" -->
+
+
+  <div id="met">
+    <header>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid first">
+        <a class="navbar-brand" href="index.html" aria-label="C N E S S T Mon espace travailleur">
+
+          <div class="logo">
+            <img src="style/images/logo.svg" alt="C N E S S T">
+          </div>
+
+
+          <div class="logo-texte">Mon espace <span>travailleur</span></div>
+
+        </a>
+        <ul id="myNavbar2" class="nav navbar-nav navbar-center">
+          <li class="im_Mon_Profil"><a href="#" aria-label="Mon profil"><span>Mon profil</span></a></li>
+          <li class="im_Deconnection"><a href="#" aria-label="Me déconnecter"><span>Me déconnecter</span></a>
+        </ul>
+      </div>
+      <div class="container-fluid" id="barre-bas-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+        </div>
+
+
+
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav mx-auto">
+            <li class="active im_Service_en_ligne"><a href="#">Service en ligne</a></li>
+            <li class="im_Mon_Dossier"><a href="#">Mon dossier</a></li>
+            <li class="im_Mes_Documents"><a href="#">Mes documents</a></li>
+            <li class="im_Mes_Depot_direct"><a href="#">Mes dépôts directs</a></li>
+            <li class="im_Ma_Messagerie"><a href="#">Ma messagerie</a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </header>
+    <main class="container" id="content">
+
+
+        <div class="step-info">
+          <h1 id="h1"><span class="number">11</span><span class="h1">Listes déroulantes</span></h1>
+          <p class="requis sans-recul">
+              <span class="sr-only">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire
+          </p>
+        </div>
+          <span id="dateformat" class="hidden" aria-hidden="true">,Format requis,a a a a,tiret,m m,tiret,j j</span>
+
+
+        <form class="form-horizontal" role="form" method="post">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Listes déroulantes disponibles</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel1">Liste déroulante adaptative 1ère option vide</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel1" name="Sel1Value">
+                                <option value="valeurNull" id="Sel1Opt0" label=" " selected=""></option>
+                                <option value="valeur 1" id="Sel1Opt1">Select 1 Option 1</option>
+                                <option value="valeur 2" id="Sel1Opt2">Select 1 Option 2</option>
+                                <option value="valeur 3" id="Sel1Opt3">Select 1 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel2">Liste déroulante avec valeur par défaut</label>
+                        <div class="reponse">
+                            <select class="form-control length20" id="Sel2">
+                                <option value="valeurNull" id="Sel2Opt0" label=" "></option>
+                                <option value="valeur 1" id="Sel2Opt1">Select 2 Option 1</option>
+                                <option value="valeur 2" id="Sel2Opt2">Select 2 Option 2</option>
+                                <option value="valeur 3" id="Sel2Opt3" selected="selected">Select 2 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Liste déroulante non disponible</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel3">Liste déroulante adaptative 1ère option vide</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel3" disabled="">
+                                <option value="valeurNull" label=" " id="Sel3Opt0"></option>
+                                <option value="valeur 1" id="Sel3Opt1">Select 3 Option 1</option>
+                                <option value="valeur 2" id="Sel3Opt2">Select 3 Option 2</option>
+                                <option value="valeur 3" id="Sel3Opt3">Select 3 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel4">Liste déroulante avec valeur par défaut</label>
+                        <div class="reponse">
+                            <select class="form-control length20" id="Sel4" disabled="">
+                                <option value="valeurNull" label=" " id="Sel4Opt0"></option>
+                                <option value="valeur 1" id="Sel4Opt1">Select 4 Option 1</option>
+                                <option value="valeur 2" id="Sel4Opt2">Select 4 Option 2</option>
+                                <option value="valeur 3" id="Sel4Opt3" selected="selected">Select 4 Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal" role="form">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h2>Appellations contrôlées</h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel5">Formulaires</label>
+                        <div class="reponse">
+                            <select class="form-control length10" id="Sel5">
+                                <option value="En cours" id="Sel5Opt1">En cours</option>
+                                <option value="Traités" id="Sel5Opt2">Traités</option>
+                                <option value="Tous" id="Sel5Opt3">Tous</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel6">Nom du fichier</label>
+                        <div class="reponse">
+                            <select class="form-control length30" id="Sel6">
+                                <option value="Choisir un fichier" id="Sel6Opt1">Choisir un fichier</option>
+                                <option value="Fichier 1" id="Sel6Opt2">Fichier 1</option>
+                                <option value="Fichier 2" id="Sel6Opt3">Fichier 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel7">Établissement</label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel7">
+                                <option value="" id="Sel7Opt0" label=" "></option>
+                                <option value="Adresse 1" id="Sel7Opt1">Adresse 1</option>
+                                <option value="Adresse 2" id="Sel7Opt2">Adresse 2</option>
+                                <option value="Adresse 3" id="Sel7Opt3">Adresse 3</option>
+                                <option value="Adresse 4" id="Sel7Opt4">Adresse 4</option>
+                                <option value="Adresse 5" id="Sel7Opt5">Adresse 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question control-label" for="Sel8">Numéro de l'établissement</label>
+                        <div class="reponse">
+                            <select class="form-control length10" id="Sel8">
+                                <option value="" id="Sel8Opt0" label=" "></option>
+                                <option value="000008574" id="Sel8Opt1">000008574</option>
+                                <option value="601054518" id="Sel8Opt2">601054518</option>
+                                <option value="602842443" id="Sel8Opt3">602842443</option>
+                                <option value="000008583" id="Sel8Opt4">000008583</option>
+                                <option value="600796586" id="Sel8Opt5">600796586</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="question requis jsRequis control-label" for="Sel9">Numéro de l'établissement <span class="sr-only">Obligatoire</span></label>
+                        <div class="reponse">
+                            <select class="form-control" id="Sel9">
+                                <option value="Tous" id="Sel9Opt1">Tous</option>
+                                <option value="CLUB L'AGE D'OR DE ST-AIME-DES-LACS INC TEST (74574528)" id="Sel9Opt2">CLUB L'AGE D'OR DE ST-AIME-DES-LACS INC TEST (74574528)</option>
+                                <option value="Grp Ress Log Colt Gaspesie Iles Msdeleine TEST (71046659)" id="Sel9Opt3">Grp Ress Log Colt Gaspesie Iles Msdeleine TEST (71046659)</option>
+                                <option value="Konstantinos Triantopoulos TEST (76208206)" id="Sel9Opt4">Konstantinos Triantopoulos TEST (76208206)</option>
+                                <option value="Magasin le travailleur sportif inc TEST (015678A5)" id="Sel9Opt5">Magasin le travailleur sportif inc TEST (015678A5)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="form-footer">
+            <div class="form-group">
+                <div class="action center-block text-center">
+                    <a role="button" href="Listes.html"  class="btn btn-default btn-precedent">Précédent</a>
+                    <a role="button" href="Message.html"  class="btn btn-primary btn-suivant">Suivant</a>
+                </div>
+            </div>
+        </div>
+      </main>
+
+
+      <footer class="container-fluid navbar-inverse">
+            <div>
+            <ul class="nav navbar-nav">
+              <li><a href="#" target="_blank">Accessibilité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li><a href="#" target="_blank">Politique de confidentialité<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li><a href="#" target="_blank">Plan du site<img alt="Ce lien s’ouvrira dans une nouvelle fenêtre" src="style/images/blank.svg"></a></li>
+              <li class="tel"><a href="#">Renseignement généraux : 1 844 838-0808</a></li>
+              <li class="logo"><img src="style/images/logo.svg" alt=""></li>
+            </ul>
+            <p> CNESST </p>
+            </div>
+            <p class="copyright navbar">© CNESST, 2017</p>
+
+          </footer>
+      </div>
+
+      <!-- / id="met" -->
+</body>
+</html>

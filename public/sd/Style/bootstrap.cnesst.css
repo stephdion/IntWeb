@@ -42,7 +42,6 @@ body {
   .container {
     max-width: 128.0rem;
     width: 100%;
-    background-color: yellow;
   }
   .navbar div.first {
      height: 12vw !important;
@@ -56,8 +55,10 @@ body {
       width: auto;
       height: auto;
       z-index: 2000 !important;
-      padding: 1.4vw 2.4vw 2.6vw 1.4vw!important;
-      margin: -1.5vw 2vw 2vw 1vw!important;
+      padding: 0.8vw 2.5vw 2.6vw 1.1vw !important;
+      margin: -0.6vw 2vw 2vw 1vw!important;
+      top: 0;
+      position: relative;
 
   }
 
@@ -433,6 +434,9 @@ h1 span.soustitre{
   line-height: 2.0rem;
 
 }
+
+
+
 
 #myNavbar2 .im_Mon_Profil a{
   background-image: url("images/ic_Mon_Profil.svg");

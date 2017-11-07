@@ -14,6 +14,17 @@
 h1, .h1{
     font-size: 3.2rem !important;
 }
+h2, .h2{
+    font-size: 2.4rem !important;
+}
+h3, .h3{
+    font-size: 2.2rem !important;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal !important;
+}
 
 
 h1 .number {
@@ -59,6 +70,26 @@ h1 span.h1 {
     left: 1.3rem;
 }
 
+
+.panel-body h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: .75rem 0.5rem .75rem 1rem;
+    padding-left: 1.5rem;
+    color: #006c08;
+}
+
+.panel-heading h2,
+.panel-heading h3{
+    margin-top: 2rem;
+}
+.panel .panel-heading:first-child h2,
+.panel .panel-heading:first-child h3{
+    margin-top: 0.7rem;
+}
+
+
 main.container
 {
     background-color: #e8e8e8;
@@ -87,12 +118,14 @@ div.form-group:last-child {
     margin-bottom: 1.5rem;
 }
 
-.panel-heading h2 {
+.panel .panel-heading h2,
+.panel-heading .h2
+ {
     color: #006c08;
     margin-bottom: 0;
     padding-left: 0;
     font-size: 2.4rem;
-    font-weight: 600;
+    font-weight: normal;
     margin-top: 1.5rem;
 }
 .panel-default > .panel-heading {
@@ -106,7 +139,33 @@ div.form-group:last-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     margin-bottom: 0.3rem;
+
 }
+/******* en-tête de niveau 2 style résumé *******/
+.panel-default > .panel-heading {
+    /*color: #414141;
+    background-color: inherit;
+    border-color: #5d5d5d;*/
+}
+.panel-heading-R {
+    position: relative;
+    display: block;
+    background-color: #5d5d5d;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    padding: 0rem 1.5rem 1.7rem 1.5rem;
+}
+.panel-heading-R h2{
+    background-color: inherit;
+    color: inherit;
+    font-size: 2.4rem;
+    line-height: inherit;
+    font-weight: inherit;
+    padding: 0;
+}
+/******* /en-tête de niveau 2 style résumé *******/
 
 /***** Formulaire ******/
 .form-cont .control-group input[type="text"], .form-cont .control-group input[type="email"] {
@@ -122,15 +181,28 @@ input {
     border-color: #a8a8a8;
 }
 
-input[type="text"]
+input[type="text"],
+.form-control,
+select.form-control
  {
     width: 100%;
     max-width: 450px;
+    min-width: 10rem;
     padding: 0.5rem;
     border: 1px solid #a8a8a8;
     font-size: 1.8rem;
     line-height: 3rem;
+        height: 4rem !important;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0 !important;
+}
+
+input[type="text"]{
+    min-width: 11rem;
+}
+
+.hasDatepicker input[type="text"]{
+    width: 20rem;
 }
 
 
@@ -151,24 +223,22 @@ input[type="text"]
 }
 
 
-.form-control {
-    font-size: 2rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.3rem;
-}
 .input-group-addon.intervalle {
     width: 4.2rem !important;
     background-color: inherit;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.4rem;
+    color: inherit;
     border: none;
 }
 .input-group-addon + .form-control {
     border-left-style: solid;
 }
 .input-group-addon.format {
-    background-color: inherit;
-    padding-bottom: 0.2rem;
-    border-radius: 0;
+  background-color: inherit;
+  padding-bottom: 0.4rem;
+  border-radius: 0;
+  border: 0;
+  color: #787878;
 }
 
 .input-group-addon {
@@ -176,7 +246,7 @@ input[type="text"]
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1rem;
-    color: #006207;
+    color: inherit;
     text-align: center;
     border: 0.1rem solid #a8a8a8;
     border-radius: 0;
@@ -237,7 +307,50 @@ input[type="checkbox"]:active, input[type="checkbox"]:checked {
   height: 2.6rem;
   background-size: 2.5rem 2.5rem;
   }
+
+.checkbox input[type="text"]{
+  position: relative;
+  top: -0.5rem;
+  max-width: 94%;
+  }
+
+.checkbox-inline input[type="text"]{
+  top: 0;
+  }
+
+html input[disabled]{
+  background-color: #e6e6e6;
+  color: #3d3d3d;
+  }
+
+  .radio label, .checkbox label {
+    margin-bottom: 1rem;
+}
 /******** / cc et radio *******/
+
+.radio-multiline-label,
+.checkbox-multiline-label
+{
+    position: relative;
+}
+
+
+
+
+.radio-multiline-label input[type="radio"],
+.checkbox-multiline-label input[type="checkbox"]
+{
+    position: absolute;
+    left: -0.5rem;
+}
+
+.radio-multiline-label label,
+.checkbox-multiline-label label
+{
+    display: block;
+    top: -2rem;
+    margin-left: 0.5rem;
+}
 
 /******** boutons d'action ***********/
 .btn-default {
@@ -377,6 +490,139 @@ a.btn:focus .icon-delete {
 }
 
 /******** /boutons d'action ***********/
+/******** Boite d'avertissement **********/
+.alert > .glyphicon {
+  float: left;
+  padding-right: 1rem;
+  font-size: 4rem;
+  margin-top: 0.8rem;
+}
+
+.close {
+    float: right;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+button.close {
+  position: relative;
+    padding: 0.5rem 1rem;
+    top: -0.5rem:
+
+}
+.alert-dismissable .close, .alert-dismissible .close {
+    right: -1rem;
+    top: -1rem;
+}
+/******** /Boite d'avertissement **********/
+/********* Accordeon ***********/
+.panel-heading .accordion-toggle {
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    padding: 0.3rem 0rem;
+}
+.accordion .panel-title h3 {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: .75em 0 .5em 0;
+    margin-bottom: 0.2rem;
+    color: #006c08;
+
+}
+/********* /Accordeon ***********/
+
+
+
+/******** tableau *********/
+.table>thead>tr>th {
+    vertical-align: middle;
+    border-left: 1px solid #fff !important;
+    border-bottom: 1px solid #003d04;
+    border-top: none;
+    border-right: none;
+    background-color: #006c08;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.table>thead>tr>th:first-of-type{
+    border-left: 0 !important;
+}
+.table > thead > tr > th > button,
+.table > thead > tr > th > button[disabled],
+.table > thead > tr > th > button:hover,
+.table > thead > tr > th > button:focus
+{
+    background-color: inherit;
+    border: 0 !important;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: 0 !important;
+    padding: 0.8rem !important;
+    font-size: 2rem;
+    font-weight: normal;
+}
+thead.clickable button[disabled]
+{
+    background-color: inherit !important;
+    border: 0 !important;
+    color: inherit !important;
+}
+
+
+.table > thead > tr > th > button.active,
+.table > thead > tr > th[aria-sort="ascending"],
+thead.clickable > tr > th:hover
+ {
+    background-color: #005106;
+    border: 0;
+    color: #ffffff;
+}
+
+thead.disabled th:hover
+{
+    background-color: #006c08 !important;
+    border: 0 !important;
+    color: inherit !important;
+}
+thead.disabled tr:hover
+{
+    background-color: inherit!important;
+    border: inherit !important;
+    color: inherit !important;
+}
+
+.alert{
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+
+.pagination > button.active {
+    background-color: #006c08;
+    border-color: #006c08;
+    color: #FFF !important;
+}
+.pagination > button.active:focus, .pagination > button.active:hover {
+    background-color: #005106;
+    border-color: #003d04;
+    color: #FFF !important;
+}
+
+
+/******** / tableau *********/
+
 /******** pied de formulaire  ***********/
 .panel-footer,
 .panel
@@ -392,9 +638,16 @@ a.btn:focus .icon-delete {
     position: relative;
     top: -2rem;
 }
+.form-footer div.form-group,
+.form-footer .form-group > .action
+ {
+    padding-left: 0;
+    margin: 0;
+}
+
 .form-footer .action .btn {
   min-width: 20rem;
-  padding: 0 4rem
+  padding: 0 4rem;
 }
 
 .form-footer-brouillon{
@@ -442,6 +695,9 @@ a.btn:focus .icon-delete {
 
 #barre-bas-header::before
 
+.pes .navbar-toggle{
+  display: none;
+}
 
 #met #myNavbar a:hover, #met #myNavbar a:focus, #met #myNavbar .navbar-nav > .active > a {
     color: #fff;
@@ -523,10 +779,28 @@ footer ul{
   }
 
 
-  @media screen and (max-width: 770px)
-  {
+  @media screen and (max-width: 770px){
+
+
+    .form-group .action .btn {
+      margin: 1rem 2vw;
+    }
+
+    main.container {
+        padding: 2rem 4vw;
+
+    }
+    .panel {
+    background-color: #FFFFFF;
+    padding: 1rem 4vw 4rem 4vw;
+}
+
     .no-menu{
         display: inline-block;
+    }
+
+    .pes .navbar-toggle{
+      display: none;
     }
     .no-menu span {
         font-size: 2.2rem;
@@ -537,4 +811,34 @@ footer ul{
         width: 100%;
         background-color: yellow;*/
     }
+
+    #myNavbar2 {
+        top: -0.5rem;
+        right: 1.5rem;
+        width: 10rem;
+    }
+
+  }
+
+  @media screen and (max-width: 500px){
+
+    main.container {
+    }
+    .form-group .action .btn {
+      margin: 1rem 1vw;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      min-width: 18rem !important;
+{
+
+  @media screen and (max-width: 320px){
+
+    main.container {
+        padding: 2rem 1rem;
+    }
+    .panel {
+    background-color: #FFFFFF;
+    padding: 1rem 1rem 4rem 1rem;
+}
+
   }
