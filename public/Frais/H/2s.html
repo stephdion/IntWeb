@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>2 - Description des frais - Remboursement de frais - CNESST</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<!-- <link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/bootstrap-reboot.min.css"> -->
+	<link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/css/components.scss?compile=true">
+	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/css/styleguide.css">
+	<!-- test -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
+
+	<link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/js/jquery.qtip.min.css">
+</head>
+<body>
+	<header class="container header-v1" aria-labelledby="naHeader">
+		<div class="row no-gutters">
+			<div class="col-auto">
+				<div class="logo">
+					<img alt="CNESST" src="http://instynctdemo.com/cnesst/images/logo.png">
+				</div>
+			</div>
+		    <div class="col align-self-end">
+		    	<nav class="top-menu">
+		    		<ul>
+		    			<li>
+			    			<a href="../index.html">
+			    				<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-fleche-retour.png">
+			    				<p>Retour à PES</p>
+			    			</a>
+		    			</li>
+		    			<li>
+			    			<a href="#">
+			    				<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
+			    				<p>Me déconnecter</p>
+			    			</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    </div>
+		</div>
+		<div class="no-menu">
+			<h1 role="presentation" id="naHeader">Remboursement de frais - Hébergement/Repas</h1>
+		</div>
+		<div class="no-menu soustitre">
+			<span>Déplacement, repas et hébergement</span>
+		</div>
+	</header>
+
+	<main class="container">
+
+		<ul class="nav nav-wizard">
+			<li class="completed"><a href="1.html"><i>1</i></a></li>
+			<li class="active"><a href="2.html"><i>2</i><span>Description des frais</span></a></li>
+			<li><a href="3.html"><i>3</i></a></li>
+		</ul>
+
+		<div class="strong">
+			<div class="mcl2" id="idform">
+
+				<div class="step-info">
+					<p class="number">2</p>
+					<h2 aria-level="1">Description des frais</h2>
+				</div>
+
+				<div class="infobox5 sp-xl">
+					<p>Les frais doivent être regroupés par date et par la raison du déplacement. Si vous avez eu des frais pour des raisons différentes à une même date, vous pouvez faire plusieurs demandes différentes ayant la même date.</p>
+				</div>
+
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+						<div class="text sp-s">
+							<p><span class="rft">*</span> Obligatoire</p>
+						</div>
+
+
+
+<!-- **********  Jour 1 ********** -->
+<div class="sub-block">
+
+
+						<div class="header panel-heading-R">
+							<span class="rft">*</span>
+
+							<h4 aria-level="2"><span class="number">1</span> - Date <span class="date-icon"><input aria-label="date du jour 1" id="inpD1" class="datepicker form-control" value="" type="text"></span></h4>
+			       <!-- <button type="button" class="btn4a btn-delete"  ><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+						 <!-- TODO: Ne pas afficher le bouton suivant si une seule date -->
+							<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer les dépenses pour cette date"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+						</div>
+						<div class="box2">
+
+							<div class="text">
+
+
+
+<!-- G -->
+<!-- Raison du déplacement -->
+								<div class="radiobutton required">
+								   <i id="naRG1">Raison du déplacement</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" type="radio" name="mode" value="create" data-hide=".os-1">
+										   <i>Ergothérapie</i>
+										</label>
+
+										<label for="inp3" class="radiobutton">
+										   <input id="inp3" type="radio" name="mode" value="create" data-hide=".os-1">
+										   <i>Physiothérapie</i>
+										</label>
+
+										<label for="inp4" class="radiobutton">
+										   <input id="inp4" type="radio" name="mode" value="create" data-hide=".os-1">
+										   <i>Visite médicale</i>
+										</label>
+
+										<label for="inp5" class="radiobutton">
+										   <input id="inp5" type="radio" name="mode" value="create" data-show=".os-1-1" data-hide=".os-1">
+										   <i>Autre</i>
+										</label>
+										<div class="control-group hide os-1-1 os-1">
+											<label for="inp6"><span class="rft">*</span> Précisez </label>
+											<input id="inp6" type="text" name="montant">
+										</div>
+
+
+								   </div>
+								 </div>
+<!-- /Raison du déplacement -->
+<!-- /G -->
+
+							</div>
+						</div>
+
+<!-- Type de frais réclamés pour cette journée -->
+						<div class="box2">
+
+							<h4 aria-level="3">Type de frais réclamés pour cette journée</h4>
+
+							<div class="text">
+
+								<div class="control-group">
+
+									<label for="inp8" class="checkbox">
+									   <input id="inp8" type="checkbox" name="mode2" data-show=".os-2-1" data-hide=".os-2" data-show2=".os-3-2" data-show5=".os-3-23">
+									   <i>Frais de déplacement</i>
+									</label>
+
+									<label for="inp9" class="checkbox">
+										<!-- TODO: Hébergement, 2 nuitée et > Date généré automatiquement
+										- Si date > date de la première nuitée déclarée précédemment
+												- Cocher par défaut Frais d'hebergement
+												- ajouter l'attribut readonly
+									-->
+									   <input id="inp9" type="checkbox" name="mode3" data-show=".os-3-1" data-show2=".os-3-2" data-hide=".os-3" data-show3=".os-3-2" data-show6=".os-3-23">
+									   <i>Frais d'hebergement</i>
+									</label>
+									<div class="note hide sp-s os-3-1-temp os-3-temp">
+										<!-- TODO:  si Frais d'hébergement coché et en lecture seule:
+															 - Afficher la note suivante
+															 - Lier explicitement la note au champ comme description accessible.
+									-->
+										<p id="daInp9"  class="clarification" ><strong>Note: </strong>Les frais d’hébergement pour plusieurs nuitées consécutives doivent être entrés la première journée du séjour <span class="dval">(<span class="inpD1Val">xxxx-xx-xx</span>)</span> </p>
+									</div>
+									<div>
+										<label for="inp10" class="checkbox">
+									   <input id="inp10" type="checkbox" name="mode4" data-show=".os-4-1" data-hide=".os-4" data-show4=".os-3-2" data-show2=".os-3-22">
+									   <i>Frais de repas</i>
+									 </label>
+									 <!-- TODO: Afficher la note suivante seulement si Frais d'hébergement coché et en lecture seule.
+								 -->
+								 <div class="note os-2 os-3">
+								 	<p id="daInp10"  class="clarification hide os-4-1" >Les frais de repas ne sont remboursés que s'il y des frais de déplacement ou d'hébergement dans cette même journée.</p>
+								 </div>
+									 <!-- TODO:
+		 						 Afficher la question suivante
+												- si "frais de repas" est sélectionnée (os-4-1)
+												- si "frais de déplacement" est sélectionnée (os-2-1)
+												- et que "Frais d'hébergement n'est pas sélectionné (os-3)
+		 							-->
+										<!-- os-4-1 os-4 -->
+										<div class="hide os-4-1 os-4">
+												<!-- os-2-1 os-3-1 -->
+												<div class="radiobutton required inline hide os-2-1 os-3-1">
+												   <i id="naRG2">Votre destination est-elle à plus de 16 km de votre résidence?</i>
+
+												   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+
+														<label for="inp11" class="radiobutton">
+														   <input id="inp11" type="radio" name="mod">
+														   <i>Oui</i>
+														</label>
+
+														<label for="inp12" class="radiobutton">
+														   <input id="inp12" type="radio" name="mod" data-show=".os-4a-1" data-hide=".os-4a">
+														   <i>Non</i>
+														</label>
+														<div class="note note-ON-N hide sp-s os-4a-1 os-4a">
+															<p id="daInp12"  class="clarification" ><strong>Note: </strong>Les frais de repas ne sont pas remboursables si la destination n’est pas à plus de 16 km de votre résidence.</p>
+														</div>
+
+												   </div>
+										 	</div>
+											 <!-- /os-2-1 os-2 -->
+										</div>
+									<!-- /os-4-1 os-4 -->
+									</div>
+
+								</div>
+
+
+							</div>
+						</div>
+<!-- /Type de frais réclamés pour cette journée -->
+<!-- Frais de déplacement -->
+						<div class="box2 hide os-2-1 os-2">
+
+							<h4 aria-level="3">Frais de déplacement</h4>
+
+							<div class="text">
+								<!--  Moyen de transport utilisé -->
+								<div class="control-group" role="group" aria-labelledby="naRGx1">
+									<i id="naRGx1"><span class="rft">*</span> Moyen de transport utilisé</i>
+
+									<label for="inp13" class="checkbox">
+									   <input id="inp13" type="checkbox" name="mode90" data-show=".os-6-1" data-hide=".os-6">
+									   <i>Transport en commun</i>
+									</label>
+
+									<label for="inp14" class="checkbox">
+									   <input id="inp14" type="checkbox" name="mode91" data-show=".os-7-1" data-hide=".os-7">
+									   <i>Voiture</i>
+									</label>
+				         					<div class="control-group sous-question hide os-7-1 os-7">
+																<label for="inp14b" class="checkbox">
+																   <input id="inp14b" type="checkbox" name="mode91b" data-show=".os-7b-1" data-hide=".os-7b">
+																   <i>Avec autorisation de la CNESST</i>
+																</label>
+				         					</div>
+
+
+									<label for="inp15" class="checkbox">
+									   <input id="inp15" type="checkbox" name="mode92" data-show=".os-8-1" data-hide=".os-8">
+									   <i>Taxi avec autorisation</i>
+									</label>
+
+									<label for="inp16" class="checkbox">
+									   <input id="inp16" type="checkbox" name="mode93" data-show=".os-9-1" data-hide=".os-9">
+									   <i>Ambulance</i>
+									</label>
+
+									<label for="inp17" class="checkbox">
+									   <input id="inp17" type="checkbox" name="mode94" data-show=".os-10-1" data-hide=".os-10">
+									   <i>Avion</i>
+									</label>
+
+									<label for="inp18" class="checkbox">
+									   <input id="inp18" type="checkbox" name="mode95" data-show=".os-11-1" data-hide=".os-11">
+									   <i>Autre</i>
+									</label>
+
+												 <div class="control-group sous-question-precisez os-11-1 os-11 hide">
+														 <label for="inp18b"><span class="rft">*</span> Precisez</label>
+														 <input id="inp18b" type="text" name="a">
+												 </div>
+
+								</div>
+								<!--  / Moyen de transport utilisé -->
+							</div>
+						</div>
+
+  					<!--  Transport en commun -->
+						<div class="box2 hide os-6-1 os-6 os-2">
+							<h4 aria-level="3">Transport en commun</h4>
+							<div class="text">
+
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement en transmport en commun <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+
+											<div class="control-group">
+												<label for="inp19"><span class="rft">*</span> Montant</label>
+												<input id="inp19" type="text" name="a" class="amount"> $
+											</div>
+
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp19">
+
+													<label for="inp20" class="radiobutton">
+													   <input id="inp20" type="radio" name="mode70">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp21" class="radiobutton">
+													   <input id="inp21" type="radio" name="mode70">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Ajouter un déplacement en Transport en commun </span></a>
+								</div>
+
+							</div>
+						</div>
+						<!--  / Transport en commun -->
+						<!--  Voiture os-7-1 os-7 os-2 -->
+						<div class="box2 hide os-7-1 os-7 os-2">
+							<h4 aria-level="3">Voiture<span class="hide os-7b-1 os-7b"> avec autorisation</span> (xxx)</h4>
+							<div class="text">
+
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+
+											<div class="control-group">
+												<label for="inp22"><span class="rft">*</span> Distance parcourue</label>
+												<input id="inp22" type="text" name="a" class="amount" value="150"> km
+											</div>
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp22">
+
+													<label for="inp23" class="radiobutton">
+													   <input id="inp23" type="radio" name="mode60" data-show=".os-23-1" data-hide=".os-23">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp24" class="radiobutton">
+													   <input id="inp24" type="radio" name="mode60" data-show=".os-24-1" data-hide=".os-24">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+<!-- TODO :
+					- Afficher la question si >= 100km aller simple ou >=200km
+
+-->
+											<div class="control-group radiobutton inline required hide os-23-1 os-24">
+												<i id="naRG5">Avez-vous une attestation médicale indiquant votre incapacité à utiliser les transports en commun?</i>
+											   <div class="radiobuttons note-ON-N" role="group" aria-labelledby="naRG5">
+
+													<label for="inp25" class="radiobutton">
+													   <input id="inp25" type="radio" name="mode61" data-show=".os-25-1" data-hide=".os-25">
+													   <i>Oui</i>
+													</label>
+
+													<label for="inp26" class="radiobutton" data-show=".os-26-1" data-hide=".os-26">
+													   <input id="inp26" type="radio" name="mode61">
+													   <i>Non</i>
+													</label>
+													<!-- TODO: Lier explicitement la note au champ-->
+
+											   </div>
+												 <div class="note-ON-N hide os-26-1 os-25 os-23 os-24">
+													 <p class="clarification sp-s">
+													 Si vous choisissez de vous rendre à plus de 100 km de chez vous pour recevoir des soins ou subir des examens qui peuvent vous être fournis dans un rayon de 100 km et moins de votre domicile, vos frais vous seront remboursés jusqu’à un maximum de 200 km pour l’aller et le retour.
+												   </p>
+												 </div>
+
+											</div>
+											<!-- Voiture sans autorisation de la CNESST (os-7b)-->
+											<div class="hide os-25-1 os-7b">
+											<div class="control-group hide os-26-1 os-25 os-24">
+												<!-- Plus de 100 km ( aller simple )sans autorisation pour plus de 100 -->
+												<label for="inp27b">Frais d'utilisation demandés <span class="naDetails">(200 km * 0.143$)</span></label>
+												<input readonly id="inp27b" type="text" name="a" value="28.60" class="amount-readonly"> $
+											</div>
+
+											<div class="control-group hide os-24-1 os-25 os-26 os-23">
+												<!-- Plus de 100 km ( aller retour )sans voiture avec autorisation  -->
+												<label for="inp27c">Frais d'utilisation demandés <span class="naDetails">(150 km * 0.143$)</span></label>
+												<input readonly id="inp27c" type="text" name="a" value="21.45" class="amount-readonly"> $
+											</div>
+											</div>
+
+
+									    <!-- Voiture avec autorisation de la CNESST (os-7b-1 os-7b)-->
+
+
+
+											<div class="hide os-7b-1 os-7b">
+
+												<div class="control-group hide os-25-1 os-26 os-24">
+													<!-- Plus de 100 km ( aller simple )avec autorisation pour plus de 100 -->
+													<label for="inp27">Frais d'utilisation demandés <span class="naDetails">(300 km * 0.43$)</span></label>
+													<input readonly id="inp27" type="text" name="a" value="120.00" class="amount-readonly"> $
+												</div>
+
+												<div class="control-group hide os-26-1 os-25 os-24">
+													<!-- Plus de 100 km ( aller simple )avec voiture avec autorisation sans autorisation pour plus de 100 -->
+													<label for="inp27d">Frais d'utilisation demandés <span class="naDetails">(200 km * 0.43$)</span></label>
+													<input readonly id="inp27d" type="text" name="a" value="86.00" class="amount-readonly"> $
+												</div>
+											</div>
+											<!-- /Voiture avec autorisation de la CNESST (os-7b-1 os-7b)-->
+
+
+
+
+
+
+<!-- Lieu de départ -->
+								<div class="radiobutton required">
+												<i id="naRG6">Lieu de départ</i>
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG6">
+
+													<label for="inp28" class="radiobutton">
+													   <input id="inp28" type="radio" name="mode62" data-hide=".os-12">
+													   <i>Résidence personnelle</i>
+													</label>
+
+													<label for="inp29" class="radiobutton">
+													   <input id="inp29" type="radio" name="mode62" data-hide=".os-12">
+													   <i>Clinique ou hopital</i>
+													</label>
+
+													<label for="inp30" class="radiobutton">
+													   <input id="inp30" type="radio" name="mode62" data-show=".os-12-1" data-hide=".os-12">
+													   <i>Autre</i>
+													</label>
+													<div class="control-group sous-question-precisez os-12 os-12-1 hide">
+														<label for="inp31"><span class="rft">*</span> Precisez</label>
+														<input id="inp31" type="text" name="a">
+													</div>
+											   </div>
+
+											 </div>
+<!-- /Lieu de départ -->
+
+
+
+<!-- /G -->
+
+<!-- G -->
+<!-- Lieu d'arrivé -->
+								<div class="radiobutton required">
+												<i id="naRG7">Lieu d'arrivé</i>
+											   <div class="radiobuttons" role="group" aria-labelledby="naRG7">
+
+													<label for="inp32" class="radiobutton">
+													   <input id="inp32" type="radio" name="mode63" data-hide=".os-13">
+													   <i>Résidence personnelle</i>
+													</label>
+
+													<label for="inp33" class="radiobutton">
+													   <input id="inp33" type="radio" name="mode63" data-hide=".os-13">
+													   <i>Clinique ou hopital</i>
+													</label>
+
+													<label for="inp34" class="radiobutton">
+													   <input id="inp34" type="radio" name="mode63" data-show=".os-13-1" data-hide=".os-13">
+													   <i>Autre</i>
+
+													</label>
+													<div class="control-group sous-question-precisez os-13 os-13-1 hide">
+														<label for="inp35"><span class="rft">*</span> Precisez</label>
+														<input id="inp35" type="text" name="a">
+													</div>
+											   </div>
+
+											 </div>
+			 								<!-- /G -->
+
+										</div>
+									</div>
+								</div>
+<!-- /Lieu d'arrivé -->
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-voiture"><i class="icon-add"></i><span>Ajouter un déplacement en voiture</span></a>
+								</div>
+
+							</div>
+						</div>
+<!--  Voiture -->
+<!-- Taxis avec autorisation -->
+						<div class="box2 hide os-8-1 os-8 os-2">
+							<h4 aria-level="3">Taxis avec autorisation</h4>
+							<div class="text">
+
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+
+											<div class="control-group">
+												<label for="inp36"><span class="rft">*</span> Montant</label>
+												<input id="inp36" type="text" name="a" class="amount"> $
+											</div>
+
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp36">
+
+													<label for="inp37" class="radiobutton">
+													   <input id="inp37" type="radio" name="mode71">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp38" class="radiobutton">
+													   <input id="inp38" type="radio" name="mode71">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-taxi"><i class="icon-add"></i><span>Ajouter un déplacement en taxis</span></a>
+								</div>
+
+							</div>
+						</div>
+<!-- /Taxis avec autorisation -->
+<!-- Ambulance -->
+						<div class="box2 hide os-9-1 os-9 os-2">
+							<h4 aria-level="3">Ambulance</h4>
+							<div class="text">
+
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+
+											<div class="control-group">
+												<label for="inp40"><span class="rft">*</span> Montant</label>
+												<input id="inp40" type="text" name="a" class="amount"> $
+											</div>
+
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp40">
+
+													<label for="inp41" class="radiobutton">
+													   <input id="inp41" type="radio" name="mode72">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp42" class="radiobutton">
+													   <input id="inp42" type="radio" name="mode72">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-ambulance"><i class="icon-add"></i><span>Ajouter un déplacement en ambulance</span></a>
+								</div>
+
+							</div>
+						</div>
+<!-- /Ambulance -->
+<!-- Avion -->
+						<div class="box2 hide os-10-1 os-10 os-2">
+							<h4 aria-level="3">Avion</h4>
+							<div class="text">
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+
+											<div class="control-group">
+												<label for="inp43"><span class="rft">*</span> Montant</label>
+												<input id="inp43" type="text" name="a" class="amount"> $
+											</div>
+
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp43">
+
+													<label for="inp44" class="radiobutton">
+													   <input id="inp44" type="radio" name="mode73-_N_">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp45" class="radiobutton">
+													   <input id="inp45" type="radio" name="mode73-_N_">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-avion"><i class="icon-add"></i><span>Ajouter un déplacement en avion</span></a>
+								</div>
+
+							</div>
+						</div>
+<!-- Avion -->
+<!-- Autre moyen de transport -->
+						<div class="box2 hide os-11-1 os-11 os-2">
+							<h4 aria-level="3">Autre moyen de transport</h4>
+							<div class="text">
+
+								<div class="multiblocks">
+									<div class="sub-block">
+										<div class="header">
+											<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+											<!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+											 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+										</div>
+										<div class="sub-cont">
+
+											<div class="control-group">
+												<label for="inp46"><span class="rft">*</span> Precisez</label>
+												<input id="inp46" type="text" name="a">
+											</div>
+
+											<div class="control-group">
+												<label for="inp47"><span class="rft">*</span> Montant</label>
+												<input id="inp47" type="text" name="a" class="amount"> $
+											</div>
+
+											<div class="radiobutton inline">
+											   <div class="radiobuttons" role="group" aria-labelledby="inp47">
+
+													<label for="inp51" class="radiobutton">
+													   <input id="inp51" type="radio" name="mode74">
+													   <i>Aller simple</i>
+													</label>
+
+													<label for="inp52" class="radiobutton">
+													   <input id="inp52" type="radio" name="mode74">
+													   <i>Aller-retour</i>
+													</label>
+
+											   </div>
+
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="btns3">
+									<a href="#" class="btn4 btn-add" data-block=".block-autre"><i class="icon-add"></i><span>Ajouter un déplacement autre</span></a>
+								</div>
+
+							</div>
+						</div>
+<!-- /Autre moyen de transport -->
+<!-- Frais d'hébergement -->
+						<div class="box2 hide os-3-1 os-3">
+							<h4 aria-level="3">Frais d'hébergement</h4>
+
+							<div class="text">
+
+								<!-- G -->
+								<div class="radiobutton required">
+								   <i id="naRG12">Type d'hébergement</i>
+
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG12">
+
+										<label for="inp53" class="radiobutton">
+										   <input id="inp53" type="radio" name="mo" value="create" data-show=".os-5-1" data-hide=".os-5">
+										   <i>Hotel</i>
+										</label>
+
+										<label for="inp54" class="radiobutton">
+										   <input id="inp54" type="radio" name="mo" value="create" data-show=".os-5-2" data-hide=".os-5">
+										   <i>Chez un parent</i>
+										</label>
+
+										<label for="inp55" class="radiobutton">
+										   <input id="inp55" type="radio" name="mo" value="create" data-show=".os-5-2" data-hide=".os-5">
+										   <i>Chez un ami</i>
+										</label>
+
+
+								   </div>
+								 </div>
+ 								<!-- /G -->
+								<!-- *********** os-5-1 os-5 os-3 *********** -->
+								<!--<div class="hide os-5-1 os-5 os-3">--><div>
+
+									<div class="control-group hide os-5-1 os-5 os-3">
+										<label for="inp56"><span class="rft">*</span> Nombre de nuitées consécutives à cet hotel</label>
+										<input id="inp56" type="text" name="a" class="amount">
+									</div>
+									<div class="control-group hide os-5-2 os-5 os-3">
+										<label for="inp56b"><span class="rft">*</span> Nombre de nuitées consécutives chez un parent ou un ami</label>
+										<input id="inp56b" type="text" name="a" class="amount">
+									</div>
+
+
+									<div class="control-group hide os-5-1 os-5 os-3">
+										<label for="inp57"><span class="rft">*</span> Montant total (taxes incluses)</label>
+										<input id="inp57" type="text" name="a" class="amount"> $
+										<!-- TODO: Lier explicitement la note au champ-->
+										<p id="daInp57"  class="clarification" >Montant total pour votre séjour de 2 nuitées consécutives à cet hotel.</p>
+									</div>
+
+									<div class="control-group hide os-5-1 os-5 os-3">
+										<label for="inp58">Montant total pour allocation <span class="naDetails">(<span class="inp56">Nombre de</span> nuitées * 5,85)</span></label>
+										<input readonly id="inp58" type="text" name="a" class="amount-readonly" value="99,99"> $
+									</div>
+									<div class="control-group hide os-5-2 os-5 os-3">
+										<label for="inp58b">Montant total <span class="naDetails">(<span class="inp56">Nombre de</span> nuitées * 22,25)</span></label>
+										<input readonly id="inp58b" type="text" name="a" class="amount-readonly" value="99,99"> $
+									</div>
+
+									<!-- G -->
+								<!-- *********** /os-5-1 os-5 os-3 *********** -->
+								<div class="radiobutton required hide os-5-1 os-5 os-3">
+									   <i id="naRG13">Emplacement de cet hotel</i>
+
+									   <div class="radiobuttons" role="group" aria-labelledby="naRG13">
+
+											<label for="inp59" class="radiobutton">
+											   <input id="inp59" type="radio" name="m2">
+											   <i>Ville de Montréal</i>
+											</label>
+
+											<label for="inp60" class="radiobutton">
+											   <input id="inp60" type="radio" name="m2">
+											   <i>Laval</i>
+											</label>
+
+											<label for="inp61" class="radiobutton">
+											   <input id="inp61" type="radio" name="m2">
+											   <i>Longueuil</i>
+											</label>
+
+											<label for="inp62" class="radiobutton">
+											   <input id="inp62" type="radio" name="m2">
+											   <i>Ville de Gatineau</i>
+											</label>
+
+											<label for="inp63" class="radiobutton">
+											   <input id="inp63" type="radio" name="m2">
+											   <i>Ville de Québec</i>
+											</label>
+
+											<label for="inp64" class="radiobutton">
+											   <input id="inp64" type="radio" name="m2">
+											   <i>Lac-Beauport</i>
+											</label>
+
+											<label for="inp65" class="radiobutton">
+											   <input id="inp65" type="radio" name="m2">
+											   <i>Lac-Delage</i>
+											</label>
+
+											<label for="inp66" class="radiobutton">
+											   <input id="inp66" type="radio" name="m2">
+											   <i>Ailleurs au Québec</i>
+											</label>
+
+
+									   </div>
+									</div>
+<!-- /Frais d'hébergement -->
+<!-- /G -->
+
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+						<!-- os-4-1 os-4 -->
+						<div class="hide os-4-1 os-4">
+							<!-- os-2-1 os-3-1 -->
+							<div class="box2 hide os-2-1 os-3-1">
+
+							<h4 aria-level="3">Repas</h4>
+
+							<div class="text">
+
+								<!-- heures -->
+								<div class="box2 hide os-4-1 os-4 row">
+									<!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
+										<div class="control-group first-child">
+											<label for="inp67"><span class="rft">*</span> Heure de départ</label>
+											<input id="inp67" type="text" name="a" class="heure">
+										</div>
+										<!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
+										<div class="control-group inpW5">
+											<label for="inp68"><span class="rft">*</span> Heure d'arrivée</label>
+											<input id="inp68" type="text" name="a" class="heure">
+										</div>
+								</div>
+								<!-- /heures -->
+
+
+
+								<p id="daInp68"  class="clarification" >(Les montants maximums incluent les pourboires et les taxes.)</p>
+
+								<div class="control-group">
+									<label for="inp69"><span class="rft">*</span> Déjeuner <span class="naDetails">(Maximum: 10,40 $)</span></label>
+									<input id="inp69" type="text" name="a" class="amount"> $
+									<!-- TODO: Au focus sur Déjeuner
+																- Afficher si heure de départ >= 7h30
+																- Lier explicitement la note au champ à l'affichage
+									-->
+									<p id="daInp69"  class="clarification" >Le déjeuner n'est pas remboursable si vous aviez quitté votre résidence après 7h30 le matin.</p>
+								</div>
+
+								<div class="control-group">
+									<label for="inp70"><span class="rft">*</span> Diner <span class="naDetails">(Maximum: 14,30 $ par personne)</span></label>
+									<input id="inp70" type="text" name="a" class="amount"> $
+									<!-- TODO: Au focus sur Diner
+																- Afficher si heure de départ >= 11h30
+																- Lier explicitement la note au champ à l'affichage
+									-->
+									<p id="daInp70a"  class="clarification" >Le diner n'est pas remboursable si vous aviez quitté votre résidence après 11h30 le matin.</p>
+									<!-- TODO: Au focus sur Diner
+																- Afficher si heure de retour =< 13h30
+																- Lier explicitement la note au champ à l'affichage
+									-->
+									<p id="daInp70b"  class="clarification" >Le diner n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.</p>
+								</div>
+
+								<div class="control-group">
+									<label for="inp71"><span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span></label>
+									<input id="inp71" type="text" name="a" class="amount"> $
+									<!-- TODO: Au focus sur Souper
+																- Afficher si heure de retour < 18h30
+																- Lier explicitement la note au champ à l'affichage
+									-->
+									<p id="daInp71"  class="clarification" >Le souper n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.</p>
+</div>
+<!-- /os-2-1 os-3-1 -->
+								</div>
+						<!-- /os-4-1 os-4 -->
+
+</div>
+<!-- **********  /Jour 1 ********** -->
+
+
+
+							</div>
+						</div>
+						<!-- G -->
+						<div class="radiobutton">
+							 <i id="naRG14">Autre frais de déplacement, de repas ou d'hebergement</i>
+
+							 <div class="radiobuttons" role="group" aria-labelledby="naRG14">
+
+								<label for="inp72" class="radiobutton">
+									 <input id="inp72" type="radio" name="m28" data-show=".os-72-1" data-hide=".os-72">
+									 <i>Meme raison de déplacement <span class="naDetails">(Physiothérapie)</span></i>
+								</label>
+
+								<label for="inp73" class="radiobutton">
+									 <input id="inp73" type="radio" name="m28" data-show=".os-73-1" data-hide=".os-73">
+									 <i>Autre raison de déplacement</i>
+								</label>
+
+								<div class="btns3 hide os-72-1 os-73">
+										<!-- TODO au click:
+													- Dupliquer le block Date idem sauf date + autres à détreminer
+													- Afficher bouton Supprimer sur première date
+									 -->
+										<a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais similaires</span></a>
+
+								</div>
+								<div class="btns3 hide os-73-1 os-72">
+									<!-- TODO au click:
+												- Dupliquer le block Date vièrge
+												- Afficher bouton Supprimer sur première date
+								 -->
+                    <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais différents</span></a>
+								</div>
+
+							 </div>
+						</div>
+						<!-- /G -->
+
+					</div>
+
+
+					<div class="btns">
+						<a role="button" class="btn btn7" href="1.html">Précédent</a>
+						<a role="button" class="btn btn3" href="3.html">Suivant</a>
+					</div>
+				</div>
+
+				<div class="btns">
+					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+				</div>
+
+			</div>
+		</div>
+
+	</main>
+
+<!--
+	<div class="hide block-transport">
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement <span class="number">1</span></h4>
+	 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+
+				<div class="control-group">
+					<label for="inp74"><span class="rft">*</span> Montant</label>
+					<input id="inp74" type="text" name="a" class="amount"> $
+				</div>
+
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp74">
+
+						<label for="inp75" class="radiobutton">
+						   <input id="inp75" type="radio" name="mode70-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp76" class="radiobutton">
+						   <input id="inp76" type="radio" name="mode70-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hide block-voiture">
+
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement en voiture b2 <span class="number">1</span></h4>
+			 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+
+				<div class="control-group">
+					<label for="inp77"><span class="rft">*</span> Distance parcourue</label>
+					<input id="inp77" type="text" name="a" class="amount"> km
+				</div>
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp77">
+
+						<label for="inp78" class="radiobutton">
+						   <input id="inp78" type="radio" name="mode60-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp79" class="radiobutton">
+						   <input id="inp79" type="radio" name="mode60-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+				<br>
+				<div class="radiobutton inline required">
+					<i  id="naRG17">Avez-vous une attestation médicale indiquant votre incapacité à utiliser les transports en commun?</i>
+				   <div class="radiobuttons" role="group" aria-labelledby="naRG17">
+
+						<label for="inp80" class="radiobutton">
+						   <input id="inp80" type="radio" name="mode61-_N_">
+						   <i>Oui</i>
+						</label>
+
+						<label for="inp81" class="radiobutton">
+						   <input id="inp81" type="radio" name="mode61-_N_">
+						   <i>Non</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+				<div class="control-group">
+					<label for="inp82">Frais d'utilisation demandés <span class="naDetails">(525 km x 0.43$)</span></label>
+					<input id="inp82" type="text" name="a" class="amount"> $
+
+				</div>
+
+
+			<div class="radiobutton required">
+					<i id="naRG18">Lieu de départ</i>
+				   <div class="radiobuttons" role="group" aria-labelledby="naRG18">
+
+						<label for="inp83" class="radiobutton">
+						   <input id="inp83" type="radio" name="mode62-_N_" data-hide=".os-12-_N_">
+						   <i>Résidence personnelle</i>
+						</label>
+
+						<label for="inp84" class="radiobutton">
+						   <input id="inp84" type="radio" name="mode62-_N_" data-hide=".os-12-_N_">
+						   <i>Clinique ou hopital</i>
+						</label>
+
+						<label for="inp85" class="radiobutton">
+						   <input id="inp85" type="radio" name="mode62-_N_" data-show=".os-12-1-_N_" data-hide=".os-12-_N_">
+						   <i>Autre</i>
+						</label>
+						<div class="control-group sous-question-precisez os-12-_N_ os-12-1-_N_ hide">
+							<label for="inp86"><span class="rft">*</span> Precisez</label>
+							<input id="inp86" type="text" name="a">
+						</div>
+
+
+				   </div>
+
+				</div>
+
+
+					<div class="radiobutton required">
+					<i id="naRG19">Lieu d'arrivé</i>
+				   <div class="radiobuttons" role="group" aria-labelledby="naRG19">
+
+						<label for="inp87" class="radiobutton">
+						   <input id="inp87" type="radio" name="mode63-_N_" data-hide=".os-13-_N_">
+						   <i>Résidence personnelle</i>
+						</label>
+
+						<label for="inp88" class="radiobutton">
+						   <input id="inp88" type="radio" name="mode63-_N_" data-hide=".os-13-_N_">
+						   <i>Clinique ou hopital</i>
+						</label>
+
+						<label for="inp89" class="radiobutton">
+						   <input id="inp89" type="radio" name="mode63-_N_" data-show=".os-13-1-_N_" data-hide=".os-13-_N_">
+						   <i>Autre</i>
+						</label>
+						<div class="control-group sous-question-precisez os-13-_N_ os-13-1-_N_ hide">
+							<label for="inp90"><span class="rft">*</span> Precisez</label>
+							<input id="inp90" type="text" name="a">
+						</div>
+
+				   </div>
+
+				 </div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="hide block-taxi">
+
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement en taxis <span class="number">1</span></h4>
+		 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+
+				<div class="control-group">
+					<label for="inp91"><span class="rft">*</span> Montant</label>
+					<input id="inp91" type="text" name="a" class="amount"> $
+				</div>
+
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp91">
+
+						<label for="inp92" class="radiobutton">
+						   <input id="inp92" type="radio" name="mode71-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp93" class="radiobutton">
+						   <input id="inp93" type="radio" name="mode71-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="hide block-avion">
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement en avion <span class="number">1</span></h4>
+				 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+
+				<div class="control-group">
+					<label for="inp94"><span class="rft">*</span> Montant</label>
+					<input id="inp94" type="text" name="a" class="amount"> $
+				</div>
+
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp94">
+
+						<label for="inp95" class="radiobutton">
+						   <input id="inp95" type="radio" name="mode73-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp96" class="radiobutton">
+						   <input id="inp96" type="radio" name="mode73-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="hide block-ambulance">
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement en ambulance <span class="number">1</span></h4>
+			 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+
+				<div class="control-group">
+					<label for="inp97"><span class="rft">*</span> Montant</label>
+					<input id="inp97" type="text" name="a" class="amount"> $
+				</div>
+
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp97">
+
+						<label for="inp98" class="radiobutton">
+						   <input id="inp98" type="radio" name="mode72-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp99" class="radiobutton">
+						   <input id="inp99" type="radio" name="mode72-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="hide block-autre">
+		<div class="sub-block">
+			<div class="header">
+				<h4 aria-level="3">Déplacement autre <span class="number">1</span></h4>
+			 <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+			</div>
+			<div class="sub-cont">
+
+				<div class="control-group">
+					<label for="inp100"><span class="rft">*</span> Precisez</label>
+					<input id="inp100" type="text" name="a">
+				</div>
+
+				<div class="control-group">
+					<label for="inp101"><span class="rft">*</span> Montant</label>
+					<input id="inp101" type="text" name="a" class="amount"> $
+				</div>
+
+				<div class="radiobutton inline">
+				   <div class="radiobuttons" role="group" aria-labelledby="inp101">
+
+						<label for="inp102" class="radiobutton">
+						   <input id="inp102" type="radio" name="mode74-_N_">
+						   <i>Aller simple</i>
+						</label>
+
+						<label for="inp103" class="radiobutton">
+						   <input id="inp103" type="radio" name="mode74-_N_">
+						   <i>Aller-retour</i>
+						</label>
+
+				   </div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+-->
+	<footer class="container footer">
+		<div class="row no-gutters">
+			<div class="col">
+				<ul class="footer-menu">
+					<li><a href="#">Accessibilité</a></li>
+					<li><a href="#">Politique de confidentialité</a></li>
+				</ul>
+			</div>
+			<div class="col right">
+				<span>Renseignements généraux : </span>
+				<span><a href="tel:18448380808">1 844 838-0808</a></span>
+				<img alt="CNESST" src="http://instynctdemo.com/cnesst/images/logo_footer.png">
+			</div>
+		</div>
+		<div class="row no-gutters bottom">
+			&copy; CNESST, 2017
+		</div>
+
+	</footer>
+
+
+
+
+
+	<script src="http://instynctdemo.com/cnesst/js/jquery.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			$('body').on('focus',".datepicker", function(){
+
+			    if( $(this).hasClass('hasDatepicker') === false )  {
+			        $(this).addClass('hasDatepicker').datepicker({
+						format: "yyyy-mm-dd",
+		    			language: 'fr'
+					});
+			    }
+
+			});
+
+			$('body').on('change', '[type="file"]', function() {
+
+		        var filename = $(this).val();
+		        var $file = $(this).parents('.file');
+
+		        if (filename.length == 0){
+		        	$file.removeClass('active');
+		        }else{
+		        	$file.addClass('active');
+		        }
+		        $file.find('.detail span').html(filename);
+
+		    }).on('click', function(event) {
+		    	event.stopPropagation();
+		    });;
+
+
+
+			$('body').on('click', '.file .file-btn', function(event) {
+				event.preventDefault();
+		        var $file = $(this).parents('.file');
+
+				$file.find('[type="file"]').trigger('click');
+
+			});
+
+			$('body').on('click', '.file .btn-remove', function(event) {
+				event.preventDefault();
+
+				$(this).parents('.file').removeClass('active').find('[type="file"]').val('');
+
+			});
+
+
+			$('.multiblocks').on('click', '.sub-block a.btn-delete', function(event) {
+				event.preventDefault();
+				var $multiblocks = $(this).parents('.multiblocks').eq(0);
+
+				$(this).parents('.sub-block').eq(0).remove();
+
+				$multiblocks.find('> .sub-block').each(function(index, el) {
+					$(this).find('> .header span.number').text(index+1);
+				});
+			});
+
+			var cont = 10;
+
+			$('body').on('click', 'a.btn-add', function(event) {
+				event.preventDefault();
+
+
+				var $block = $(this).data('block');
+
+				if  ( typeof $block === "undefined" || $block == null ){
+					$block = $('.block-example');
+				}else{
+					$block = $($block);
+				}
+
+				var html = $block.html();
+
+				console.log(html);
+
+				html_r = html.split('_N_').join(cont++);
+
+				$(this).parent().prev('.multiblocks').append(html_r).find('> .sub-block').each(function(index, el) {
+					$(this).find('> .header span.number').text(index+1);
+				});
+			});
+
+
+		    $("body").on('keydown', '.amount', function (e) {
+		        // Allow: backspace, delete, tab, escape, enter and .
+		        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+		             // Allow: Ctrl/cmd+A
+		            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+C
+		            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: Ctrl/cmd+X
+		            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+		             // Allow: home, end, left, right
+		            (e.keyCode >= 35 && e.keyCode <= 39)) {
+		                 // let it happen, don't do anything
+		                 return;
+		        }
+		        // Ensure that it is a number and stop the keypress
+		        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+		            e.preventDefault();
+		        }
+		    });
+
+
+		    $('[title!=""]').qtip({
+		    	content: {
+		    		button: true
+		    	},
+			    show: {
+			        event: 'click',
+
+			    },
+			    hide: {
+			        event: 'click'
+			    }
+		    });
+
+			$('.hasTooltip').each(function() { // Notice the .each() loop, discussed below
+			    $(this).qtip({
+			    	content: {
+			    		button: true,
+			            text: $(this).next('div').html() // Use the "div" element next to this for the content
+			    	},
+				    show: {
+				        event: 'click',
+
+				    },
+				    hide: {
+				        event: 'click'
+				    }
+			    });
+			});
+
+
+		    $('body').on('click', '[data-hide]', function(event) {
+		    	event.stopPropagation();
+
+		    	$($(this).data('hide')).addClass('hide');
+
+
+		    	// $($(this).data('hide')).find('input[type="radio"]').prop('checked', false);
+		    	$($(this).data('hide')).each(function(index, el) {
+		    		// $(el).find('input[type="radio"]').eq(0).trigger('click');
+		    		$(el).find('input[type="radio"]').prop('checked', false);
+		    		$(el).find('input[type="checkbox"]').prop('checked', false);
+		    	});
+		    });
+
+		    $('body').on('click', '[data-show]', function(event) {
+		    	event.stopPropagation();
+
+		    	if ( typeof $(this).prop('checked') === 'undefined' || $(this).prop('checked') )
+		    		$($(this).data('show')).removeClass('hide');
+		    });
+
+				$('body').on('click', '[data-show2]', function(event) {
+		    	event.stopPropagation();
+					$($(this).data('show2')).toggleClass('hide2');
+		    });
+				$('body').on('click', '[data-show3]', function(event) {
+					event.stopPropagation();
+					$($(this).data('show3')).toggleClass('hide3');
+				});
+				$('body').on('click', '[data-show4]', function(event) {
+					event.stopPropagation();
+					$($(this).data('show4')).toggleClass('hide4');
+				});
+				$('body').on('click', '[data-show5]', function(event) {
+					event.stopPropagation();
+					/*alert('show5')*/
+					$($(this).data('show5')).removeClass('hide');
+					$($(this).data('show5')).toggleClass('hide5');
+				});
+				$('body').on('click', '[data-show6]', function(event) {
+					event.stopPropagation();
+					/*alert('show5')*/
+					$($(this).data('show6')).removeClass('hide');
+					$($(this).data('show6')).toggleClass('hide5');
+				});
+
+
+		    $('[data-characters!=""]').keyup(function(){
+		        var text = $(this).val();
+		        var maxlength = $(this).data('characters');
+
+		        if(maxlength > 0) {
+		                $(this).val(text.substr(0, maxlength));
+		        }
+			});
+
+		});
+	</script>
+
+</body>
+</html>

@@ -37,10 +37,10 @@
 		    </div>
 		</div>
 		<div class="no-menu">
-			<h1 role="none decoration" id="naHeader">Demande de remboursement de frais</h1>
+			<h1 role="none presentation" id="naHeader">Demande de remboursement de frais</h1>
 		</div>
-		<div class="no-menu2">
-			<span>Dépalcement, repas et hébergement</span>
+		<div class="no-menu soustitre">
+			<span>Déplacement, repas et hébergement</span>
 		</div>
 	</header>
 
@@ -71,16 +71,110 @@
 						<div class="box2">
 							<h4 aria-level="2">Renseignements sur vous</h4>
 							<div class="text">
-								<p><strong>Prénom,nom :</strong>Jean-Pierre Bertrand</p>
+							<div class="radiobutton required inline">
+								 <i id="naRG1" class="obligatoire">Sexe</i>
+
+								 <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+									<label for="inp1" class="radiobutton">
+										 <input id="inp1" type="radio" name="r1">
+										 <i>Féminin</i>
+									</label>
+
+									<label for="inp2" class="radiobutton">
+										 <input id="inp2" type="radio" name="r1">
+										 <i>Masculin</i>
+									</label>
+
+								 </div>
+
+							</div>
+
+							<div class="control-group">
+								<label for="inp3"><span class="rft">*</span>Nom</label>
+								<input id="inp3" type="text" name="Nom1">
+							</div>
+
+							<div class="control-group">
+								<label for="inp4"><span class="rft">*</span> Prénom </label>
+								<input id="inp4" type="text" name="Prenon1">
+							</div>
+
+							<div class="control-group">
+								<label for="inp5"><span class="rft">*</span> Numéro d’assurance maladie (NAM) </label>
+								<input id="inp5" type="text" name="NAM">
+								<p class="format">12 caractères</p>
+							</div>
+
+
+
+
+
+
 							</div>
 						</div>
+<!-- Vos coordonnées -->
+						<div class="box2">
+							<h4 aria-level="2">Vos Coordonnées</h4>
 
+							<div class="text">
+
+								<div class="control-group">
+									<label for="inp6"><span class="rft">*</span> Adresse  </label>
+									<input id="inp6" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp7"><span class="rft">*</span> Ville  </label>
+									<input id="inp7" type="text" name="montant">
+								</div>
+
+								<div class="control-group">
+									<label for="inp8"><span class="rft">*</span> Province  </label>
+									<input id="inp8" type="text" name="province2">
+								</div>
+
+								<div class="control-group">
+									<label for="inp9"><span class="rft">*</span> Pays  </label>
+									<input id="inp9" type="text" name="pays2">
+								</div>
+
+								<div class="control-group">
+									<label for="inp10"><span class="rft">*</span> Code postal  </label>
+									<input id="inp10" type="text" name="cp2">
+								</div>
+
+								<div class="control-group">
+									<label for="inp11"><span class="rft">*</span> Téléphone principal </label>
+									<input id="inp11" type="tel" name="tel2a">
+									<p class="format">(xxx) xxx-xxxx</p>
+								</div>
+
+								<div class="control-group">
+									<label for="inp12">Téléphone secondaire</label>
+									<input id="inp12" type="tel" name="tel2b">
+									<p class="format">(xxx) xxx-xxxx</p>
+								</div>
+
+							</div>
+
+						</div>
+<!-- /Vos coordonnées -->
 						<div class="box2">
 							<h4 aria-level="2">Événements</h4>
 							<div class="text">
-								<p><strong>Numéro de dossier à la CNESST</strong>9 5678 345 6</p>
-								<br>
-								<p><strong>Date de l'événement pour laquelle les frais sont demandés</strong>2016-12-05 (Rechute, récidive ou aggravation)</p>
+								<div class="control-group">
+									<label for="inp13">Numéro de dossier à la CNESST</label>
+									<input id="inp13" type="text" name="ND">
+									<p class="format">9 chiffres</p>
+								</div>
+								<div class="control-group">
+									<label for="inp14" aria-level="2"><span class="rft">*</span>Date de l'événement pour laquelle les frais sont demandés</label>
+									<div class="date-icon">
+										<input id="inp14" type="text" class="datepicker form-control" value="">
+									</div>
+								</div>
+
 							</div>
 						</div>
 
@@ -89,27 +183,27 @@
 
 							<div class="text">
 
-								<label class="radiobutton required inline">
-								   <i id="naRG" class="obligatoire">Avez-vous des frais liés à la présence d'une personne qui vous a accompagné?</i>
+								<div class="radiobutton required inline">
+								   <i id="naRG2" class="obligatoire">Avez-vous des frais liés à la présence d'une personne qui vous a accompagné?</i>
 
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
-										<label for="inp1" class="radiobutton">
-										   <input id="inp1" type="radio" name="mode3" data-show=".os-1-1" data-hide=".os-1">
+										<label for="inp15" class="radiobutton">
+										   <input id="inp15" type="radio" name="mode3" data-show=".os-1-1" data-hide=".os-1">
 										   <i>Oui</i>
 										</label>
 
-										<label for="inp2" class="radiobutton">
-										   <input id="inp2" type="radio" name="mode3" data-hide=".os-1">
+										<label for="inp16" class="radiobutton">
+										   <input id="inp16" type="radio" name="mode3" data-hide=".os-1">
 										   <i>Non</i>
 										</label>
 
 								   </div>
 
-								</label>
-
-								<p class="note hide os-1 os-1-1"><strong>Note:</strong>Vous devez avoir une ordonnance médicale autorisant l'accompagnateur.</p>
-
+								</div>
+      <div class="control-group">
+								<p class="clarification hide os-1 os-1-1">Vous devez avoir une ordonnance médicale autorisant l'accompagnateur.</p>
+     </div>
 							</div>
 
 						</div>
@@ -120,17 +214,17 @@
 							<div class="text">
 
 								<label class="radiobutton required inline">
-								   <i id="naRG" class="obligatoire">Sexe</i>
+								   <i id="naRG3" class="obligatoire">Sexe</i>
 
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG">
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
 
-										<label for="inp3" class="radiobutton">
-										   <input id="inp3" type="radio" name="mode" value="create">
+										<label for="inp17" class="radiobutton">
+										   <input id="inp17" type="radio" name="mode" value="create">
 										   <i>Féminin</i>
 										</label>
 
-										<label for="inp4" class="radiobutton">
-										   <input id="inp4" type="radio" name="mode" value="create">
+										<label for="inp18" class="radiobutton">
+										   <input id="inp18" type="radio" name="mode" value="create">
 										   <i>Masculin</i>
 										</label>
 
@@ -138,14 +232,15 @@
 								</label>
 
 								<div class="control-group">
-									<label for="inp5"><span class="rft">*</span>Nom</label>
-									<input id="inp5" type="text" name="montant">
+									<label for="inp19"><span class="rft">*</span>Nom</label>
+									<input id="inp19" type="text" name="Nom2">
 								</div>
 
 								<div class="control-group">
-									<label for="inp6"><span class="rft">*</span> Prénom </label>
-									<input id="inp6" type="text" name="montant">
+									<label for="inp20"><span class="rft">*</span> Prénom </label>
+									<input id="inp20" type="text" name="Prenom2">
 								</div>
+
 
 							</div>
 
@@ -157,35 +252,40 @@
 							<div class="text">
 
 								<div class="control-group">
-									<label for="inp7"><span class="rft">*</span> Adresse  </label>
-									<input id="inp7" type="text" name="montant">
+									<label for="inp21"><span class="rft">*</span> Adresse  </label>
+									<input id="inp21" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label for="inp8"><span class="rft">*</span> Ville  </label>
-									<input id="inp8" type="text" name="montant">
+									<label for="inp22"><span class="rft">*</span> Ville  </label>
+									<input id="inp22" type="text" name="montant">
 								</div>
 
 								<div class="control-group">
-									<label for="inp9"><span class="rft">*</span> Province  </label>
-									<input id="inp9" type="text" name="montant">
+									<label for="inp23"><span class="rft">*</span> Province  </label>
+									<input id="inp23" type="text" name="province2">
 								</div>
 
 								<div class="control-group">
-									<label for="inp10"><span class="rft">*</span> Code postal  </label>
-									<input id="inp10" type="text" name="montant">
+									<label for="inp24"><span class="rft">*</span> Pays  </label>
+									<input id="inp24" type="text" name="pays2">
 								</div>
 
 								<div class="control-group">
-									<label for="inp11"><span class="rft">*</span> Téléphone principal </label>
-									<input id="inp11" type="tel" name="tel">
-									<p class="clarification">(xxx) xxx-xxxx</p>
+									<label for="inp25"><span class="rft">*</span> Code postal  </label>
+									<input id="inp25" type="text" name="cp2">
 								</div>
 
 								<div class="control-group">
-									<label for="inp12">Téléphone secondaire</label>
-									<input id="inp12" type="tel" name="tel">
-									<p class="clarification">(xxx) xxx-xxxx</p>
+									<label for="inp26"><span class="rft">*</span> Téléphone principal </label>
+									<input id="inp26" type="tel" name="tel2a">
+									<p class="format">(xxx) xxx-xxxx</p>
+								</div>
+
+								<div class="control-group">
+									<label for="inp27">Téléphone secondaire</label>
+									<input id="inp27" type="tel" name="tel2b">
+									<p class="format">(xxx) xxx-xxxx</p>
 								</div>
 
 							</div>

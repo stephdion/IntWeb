@@ -1,5 +1,23 @@
+.hide2,
+.hide3,
+.hide4,
+.hide5
+{
+  display: none;
+}
+
+
 h2{
   /*background: yellow;*/
+}
+
+::selection {
+  background: #414141; /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #414141; /* Gecko Browsers */
+  color: #fff;
 }
 
 .hors-ecran {
@@ -12,3 +30,205 @@ h2{
   position: absolute;
   width: 1px;
 }
+
+/******** header *******/
+.no-menu {
+    padding: 1rem 0;
+    background: #414141;
+    border-top: 2px solid #101010;
+    border-bottom: 0;
+    font-weight: normal;
+    line-height: 1.2rem;
+}
+
+.soustitre {
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+    background: #5d5d5d;
+    border-top: 0;
+    border-bottom: 0;
+    line-height: 1.2rem;
+}
+
+.soustitre  span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 2rem 0 13rem;
+}
+/******** /header *******/
+
+
+/***** Avant de débuter ******/
+.text h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+}
+.text p{
+    padding: 0.5rem 0 !important;
+}
+.sub-block .box2{
+    margin: 1rem;
+}
+
+/******** H Etape 2 ******/
+/******* en-tête de niveau 2 style résumé *******/
+.panel-heading-R {
+    position: relative;
+    display: block;
+    background-color: #5d5d5d !important;
+    color: #fff;
+    /*font-size: 2.4rem;*/
+    font-weight: normal;
+    /*line-height: 2.2rem;
+    padding: 0rem 1.5rem 1.7rem 1.5rem;*/
+}
+.panel-heading-R h2{
+    /*background-color: inherit;
+    color: inherit;
+    font-size: 2.4rem;
+    line-height: inherit;
+    font-weight: inherit;
+    padding: 0;*/
+}
+.panel-heading-R .control-group {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+.panel-heading-R .control-group label {
+    display: inline-block;
+    width: auto;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.panel-heading-R .rft{
+    position: absolute;
+    left:-0.7rem;
+}
+
+.panel-heading-R .date-icon input {
+    width: 7rem;
+}
+
+/******* /en-tête de niveau 2 style résumé *******/
+
+.sous-question{
+    margin-left: 2rem;
+}
+.sous-question-precisez{
+    margin-left: 1rem;
+}
+
+/******* Boutons *********/
+.btn4 {
+    border: 2px solid #006c08;
+    background: #006c08;
+}
+.sub-block .header a.btn4a
+{
+    border: 2px solid #006c08;
+    background: #f0f0f0;
+    color: #006c08;
+    background-image: url("images/ic_supprimer.svg");
+    background-position: 0.3rem center;
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    height: 2.2rem;
+    width: auto;
+    min-width: 2.2rem;
+    padding:0;
+    line-height: 1.9rem;
+    margin-top: 0.3rem;
+    margin-right: -0.4rem;
+
+}
+/**** masquer l'icône inline *****/
+.sub-block .header a.btn4a i{display: none;}
+
+
+.sub-block .header a.btn4a span{
+    margin: 0 0.8rem 0 1.8rem;
+    display: none;/**/
+}
+.sub-block .header a.btn4a:hover span{
+    margin: 0 0.8rem 0 1.8rem;
+    display: inline-block;;/**/
+}
+
+
+/******* /Boutons *********/
+/******* champs ***********/
+.row div.first-child{
+  margin-right: 1rem;
+}
+
+
+.form-cont .control-group input.heure[type="text"],
+.form-cont .control-group input.amount[type="text"]{
+    max-width: 10rem;
+}
+.form-cont .control-group input[readonly]{
+  background-color: inherit;
+  border: none;
+}
+.form-cont .control-group input[readonly]:focus{
+  background-color: #414141;
+}
+.form-cont .control-group input[readonly].amount-readonly{
+  width: 3.5rem !important;
+  min-width: 1rem !important;
+  padding: 0.2rem 0 0.2rem 0.77rem;
+  text-align: left;
+}
+/******* /champs ***********/
+
+
+.naDetails{
+    font-weight: normal;
+}
+
+/******* note lié (clarification)  ********/
+
+.control-group p.clarification{
+    background-color: #fff;
+    border: 1px solid #006c08;
+    padding: 0.5rem 1rem !important;
+    margin: 0.5rem 1rem 0 0.5rem;
+    position: relative;
+}
+
+.control-group p.clarification::after{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 2.2rem;
+    margin-top: 1px;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.control-group p.clarification::before {
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: 2.2rem;
+    border-top: 10px solid #006c08;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.control-group .note-ON-N  p.clarification::after,
+.control-group .note-ON-N  p.clarification::before{
+  left: 5.5rem;
+}
+
+/******* /note lié (clarification) ********/
