@@ -50,7 +50,7 @@
 	</header>
 
 	<main class="container">
-
+<!-- Barre d'étape -->
 		<ul class="nav nav-wizard">
 			<li class="completed"><a href="1.html"><i>1</i></a></li>
 			<li class="active"><a href="#"><i>2</i><span>Médicaments</span></a></li>
@@ -58,6 +58,7 @@
 			<li><a href="4.html"><i>4</i></a></li>
 			<li><a href="5.html"><i>5</i></a></li>
 		</ul>
+<!-- / Barre d'étape -->
 
 		<div class="strong">
 			<div class="mcl2" id="idform">
@@ -78,11 +79,11 @@
 
 						<div class="box2">
 
-							<div class="text">
+							<div class="text control-group">
 
 								<div class="radiobutton required inline">
-								   <i id="naRG3">Avez-vous des frais de médicaments?</i>
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
+								   <i id="naRG-SG1-1">Avez-vous des frais de médicaments?</i>
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-1">
 
 										<label for="inp1" class="radiobutton">
 										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
@@ -100,28 +101,34 @@
 
 
 								<div class="os-1-1 os-1 hide">
-									<p class="note"><strong>Note:</strong> Copie le reçu précédent modifiable.</p>
+									<p class="clarification">Les frais de médicaments doivent être regroupés par reçu. </p>
 								</div>
 
 							</div>
 
 
 							<div class="hide os-1-1 os-1">
+								<!--  multiblocks  Reçu -->
 								<div class="multiblocks">
+									<!--  sub-block Reçu  1 -->
 									<div class="sub-block">
-										<div class="header">
-											<h4 aria-level="3"><span class="number">1</span> - Reçu du <div class="date-icon"><input aria-label="date du reçu numéro 2" id="inp3" type="text" class="datepicker form-control" value=""></div></h4>
+										<div class="header panel-heading-R">
+											<h4 aria-level="3">
+												 <span class="number">1</span> - Reçu du <div class="date-icon">
+													 <input aria-label="date du reçu numéro 1" id="inp3" type="text" class="datepicker form-control" value=""></div></h4>
+<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
-
+											<!--  multiblocks  Médicament -->
 											<div class="multiblocks">
+												<!--  sub-block Médicament 1 -->
 												<div class="sub-block">
 
 													<div class="header">
 														<h4 aria-level="3">Médicament <span class="number">1</span></h4>
 													</div>
-													<div class="sub-cont">
 
+													<div class="sub-cont">
 														<div class="control-group">
 															<label for="inp4"><span class="rft">*</span> Nom du médicament</label>
 															<input id="inp4" type="text" name="a">
@@ -141,56 +148,72 @@
 													</div>
 
 												</div>
-
+												<!--  / sub-block Médicament 1 -->
 											</div>
+											<!--  / multiblocks Médicament-->
 
+											<!--
+											TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
+														Actuellement, on duplique tous les ids d'un block à chaque ajout!
+											-->
 											<div class="btns3">
-												<a href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament</span></a>
+												<a role="button"	href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament</span></a>
 											</div>
 
+ 											<!--  Copie du reçu -->
 											<div class="control-group">
-												<label>Copie du reçu</label>
-												<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
-												<br>
-												<div class="file">
+												<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+												<p id="daRG2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG2">
+													<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 													<label for="inp7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 													<input id="inp7" type="file" name="file">
-													<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<a role="button" id="inp7b" aria-labelledby="inp7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 													<div class="detail"><i class="icon-file"></i><span></span></div>
 												</div>
 											</div>
-
-
-											<div class="radiobutton required sp-xl">
-											   <i ="naRG1">Autre reçu de médicaments</i>
-											   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
-
-													<label for="inp8" class="radiobutton">
-													   <input id="inp8" data-show=".os-9-1" data-hide=".os-9" type="radio" name="mode">
-													   <i>Similaire au précedent</i>
-													</label>
-
-													<div class="os-9-1 os-9 hide sp-s">
-														<p class="note"><strong>Note:</strong> Copie le reçu précédent modifiable.</p>
-													</div>
-
-													<label for="inp9" class="radiobutton">
-													   <input id="inp9" data-hide=".os-9" type="radio" name="mode">
-													   <i>Différent du précédent</i>
-													</label>
-
-											   </div>
-
-											</div>
-
-
+											<!--  Copie du reçu -->
 
 
 										</div>
 									</div>
+									<!--  / sub-block Reçu  1 -->
+
+
 								</div>
+								<!--  /multiblocks  Reçu -->
+
+
+								<!--  Autre reçu de médicaments -->
 
 								<div class="btns3">
+
+									<!--  Autre reçu de médicaments -->
+									<div class="radiobutton sp-xl inline">
+										 <i id="naRG-SG1-3">Autre reçu de médicaments</i>
+										 <div class="control-group radiobuttons" role="group" aria-labelledby="naRG-SG1-3">
+
+
+
+											<label for="inp9" class="radiobutton">
+												 <input id="inp9" data-hide=".os-9" type="radio" name="mode">
+												 <i>Différent du précédent</i>
+											</label>
+
+											<label for="inp8" class="radiobutton">
+												 <input id="inp8" data-show=".os-9-1" data-hide=".os-9" type="radio" name="mode">
+												 <i>Similaire au précedent</i>
+											</label>
+
+											<div class="similaire os-9-1 os-9 hide sp-s">
+												<p class="clarification"><strong>Note:</strong> Copie le reçu précédent modifiable.</p>
+											</div>
+
+										 </div>
+
+									</div>
+									<!--  / Autre reçu de médicaments -->
+
 									<a href="#" class="btn4 btn-add" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter un reçu</span></a>
 								</div>
 							</div>
@@ -216,9 +239,9 @@
 
 	</main>
 
-
+<!--  block-medicament -->
 	<div class="block-medicament hide">
-
+		<!--  sub-block-medicament -->
 		<div class="sub-block">
 			<div class="header">
 				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
@@ -244,92 +267,86 @@
 
 			</div>
 		</div>
-
+		<!--  /sub-block-medicament -->
 	</div>
-
+<!--  / block-medicament -->
+<!--  block-recu -->
 	<div class="block-recu hide">
 
+		<!--  sub-block Reçu  2 -->
 		<div class="sub-block">
-			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
-				<h4 aria-level="3"><span class="number">1</span> - Reçu du <div class="date-icon"><input aria-label="date du reçu numéro 1" id="inp" type="text" class="datepicker form-control" value=""></div></h4>
+			<div class="header panel-heading-R">
+				<h4 aria-level="3">
+					 <span class="number">1</span> - Reçu du <div class="date-icon">
+						 <input aria-label="date du reçu numéro 1" id="inp-SG1-3" type="text" class="datepicker form-control" value=""></div></h4>
+
+						 <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
-
+				<!--  multiblocks  Médicament -->
 				<div class="multiblocks">
+					<!--  sub-block Médicament 2 -->
 					<div class="sub-block">
 
 						<div class="header">
-							<h4 aria-level="3">Medicament <span class="number">1</span></h4>
+							<h4 aria-level="3">Médicament <span class="number">1</span></h4>
 						</div>
+
 						<div class="sub-cont">
-
 							<div class="control-group">
-								<label for="inp13"><span class="rft">*</span> Nom du médicament</label>
-								<input id="inp13" type="text" name="a">
+								<label for="inp-SG1-4"><span class="rft">*</span> Nom du médicament</label>
+								<input id="inp-SG1-4" type="text" name="a">
 							</div>
 
 							<div class="control-group">
-								<label for="inp14"><span class="rft">*</span> Montant</label>
-								<input id="inp14" type="text" name="a" class="amount"> $
+								<label for="inp-SG1-5"><span class="rft">*</span> Montant</label>
+								<input id="inp-SG1-5" type="text" name="a" class="amount"> $
 							</div>
 
 
 							<div class="control-group">
-								<label for="inp15"><span class="rft">*</span> Nom du médicin</label>
-								<input id="inp15" type="text" name="a" class="amount"> $
+								<label for="inp-SG1-6"><span class="rft">*</span> Nom du médecin</label>
+								<input id="inp-SG1-6" type="text" name="a">
 							</div>
 
 						</div>
 
 					</div>
-
+					<!--  / sub-block Médicament 2 -->
 				</div>
+				<!--  / multiblocks Médicament-->
 
+				<!--
+				TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
+							Actuellement, on duplique tous les ids d'un block à chaque ajout!
+				-->
 				<div class="btns3">
-					<a href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament</span></a>
+					<a role="button"	href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament</span></a>
 				</div>
 
+				<!--  Copie du reçu -->
 				<div class="control-group">
-					<label>Copie du reçu</label>
-					<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-					<br>
-					<div class="file">
-						<label for="inp16" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
-						<input id="inp16" type="file" name="file">
-						<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+						<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
+						<label for="inp-SG1-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+						<input id="inp-SG1-7" type="file" name="file">
+						<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 						<div class="detail"><i class="icon-file"></i><span></span></div>
 					</div>
 				</div>
+				<!--  Copie du reçu -->
 
-
-				<div class="radiobutton required sp-xl">
-				   <i 1d="naRG2">Autre reçu de médicaments</i>
-				   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
-
-						<label for="inp17" class="radiobutton">
-						   <input id="inp17" data-show=".os-9-1" data-hide=".os-9" type="radio" name="mode">
-						   <i>Similaire au précedent</i>
-						</label>
-
-						<div class="os-9-1 os-9 hide sp-s">
-							<p class="note"><strong>Note:</strong> Copie le reçu précédent modifiable.</p>
-						</div>
-
-						<label for="inp18" class="radiobutton">
-						   <input id="inp18" data-hide=".os-9" type="radio" name="mode">
-						   <i>Différent du précédent</i>
-						</label>
-
-				   </div>
-
-				</div>
 
 			</div>
 		</div>
+		<!--  / sub-block Reçu  2 -->
+
+
 
 	</div>
-
+<!--  block-recu -->
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">

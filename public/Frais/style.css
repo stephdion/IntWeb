@@ -192,6 +192,27 @@ h2{
 
 /******* note lié (clarification)  ********/
 
+.btns3 {
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+    color: #414141;
+}
+
+.control-group h4{
+    display: block;
+    font-size: 1.2rem;
+    border-top: #414141 solid 1px;
+    padding-top: 1rem;
+}
+
+.control-group p,
+.btns3 > div
+{
+    margin: 1rem 1rem;
+    position: relative;
+    text-align: left;
+}
+
 .control-group p.clarification{
     background-color: #fff;
     border: 1px solid #006c08;
@@ -230,5 +251,13 @@ h2{
 .control-group .note-ON-N  p.clarification::before{
   left: 5.5rem;
 }
+.control-group .similaire  p.clarification::after,
+.control-group .similaire  p.clarification::before{
+  left: 38%;
+}
 
 /******* /note lié (clarification) ********/
+
+.btn3 .radiobutton {
+    text-align: left;
+}
