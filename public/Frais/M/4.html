@@ -78,10 +78,10 @@
 
 						<div class="box2">
 
-							<div class="text">
+							<div class="text control-group">
 
-								<div class="radiobutton required inline">
-								   <i id="naRG1">Avez-vous d'autres frais (produits ou services) à vous faire rembourser</i>
+								<div class="radiobutton inline">
+								   <i id="naRG1" class="label"><span class="rft">*</span> Avez-vous d'autres frais (produits ou services) à vous faire rembourser?</i>
 								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
 										<label for="inp1" class="radiobutton">
@@ -100,7 +100,7 @@
 
 
 								<div class="os-1-1 os-1 hide">
-									<p class="note"><strong>Note:</strong> Les autres frais ne doivent pas etre des frais de médicaments, de vêtements, de déplacements, d'hébergement ou de repas. Ces frais doivent etre regroupés par reçu.</p>
+									<p class="clarification">Les autres frais ne doivent pas etre des frais de médicaments, de vêtements, de déplacements, d'hébergement ou de repas. Ces frais doivent etre regroupés par reçu.</p>
 								</div>
 
 							</div>
@@ -109,8 +109,10 @@
 							<div class="hide os-1-1 os-1">
 								<div class="multiblocks">
 									<div class="sub-block">
-										<div class="header">
-											<h4 aria-level="3"><span class="number">1</span> - Reçu du <div class="date-icon"><input id="inp3" type="text" class="datepicker form-control" value=""></div></h4>
+										<div class="header panel-heading-R">
+											<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input id="inp3" type="text" class="datepicker form-control" value=""></span></h4>
+											<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+											<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 
@@ -118,6 +120,9 @@
 												<div class="sub-block">
 													<div class="header">
 														<h4 aria-level="3">Frais <span class="number">1</span></h4>
+														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier frais s'il y a plus d'un frais. -->
+														<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce frais"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
 													</div>
 													<div class="sub-cont">
 
@@ -132,7 +137,7 @@
 														</div>
 
 														<div class="control-group">
-															<label for="inp6"><span class="rft">*</span> Montant (avant taxes)</label>
+															<label for="inp6"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 															<input id="inp6" type="text" name="a" class="amount"> $
 														</div>
 
@@ -147,21 +152,22 @@
 											</div>
 
 											<div class="control-group">
-												<label>Copie du reçu</label>
-												<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-												<br>
-												<div class="file">
+												<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+												<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 													<label for="inp7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 													<input id="inp7" type="file" name="file">
-													<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 													<div class="detail"><i class="icon-file"></i><span></span></div>
 												</div>
 											</div>
 
 
-											<div class="radiobutton required inline sp-s">
-												<p><strong>Ordonnance médicale</strong></p><br>
-											   	<i id="naRG2">Avez-vous reçu une ordonnance médicale pour ce frais?</i>
+											<div class="radiobutton inline sp-s">
+												<h4>Ordonnance médicale</h4>
+											   	<i id="naRG2" class="label"><span class="rft">*</span> Avez-vous reçu une ordonnance médicale pour ce frais?</i>
 												<div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
 													<label for="inp8" class="radiobutton">
@@ -179,8 +185,8 @@
 											</div>
 
 
-											<div class="radiobutton required inline hide os-8 os-8-1">
-											   <i id="naRG3">Avez-vous déjà faire parvenir cette ordonnance médicale à la CNESST?</i>
+											<div class="radiobutton inline hide os-8 os-8-1">
+											   <i id="naRG3" class="label"><span class="rft">*</span> Avez-vous déjà faire parvenir cette ordonnance médicale à la CNESST?</i>
 											   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
 
 													<label for="inp10" class="radiobutton">
@@ -199,13 +205,14 @@
 
 
 											<div class="control-group hide os-7 os-7-1">
-												<label>Copie du reçu</label>
-												<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-												<br>
-												<div class="file">
+												<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+												<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 													<label for="inp12" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 													<input id="inp12" type="file" name="file">
-													<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 													<div class="detail"><i class="icon-file"></i><span></span></div>
 												</div>
 											</div>
@@ -244,9 +251,9 @@
 	<div class="block-recu hide">
 
 		<div class="sub-block">
-			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
-				<h4 aria-level="3"><span class="number">1</span> - Reçu du <div class="date-icon"><input id="inp13" type="text" class="datepicker form-control" value=""></div></h4>
+			<div class="header panel-heading-R">
+				<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input id="inp13" type="text" class="datepicker form-control" value=""></span></h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 
@@ -254,6 +261,8 @@
 					<div class="sub-block">
 						<div class="header">
 							<h4 aria-level="3">Frais <span class="number">1</span></h4>
+							<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce frais"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
 						</div>
 						<div class="sub-cont">
 
@@ -268,7 +277,7 @@
 							</div>
 
 							<div class="control-group">
-								<label for="inp16"><span class="rft">*</span> Montant (avant taxes)</label>
+								<label for="inp16"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 								<input id="inp16" type="text" name="a" class="amount"> $
 							</div>
 
@@ -283,21 +292,22 @@
 				</div>
 
 				<div class="control-group">
-					<label>Copie du reçu</label>
-					<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-					<br>
-					<div class="file">
+					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 						<label for="inp17" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 						<input id="inp17" type="file" name="file">
-						<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+						<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 						<div class="detail"><i class="icon-file"></i><span></span></div>
 					</div>
 				</div>
 
 
-				<divv class="radiobutton required inline sp-s">
-					<p><strong>Ordonnance médicale</strong></p>
-				   <i id="naRG4">Avez-vous reçu une ordonnance médicale pour ce frais?</i>
+				<div class="radiobutton inline sp-s">
+					<h4>Ordonnance médicale</h4>
+				   <i id="naRG4" class="label"><span class="rft">*</span> Avez-vous reçu une ordonnance médicale pour ce frais?</i>
 				   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
 
 						<label for="inp18" class="radiobutton">
@@ -315,8 +325,8 @@
 				</div>
 
 
-				<div class="radiobutton required inline hide os-_N_-8 os-_N_-8-1">
-				   <i id="naRG5">Avez-vous déjà faire parvenir cette ordonnance médicale à la CNESST?</i>
+				<div class="radiobutton inline hide os-_N_-8 os-_N_-8-1">
+				   <i id="naRG5" class="label"><span class="rft">*</span> Avez-vous déjà faire parvenir cette ordonnance médicale à la CNESST?</i>
 				   <div class="radiobuttons" role="group" aria-labelledby="naRG5">
 
 						<label for="inp20" class="radiobutton">
@@ -335,13 +345,14 @@
 
 
 				<div class="control-group hide os-_N_-7 os-_N_-7-1">
-					<label>Copie du reçu</label>
-					<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-					<br>
-					<div class="file">
+					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 						<label for="inp22" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 						<input id="inp22" type="file" name="file">
-						<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+						<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 						<div class="detail"><i class="icon-file"></i><span></span></div>
 					</div>
 				</div>
@@ -354,8 +365,8 @@
 	<div class="block-frais hide">
 		<div class="sub-block">
 			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 				<h4 aria-level="3">Frais <span class="number">1</span></h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce frais"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 
@@ -370,7 +381,7 @@
 				</div>
 
 				<div class="control-group">
-					<label for="inp25"><span class="rft">*</span> Montant (avant taxes)</label>
+					<label for="inp25"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 					<input id="inp25" type="text" name="a" class="amount"> $
 				</div>
 

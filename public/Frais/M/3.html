@@ -78,11 +78,11 @@
 
 						<div class="box2">
 
-							<div class="text">
+							<div class="text control-group">
 
 								<div class="radiobutton required inline sp-s">
-								   <i id="naRG3">Avez-vous des frais de vêtements endommagés suite à l'événement</i>
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
+								   <i id="naRG1">Avez-vous des frais de vêtements endommagés suite à l'événement?</i>
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
 										<label for="inp1" class="radiobutton">
 										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
@@ -100,17 +100,21 @@
 
 
 								<div class="os-1-1 os-1 hide">
-									<p class="note"><strong>Note:</strong> Les frais de vêtements doivent être regroupés par reçu.</p>
+									<p class="clarification"><strong>Note:</strong> Les frais de vêtements doivent être regroupés par reçu.</p>
 								</div>
 
 							</div>
 
 
 							<div class="hide os-1-1 os-1">
+								<!--  multiblocks  Reçu -->
 								<div class="multiblocks">
+									<!--  sub-block Reçu  1 -->
 									<div class="sub-block">
-										<div class="header">
-											<h4 aria-level="3"><span class="number">1</span> - Reçu du <div class="date-icon"><input aria-label="date du reçu numéro 1" id="inp" type="text" class="datepicker form-control" value=""></div></h4>
+										<div class="header panel-heading-R">
+											<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 1" id="inp" type="text" class="datepicker form-control" value=""></span></h4>
+											<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+											<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 
@@ -118,17 +122,19 @@
 												<div class="sub-block">
 													<div class="header">
 														<h4 aria-level="3">Vêtement <span class="number">1</span></h4>
+														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier Vêtement s'il y a plus d'un vetement. -->
+														<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce vêtement"><i class="icon-delete2"></i><span>Supprimer</span></a>
 													</div>
 													<div class="sub-cont">
 
 														<div class="control-group">
-															<label for="inp3"><span class="rft">*</span> Description du vêtement (Ex.: Salopette, pantalon.)</label>
+															<label for="inp3"><span class="rft">*</span> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
 															<input id="inp3" type="text" name="a">
 														</div>
 
 														<div class="radiobutton required inline sp-s">
-														   <i id="naRG4">Avez-vous du remplacer le vêtement?</i>
-														   <div class="radiobuttons" role="group" aria-labelledby="naRG4">
+														   <i id="naRG2">Avez-vous du remplacer le vêtement?</i>
+														   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
 																<label for="inp4" class="radiobutton">
 																   <input id="inp4" data-show="#os-2" type="radio" name="mode2">
@@ -141,13 +147,13 @@
 																</label>
 
 														   </div>
-
+															 <div class="sous-question-montant control-group hide" id="os-2">
+	 															<label for="inp6"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 															<input id="inp6" type="text" name="a" class="amount"> $
+	 														</div>
 														</div>
 
-														<div class="control-group hide" id="os-2">
-															<label for="inp6"><span class="rft">*</span> Montant (avant taxes)</label>
-															<input id="inp6" type="text" name="a" class="amount"> $
-														</div>
+
 
 
 														<div class="control-group">
@@ -156,24 +162,24 @@
 															   <input id="inp7" type="checkbox" name="mode8" value="create" data-show="#os-3" data-hide="#os-3">
 															   <i>Nettoyage</i>
 															</label>
-															<div class="sub-box control-group hide" id="os-3">
-																<label for="inp8"><span class="rft">*</span> Montant (avant taxes)</label>
+															<div class="sous-question-montant control-group hide" id="os-3">
+																<label for="inp8"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 																<input id="inp8" type="text" name="a" class="amount"> $
 															</div>
 															<label for="inp9" class="checkbox">
 															   <input id="inp9" type="checkbox" name="mode8" value="create" data-show="#os-4" data-hide="#os-4">
 															   <i>Réparation</i>
 															</label>
-															<div class="control-group hide" id="os-4">
-																<label for="inp10"><span class="rft">*</span> Montant (avant taxes)</label>
+															<div class="sous-question-montant control-group hide" id="os-4">
+																<label for="inp10"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 																<input id="inp10" type="text" name="a" class="amount"> $
 															</div>
 														</div>
 
 
 														<div class="radiobutton required sp-s">
-														   <i id="naRG5">Raison des dommages causés au vêtement</i>
-														   <div class="radiobuttons" role="group" aria-labelledby="naRG5">
+														   <i id="naRG3">Raison des dommages causés au vêtement</i>
+														   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
 
 																<label for="inp11" class="radiobutton">
 																   <input id="inp11" type="radio" name="mode9">
@@ -201,13 +207,14 @@
 											</div>
 
 											<div class="control-group">
-												<label>Copie du reçu</label>
-												<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-												<br>
-												<div class="file">
+												<h4 id="naRG-4"><span class="rft">*</span>Copie du reçu</h4>
+												<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 													<label for="inp13" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 													<input id="inp13" type="file" name="file">
-													<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+													<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 													<div class="detail"><i class="icon-file"></i><span></span></div>
 												</div>
 											</div>
@@ -247,14 +254,14 @@
 
 		<div class="sub-block">
 			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 				<h4 aria-level="3">Vêtement <span class="number">1</span> </h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce vêtement"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 
 
 				<div class="control-group">
-					<label for="inp14"><span class="rft">*</span> Description du vêtement (Ex.: Salopette, pantalon.)</label>
+					<label for="inp14"><span class="rft">*</span> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
 					<input id="inp14" type="text" name="a">
 				</div>
 
@@ -273,31 +280,31 @@
 						</label>
 
 				   </div>
-
+					 <div class="sous-question-montant control-group hide" id="os-_N_-2">
+	 					<label for="inp17"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 					<input id="inp17" type="text" name="a" class="amount"> $
+	 				</div>
 				</div>
 
-				<div class="control-group hide" id="os-_N_-2">
-					<label for="inp17"><span class="rft">*</span> Montant (avant taxes)</label>
-					<input id="inp17" type="text" name="a" class="amount"> $
-				</div>
 
 
-				<div class="control-group">
-					<label><span class="rft">*</span> Types de frais</label>
+
+				<div class="control-group" role="group" aria-labelledby="naRG-">
+					<i id="naRG-1"><span class="rft">*</span> Types de frais</i>
 					<label for="inp18" class="checkbox">
 					   <input id="inp18" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
 					   <i>Nettoyage</i>
 					</label>
 					<div class="sub-box control-group hide" id="os-_N_-3">
-						<label for="inp19"><span class="rft">*</span> Montant (avant taxes)</label>
+						<label for="inp19"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 						<input id="inp19" type="text" name="a" class="amount"> $
 					</div>
 					<label for="inp20" class="checkbox">
 					   <input id="inp20" type="checkbox" name="mode8" value="create" data-show="#os-_N_-4" data-hide="#os-_N_-4">
 					   <i>Réparation</i>
 					</label>
-					<div class="control-group hide" id="os-_N_-4">
-						<label for="inp21"><span class="rft">*</span> Montant (avant taxes)</label>
+					<div class="sous-question-montant control-group hide" id="os-_N_-4">
+						<label for="inp21"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 						<input id="inp21" type="text" name="a" class="amount"> $
 					</div>
 				</div>
@@ -332,9 +339,9 @@
 	<div class="block-recu hide">
 
 		<div class="sub-block">
-			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
-				<h4 aria-level="3"><span class="number">2</span> - Reçu du <div class="date-icon"><input aria-label="date du reçu numéro 2" id="inp" type="text" class="datepicker form-control" value=""></div></h4>
+			<div class="header panel-heading-R">
+				<h4 aria-level="3"><span class="number">2</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 2" id="inp" type="text" class="datepicker form-control" value=""></span></h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 
@@ -347,7 +354,7 @@
 
 							<div class="control-group">
 								<label for="inp24"><span class="rft">*</span> Description du vêtement</label>
-								<p class="clarification">(Ex.: Salopette, pantalon.)</p>
+								<p class="clarification"><span class="naDetails">(Ex.: Salopette, pantalon.)</span></p>
 								<input id="inp24" type="text" name="a">
 							</div>
 
@@ -367,13 +374,13 @@
 									</label>
 
 							   </div>
-
+								 <div class="sous-question-montant control-group hide" id="os-_N_-2">
+	 								<label for="inp27"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 								<input id="inp27" type="text" name="a" class="amount"> $
+	 							</div>
 							</div>
 
-							<div class="control-group hide" id="os-_N_-2">
-								<label for="inp27"><span class="rft">*</span> Montant (avant taxes)</label>
-								<input id="inp27" type="text" name="a" class="amount"> $
-							</div>
+
 
 
 							<div class="control-group">
@@ -382,16 +389,16 @@
 								   <input id="inp28" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
 								   <i>Nettoyage</i>
 								</label>
-								<div class="sub-box control-group hide" id="os-_N_-3">
-									<label for="inp29"><span class="rft">*</span> Montant (avant taxes)</label>
+								<div class="sous-question-montant control-group hide" id="os-_N_-3">
+									<label for="inp29"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 									<input id="inp29" type="text" name="a" class="amount"> $
 								</div>
 								<label for="inp30" class="checkbox">
 								   <input id="inp30" type="checkbox" name="mode8" value="create" data-show="#os-_N_-4" data-hide="#os-_N_-4">
 								   <i>Réparation</i>
 								</label>
-								<div class="control-group hide" id="os-_N_-4">
-									<label for="inp31"><span class="rft">*</span> Montant (avant taxes)</label>
+								<div class="sous-question-montant control-group hide" id="os-_N_-4">
+									<label for="inp31"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
 									<input id="inp31" type="text" name="a" class="amount"> $
 								</div>
 							</div>
@@ -427,13 +434,14 @@
 				</div>
 
 				<div class="control-group">
-					<label>Copie du reçu</label>
-					<p class="clarification"><span class="rft">*</span>Veuillez joindre une copie du reçu.</p>
-					<br>
-					<div class="file">
+					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+
+					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+  <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 						<label for="inp34" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 						<input id="inp34" type="file" name="file">
-						<a href="#" class="btn-remove"><i class="icon-remove"></i></a>
+						<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 						<div class="detail"><i class="icon-file"></i><span></span></div>
 					</div>
 				</div>

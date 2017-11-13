@@ -82,8 +82,8 @@
 							<div class="text control-group">
 
 								<div class="radiobutton required inline">
-								   <i id="naRG-SG1-1">Avez-vous des frais de médicaments?</i>
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-1">
+								   <i id="naRG1">Avez-vous des frais de médicaments?</i>
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
 										<label for="inp1" class="radiobutton">
 										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
@@ -114,35 +114,39 @@
 									<div class="sub-block">
 										<div class="header panel-heading-R">
 											<h4 aria-level="3">
-												 <span class="number">1</span> - Reçu du <div class="date-icon">
-													 <input aria-label="date du reçu numéro 1" id="inp3" type="text" class="datepicker form-control" value=""></div></h4>
-<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
+												 <span class="number">1</span> - Reçu du <span class="date-icon">
+													 <input aria-label="date du reçu numéro 1" id="inp3" type="text" class="datepicker form-control" value=""></span></h4>
+<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
-											<!--  multiblocks  Médicament -->
+											<!--  multiblocks  Médicament 1-->
 											<div class="multiblocks">
 												<!--  sub-block Médicament 1 -->
 												<div class="sub-block">
 
 													<div class="header">
 														<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier Médicament s'il y a plus d'un médicament. -->
+														<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
 													</div>
 
 													<div class="sub-cont">
 														<div class="control-group">
-															<label for="inp4"><span class="rft">*</span> Nom du médicament</label>
-															<input id="inp4" type="text" name="a">
+															<label for="inp-SG1-4"><span class="rft">*</span> Nom du médicament</label>
+															<input id="inp-SG1-4" type="text" name="a">
 														</div>
 
 														<div class="control-group">
-															<label for="inp5"><span class="rft">*</span> Montant</label>
-															<input id="inp5" type="text" name="a" class="amount"> $
+															<label for="inp-SG1-5"><span class="rft">*</span> Montant</label>
+															<input id="inp-SG1-5" type="text" name="a" class="amount"> $
 														</div>
 
 
 														<div class="control-group">
-															<label for="inp6"><span class="rft">*</span> Nom du médecin</label>
-															<input id="inp6" type="text" name="a">
+															<label for="inp-SG1-6"><span class="rft">*</span> Nom du médecin</label>
+															<input id="inp-SG1-6" type="text" name="a">
 														</div>
 
 													</div>
@@ -150,7 +154,7 @@
 												</div>
 												<!--  / sub-block Médicament 1 -->
 											</div>
-											<!--  / multiblocks Médicament-->
+											<!--  / multiblocks Médicament 1-->
 
 											<!--
 											TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
@@ -163,12 +167,12 @@
  											<!--  Copie du reçu -->
 											<div class="control-group">
 												<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
-												<p id="daRG2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
-												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG2">
+												<p id="daR-SG1-G2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daR-SG1-G2">
 													<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
-													<label for="inp7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
-													<input id="inp7" type="file" name="file">
-													<a role="button" id="inp7b" aria-labelledby="inp7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
+													<label for="inp-SG1-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+													<input id="inp-SG1-7" type="file" name="file">
+													<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp-SG1-7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 													<div class="detail"><i class="icon-file"></i><span></span></div>
 												</div>
 											</div>
@@ -239,37 +243,39 @@
 
 	</main>
 
-<!--  block-medicament -->
+<!--  block-medicament 2-->
 	<div class="block-medicament hide">
-		<!--  sub-block-medicament -->
+		<!--  sub-block Médicament 2 -->
 		<div class="sub-block">
+
 			<div class="header">
-				<a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
-				<h4 aria-level="3">Médicament <span class="number">1</span> </h4>
+				<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
+
 			<div class="sub-cont">
-
 				<div class="control-group">
-					<label for="inp10"><span class="rft">*</span> Nom du médicament</label>
-					<input id="inp10" type="text" name="a">
+					<label for="inp-SG2-4"><span class="rft">*</span> Nom du médicament</label>
+					<input id="inp-SG2-4" type="text" name="a">
 				</div>
 
 				<div class="control-group">
-					<label for="inp11"><span class="rft">*</span> Montant</label>
-					<input id="inp11" type="text" name="a" class="amount"> $
+					<label for="inp-SG2-5"><span class="rft">*</span> Montant</label>
+					<input id="inp-SG2-5" type="text" name="a" class="amount"> $
 				</div>
 
 
 				<div class="control-group">
-					<label for="inp12"><span class="rft">*</span> Nom du médecin</label>
-					<input id="inp12" type="text" name="a">
+					<label for="inp-SG2-6"><span class="rft">*</span> Nom du médecin</label>
+					<input id="inp-SG2-6" type="text" name="a">
 				</div>
 
 			</div>
+
 		</div>
-		<!--  /sub-block-medicament -->
+		<!--  / sub-block Médicament 2 -->
 	</div>
-<!--  / block-medicament -->
+<!--  / block-medicament 2-->
 <!--  block-recu -->
 	<div class="block-recu hide">
 
@@ -277,44 +283,46 @@
 		<div class="sub-block">
 			<div class="header panel-heading-R">
 				<h4 aria-level="3">
-					 <span class="number">1</span> - Reçu du <div class="date-icon">
-						 <input aria-label="date du reçu numéro 1" id="inp-SG1-3" type="text" class="datepicker form-control" value=""></div></h4>
+					 <span class="number">1</span> - Reçu du <span class="date-icon">
+						 <input aria-label="date du reçu numéro 1" id="inp-SG2-3" type="text" class="datepicker form-control" value=""></span></h4>
 
 						 <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
-				<!--  multiblocks  Médicament -->
+				<!--  multiblocks  Médicament 3-->
 				<div class="multiblocks">
-					<!--  sub-block Médicament 2 -->
+					<!--  sub-block Médicament 3 -->
 					<div class="sub-block">
 
 						<div class="header">
 							<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+							<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
 						</div>
 
 						<div class="sub-cont">
 							<div class="control-group">
-								<label for="inp-SG1-4"><span class="rft">*</span> Nom du médicament</label>
-								<input id="inp-SG1-4" type="text" name="a">
+								<label for="inp-SG3-4"><span class="rft">*</span> Nom du médicament</label>
+								<input id="inp-SG3-4" type="text" name="a">
 							</div>
 
 							<div class="control-group">
-								<label for="inp-SG1-5"><span class="rft">*</span> Montant</label>
-								<input id="inp-SG1-5" type="text" name="a" class="amount"> $
+								<label for="inp-SG3-5"><span class="rft">*</span> Montant</label>
+								<input id="inp-SG3-5" type="text" name="a" class="amount"> $
 							</div>
 
 
 							<div class="control-group">
-								<label for="inp-SG1-6"><span class="rft">*</span> Nom du médecin</label>
-								<input id="inp-SG1-6" type="text" name="a">
+								<label for="inp-SG3-6"><span class="rft">*</span> Nom du médecin</label>
+								<input id="inp-SG3-6" type="text" name="a">
 							</div>
 
 						</div>
 
 					</div>
-					<!--  / sub-block Médicament 2 -->
+					<!--  / sub-block Médicament 3 -->
 				</div>
-				<!--  / multiblocks Médicament-->
+				<!--  / multiblocks Médicament 3-->
 
 				<!--
 				TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
@@ -326,13 +334,13 @@
 
 				<!--  Copie du reçu -->
 				<div class="control-group">
-					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
-					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
-					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+					<h4 id="naRG-SG3-2"><span class="rft">*</span>Copie du reçu</h4>
+					<p id="daRG-SG3-2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
+					<div class="file" role="group" aria-labelledby="naRG-SG3-2" aria-describedby="daRG-SG3-2">
 						<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
-						<label for="inp-SG1-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
-						<input id="inp-SG1-7" type="file" name="file">
-						<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
+						<label for="inp-SG3-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+						<input id="inp-SG3-7" type="file" name="file">
+						<a role="button" id="inp-SG3-7b" aria-labelledby="inp-SG3-7b inp-SG3-7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
 						<div class="detail"><i class="icon-file"></i><span></span></div>
 					</div>
 				</div>
@@ -346,7 +354,7 @@
 
 
 	</div>
-<!--  block-recu -->
+<!--  / block-recu -->
 	<footer class="container footer">
 		<div class="row no-gutters">
 			<div class="col">
@@ -457,6 +465,11 @@
 				$(this).parent().prev('.multiblocks').append(html_r).find('> .sub-block').each(function(index, el) {
 					$(this).find('> .header span.number').text(index+1);
 				});
+			});
+
+
+			$("input").change(function(){
+			    alert("The text has been changed.");
 			});
 
 
