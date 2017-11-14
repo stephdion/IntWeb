@@ -356,7 +356,7 @@
                             </label>
 
                                   <label for="nbrKM-AR-1" class="radiobutton">
-                            <input id="nbrKM-AR-1" type="radio" name="mode60" checked onchange="myFunction()">
+                            <input id="nbrKM-AR-1" type="radio" name="mode60" checked>
                             <i>Aller-retour</i>
                             </label>
                                 </div>
@@ -1411,98 +1411,7 @@
 
 
       /********** Nombre de KM parcouru ***********/
-
-      function idx(id,x) {
-        var t = id.split("-");
-        var prefixe= t[0];
-        var index= t[t.length-1];
-        var inpText = prefixe+"-"+index;
-        var valeur = $( "#"+inpText ).val();
-        var idCible = prefixe+"-"+index+"-val";
-        var valeurCible = $( "#"+idCible ).val();
-
-       var a=0;
-
-        switch (x) {
-          case 1:
-              /*Retourne la valeur de l'index avant le premier séparateur (_)*/
-              a = prefixe;
-              break;
-          case 2:
-               /*Retourne la valeur de l'index après le dernier séparateur (_)*/
-              a = index;
-              break;
-          case 3:
-              /*Retourne le id de du champ dont on veut la valeur*/
-              a = inpText;
-              break;
-          case 4:
-              /*Retourne le valeur du champ texte dont on veut la valeur*/
-              a = valeur;
-              break;
-          case 5:
-              /*Retourne le id de du champ dont on veut modifier la valeur*/
-              a = idCible;
-              break;
-          case 6:
-              /*Retourne la valeur actuel du champ dont on veut modifier la valeur*/
-              a = valeurCible;
-              break;
-          default:
-             a = 0;
-      }
-        return a;
-      }
-
-      function rov(id){
-          var prefixe = idx(id,1);
-          var index = idx(id,2);
-          var valSource = idx(id,4);
-          var idCible = idx(id,5);
-          var hideC = ".hide-"+prefixe+"-"+index;
-          var valeurCible = idx(id,6);
-
-         /* Si vide, masquer Frais d'utilisation demandés */
-          if (valSource=="") {
-            $( ".hide-nbrKM-"+index ).addClass( "hide" );
-          } else  if (valSource>=1)  {
-            $( ".hide-nbrKM-"+index ).removeClass( "hide" );
-          }
-
-             /* Vérifier si Auto avec autorisation */
-          if ( $( "#autoAA-"+index ).is( ":checked" ) ) {
-            /* Si oui, remboursement de 0.43$ par km*/
-          var aaa = 0.43;
-          } else {
-            /* Si non, remboursement de 0.143$ par km*/
-          var aaa = 0.143;
-          }
-
-           /* Vérifier si aller simple ou aller-retour */
-          if ( $( "#nbrKM-AS-"+index ).is( ":checked" ) ) {
-          aller = 1;
-          } else if ( $( "#nbrKM-AR-"+index ).is( ":checked" ) )  {
-          aller = 2;
-          }
-
-          $( ".nbrKM-1-val" ).text("("+valSource+" km * "+aaa+" )");
-          $("#nbrKM-1-val").val(Math.round(valSource*aaa*100)/100);
-
-        return;
-
-      }
-
-
-      /********** Ajuster les frais d'utilisation demandés selon avec ou sans autorisation  ***********/
-      $( "#autoAA-1" ).on('keyup change',function() {
-          rov("nbrKM-1");
-        })
-        .keyup();
-      /********** / avec ou sans autorisation ***********/
-
-
-      /********** Nombre de KM parcouru ***********/
-      $( "#nbrKM-1" ).on('keyup change',function() {
+      $( "#nbrKM-1" ).on('keyup touchend',function() {
           /* Récupérer le no du id (-x) */
           var no = $( this ).attr("id").substring(6);
           var value = $( this ).val();
@@ -1536,9 +1445,6 @@
 
         })
         .keyup();
-      /********** Nombre de KM parcouru ***********/
-
-
       /********** Nombre de KM parcouru ***********/
 
 
