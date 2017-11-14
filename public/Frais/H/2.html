@@ -813,61 +813,63 @@
                       </div>
                       <!-- /heures -->
 
-                      <p id="daInp68" class="clarification">(Les montants maximums incluent les pourboires et les taxes.)</p>
+                      <p id="daInp68" class="clarification">Les montants maximums incluent les pourboires et les taxes.</p>
+                        <!-- Déjeuner-Diner-Souper-->
+                        <div>
+                            <!-- Déjeuner  NU:ok-->
+                            <div class="control-group">
+                              <label for="repDj-1">
+                                  <span class="rft">*</span> Déjeuner <span class="naDetails">(Maximum: 10,40 $)</span>
+                              </label>
+                              <input id="repDj-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Déjeuner
+                                    - Afficher si heure de départ >= 7h30
+                                    - Lier explicitement la note au champ à l'affichage-->
+                              <p id="repDj-DA-1" class="clarification">
+                                Le déjeuner n'est pas remboursable si vous aviez quitté votre résidence après 7h30 le matin.
+                              </p>
+                            </div>
+                            <!-- / Déjeuner  -->
 
-                      <!-- Déjeuner  NU:ok-->
-                      <div class="control-group">
-                        <label for="inp69">
-                                                                              <span class="rft">*</span> Déjeuner <span class="naDetails">(Maximum: 10,40 $)</span>
-                                                                            </label>
-                        <input id="inp69" type="text" name="a" class="amount"> $
-                        <!-- TODO: Au focus sur Déjeuner
-                                                                          			- Afficher si heure de départ >= 7h30
-                                                                          			- Lier explicitement la note au champ à l'affichage-->
-                        <p id="daInp69" class="clarification">
-                          Le déjeuner n'est pas remboursable si vous aviez quitté votre résidence après 7h30 le matin.
-                        </p>
-                      </div>
-                      <!-- / Déjeuner  -->
+                            <!-- Diner NU:ok-->
+                            <div class="control-group">
+                              <label for="repDi-1">
+                                  <span class="rft">*</span> Diner <span class="naDetails">(Maximum: 14,30 $ par personne)</span>
+                              </label>
+                              <input id="repDi-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Diner
+                                  - Afficher si heure de départ >= 11h30
+                                  - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repDi-DA1-1" class="clarification">
+                                Le diner n'est pas remboursable si vous aviez quitté votre résidence après 11h30 le matin.
+                              </p>
+                              <!-- TODO: Au focus sur Diner
+                                  - Afficher si heure de retour =< 13h30
+                                  - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repDi-DA2-1" class="clarification">
+                                Le diner n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
+                              </p>
+                            </div>
+                            <!-- / Diner -->
 
-                      <!-- Diner NU:ok-->
-                      <div class="control-group">
-                        <label for="inp70">
-                                                                              <span class="rft">*</span> Diner <span class="naDetails">(Maximum: 14,30 $ par personne)</span>
-                                                                            </label>
-                        <input id="inp70" type="text" name="a" class="amount"> $
-                        <!-- TODO: Au focus sur Diner
-                                                                              - Afficher si heure de départ >= 11h30
-                                                                              - Lier explicitement la note au champ à l'affichage -->
-                        <p id="daInp70a" class="clarification">
-                          Le diner n'est pas remboursable si vous aviez quitté votre résidence après 11h30 le matin.
-                        </p>
-                        <!-- TODO: Au focus sur Diner
-                                                                               - Afficher si heure de retour =< 13h30
-                                                                               - Lier explicitement la note au champ à l'affichage -->
-                        <p id="daInp70b" class="clarification">
-                          Le diner n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
-                        </p>
-                      </div>
-                      <!-- / Diner -->
-
-                      <!-- Souper NU:ok-->
-                      <div class="control-group">
-                        <label for="inp71">
-                                                                              <span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span>
-                                                                            </label>
-                        <input id="inp71" type="text" name="a" class="amount"> $
-                        <!-- TODO: Au focus sur Souper
-                                                                                 - Afficher si heure de retour < 18h30
-                                                                                 - Lier explicitement la note au champ à l'affichage -->
-                        <p id="daInp71" class="clarification">
-                          Le souper n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
-                        </p>
-                      </div>
-                      <!-- / Souper -->
-
+                            <!-- Souper NU:ok-->
+                            <div class="control-group">
+                              <label for="repS-1">
+                                  <span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span>
+                                  </label>
+                              <input id="repS-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Souper
+                                      - Afficher si heure de retour < 18h30
+                                      - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repS-DA-1" class="clarification">
+                                Le souper n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
+                              </p>
+                            </div>
+                            <!-- / Souper -->
+                        </div>
+                        <!-- /Déjeuner-Diner-Souper-->
                     </div>
-                    <!-- / text-->
+                    <!-- / text asdf-->
                   </div>
                   <!-- / Repas 2-->
                 </div>
@@ -1410,7 +1412,7 @@
 
 
 
-      /********** Nombre de KM parcouru ***********/
+      /************* Nombre de KM parcouru ***********/
 
       function idx(id,x) {
         var t = id.split("-");

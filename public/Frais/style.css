@@ -158,6 +158,49 @@ h2{
     background: #003d04;
 }
 
+
+
+.btn-add{
+ background-color: inherit !important;
+ border:0;
+ color: #006c08;
+ padding: 0 0 0 0;
+ margin-top: 1rem
+}
+
+.btn-add span {
+    vertical-align: middle;
+    line-height: 1.2rem;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.btn-add:hover span {
+    border-bottom: 1px solid #003d04;
+}
+
+.btn-add:hover,
+.btn-add:focus{
+ color: #003d04;
+ border:0;
+}
+
+
+.btn-add .icon-add {
+    background-image: url('images/ic_Ajouter.svg');
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.btn-add:hover .icon-add,
+.btn-add:focus .icon-add
+ {
+    background-image: url('images/ic_Ajouter_hover.svg');
+}
+
+
 .btn4a {
     background-color: #f0f0f0;
 }
@@ -199,19 +242,66 @@ a:focus .icon-delete {
     border: 2px solid #006c08;
     background: #f0f0f0;
     color: #006c08;
-    background-image: url("images/ic_supprimer.svg");
+    background-image: url('images/ic_Supprimer.svg');
+    background-position: 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    height: 2.2rem;
+    margin-right: -0.4rem;
+    z-index: 100;
+
+}
+/****** test sub-block ******/
+
+.sub-block .sub-block {
+    margin: 0 0 0 0;
+    border-left: 0px solid #919191;
+    border-right: 0px solid #919191;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-block .sub-cont {
+    padding: 1rem 1.5rem;
+}
+
+.sub-block .sub-block .header {
+    position: relative;
+    background: inherit;
+    color: #fff;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.sub-block .header a.btn4a {
+    border: 0;
+    background: inherit;
+    color: #006c08;
+    background-image: url("images/ic_Supprimer2.svg");
     background-position: 0.3rem center;
     background-repeat: no-repeat;
     background-size: 1.3rem;
     height: 2.2rem;
     width: auto;
     min-width: 2.2rem;
-    padding:0;
+    padding: 0;
     line-height: 1.9rem;
-    margin-top: 0.3rem;
-    margin-right: -0.4rem;
-
+    margin-top: -0.4rem;
+    margin-right: -1rem;
+    display: block;
 }
+.sub-block .header a.btn4a:hover,
+.sub-block .header a.btn4a:focus
+  {
+    background-image: url("images/ic_Supprimer2_hover.svg");
+}
+
+.sub-block .sub-block .sub-cont {
+    padding: 0 0 0.5rem 0;
+}
+
+/****** /test sub-block ******/
 /**** masquer l'icône inline *****/
 .sub-block .header a.btn4a i{display: none;}
 
@@ -222,7 +312,7 @@ a:focus .icon-delete {
 }
 .sub-block .header a.btn4a:hover span{
     margin: 0 0.8rem 0 1.8rem;
-    display: inline-block;;/**/
+    /*display: inline-block;;*/
 }
 
 
