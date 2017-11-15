@@ -23,18 +23,24 @@
 					<img alt="CNESST" src="http://instynctdemo.com/cnesst/images/logo.png">
 				</div>
 			</div>
-		    <div class="col align-self-end">
-		    	<nav class="top-menu">
-		    		<ul>
-		    			<li>
-			    			<a href="../index.html">
-			    				<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
-			    			</a>
-		    			</li>
-		    		</ul>
-		    	</nav>
-		    </div>
+			<div class="col align-self-end">
+				<nav class="top-menu" aria-label="Menu secondaire">
+					<ul>
+						<li class="tm-retour">
+							<a href="../index.html" aria-label="Retour">
+								<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-fleche-retour.png">
+								<p>Retour</p>
+							</a>
+						</li>
+						<li class="tm-meDeconnecter">
+							<a href="#" aria-label="Me déconnecter">
+								<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
+								<p>Me déconnecter</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		<div class="no-menu">
 			<h1 role="none presentation" id="naHeader">Demande de remboursement de frais</h1>
@@ -104,8 +110,8 @@
 
 							<div class="control-group">
 								<label for="inp5"><span class="rft">*</span> Numéro d’assurance maladie (NAM) </label>
-								<input id="inp5" type="text" name="NAM">
-								<p class="format">12 caractères</p>
+								<input class="l2" id="inp5" type="text" name="NAM">
+								<div class="format">12 caractères</div>
 							</div>
 
 
@@ -143,19 +149,19 @@
 
 								<div class="control-group">
 									<label for="inp10"><span class="rft">*</span> Code postal  </label>
-									<input id="inp10" type="text" name="cp2">
+									<input class="l2" id="inp10" type="text" name="cp2">
 								</div>
 
 								<div class="control-group">
 									<label for="inp11"><span class="rft">*</span> Téléphone principal </label>
-									<input id="inp11" type="tel" name="tel2a">
-									<p class="format">(xxx) xxx-xxxx</p>
+									<input class="l2" id="inp11" type="tel" name="tel2a">
+									<div class="format">10 chiffres</div>
 								</div>
 
 								<div class="control-group">
 									<label for="inp12">Téléphone secondaire</label>
-									<input id="inp12" type="tel" name="tel2b">
-									<p class="format">(xxx) xxx-xxxx</p>
+									<input class="l2" id="inp12" type="tel" name="tel2b">
+									<div class="format">10 chiffres</div>
 								</div>
 
 							</div>
@@ -167,13 +173,13 @@
 							<div class="text">
 								<div class="control-group">
 									<label for="inp13">Numéro de dossier à la CNESST</label>
-									<input id="inp13" type="text" name="ND">
+									<input class="l2" id="inp13" type="text" name="ND">
 									<p class="format">9 chiffres</p>
 								</div>
 								<div class="control-group">
 									<label for="inp14"><span class="rft">*</span>Date de l'événement pour laquelle les frais sont demandés</label>
 									<div class="date-icon">
-										<input id="inp14" type="text" class="datepicker form-control" value="">
+										<input class="l2" id="inp14" type="text" class="datepicker form-control" value="">
 									</div>
 								</div>
 
@@ -275,19 +281,19 @@
 
 								<div class="control-group">
 									<label for="inp25"><span class="rft">*</span> Code postal  </label>
-									<input id="inp25" type="text" name="cp2">
+									<input class="l2" id="inp25" type="text" name="cp2">
 								</div>
 
 								<div class="control-group">
 									<label for="inp26"><span class="rft">*</span> Téléphone principal </label>
 									<input id="inp26" type="tel" name="tel2a">
-									<p class="format">(xxx) xxx-xxxx</p>
+									<div class="format">10 chiffres</div>
 								</div>
 
 								<div class="control-group">
 									<label for="inp27">Téléphone secondaire</label>
-									<input id="inp27" type="tel" name="tel2b">
-									<p class="format">(xxx) xxx-xxxx</p>
+									<input class="l2" class="l2" id="inp27" type="tel" name="tel2b">
+									<div class="format">10 chiffres</div>
 								</div>
 
 							</div>
@@ -314,7 +320,7 @@
 
 	<footer class="container footer">
 		<div class="row no-gutters">
-			<div class="col">
+			<div class="col gauche">
 				<ul class="footer-menu">
 					<li><a href="#">Accessibilité</a></li>
 					<li><a href="#">Politique de confidentialité</a></li>

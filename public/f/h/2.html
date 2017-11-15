@@ -24,23 +24,23 @@
         </div>
       </div>
       <div class="col align-self-end">
-        <nav class="top-menu">
-          <ul>
-            <li>
-              <a href="../index.html">
-                <img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-fleche-retour.png">
-                <p>Retour à PES</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
-                <p>Me déconnecter</p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+				<nav class="top-menu" aria-label="Menu secondaire">
+					<ul>
+						<li class="tm-retour">
+							<a href="../index.html" aria-label="Retour">
+								<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-fleche-retour.png">
+								<p>Retour</p>
+							</a>
+						</li>
+						<li class="tm-meDeconnecter">
+							<a href="#" aria-label="Me déconnecter">
+								<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
+								<p>Me déconnecter</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
     </div>
     <div class="no-menu">
       <h1 role="presentation" id="naHeader">Remboursement de frais - Hébergement/Repas</h1>
@@ -800,7 +800,7 @@
                         <!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
                         <div class="control-group first-child">
                           <label for="repHD-1"><span class="rft">*</span> Heure de départ</label>
-                          <input id="repHD-1" type="time" name="a" class="heure repHD">
+                          <input class="heure repHD" id="repHD-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
                         <!-- / Heure de départ -->
@@ -808,7 +808,7 @@
                         <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
                         <div class="control-group inpW5">
                           <label for="repHA-1"><span class="rft">*</span> Heure d'arrivée</label>
-                          <input id="repHA-1" type="time" name="a" class="heure repHA">
+                          <input class="heure repHA" id="repHA-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
                         <!-- / Heure d'arrivée -->
