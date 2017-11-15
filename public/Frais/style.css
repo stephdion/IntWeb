@@ -72,6 +72,32 @@ h2{
 .sub-block .box2{
     margin: 1rem;
 }
+.box2 .text {
+    padding-left: 1rem ;
+    color: #414141;
+}
+.group  {
+    padding-left: 1rem ;
+}
+
+.autre{
+    border-top: 1px solid #414141;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.autre .radiobutton h3.label {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #006a08;
+    padding: 0.3rem 0;
+}
+
+.autre  .btns3{
+    padding: 0rem;
+}
 
 /******** H Etape 2 ******/
 /******* en-tête de niveau 2 style résumé *******/
@@ -98,6 +124,23 @@ h2{
     padding: 0.5rem 1rem;
     font-size: 1.2rem;
 }
+.checkboxs {
+    position: relative;
+    padding: 0.5rem 0.6rem !important;
+}
+.checkboxs .label {
+    font-weight: bold;
+}
+.checkboxs label {
+    margin-left: 0.5rem;
+}
+.checkboxs .radiobutton {
+    margin-left: 1.4rem;
+}
+
+
+
+
 .text p,
 .label
 {
@@ -138,9 +181,16 @@ h2{
 .sous-question-precisez,
 .sous-question-montant{
   position: relative;
-    margin-left: 1.5rem;
+    margin-left: 1.5rem !important;
     top: -0.3rem;
 }
+
+
+.form-cont .radiobuttons .sous-question-precisez,
+.form-cont .radiobuttons .sous-question-montant{
+    margin-left: 2.5rem !important;
+}
+
 .radiobutton .sous-question-montant{
     margin-left: 0.7rem;
 }
@@ -343,7 +393,9 @@ h4 span.rft {
 .form-cont .control-group input[type="password"],
 .form-cont .control-group input[type="text"],
 .form-cont .control-group input[type="email"],
-.form-cont .control-group input[type="number"]
+.form-cont .control-group input[type="number"],
+.form-cont .control-group input[type="time"]
+
 {
     width: 100%;
     max-width: 500px;
@@ -356,11 +408,19 @@ h4 span.rft {
 
 .form-cont .control-group input.heure[type="text"],
 .form-cont .control-group input.amount[type="text"],
-.form-cont .control-group input[type="number"]
+.form-cont .control-group input[type="number"],
+.form-cont .control-group input[type="time"]
 {
     max-width: 10rem;
 
 }
+.form-cont .control-group input[type="number"],
+.form-cont .control-group input[type="time"]
+{
+    margin-right: 1.5rem;
+
+}
+
 .form-cont .control-group input[readonly]{
   background-color: inherit;
   border: none;
@@ -379,6 +439,10 @@ h4 span.rft {
 
 .naDetails{
     font-weight: normal;
+}
+.format{
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
 }
 
 /******* note lié (clarification)  ********/
@@ -466,3 +530,9 @@ h4 span.rft {
 }
 
 /*******  / file ********/
+
+
+.hover{
+    background-color: yellow;
+
+}

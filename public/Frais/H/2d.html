@@ -100,7 +100,7 @@
                   <div class="text">
                     <div class="radiobutton required">
 
-                      <i class="label" id="naRG1">Raison du déplacement</i>
+                      <i id="naRG1">Raison du déplacement</i>
 
                       <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
@@ -123,9 +123,9 @@
               										   <input id="inp5" type="radio" name="mode" value="create" data-show=".os-1-1" data-hide=".os-1">
               										   <i>Autre</i>
               										</label>
-                        <div class="control-group hide os-1-1 os-1" sous-question-precisez>
+                        <div class="control-group hide os-1-1 os-1">
                           <label for="inp6"><span class="rft">*</span> Précisez </label>
-                          <input id="inp6" type="text" name="inp6">
+                          <input id="inp6" type="text" name="montant">
                         </div>
 
                       </div>
@@ -141,7 +141,7 @@
 
                   <div class="text">
 
-                    <div class="control-group checkboxs">
+                    <div class="control-group">
 
                       <label for="inp8" class="checkbox">
               									   <input id="inp8" type="checkbox" name="mode2" data-show=".os-2-1" data-hide=".os-2" data-show2=".os-3-2" data-show5=".os-3-23">
@@ -185,7 +185,7 @@
                         <div class="hide os-4-1 os-4">
                           <!-- os-2-1 os-3-1 -->
                           <div class="radiobutton required inline hide os-2-1 os-3-1">
-                            <i class="label" id="naRG2" class="label">Votre destination est-elle à plus de 16 km de votre résidence?</i>
+                            <i id="naRG2">Votre destination est-elle à plus de 16 km de votre résidence?</i>
 
                             <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
@@ -224,8 +224,8 @@
 
                     <div class="text">
                       <!--  Moyen de transport utilisé -->
-                      <div class="control-group checkboxs" role="group" aria-labelledby="naRGx1">
-                        <i class="label" id="naRGx1"><span class="rft">*</span> Moyen de transport utilisé</i>
+                      <div class="control-group" role="group" aria-labelledby="naRGx1">
+                        <i id="naRGx1"><span class="rft">*</span> Moyen de transport utilisé</i>
 
                         <label for="inp13" class="checkbox">
                                          <input id="inp13" type="checkbox" name="mode90" data-show=".os-6-1" data-hide=".os-6">
@@ -379,7 +379,7 @@
 
                             <!-- Lieu de départ NU:ok -->
                             <div class="radiobutton required">
-                              <i class="label" id="naRG6">Lieu de départ</i>
+                              <i id="naRG6">Lieu de départ</i>
                               <div class="radiobuttons" role="group" aria-labelledby="naRG6">
 
                                 <label for="inp28" class="radiobutton">
@@ -407,7 +407,7 @@
 
                             <!-- Lieu d'arrivé NU:ok-->
                             <div class="radiobutton required">
-                              <i class="label" id="naRG7">Lieu d'arrivé</i>
+                              <i id="naRG7">Lieu d'arrivé</i>
                               <!-- role="group" -->
                               <div class="radiobuttons" role="group" aria-labelledby="naRG7">
 
@@ -609,7 +609,7 @@
                           </div>
                           <div class="sub-cont">
 
-                            <div class="control-group sous-question-precisez">
+                            <div class="control-group">
                               <label for="inp46"><span class="rft">*</span> Precisez</label>
                               <input id="inp46" type="text" name="a">
                             </div>
@@ -655,7 +655,7 @@
                   <div class="text">
                     <!-- Frais d'hébergement NU:ok-->
                     <div class="radiobutton required">
-                      <i class="label" id="naRG12">Type d'hébergement</i>
+                      <i id="naRG12">Type d'hébergement</i>
 
                       <div class="radiobuttons" role="group" aria-labelledby="naRG12">
 
@@ -709,7 +709,7 @@
 
                         <!-- Emplacement de cet hôtel NU:ok-->
                         <div class="radiobutton required">
-                          <i class="label" id="naRG13">Emplacement de cet hôtel</i>
+                          <i id="naRG13">Emplacement de cet hôtel</i>
 
                           <div class="radiobuttons" role="group" aria-labelledby="naRG13">
 
@@ -799,67 +799,73 @@
                         <!-- Heure de départ -->
                         <!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
                         <div class="control-group first-child">
-                          <label for="repHD-1"><span class="rft">*</span> Heure de départ</label>
-                          <input id="repHD-1" type="time" name="a" class="heure repHD">
-                          <div class="format"><span class="naDetails">(hh:mm)</span></div>
+                          <label for="inp67"><span class="rft">*</span> Heure de départ</label>
+                          <input id="inp67" type="text" name="a" class="heure">
                         </div>
                         <!-- / Heure de départ -->
                         <!-- Heure d'arrivée -->
                         <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
                         <div class="control-group inpW5">
-                          <label for="repHA-1"><span class="rft">*</span> Heure d'arrivée</label>
-                          <input id="repHA-1" type="time" name="a" class="heure repHA">
-                          <div class="format"><span class="naDetails">(hh:mm)</span></div>
+                          <label for="inp68"><span class="rft">*</span> Heure d'arrivée</label>
+                          <input id="inp68" type="text" name="a" class="heure">
                         </div>
                         <!-- / Heure d'arrivée -->
                       </div>
                       <!-- /heures -->
 
-                        <p id="daInp68" class="clarification">Les montants maximums incluent les pourboires et les taxes.</p>
+                      <p id="daInp68" class="clarification">Les montants maximums incluent les pourboires et les taxes.</p>
                         <!-- Déjeuner-Diner-Souper-->
-                        <div class="group">
-                          <!-- Déjeuner  NU:ok-->
-                          <div class="control-group">
-                            <label for="repDj-1">
-                                                        <span class="rft">*</span> Déjeuner <span class="naDetails">(Maximum: 10,40 $)</span>
-                                                    </label>
-                            <input id="repDj-1" type="text" name="a" class="amount" aria-describedby="repHd-Da1-1"> $
-                            <!-- TODO: Au focus sur Déjeuner
-                                                          - Afficher si heure de départ >= 7h30
-                                                          - Lier explicitement la note au champ à l'affichage-->
-                            <p id="repHd-Da1-1" class="clarification hide">
-                      toto
-                            </p>
-                          </div>
-                          <!-- / Déjeuner  -->
+                        <div>
+                            <!-- Déjeuner  NU:ok-->
+                            <div class="control-group">
+                              <label for="repDj-1">
+                                  <span class="rft">*</span> Déjeuner <span class="naDetails">(Maximum: 10,40 $)</span>
+                              </label>
+                              <input id="repDj-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Déjeuner
+                                    - Afficher si heure de départ >= 7h30
+                                    - Lier explicitement la note au champ à l'affichage-->
+                              <p id="repDj-DA-1" class="clarification">
+                                Le déjeuner n'est pas remboursable si vous aviez quitté votre résidence après 7h30 le matin.
+                              </p>
+                            </div>
+                            <!-- / Déjeuner  -->
 
-                          <!-- Diner NU:ok-->
-                          <div class="control-group">
-                            <label for="repDi-1">
-                                                        <span class="rft">*</span> Diner <span class="naDetails">(Maximum: 14,30 $ par personne)</span>
-                                                    </label>
-                            <input id="repDi-1" type="text" name="a" class="amount" aria-describedby="repHd-Da2-1"> $
-                            <!-- TODO: Au focus sur Diner
-                                                        - Afficher si heure de départ >= 11h30
-                                                        - Lier explicitement la note au champ à l'affichage -->
-                            <p id="repHd-Da2-1" class="clarification hide">
-                            </p>
-                          </div>
-                          <!-- / Diner -->
+                            <!-- Diner NU:ok-->
+                            <div class="control-group">
+                              <label for="repDi-1">
+                                  <span class="rft">*</span> Diner <span class="naDetails">(Maximum: 14,30 $ par personne)</span>
+                              </label>
+                              <input id="repDi-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Diner
+                                  - Afficher si heure de départ >= 11h30
+                                  - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repDi-DA1-1" class="clarification">
+                                Le diner n'est pas remboursable si vous aviez quitté votre résidence après 11h30 le matin.
+                              </p>
+                              <!-- TODO: Au focus sur Diner
+                                  - Afficher si heure de retour =< 13h30
+                                  - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repDi-DA2-1" class="clarification">
+                                Le diner n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
+                              </p>
+                            </div>
+                            <!-- / Diner -->
 
-                          <!-- Souper NU:ok-->
-                          <div class="control-group">
-                            <label for="repS-1">
-                                                        <span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span>
-                                                        </label>
-                            <input id="repS-1" type="text" name="a" class="amount"aria-describedby="repHa-Da4-1"> $
-                            <!-- TODO: Au focus sur Souper
-                                                            - Afficher si heure de retour < 18h30
-                                                            - Lier explicitement la note au champ à l'affichage -->
-                            <p id="repHa-Da4-1" class="clarification hide">
-                            </p>
-                          </div>
-                          <!-- / Souper -->
+                            <!-- Souper NU:ok-->
+                            <div class="control-group">
+                              <label for="repS-1">
+                                  <span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span>
+                                  </label>
+                              <input id="repS-1" type="text" name="a" class="amount"> $
+                              <!-- TODO: Au focus sur Souper
+                                      - Afficher si heure de retour < 18h30
+                                      - Lier explicitement la note au champ à l'affichage -->
+                              <p id="repS-DA-1" class="clarification">
+                                Le souper n'est pas remboursable si vous étiez de retour à votre résidence avant 18h30.
+                              </p>
+                            </div>
+                            <!-- / Souper -->
                         </div>
                         <!-- /Déjeuner-Diner-Souper-->
                     </div>
@@ -873,9 +879,9 @@
               <!-- / **********  Jour 1 ********** -->
 
               <!-- Autre frais de déplacement, de repas ou d'hébergement -->
-              <div class="box2 autre">
+              <div class="box2">
                 <div class="radiobutton">
-                  <h3 class="label" id="naRG14">Autre frais de déplacement, de repas ou d'hébergement</h3>
+                  <i id="naRG14">Autre frais de déplacement, de repas ou d'hébergement</i>
 
                   <div class="radiobuttons" role="group" aria-labelledby="naRG14">
 
@@ -1012,7 +1018,7 @@
 		                               - Afficher la question si >= 100km aller simple ou >=200km-->
         <!-- Attestation médicale -->
         <div class="control-group radiobutton inline required hide os-SG1-23-1 os-SG1-24">
-          <i class="label" id="naRG-SG1-5">Avez-vous une attestation médicale indiquant votre incapacité à utiliser les transports en commun?</i>
+          <i id="naRG-SG1-5">Avez-vous une attestation médicale indiquant votre incapacité à utiliser les transports en commun?</i>
           <div class="radiobuttons note-ON-N" role="group" aria-labelledby="naRG-SG1-5">
 
             <label for="inpSG1_25" class="radiobutton">
@@ -1070,7 +1076,7 @@
 
         <!-- Lieu de départ -->
         <div class="radiobutton required">
-          <i class="label" id="naRG-SG1-6">Lieu de départ</i>
+          <i id="naRG-SG1-6">Lieu de départ</i>
           <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-6">
 
             <label for="inpSG1_28" class="radiobutton">
@@ -1098,7 +1104,7 @@
 
         <!-- Lieu d'arrivé -->
         <div class="radiobutton required">
-          <i class="label" id="naRG-SG1-7">Lieu d'arrivé</i>
+          <i id="naRG-SG1-7">Lieu d'arrivé</i>
           <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-7">
 
             <label for="inpSG1_32" class="radiobutton">
@@ -1265,7 +1271,7 @@
         </div>
         <div class="sub-cont">
 
-          <div class="control-group sous-question-montant">
+          <div class="control-group">
             <label for="inp-SG1-46"><span class="rft">*</span> Precisez</label>
             <input id="inp-SG1-46" type="text" name="a">
           </div>
@@ -1449,146 +1455,6 @@
       }
         return a;
       }
-
-
-      /****** Déjeuner - Diner - Souper ******/
-
-      /* Fonction permettant d'afficher ou non les messages (description accessible) liés au champs Déjeuner, Diner ou Souper
-
-      Les messages ne doivent s'afficher que si l'utilisateur donne le focus à un champs Montant pour un repas auquel il ne devrait pas avoir droit si les informations entrée au niveau des heures de départ et d'arrivée sont exacte.
-
-      Si l'utilisateur n'entre aucune information dans le champ, on supprime le message à la sortie du champ.
-
-      Important pour les lecteur d'écran: remplir la zone de message avant l'arrivée au focus sur le champ lié et vide la zone du message si non pertinent.
-
-      */
-      function heure(v, x, y) {
-        var v = v.trim();
-        var v = v.replace("h", ":");
-        var t = v.split(":");
-        var h = new Number(t[0]);
-        var m = new Number(t[1]);
-        var hm = new Number(h * 60 + m);
-        var L7h30 = new Number(450);
-        var L11h30 = new Number(690);
-        var L13h30 = new Number(810);
-        var L18h30 = new Number(1110);
-
-        switch (y) {
-          case 1:
-            /*Heure de départ*/
-            if (hm > L7h30) {
-              $("#repHd-Da1-"+x).text(
-                "Le déjeuner n'est pas remboursable si vous aviez quitté votre résidence après 7:30 le matin."
-              );
-            } else {
-              $("#repHd-Da1-"+x).text("");
-            }
-
-            if (hm > L11h30) {
-              $("#repHd-Da2-"+x).text(
-                "Le diner n'est pas remboursable si vous aviez quitté votre résidence après 11:30 le matin."
-              );
-            } else {
-              $("#repHd-Da2-"+x).text("");
-            }
-            break;
-          case 2:
-            if (hm < L13h30) {
-              $("#repHd-Da2-"+x).text(
-                "Le dîner n’est pas remboursable si vous étiez de retour à votre résidence avant 13:30."
-              );
-            } else {
-              $("#repHd-Da2-"+x).text("");
-            }
-            if (hm < L18h30) {
-              $("#repHa-Da4-"+x).text(
-                "Le souper n'est pas remboursable si vous étiez de retour à                 votre résidence avant 18:30."
-              );
-            } else {
-              $("#repHa-Da4-"+x).text("");
-            }
-            break;
-        }
-
-        return;
-      }
-      /********** heure de départ  ***********/
-      $("#repHD-1")
-        .on("keyup change", function() {
-          var valeur = $(this).val();
-          var index = idx("repHD-1", 2);
-          var a = heure(valeur, index, 1);
-
-        })
-        .keyup();
-      /********** /heure de départ  ***********/
-      /********** heure d'arrivée  ***********/
-      $("#repHA-1")
-        .on("keyup change", function() {
-          var valeur = $(this).val();
-         var index = idx("repHA-1", 2);
-          var a = heure(valeur, index, 2); /*2 pour tester l'heure de d'arrivé*/
-        })
-        .keyup();
-      /********** / heure d'arrivée  ***********/
-
-      /********** Déjeuner  ***********/
-      $("#repDj-1")
-        .on("focusin", function() {
-        /*Au focus sur le champ, si la zone de message contient un contenu, afficher le message*/
-        if ($("#repHd-Da1-"+1).text().length > 0){
-          $("#repHd-Da1-"+1).removeClass("hide");}else{
-           $("#repHd-Da1-"+1).addClass("hide");
-          }
-        });
-      $("#repDj-1")
-        /*À la sortie du champ, si le champ est vide ou égal à 0, masquer le message*/
-        .on("blur", function() {
-        if ($("#repDj-"+1).val() == 0){
-          $("#repHd-Da1-"+1).addClass("hide");}else{
-           $("#repHd-Da1-"+1).removeClass("hide");}
-        });
-      /********** / Déjeuner  ***********/
-      /********** Diner  ***********/
-      $("#repDi-1")
-        .on("focusin", function() {
-        /*Au focus sur le champ, si la zone de message contient un contenu, afficher le message*/
-        if ($("#repHd-Da2-"+1).text().length > 0){
-          $("#repHd-Da2-"+1).removeClass("hide");}else{
-           $("#repHd-Da2-"+1).addClass("hide");
-          }
-        });
-      $("#repDi-1")
-        /*À la sortie du champ, si le champ est vide ou égal à 0, masquer le message*/
-        .on("blur", function() {
-        if ($("#repDi-"+1).val() == 0){
-          $("#repHd-Da2-"+1).addClass("hide");}else{
-           $("#repHd-Da2-"+1).removeClass("hide");}
-        });
-      /********** / Diner  ***********/
-      /********** Souper  ***********/
-      $("#repS-1")
-        .on("focusin", function() {
-        /*Au focus sur le champ, si la zone de message contient un contenu, afficher le message*/
-        if ($("#repHa-Da4-"+1).text().length > 0){
-          $("#repHa-Da4-"+1).removeClass("hide");}else{
-           $("#repHa-Da4-"+1).addClass("hide");
-          }
-        });
-      $("#repS-1")
-        /*À la sortie du champ, si le champ est vide ou égal à 0, masquer le message*/
-        .on("blur", function() {
-        if ($("#repS-"+1).val() == 0){
-          $("#repHa-Da4-"+1).addClass("hide");}else{
-           $("#repHa-Da4-"+1).removeClass("hide");}
-        });
-      /********** / souper  ***********/
-      /****** // Déjeuner - Diner - Souper ******/
-
-
-
-
 
       function rov(id){
           var prefixe = idx(id,1);
@@ -1899,8 +1765,6 @@
           $(this).val(text.substr(0, maxlength));
         }
       });
-
-
     });
   </script>
   <!-- script -->
