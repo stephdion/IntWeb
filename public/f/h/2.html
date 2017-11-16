@@ -43,7 +43,7 @@
 			</div>
     </div>
     <div class="no-menu">
-			<h1 role="none presentation" id="naHeader">Demande de remboursement de frais</h1>
+			<h1 role="presentation" id="naHeader">Demande de remboursement de frais</h1>
 		</div>
 		<div class="no-menu soustitre">
 			<span>Déplacement, repas et hébergement</span>
@@ -96,7 +96,7 @@
 
                 </div>
                 <!-- /header panel -->
-                <!-- Raison du déplacement -->
+                <!-- Raison du déplacement Nu:17-11-16 14:30 -->
                 <div class="box2">
                   <div class="text">
                     <div class="control-group checkboxs">
@@ -124,7 +124,7 @@
               										   <input id="inp5" type="checkbox" name="mode" value="create" data-show=".os-1-1" data-hide=".os-1">
               										   <i>Autre</i>
               										</label>
-                        <div class="control-group hide os-1-1 os-1" sous-question-precisez>
+                        <div class="control-group hide os-1-1 os-1 sous-question-precisez">
                           <label for="inp6" class="obligatoire"> Précisez <span class="hors-ecran"> obligatoire</span></label>
                           <input id="inp6" type="text" name="inp6">
                         </div>
@@ -135,7 +135,7 @@
                 </div>
                 <!-- /Raison du déplacement -->
 
-                <!-- Type de frais réclamés pour cette journée -->
+                <!-- Type de frais réclamés pour cette journée Nu:17-11-16 14:30-->
                 <div class="box2">
 
                   <h4 aria-level="3">Type de frais réclamés pour cette journée<span class="hors-ecran"> obligatoire</span></h4>
@@ -186,7 +186,7 @@
                         <div class="hide os-4-1 os-4">
                           <!-- os-2-1 os-3-1 -->
                           <div class="radiobutton required_ inline hide os-2-1 os-3-1">
-                            <i class="label" id="naRG2" class="label obligatoire">Votre destination est-elle à plus de 16 km de votre résidence?<span class="hors-ecran"> obligatoire</span></i>
+                            <i id="naRG2" class="label obligatoire">Votre destination est-elle à plus de 16 km de votre résidence?<span class="hors-ecran"> obligatoire</span></i>
 
                             <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
@@ -216,9 +216,9 @@
                 </div>
                 <!-- /Type de frais réclamés pour cette journée -->
 
-                <!-- Frais de déplacement NU:ok-->
+                <!-- Frais de déplacement Nu:17-11-16 14:30-->
                 <div>
-                  <!-- Frais de déplacement (Choix) -->
+                  <!-- Frais de déplacement (Choix) Nu:17-11-16 14:30-->
                   <div class="box2 hide os-2-1 os-2">
 
                     <h4 aria-level="3">Frais de déplacement</h4>
@@ -226,7 +226,7 @@
                     <div class="text">
                       <!--  Moyen de transport utilisé -->
                       <div class="control-group checkboxs" role="group" aria-labelledby="naRGx1">
-                        <i class="label" id="naRGx1" class="obligatoire"> Moyen de transport utilisé<span class="hors-ecran"> obligatoire</span></i>
+                        <i id="naRGx1" class="obligatoire"> Moyen de transport utilisé<span class="hors-ecran"> obligatoire</span></i>
 
                         <label for="inp13" class="checkbox">
                                          <input id="inp13" type="checkbox" name="mode90" data-show=".os-6-1" data-hide=".os-6">
@@ -279,7 +279,7 @@
                     </div>
                   </div>
                   <!-- /Frais de déplacement (Choix) -->
-                  <!--  Transport en commun -->
+                  <!--  Transport en commun Nu:17-11-16 14:30 -->
                   <div class="box2 hide os-6-1 os-6 os-2">
                     <h4 aria-level="3">Transport en commun</h4>
                     <div class="text">
@@ -327,13 +327,13 @@
 
                   <!--  Voiture  NU:ok -->
                   <div class="box2 hide os-7-1 os-7 os-2">
-                    <h4 aria-level="3">Voiture<span class="hide os-7b-1 os-7b"> avec autorisation</span> (xxx)</h4>
+                    <h4 aria-level="3">Voiture<span class="hide os-7b-1 os-7b"> avec autorisation</span></h4>
                     <div class="text">
                       <!--  multiblocks -->
                       <div class="multiblocks">
-                        <!--  sub-block NU:ok-->
+                        <!--  sub-block Nu:17-11-16 14:30 -->
                         <div class="sub-block">
-                          <!--  header sub-cont  NU:ok-->
+                          <!--  header sub-cont  Nu:17-11-16 14:30-->
                           <div class="header">
                             <h4 aria-level="3">Déplacement <span class="number">1</span></h4>
                             <!-- <button type="button" class="btn4a btn-delete hide" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
@@ -342,24 +342,24 @@
                           <!--  / header sub-cont-->
                           <!--  sub-cont-->
                           <div class="sub-cont">
-                            <!-- Distance parcourue  NU:ok-->
+                            <!-- Distance parcourue  Nu:17-11-16 14:30-->
                             <div>
                               <div class="control-group">
-                                <label for="nbrKM-1" id="nbrKM-EG-1" class="nbrKM" class="obligatoire"> Distance parcourue<span class="hors-ecran"> obligatoire</span></label>
+                                <label for="nbrKM-1" id="nbrKM-EG-1" class="nbrKM obligatoire"> Distance parcourue<span class="hors-ecran"> obligatoire</span></label>
                                 <input id="nbrKM-1" type="number" min="1" name="a" class="amount" value=""> km
                               </div>
                               <!-- Aller - retour -->
                               <div class="radiobutton inline">
-                                <div class="radiobuttons" role="group" aria-labelledby="nbrKM-EG-1">
+                                <div class="radiobuttons" role="group" aria-labelledby="nbrKM-1">
                                   <label for="nbrKM-AS-1" class="radiobutton">
-                            <input id="nbrKM-AS-1" type="radio" name="mode60">
-                            <i>Aller simple</i>
-                            </label>
+                                  <input id="nbrKM-AS-1" type="radio" name="mode60">
+                                  <i>Aller simple</i>
+                                  </label>
 
                                   <label for="nbrKM-AR-1" class="radiobutton">
-                            <input id="nbrKM-AR-1" type="radio" name="mode60" checked onchange="myFunction()">
-                            <i>Aller-retour</i>
-                            </label>
+                                  <input id="nbrKM-AR-1" type="radio" name="mode60" checked onchange="myFunction()">
+                                  <i>Aller-retour</i>
+                                  </label>
                                 </div>
                               </div>
                               <!-- /Aller - retour -->
@@ -375,10 +375,11 @@
                                 <label for="nbrKM-1-val">Frais d'utilisation demandés <span class="naDetails nbrKM-1-val"></span></label>
                                 <input readonly id="nbrKM-1-val" type="text" name="a" value="" class="amount-readonly"> $
                               </div>
+                            </div>
                              <!-- /Frais d'utilisation demandés  -->
 
 
-                            <!-- Lieu de départ NU:ok -->
+                            <!-- Lieu de départ Nu:17-11-16 14:30-->
                             <div class="radiobutton required_">
                               <i class="label obligatoire" id="naRG6">Lieu de départ<span class="hors-ecran"> obligatoire</span></i>
                               <div class="radiobuttons" role="group" aria-labelledby="naRG6">
@@ -406,7 +407,7 @@
                             </div>
                             <!-- /Lieu de départ -->
 
-                            <!-- Lieu d'arrivé NU:ok-->
+                            <!-- Lieu d'arrivé Nu:17-11-16 14:30-->
                             <div class="radiobutton required_">
                               <i class="label obligatoire" id="naRG7">Lieu d'arrivé<span class="hors-ecran"> obligatoire</span></i>
                               <!-- role="group" -->
@@ -438,6 +439,8 @@
                             <!-- /Lieu d'arrivé -->
                           </div>
                           <!-- / sub-cont-->
+
+
                         </div>
                         <!--  / sub-block -->
                       </div>
@@ -853,7 +856,7 @@
                             <label for="repS-1">
                                                         <span class="rft">*</span> Souper <span class="naDetails">(Maximum: 21,55 $ par personne)</span>
                                                         </label>
-                            <input id="repS-1" type="text" name="a" class="amount"aria-describedby="repHa-Da4-1"> $
+                            <input id="repS-1" type="text" name="a" class="amount" aria-describedby="repHa-Da4-1"> $
                             <!-- TODO: Au focus sur Souper
                                                             - Afficher si heure de retour < 18h30
                                                             - Lier explicitement la note au champ à l'affichage -->
