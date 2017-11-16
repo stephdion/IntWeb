@@ -43,14 +43,15 @@
 			</div>
     </div>
     <div class="no-menu">
-      <h1 role="presentation" id="naHeader">Remboursement de frais - Hébergement/Repas</h1>
-    </div>
-    <div class="no-menu soustitre">
-      <span>Déplacement, repas et hébergement</span>
-    </div>
+			<h1 role="none presentation" id="naHeader">Demande de remboursement de frais</h1>
+		</div>
+		<div class="no-menu soustitre">
+			<span>Déplacement, repas et hébergement</span>
+		</div>
   </header>
 
   <main class="container">
+   <form id="idForm">
 
     <!-- Barre d'étape -->
     <ul class="nav nav-wizard">
@@ -79,7 +80,7 @@
           <!-- class="content" -->
           <div class="content">
               <div class="text sp-s">
-                <p><span class="rft">*</span> Obligatoire</p>
+                <p class="obligatoire"> Obligatoire</p>
               </div>
 
               <!-- **********  Jour 1 ********** -->
@@ -98,33 +99,33 @@
                 <!-- Raison du déplacement -->
                 <div class="box2">
                   <div class="text">
-                    <div class="radiobutton required">
+                    <div class="control-group checkboxs">
 
-                      <i class="label" id="naRG1">Raison du déplacement</i>
+                      <i class="label obligatoire" id="naRG1">Raison du déplacement<span class="hors-ecran"> obligatoire</span></i>
 
                       <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
-                        <label for="inp2" class="radiobutton">
-              										   <input id="inp2" type="radio" name="mode" value="create" data-hide=".os-1">
+                        <label for="inp2" class="checkbox">
+              										   <input id="inp2" type="checkbox" name="mode" value="create" data-hide=".os-1">
               										   <i>Ergothérapie</i>
               										</label>
 
-                        <label for="inp3" class="radiobutton">
-              										   <input id="inp3" type="radio" name="mode" value="create" data-hide=".os-1">
+                        <label for="inp3" class="checkbox">
+              										   <input id="inp3" type="checkbox" name="mode" value="create" data-hide=".os-1">
               										   <i>Physiothérapie</i>
               										</label>
 
-                        <label for="inp4" class="radiobutton">
-              										   <input id="inp4" type="radio" name="mode" value="create" data-hide=".os-1">
+                        <label for="inp4" class="checkbox">
+              										   <input id="inp4" type="checkbox" name="mode" value="create" data-hide=".os-1">
               										   <i>Visite médicale</i>
               										</label>
 
-                        <label for="inp5" class="radiobutton">
-              										   <input id="inp5" type="radio" name="mode" value="create" data-show=".os-1-1" data-hide=".os-1">
+                        <label for="inp5" class="checkbox">
+              										   <input id="inp5" type="checkbox" name="mode" value="create" data-show=".os-1-1" data-hide=".os-1">
               										   <i>Autre</i>
               										</label>
                         <div class="control-group hide os-1-1 os-1" sous-question-precisez>
-                          <label for="inp6"><span class="rft">*</span> Précisez </label>
+                          <label for="inp6" class="obligatoire"> Précisez <span class="hors-ecran"> obligatoire</span></label>
                           <input id="inp6" type="text" name="inp6">
                         </div>
 
@@ -137,7 +138,7 @@
                 <!-- Type de frais réclamés pour cette journée -->
                 <div class="box2">
 
-                  <h4 aria-level="3">Type de frais réclamés pour cette journée</h4>
+                  <h4 aria-level="3">Type de frais réclamés pour cette journée<span class="hors-ecran"> obligatoire</span></h4>
 
                   <div class="text">
 
@@ -184,8 +185,8 @@
                         <!-- os-4-1 os-4 -->
                         <div class="hide os-4-1 os-4">
                           <!-- os-2-1 os-3-1 -->
-                          <div class="radiobutton required inline hide os-2-1 os-3-1">
-                            <i class="label" id="naRG2" class="label">Votre destination est-elle à plus de 16 km de votre résidence?</i>
+                          <div class="radiobutton required_ inline hide os-2-1 os-3-1">
+                            <i class="label" id="naRG2" class="label obligatoire">Votre destination est-elle à plus de 16 km de votre résidence?<span class="hors-ecran"> obligatoire</span></i>
 
                             <div class="radiobuttons" role="group" aria-labelledby="naRG2">
 
@@ -225,7 +226,7 @@
                     <div class="text">
                       <!--  Moyen de transport utilisé -->
                       <div class="control-group checkboxs" role="group" aria-labelledby="naRGx1">
-                        <i class="label" id="naRGx1"><span class="rft">*</span> Moyen de transport utilisé</i>
+                        <i class="label" id="naRGx1" class="obligatoire"> Moyen de transport utilisé<span class="hors-ecran"> obligatoire</span></i>
 
                         <label for="inp13" class="checkbox">
                                          <input id="inp13" type="checkbox" name="mode90" data-show=".os-6-1" data-hide=".os-6">
@@ -269,7 +270,7 @@
                                         </label>
 
                         <div class="control-group sous-question-precisez os-11-1 os-11 hide">
-                          <label for="inp18b"><span class="rft">*</span> Precisez</label>
+                          <label for="inp18b" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
                           <input id="inp18b" type="text" name="a">
                         </div>
 
@@ -296,7 +297,7 @@
                           <div class="sub-cont">
 
                             <div class="control-group">
-                              <label for="inp19"><span class="rft">*</span> Montant</label>
+                              <label for="inp19" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp19" type="text" name="a" class="amount"> $
                             </div>
 
@@ -344,7 +345,7 @@
                             <!-- Distance parcourue  NU:ok-->
                             <div>
                               <div class="control-group">
-                                <label for="nbrKM-1" id="nbrKM-EG-1" class="nbrKM"><span class="rft">*</span> Distance parcourue</label>
+                                <label for="nbrKM-1" id="nbrKM-EG-1" class="nbrKM" class="obligatoire"> Distance parcourue<span class="hors-ecran"> obligatoire</span></label>
                                 <input id="nbrKM-1" type="number" min="1" name="a" class="amount" value=""> km
                               </div>
                               <!-- Aller - retour -->
@@ -378,8 +379,8 @@
 
 
                             <!-- Lieu de départ NU:ok -->
-                            <div class="radiobutton required">
-                              <i class="label" id="naRG6">Lieu de départ</i>
+                            <div class="radiobutton required_">
+                              <i class="label obligatoire" id="naRG6">Lieu de départ<span class="hors-ecran"> obligatoire</span></i>
                               <div class="radiobuttons" role="group" aria-labelledby="naRG6">
 
                                 <label for="inp28" class="radiobutton">
@@ -397,7 +398,7 @@
                               														<i>Autre</i>
                               											</label>
                                 <div class="control-group sous-question-precisez os-12 os-12-1 hide">
-                                  <label for="inp31"><span class="rft">*</span> Precisez</label>
+                                  <label for="inp31" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
                                   <input id="inp31" type="text" name="a">
                                 </div>
                               </div>
@@ -406,8 +407,8 @@
                             <!-- /Lieu de départ -->
 
                             <!-- Lieu d'arrivé NU:ok-->
-                            <div class="radiobutton required">
-                              <i class="label" id="naRG7">Lieu d'arrivé</i>
+                            <div class="radiobutton required_">
+                              <i class="label obligatoire" id="naRG7">Lieu d'arrivé<span class="hors-ecran"> obligatoire</span></i>
                               <!-- role="group" -->
                               <div class="radiobuttons" role="group" aria-labelledby="naRG7">
 
@@ -427,7 +428,7 @@
                               											</label>
 
                                 <div class="control-group sous-question-precisez os-13 os-13-1 hide">
-                                  <label for="inp35"><span class="rft">*</span> Precisez</label>
+                                  <label for="inp35" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
                                   <input id="inp35" type="text" name="a">
                                 </div>
 
@@ -466,7 +467,7 @@
                           <div class="sub-cont">
 
                             <div class="control-group">
-                              <label for="inp36"><span class="rft">*</span> Montant</label>
+                              <label for="inp36" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp36" type="text" name="a" class="amount"> $
                             </div>
 
@@ -516,7 +517,7 @@
                           <div class="sub-cont">
 
                             <div class="control-group">
-                              <label for="inp40"><span class="rft">*</span> Montant</label>
+                              <label for="inp40" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp40" type="text" name="a" class="amount"> $
                             </div>
 
@@ -562,7 +563,7 @@
                           <div class="sub-cont">
 
                             <div class="control-group">
-                              <label for="inp43"><span class="rft">*</span> Montant</label>
+                              <label for="inp43" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp43" type="text" name="a" class="amount"> $
                             </div>
 
@@ -610,12 +611,12 @@
                           <div class="sub-cont">
 
                             <div class="control-group sous-question-precisez">
-                              <label for="inp46"><span class="rft">*</span> Precisez</label>
+                              <label for="inp46" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp46" type="text" name="a">
                             </div>
 
                             <div class="control-group">
-                              <label for="inp47"><span class="rft">*</span> Montant</label>
+                              <label for="inp47" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
                               <input id="inp47" type="text" name="a" class="amount"> $
                             </div>
 
@@ -654,8 +655,8 @@
                   <!-- text NU:ok -->
                   <div class="text">
                     <!-- Frais d'hébergement NU:ok-->
-                    <div class="radiobutton required">
-                      <i class="label" id="naRG12">Type d'hébergement</i>
+                    <div class="radiobutton required_">
+                      <i class="label obligatoire" id="naRG12">Type d'hébergement<span class="hors-ecran"> obligatoire</span></i>
 
                       <div class="radiobuttons" role="group" aria-labelledby="naRG12">
 
@@ -684,14 +685,14 @@
                       <div class="hide os-5-1 os-5 os-3">
                         <!-- Nombre de nuitées  Hôtel-->
                         <div class="control-group">
-                          <label for="nbrNH-1"><span class="rft">*</span> Nombre de nuitées consécutives à cet hôtel</label>
+                          <label for="nbrNH-1" class="obligatoire"> Nombre de nuitées consécutives à cet hôtel<span class="hors-ecran"> obligatoire</span></label>
                           <input id="nbrNH-1" type="number" min="1" name="a" class="nbrNH amount" value="">
                         </div>
                         <!-- / Nombre de nuitées  Hôtel-->
 
                         <!-- Montant total Hôtel-->
                         <div class="control-group">
-                          <label for="inp57"><span class="rft">*</span> Montant total (taxes incluses)</label>
+                          <label for="inp57" class="obligatoire"> Montant total (taxes incluses)<span class="hors-ecran"> obligatoire</span></label>
                           <input id="inp57" type="text" name="a" class="amount"> $
                           <!-- TODO: Lier explicitement la note au champ-->
                           <p id="nbrNH1-da" class="hide-nbrNH2-1 hide clarification">
@@ -708,8 +709,8 @@
                         <!-- / Montant total pour allocation-->
 
                         <!-- Emplacement de cet hôtel NU:ok-->
-                        <div class="radiobutton required">
-                          <i class="label" id="naRG13">Emplacement de cet hôtel</i>
+                        <div class="radiobutton required_">
+                          <i class="label oblogatoire" id="naRG13">Emplacement de cet hôtel<span class="hors-ecran"> obligatoire</span></i>
 
                           <div class="radiobuttons" role="group" aria-labelledby="naRG13">
 
@@ -763,7 +764,7 @@
                       <!-- Ami - Parent -->
                       <div class="hide os-5-2 os-5 os-3">
                         <div class="control-group">
-                          <label for="nbrNA-1"><span class="rft">*</span> Nombre de nuitées consécutives chez un parent ou un ami</label>
+                          <label for="nbrNA-1" class="obligatoire"> Nombre de nuitées consécutives chez un parent ou un ami</label>
                           <input id="nbrNA-1" type="number" min="1" name="a" class="nbrNA amount">
                         </div>
 
@@ -799,7 +800,7 @@
                         <!-- Heure de départ -->
                         <!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
                         <div class="control-group first-child">
-                          <label for="repHD-1"><span class="rft">*</span> Heure de départ</label>
+                          <label for="repHD-1" class="obligatoire"> Heure de départ<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHD" id="repHD-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
@@ -807,7 +808,7 @@
                         <!-- Heure d'arrivée -->
                         <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
                         <div class="control-group inpW5">
-                          <label for="repHA-1"><span class="rft">*</span> Heure d'arrivée</label>
+                          <label for="repHA-1" class="obligatoire"> Heure d'arrivée<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHA" id="repHA-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
@@ -930,7 +931,8 @@
       <!-- id="idform" -->
     </div>
     <!-- / class="strong" -->
-  </main>
+  </form>
+</main>
 
 
   <!--
@@ -952,7 +954,7 @@
       <div class="sub-cont">
 
         <div class="control-group">
-          <label for="inpSB1_19"><span class="rft">*</span> Montant</label>
+          <label for="inpSB1_19" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
           <input id="inpSB1_19" type="text" name="a" class="amount"> $
         </div>
 
@@ -987,7 +989,7 @@
       </div>
       <div class="sub-cont">
         <div class="control-group">
-          <label for="inpSG1_22"><span class="rft">*</span> Distance parcourue</label>
+          <label for="inpSG1_22" class="obligatoire"> Distance parcourue<span class="hors-ecran"> obligatoire</span></label>
           <input id="inpSG1_22" type="text" name="a" class="amount" value="150"> km
         </div>
         <!-- Aller - retour -->
@@ -1088,7 +1090,7 @@
 		                                     <i>Autre</i>
 		                                  </label>
             <div class="control-group sous-question-precisez os-SG1-12 os-SG1-12-1 hide">
-              <label for="inpSG1_31"><span class="rft">*</span> Precisez</label>
+              <label for="inpSG1_31" class="obligatoire"> Precisez</label>
               <input id="inpSG1_31" type="text" name="a">
             </div>
           </div>
@@ -1117,7 +1119,7 @@
 		                                  </label>
 
             <div class="control-group sous-question-precisez os-SG1-13 os-SG1-13-1 hide">
-              <label for="inpSG1_35"><span class="rft">*</span> Precisez</label>
+              <label for="inpSG1_35" class="obligatoire"> Precisez</label>
               <input id="inpSG1_35" type="text" name="a">
             </div>
 
@@ -1144,7 +1146,7 @@
       <div class="sub-cont">
 
         <div class="control-group">
-          <label for="inp-SG1-36"><span class="rft">*</span> Montant</label>
+          <label for="inp-SG1-36" class="obligatoire"> Montant</label>
           <input id="inp-SG1-36" type="text" name="a" class="amount"> $
         </div>
 
@@ -1184,7 +1186,7 @@
       <div class="sub-cont">
 
         <div class="control-group">
-          <label for="inp-SG1-43"><span class="rft">*</span> Montant</label>
+          <label for="inp-SG1-43" class="obligatoire"> Montant</label>
           <input id="inp-SG1-43" type="text" name="a" class="amount"> $
         </div>
 
@@ -1225,7 +1227,7 @@
       <div class="sub-cont">
 
         <div class="control-group">
-          <label for="inp-SG1-40"><span class="rft">*</span> Montant</label>
+          <label for="inp-SG1-40" class="obligatoire"> Montant</label>
           <input id="inp-SG1-40" type="text" name="a" class="amount"> $
         </div>
 
@@ -1266,12 +1268,12 @@
         <div class="sub-cont">
 
           <div class="control-group sous-question-montant">
-            <label for="inp-SG1-46"><span class="rft">*</span> Precisez</label>
+            <label for="inp-SG1-46" class="obligatoire"> Precisez</label>
             <input id="inp-SG1-46" type="text" name="a">
           </div>
 
           <div class="control-group">
-            <label for="inp-SG1-47"><span class="rft">*</span> Montant</label>
+            <label for="inp-SG1-47" class="obligatoire"> Montant</label>
             <input id="inp-SG1-47" type="text" name="a" class="amount"> $
           </div>
 
@@ -1328,6 +1330,7 @@
   <script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>
   <script>
     $(document).ready(function() {
+  $('#idForm')[0].reset();
 
 
 

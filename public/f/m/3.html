@@ -42,14 +42,15 @@
 			</div>
 		</div>
 		<div class="no-menu">
-			<h1 role="presentation" id="naHeader">Remboursement de frais - Hébergement/Repas</h1>
-		</div>
-		<div class="no-menu soustitre">
-			<span>Médicaments, vêtements et autres frais</span>
-		</div>
+      <h1 role="presentation" id="naHeader">Demande de remboursement de frais</h1>
+    </div>
+    <div class="no-menu soustitre">
+      <span>Médicaments, vêtements et autres frais</span>
+    </div>
 	</header>
 
 	<main class="container">
+   <form id="idForm">
 <!-- Barre d'étape -->
 		<ul class="nav nav-wizard">
 			<li class="completed"><a href="1.html"><i>1</i></a></li>
@@ -72,7 +73,7 @@
 					<div class="content">
 
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<pclass="obligatoire"> Obligatoire</p>
 						</div>
 
 
@@ -128,7 +129,7 @@
 													<div class="sub-cont">
 
 														<div class="control-group">
-															<label for="inp3"><span class="rft">*</span> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
+															<label for="inp3" class="obligatoire"> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
 															<input id="inp3" type="text" name="a">
 														</div>
 
@@ -148,7 +149,7 @@
 
 														   </div>
 															 <div class="sous-question-montant control-group hide" id="os-2">
-	 															<label for="inp6"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 															<label for="inp6" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 	 															<input id="inp6" type="text" name="a" class="amount"> $
 	 														</div>
 														</div>
@@ -157,13 +158,13 @@
 
 
 														<div class="control-group">
-															<label><span class="rft">*</span> Types de frais</label>
+															<labelclass="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></label>
 															<label for="inp7" class="checkbox">
 															   <input id="inp7" type="checkbox" name="mode8" value="create" data-show="#os-3" data-hide="#os-3">
 															   <i>Nettoyage</i>
 															</label>
 															<div class="sous-question-montant control-group hide" id="os-3">
-																<label for="inp8"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+																<label for="inp8" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 																<input id="inp8" type="text" name="a" class="amount"> $
 															</div>
 															<label for="inp9" class="checkbox">
@@ -171,7 +172,7 @@
 															   <i>Réparation</i>
 															</label>
 															<div class="sous-question-montant control-group hide" id="os-4">
-																<label for="inp10"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+																<label for="inp10" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 																<input id="inp10" type="text" name="a" class="amount"> $
 															</div>
 														</div>
@@ -207,7 +208,7 @@
 											</div>
 
 											<div class="control-group">
-												<h4 id="naRG-4"><span class="rft">*</span>Copie du reçu</h4>
+												<h4 id="naRG-4" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
 												<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
 												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
@@ -247,7 +248,8 @@
 			</div>
 		</div>
 
-	</main>
+	 </form>
+ </main>
 
 
 	<div class="block-vêtement hide">
@@ -261,7 +263,7 @@
 
 
 				<div class="control-group">
-					<label for="inp14"><span class="rft">*</span> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
+					<label for="inp14" class="obligatoire"> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span><span class="hors-ecran"> obligatoire</span></label>
 					<input id="inp14" type="text" name="a">
 				</div>
 
@@ -281,7 +283,7 @@
 
 				   </div>
 					 <div class="sous-question-montant control-group hide" id="os-_N_-2">
-	 					<label for="inp17"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 					<label for="inp17" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 	 					<input id="inp17" type="text" name="a" class="amount"> $
 	 				</div>
 				</div>
@@ -290,13 +292,13 @@
 
 
 				<div class="control-group" role="group" aria-labelledby="naRG-">
-					<i id="naRG-1"><span class="rft">*</span> Types de frais</i>
+					<i id="naRG-1" class="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></i>
 					<label for="inp18" class="checkbox">
 					   <input id="inp18" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
 					   <i>Nettoyage</i>
 					</label>
 					<div class="sub-box control-group hide" id="os-_N_-3">
-						<label for="inp19"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+						<label for="inp19" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 						<input id="inp19" type="text" name="a" class="amount"> $
 					</div>
 					<label for="inp20" class="checkbox">
@@ -304,7 +306,7 @@
 					   <i>Réparation</i>
 					</label>
 					<div class="sous-question-montant control-group hide" id="os-_N_-4">
-						<label for="inp21"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+						<label for="inp21" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 						<input id="inp21" type="text" name="a" class="amount"> $
 					</div>
 				</div>
@@ -353,7 +355,7 @@
 						<div class="sub-cont">
 
 							<div class="control-group">
-								<label for="inp24"><span class="rft">*</span> Description du vêtement</label>
+								<label for="inp24" class="obligatoire"> Description du vêtement<span class="hors-ecran"> obligatoire</span></label>
 								<p class="clarification"><span class="naDetails">(Ex.: Salopette, pantalon.)</span></p>
 								<input id="inp24" type="text" name="a">
 							</div>
@@ -375,7 +377,7 @@
 
 							   </div>
 								 <div class="sous-question-montant control-group hide" id="os-_N_-2">
-	 								<label for="inp27"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+	 								<label for="inp27" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 	 								<input id="inp27" type="text" name="a" class="amount"> $
 	 							</div>
 							</div>
@@ -384,13 +386,13 @@
 
 
 							<div class="control-group">
-								<label><span class="rft">*</span> Types de frais</label>
+								<labelclass="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></label>
 								<label for="inp28" class="checkbox">
 								   <input id="inp28" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
 								   <i>Nettoyage</i>
 								</label>
 								<div class="sous-question-montant control-group hide" id="os-_N_-3">
-									<label for="inp29"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+									<label for="inp29" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 									<input id="inp29" type="text" name="a" class="amount"> $
 								</div>
 								<label for="inp30" class="checkbox">
@@ -398,7 +400,7 @@
 								   <i>Réparation</i>
 								</label>
 								<div class="sous-question-montant control-group hide" id="os-_N_-4">
-									<label for="inp31"><span class="rft">*</span> Montant <span class="naDetails">(avant taxes)</span></label>
+									<label for="inp31" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
 									<input id="inp31" type="text" name="a" class="amount"> $
 								</div>
 							</div>
@@ -434,7 +436,7 @@
 				</div>
 
 				<div class="control-group">
-					<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+					<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
 					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
 					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
@@ -484,6 +486,7 @@
 
 	<script>
 		$(document).ready(function() {
+  $('#idForm')[0].reset();
 
 			$('body').on('focus',".datepicker", function(){
 

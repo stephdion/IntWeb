@@ -53,6 +53,7 @@
   </header>
 
   <main class="container">
+   <form id="idForm">
 <!-- Barre d'étape -->
     <ul class="nav nav-wizard">
       <li class="active"><a href="#"><i>1</i><span>Identification</span></a></li>
@@ -74,14 +75,14 @@
 
           <div class="content">
             <div class="text sp-s">
-              <p><span class="rft">*</span> Obligatoire</p>
+              <pclass="obligatoire"> Obligatoire</p>
             </div>
 
             <div class="box2">
               <h4 aria-level="2">Renseignements sur vous</h4>
               <div class="text">
-                <div class="radiobutton required inline">
-                  <i id="naRG1" class="obligatoire">Sexe</i>
+                <div class="radiobutton required_ inline">
+                  <i id="naRG1" class="obligatoire">Sexe<span class="hors-ecran"> obligatoire</span></i>
 
                   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
 
@@ -100,17 +101,17 @@
                 </div>
 
                 <div class="control-group">
-                  <label for="inp3"><span class="rft">*</span>Nom</label>
+                  <label for="inp3" class="obligatoire">Nom</label>
                   <input id="inp3" type="text" name="Nom1">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp4"><span class="rft">*</span> Prénom </label>
+                  <label for="inp4" class="obligatoire"> Prénom </label>
                   <input id="inp4" type="text" name="Prenon1">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp5"><span class="rft">*</span> Numéro d’assurance maladie (NAM) </label>
+                  <label for="inp5" class="obligatoire"> Numéro d’assurance maladie (NAM) </label>
                   <input id="inp5" type="text" name="NAM">
                   <div class="format">12 caractères</div>
                 </div>
@@ -125,32 +126,32 @@
               <div class="text">
 
                 <div class="control-group">
-                  <label for="inp6"><span class="rft">*</span> Adresse  </label>
+                  <label for="inp6" class="obligatoire"> Adresse  </label>
                   <input id="inp6" type="text" name="montant">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp7"><span class="rft">*</span> Ville  </label>
+                  <label for="inp7" class="obligatoire"> Ville  </label>
                   <input id="inp7" type="text" name="montant">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp8"><span class="rft">*</span> Province  </label>
+                  <label for="inp8" class="obligatoire"> Province  </label>
                   <input id="inp8" type="text" name="province2">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp9"><span class="rft">*</span> Pays  </label>
+                  <label for="inp9" class="obligatoire"> Pays  </label>
                   <input id="inp9" type="text" name="pays2">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp10"><span class="rft">*</span> Code postal  </label>
+                  <label for="inp10" class="obligatoire"> Code postal  </label>
                   <input id="inp10" type="text" name="cp2">
                 </div>
 
                 <div class="control-group">
-                  <label for="inp11"><span class="rft">*</span> Téléphone principal </label>
+                  <label for="inp11" class="obligatoire"> Téléphone principal </label>
                   <input id="inp11" type="tel" name="tel2a">
                   <div class="format">10 chiffres</div>
                 </div>
@@ -174,7 +175,7 @@
                   <div class="format">9 chiffres</div>
                 </div>
                 <div class="control-group">
-                  <label for="inp14"><span class="rft">*</span>Date de l'événement pour laquelle les frais sont demandés</label>
+                  <label for="inp14" class="obligatoire">Date de l'événement pour laquelle les frais sont demandés</label>
                   <div class="date-icon">
                     <input id="inp14" type="text" class="datepicker form-control" value="">
                   </div>
@@ -205,7 +206,8 @@
     </div>
 
 
-  </main>
+  </form>
+</main>
 
   <footer class="container footer">
     <div class="row no-gutters">
@@ -235,6 +237,7 @@
 
   <script>
     $(document).ready(function() {
+  $('#idForm')[0].reset();
       $("body").on("focus", ".datepicker", function() {
         if ($(this).hasClass("hasDatepicker") === false) {
           $(this)

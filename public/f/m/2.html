@@ -42,14 +42,15 @@
 			</div>
 		</div>
 		<div class="no-menu">
-			<h1 role="presentation" id="naHeader">Remboursement de frais - Hébergement/Repas</h1>
-		</div>
-		<div class="no-menu soustitre">
-			<span>Médicaments, vêtements et autres frais</span>
-		</div>
+      <h1 role="presentation" id="naHeader">Demande de remboursement de frais</h1>
+    </div>
+    <div class="no-menu soustitre">
+      <span>Médicaments, vêtements et autres frais</span>
+    </div>
 	</header>
 
 	<main class="container">
+   <form id="idForm">
 <!-- Barre d'étape -->
 		<ul class="nav nav-wizard">
 			<li class="completed"><a href="1.html"><i>1</i></a></li>
@@ -73,7 +74,7 @@
 					<div class="content">
 
 						<div class="text sp-s">
-							<p><span class="rft">*</span> Obligatoire</p>
+							<pclass="obligatoire"> Obligatoire</p>
 						</div>
 
 
@@ -117,7 +118,7 @@
 												 <span class="number">1</span> - Reçu du <span class="date-icon">
 													 <input aria-label="date du reçu numéro 1" id="inp3" type="text" class="datepicker form-control" value=""></span></h4>
 <!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
-<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 											<!--  multiblocks  Médicament 1-->
@@ -128,24 +129,24 @@
 													<div class="header">
 														<h4 aria-level="3">Médicament <span class="number">1</span></h4>
 														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier Médicament s'il y a plus d'un médicament. -->
-														<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+														<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 
 													</div>
 
 													<div class="sub-cont">
 														<div class="control-group">
-															<label for="inp-SG1-4"><span class="rft">*</span> Nom du médicament</label>
+															<label for="inp-SG1-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
 															<input id="inp-SG1-4" type="text" name="a">
 														</div>
 
 														<div class="control-group">
-															<label for="inp-SG1-5"><span class="rft">*</span> Montant</label>
+															<label for="inp-SG1-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
 															<input id="inp-SG1-5" type="text" name="a" class="amount"> $
 														</div>
 
 
 														<div class="control-group">
-															<label for="inp-SG1-6"><span class="rft">*</span> Nom du médecin</label>
+															<label for="inp-SG1-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
 															<input id="inp-SG1-6" type="text" name="a">
 														</div>
 
@@ -166,7 +167,7 @@
 
  											<!--  Copie du reçu -->
 											<div class="control-group">
-												<h4 id="naRG-SG1-2"><span class="rft">*</span>Copie du reçu</h4>
+												<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
 												<p id="daR-SG1-G2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
 												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daR-SG1-G2">
 													<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
@@ -241,7 +242,8 @@
 			</div>
 		</div>
 
-	</main>
+	 </form>
+ </main>
 
 <!--  block-medicament 2-->
 	<div class="block-medicament hide">
@@ -255,18 +257,18 @@
 
 			<div class="sub-cont">
 				<div class="control-group">
-					<label for="inp-SG2-4"><span class="rft">*</span> Nom du médicament</label>
+					<label for="inp-SG2-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
 					<input id="inp-SG2-4" type="text" name="a">
 				</div>
 
 				<div class="control-group">
-					<label for="inp-SG2-5"><span class="rft">*</span> Montant</label>
+					<label for="inp-SG2-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
 					<input id="inp-SG2-5" type="text" name="a" class="amount"> $
 				</div>
 
 
 				<div class="control-group">
-					<label for="inp-SG2-6"><span class="rft">*</span> Nom du médecin</label>
+					<label for="inp-SG2-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
 					<input id="inp-SG2-6" type="text" name="a">
 				</div>
 
@@ -302,18 +304,18 @@
 
 						<div class="sub-cont">
 							<div class="control-group">
-								<label for="inp-SG3-4"><span class="rft">*</span> Nom du médicament</label>
+								<label for="inp-SG3-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
 								<input id="inp-SG3-4" type="text" name="a">
 							</div>
 
 							<div class="control-group">
-								<label for="inp-SG3-5"><span class="rft">*</span> Montant</label>
+								<label for="inp-SG3-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
 								<input id="inp-SG3-5" type="text" name="a" class="amount"> $
 							</div>
 
 
 							<div class="control-group">
-								<label for="inp-SG3-6"><span class="rft">*</span> Nom du médecin</label>
+								<label for="inp-SG3-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
 								<input id="inp-SG3-6" type="text" name="a">
 							</div>
 
@@ -334,7 +336,7 @@
 
 				<!--  Copie du reçu -->
 				<div class="control-group">
-					<h4 id="naRG-SG3-2"><span class="rft">*</span>Copie du reçu</h4>
+					<h4 id="naRG-SG3-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
 					<p id="daRG-SG3-2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
 					<div class="file" role="group" aria-labelledby="naRG-SG3-2" aria-describedby="daRG-SG3-2">
 						<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
@@ -386,6 +388,7 @@
 
 	<script>
 		$(document).ready(function() {
+  $('#idForm')[0].reset();
 
 			$('body').on('focus',".datepicker", function(){
 
@@ -465,11 +468,6 @@
 				$(this).parent().prev('.multiblocks').append(html_r).find('> .sub-block').each(function(index, el) {
 					$(this).find('> .header span.number').text(index+1);
 				});
-			});
-
-
-			$("input").change(function(){
-			    alert("The text has been changed.");
 			});
 
 

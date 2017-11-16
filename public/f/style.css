@@ -7,9 +7,19 @@
   display: none !important;
 }
 
+body {
+    background: #fff;
+}
 
 h2{
   /*background: yellow;*/
+}
+
+.box2 .text {
+    background: #f7f7f7;
+    padding: 1rem;
+        padding-left: 1rem;
+    color: #414141;
 }
 
 ::selection {
@@ -101,15 +111,16 @@ h2{
 
 /******** H Etape 2 ******/
 /******* en-tête de niveau 2 style résumé *******/
-.panel-heading-R {
+.sub-block .panel-heading-R {
     position: relative;
     display: block;
     background-color: #5d5d5d !important;
     color: #fff;
     /*font-size: 2.4rem;*/
     font-weight: normal;
-    /*line-height: 2.2rem;
-    padding: 0rem 1.5rem 1.7rem 1.5rem;*/
+    font-size: 1.1rem;
+line-height: 1.2rem;
+padding: 0.95rem 1.5rem;
 }
 .panel-heading-R h2{
     /*background-color: inherit;
@@ -275,16 +286,17 @@ a:focus .icon-save{
     background-image: url("images/ic_sauvegarder_hover.svg") !important;
 }
 
-.icon-delete {
+.icon-delete{
   background-image: url("images/ic_supprimer.svg");
   background-position: 0 center;
   background-repeat: no-repeat;
   background-size: 1.3rem;
 }
 a:hover .icon-delete ,
-a:focus .icon-delete {
+a:focus .icon-delete{
     background-image: url("images/ic_supprimer_hover.svg") !important;
 }
+
 
 
 .sub-block .header a.btn4a
@@ -293,21 +305,25 @@ a:focus .icon-delete {
     background: #f0f0f0;
     color: #006c08;
     background-image: url('images/ic_Supprimer.svg');
-    background-position: 0.5rem center;
+    background-position: 0.4rem center;
     background-repeat: no-repeat;
     background-size: 1.3rem;
     height: 2.2rem;
-    margin-right: -0.4rem;
+    margin-right: -0.8rem;
     z-index: 100;
+    padding: 0.1rem 1.6rem 0.1rem 0.4rem;
+    width: auto;
+    min-width: 2.4rem;
+    line-height: 1.0rem;
 
 }
 /****** test sub-block ******/
 
 .sub-block .sub-block {
     margin: 0 0 0 0;
-    border-left: 0px solid #919191;
-    border-right: 0px solid #919191;
-    border-bottom: 1px solid #ddd;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #414141;
 }
 
 .sub-block .sub-cont {
@@ -324,7 +340,9 @@ a:focus .icon-delete {
     border: 0;
 }
 
-.sub-block .header a.btn4a {
+.sub-cont .sub-block .header a.btn4a,
+.sub-block .sub-block .header a.btn4a
+ {
     border: 0;
     background: inherit;
     color: #006c08;
@@ -338,11 +356,18 @@ a:focus .icon-delete {
     padding: 0;
     line-height: 1.9rem;
     margin-top: -0.4rem;
-    margin-right: -1rem;
+    margin-right: -2.9rem;
     display: block;
 }
-.sub-block .header a.btn4a:hover,
-.sub-block .header a.btn4a:focus
+
+.sub-block .sub-block .header a.btn4a{
+  margin-right: -1.7rem;
+}
+
+.sub-cont .sub-block .header a.btn4a:hover,
+.sub-cont .sub-block .header a.btn4a:focus,
+.sub-block .sub-block .header a.btn4a:hover,
+.sub-block .sub-block .header a.btn4a:focus
   {
     background-image: url("images/ic_Supprimer2_hover.svg");
 }
@@ -351,20 +376,41 @@ a:focus .icon-delete {
     padding: 0 0 0.5rem 0;
 }
 
+
+.icon-remove  {
+  background-image: url("images/ic_Supprimer2.svg");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+}
+a:hover .icon-remove ,
+a:focus .icon-remove
+ {
+    background-image: url("images/ic_Supprimer2_hover.svg") !important;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+}
 /****** /test sub-block ******/
 /**** masquer l'icône inline *****/
 .sub-block .header a.btn4a i{display: none;}
 
 
 .sub-block .header a.btn4a span{
-    margin: 0 0.8rem 0 1.8rem;
-    display: none;/**/
+  margin: 0 0 0 2rem;
+line-height: 1.7rem;
+    /*display: none;*/
 }
+
 .sub-block .header a.btn4a:hover span{
-    margin: 0 0.8rem 0 1.8rem;
     /*display: inline-block;;*/
 }
 
+.sub-cont .sub-block .header a.btn4a span,
+.sub-block .sub-block .header a.btn4a span
+{
+    display: none;/**/
+}
 
 /******* /Boutons *********/
 /******* champs ***********/
@@ -454,7 +500,7 @@ h4 span.rft {
 
 .btns3 {
     text-align: center;
-    padding: 0 0 1.5rem 0;
+    padding: 0.7rem 0 1.5rem 0;
     color: #414141;
 }
 
@@ -559,6 +605,9 @@ nav.top-menu ul li a img {
 #idform {
     max-width: 44rem;
 }
+.mcl {
+    max-width: 60rem;
+}
 
 .form-cont .btns {
     margin: 1vw 0;
@@ -576,9 +625,94 @@ nav.top-menu ul li a img {
 
 
 /******** largeur de champs *********/
+
+
+.date-icon::after {
+background-image: url('images/ic_Calendrier.svg');
+background-size: 1.2rem;
+right: -2.05rem;
+width: 2.05rem;
+height: 2.05rem;
+margin-top: -0.05rem;
+}
+
+
+
+.infobox5 {
+    background: inherit;
+    color: #414141;
+    padding: 0;
+    border-radius: 0.4rem;
+    line-height: 140%;
+    font-weight: normal;
+}
+
+p.obligatoire::before {
+    content: "*";
+    color: #be1615;
+    position: relative;
+    left: -0.2rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.obligatoire::before {
+    content: "*";
+    color: #be1615;
+    position: absolute;
+    left: -0.7rem;
+    font-size: 1.5rem;
+    top: 0.6rem;
+}
+
+.control-group h4.obligatoire::before {
+    top: 1.7rem;
+}
+
+
+i.obligatoire::before {
+    left: -0.7rem;
+    top: 0.1rem;
+}
+p.obligatoire::before {
+    position: relative;
+    left: -0.2rem;
+}
+
+
+
+
 div.strong {
     padding: 2rem 1vw 4rem 1vw;
 }
+
+
+.list2 h3, .list1 h3 {
+    background: #5d5d5d;
+    font-weight: normal;
+}
+.title-w-icon h3 {
+    vertical-align: middle;
+}
+.title-w-icon {
+    background-color: #118914;
+}
+
+.row-b .cl:last-child,
+.row-b .cl
+{
+    margin: 0.25rem 0.25rem 1rem 0.25rem;
+}
+
+.row-b {
+    margin: 0;
+}
+
+h2.main-title {
+  margin-left: 1rem;
+}
+
+/******* @media  ********/
 
 @media (min-width:576px) {
  .container {
@@ -598,26 +732,26 @@ div.strong {
 
 
 @media (min-width:768px) {
- .container {
-  max-width:1280px;
- }
- .header-v1 .logo img {
-  max-width: 9.89rem;
-}
-.no-menu {
-   line-height: 1.2rem;
-}
-.no-menu h1,
-.soustitre span {
-    font-size: 1.2rem;
-    padding: 0 2rem 0 13rem;
-}
-div.strong {
-    padding: 2rem 1vw 4rem 1vw;
-}
-.header-v1 {
-    padding-bottom: 1vw;
-}
+     .container {
+      max-width:1280px;
+     }
+     .header-v1 .logo img {
+      max-width: 9.89rem;
+    }
+    .no-menu {
+       line-height: 1.2rem;
+    }
+    .no-menu h1,
+    .soustitre span {
+        font-size: 1.2rem;
+        padding: 0 2rem 0 13rem;
+    }
+    div.strong {
+        padding: 2rem 1vw 4rem 1vw;
+    }
+    .header-v1 {
+        padding-bottom: 1vw;
+    }
 }
 
 
@@ -635,6 +769,9 @@ div.strong {
 }
 
 @media (max-width:992px) {
+  h2.main-title {
+    margin-left: 1.5rem;
+}
 
  footer.footer img {
   position: absolute;
@@ -652,6 +789,26 @@ div.strong {
       padding: 0.7rem 2rem;
       font-size: 0.8rem;
   }
+  .no-menu h1, .soustitre span {
+    font-size: 1.0rem;
+    padding: 0 2rem 0 2rem;
+  }
+  .title-w-icon h3 {
+    line-height: 1.4rem;
+    font-size: 1.0rem;
+    padding: 1.0rem 0.0rem 1rem 0.9rem;
+}
+.title-w-icon .icon {
+    width: 5rem;
+    height: 5rem;
+}
+.list2 h3, .list1 h3 {
+    background: #5d5d5d;
+    color: #fff;
+    padding: 0.5rem 0.9rem 0.5 0.9rem;
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+}
 
 }
 
@@ -673,11 +830,15 @@ div.strong {
         line-height: 1.0rem;
      }
      div.strong {
-         padding: 2rem 2vw 4rem 2vw;
+         padding: 2vw;
      }
 
      .nav-wizard {
          margin: 1vw auto 2vw auto;
+     }
+
+     .sub-block .header a.btn4a span{
+         display: none;/**/
      }
 
      footer.footer img {
@@ -696,12 +857,36 @@ div.strong {
           padding: 0.7rem 1rem;
           font-size: 0.7rem;
       }
-    footer.footer .gauche {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 1;
-    max-width: 20rem;
+      footer.footer .gauche {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 1;
+      max-width: 20rem;
+      }
+      .form-cont .content {
+      padding: 1vw 2.5vw;
+      }
+      .sp-s {
+      margin: 1vw 0;
+      }
+
+    .sub-block .panel-heading-R {
+    font-size: 1.0rem;
+    line-height: 1.0rem;
+    padding: 0.95rem 3vw;
+    }
+
+    .panel-heading-R .date-icon input {
+      width: 14vw;
+      min-width: 6rem;
+    }
+
+
+    .row-b .cl {
+    display: block;
+    width: 100%;
+    min-width: 25rem;
 }
 
 }
@@ -742,6 +927,18 @@ div.strong {
   padding-right: 2vw;
   padding-left: 2vw;
   }
+  .row-b .cl {
+    min-width: 19rem;
+}
+
+  h2.main-title {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      font-weight: 700;
+      padding: 1.0rem 0;
+      margin-left: 1rem;
+  }
+
   .header-v1 .logo img {
      max-width: 7rem;}
      .no-menu h1,
@@ -756,6 +953,16 @@ div.strong {
     nav.top-menu ul li a p {
         display:none;
     }
+
+    .title-w-icon h3 {
+      line-height: 1.4rem;
+      font-size: 0.90rem;
+      padding: 1.0rem 0.0rem 1rem 0.8rem;
+  }
+  .title-w-icon .icon {
+      width: 5rem;
+      height: 5rem;
+  }
 }
 
 @media (max-width:400px) {
@@ -794,6 +1001,7 @@ div.strong {
     font-size: 1.3rem;
     line-height: 2rem;
     max-width: 90%;
+    margin-top: 0.05rem;
 }
 .step-info p.number {
 
@@ -809,5 +1017,18 @@ div.strong {
 .header-v1 {
     padding-bottom: 1vw;
 }
+
+.form-cont .btns .btn {
+    min-width: 8rem;
+}
+
+}
+
+
+@media (max-width:320px) {
+  .container {
+   max-width:1280px;
+  padding-right: 0;
+  padding-left: 0;}
 
 }

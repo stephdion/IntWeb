@@ -42,7 +42,7 @@
 			</div>
 		</div>
 		<div class="no-menu">
-			<h1 role="presentation" id="naHeader">Réclamation du travailleur</h1>
+			<h1 role="none presentation" id="naHeader">Demande de remboursement de frais</h1>
 		</div>
 		<div class="no-menu soustitre">
 			<span>Déplacement, repas et hébergement</span>
@@ -50,6 +50,7 @@
 	</header>
 
 	<main class="container">
+   <form id="idForm">
 
 		<ul class="nav nav-wizard">
 			<li class="completed"><a href="1.html"><i>1</i></a></li>
@@ -110,7 +111,8 @@
 				</div>
 			</div>
 		</div>
-	</main>
+	 </form>
+ </main>
 
 	<footer class="container footer">
 		<div class="row no-gutters">
@@ -143,6 +145,7 @@
 
 	<script>
 		$(document).ready(function() {
+  $('#idForm')[0].reset();
 
 			$('body').on('focus',".datepicker", function(){
 
