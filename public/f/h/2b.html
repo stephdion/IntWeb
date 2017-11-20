@@ -898,37 +898,35 @@
 
               <!-- Autre frais de déplacement, de repas ou d'hébergement -->
               <div class="box2 autre">
-                <div class="radiobutton  sp-xl inline">
+                <div class="radiobutton">
                   <h3 class="label" id="naRG14">Autre frais de déplacement, de repas ou d'hébergement</h3>
 
-                  <div class="radiobuttons control-group" role="group" aria-labelledby="naRG14">
+                  <div class="radiobuttons" role="group" aria-labelledby="naRG14">
 
                     <label for="inp72" class="radiobutton">
                    <input id="inp72" type="radio" name="m28" data-show=".os-72-1" data-hide=".os-72">
-                   <i>Différent du précédent</i>
-                   </label>
+                   <i>Meme raison de déplacement <span class="naDetails">(Physiothérapie)</span></i>
+                </label>
 
                     <label for="inp73" class="radiobutton">
                    <input id="inp73" type="radio" name="m28" data-show=".os-73-1" data-hide=".os-73">
-                   <i>Similaire au précedent</i>
-                    </label>
-                    <div class="similaire os-73-1 os-73 os-72 hide sp-s">
-                      <p class="clarification">Copie modifiable des frais précédents</p>
-                    </div>
+                   <i>Autre raison de déplacement</i>
+                </label>
+
                     <div class="btns3 hide os-72-1 os-73">
                       <!-- TODO au click:
-                          - Dupliquer le block Date vièrge
+                          - Dupliquer le block Date idem sauf date + autres à détreminer
                           - Afficher bouton Supprimer sur première date
                    -->
-                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais différents</span></a>
+                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais similaires</span></a>
 
                     </div>
                     <div class="btns3 hide os-73-1 os-72">
                       <!-- TODO au click:
-                      - Dupliquer le block Date idem sauf date + autres à détreminer
-                      - Afficher bouton Supprimer sur première date
+                        - Dupliquer le block Date vièrge
+                        - Afficher bouton Supprimer sur première date
                  -->
-                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais similaires</span></a>
+                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais différents</span></a>
                     </div>
 
                   </div>
@@ -1606,7 +1604,7 @@
       $("#repDi-1")
         /*À la sortie du champ, si le champ est vide ou égal à 0, masquer le message*/
         .on("blur", function() {
-        if ($("#repDi-"+1).val() == 0 || $("#repHd-Da2-"+1).text().length == 0){
+        if ($("#repDi-"+1).val() == 0){
           $("#repHd-Da2-"+1).addClass("hide");}else{
            $("#repHd-Da2-"+1).removeClass("hide");}
         });
@@ -1623,7 +1621,7 @@
       $("#repS-1")
         /*À la sortie du champ, si le champ est vide ou égal à 0, masquer le message*/
         .on("blur", function() {
-        if ($("#repS-"+1).val() == 0 || $("#repHa-Da4-"+1).text().length == 0){
+        if ($("#repS-"+1).val() == 0){
           $("#repHa-Da4-"+1).addClass("hide");}else{
            $("#repHa-Da4-"+1).removeClass("hide");}
         });
