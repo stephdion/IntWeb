@@ -1,93 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Remboursement de frais - CNESST</title>
+	<title>2 - Médicaments - Médicaments, vêtements et autres frais - Remboursement de frais - CNESST</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-	<!-- <link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/bootstrap-reboot.min.css"> -->
-	<link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/css/components.scss?compile=true">
-	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/css/styleguide.css">
-<!-- test -->
-<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.standalone.min.css">
-	<link rel="stylesheet" type="text/css" href="http://instynctdemo.com/cnesst/js/jquery.qtip.min.css">
+  <link rel="stylesheet" href="../js/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/components.css">
+	<link rel="stylesheet" type="text/css" href="../css/styleguide.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" href="../js/dp/bootstrap-datepicker.standalone.min.css">
+	<link rel="stylesheet" type="text/css" href="../js/jquery.qtip.min.css">
 </head>
 <body>
 	<header class="container header-v1" aria-labelledby="naHeader">
 		<div class="row no-gutters">
 			<div class="col-auto">
 				<div class="logo">
-
-					<img alt="CNESST" src="http://instynctdemo.com/cnesst/images/logo.png">
+					<img alt="CNESST" src="../images/logo.png">
 				</div>
 			</div>
-		    <div class="col align-self-end">
-		    	<nav class="top-menu">
-		    		<ul>
-		    			<li>
-			    			<a href="../index.html">
-			    				<img alt="" src="http://instynctdemo.com/cnesst/images/icone-cnesst-icone-connexion.png">
-			    				<p>Me déconnecter</p>
-			    			</a>
-		    			</li>
-		    		</ul>
-		    	</nav>
-		    </div>
+			<div class="col align-self-end">
+				<nav class="top-menu" aria-label="Menu secondaire">
+					<ul>
+						<li class="tm-retour">
+							<a href="../index.html" aria-label="Retour">
+								<img alt="" src="../images/icone-cnesst-icone-fleche-retour.png">
+								<p>Retour</p>
+							</a>
+						</li>
+						<li class="tm-meDeconnecter">
+							<a href="#" aria-label="Me déconnecter">
+								<img alt="" src="../images/icone-cnesst-icone-connexion.png">
+								<p>Me déconnecter</p>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 		<div class="no-menu">
-			<h1 role="presentation" id="naHeader">Demande de remboursement de frais</h1>
-		</div>
+      <h1 role="presentation" id="naHeader">Demande de remboursement de frais</h1>
+    </div>
+    <div class="no-menu soustitre">
+      <span>Médicaments, vêtements et autres frais</span>
+    </div>
 	</header>
 
 	<main class="container">
+   <form id="idForm">
+	    <ul class="nav nav-wizard">
+				<li class="completed"><a href="1.html"><i>1</i></a></li>
+				<li class="active"><a href="#"><i>2</i><span>Médicaments</span></a></li>
+				<li><a href="3.html"><i>3</i></a></li>
+				<li><a href="4.html"><i>4</i></a></li>
+				<li><a href="5.html"><i>5</i></a></li>
+		  </ul>
+    <!-- / Barre d'étape -->
 
-		<div class="strong">
+	<div class="strong">
+			<div class="mcl2" id="idform">
 
-			<div id="idform" class="mcl 2">
-				<div class="text sp-s">
-					<p class="obligatoire"><span class="hors-ecran">Un champ ou un groupe de champs précédé d’un astérisque sera annoncé comme étant </span>Obligatoire</p>
+				<div class="step-info">
+					<p class="number">2</p>
+					<h2 aria-level="1">Titre</h2>
 				</div>
-				<div class="form-cont">
 
-					<div class="content radiobutton">
-          <i  class="label obligatoire" id="nag1">Que voulez-vous faire ?<span class="hors-ecran"> obligatoire</span></i>
+				<div class="form-cont sp-xl">
+
+					<div class="content">
+
+						<div class="text sp-s">
+							<p class="obligatoire"> Obligatoire</p>
+						</div>
 
 
-<div class="radiobuttons" role="group" aria-labelledby="nag1">
-							<label class="radiobutton">
-							   <input data-hide=".os-1" data-show=".os-1-1" type="radio" name="mode">
-							   <i>Demande de remboursement de frais de déplacements, d'hébergement, de repas.</i>
-							</label>
+						<div class="box2">
 
-							<label class="radiobutton">
-							   <input data-hide=".os-1" data-show=".os-1-2" type="radio" name="mode">
-							   <i>Demande de remboursement de frais de médicaments, de vêtements ou autre frais.</i>
-							</label>
-
-							<label class="radiobutton">
-							   <input data-hide=".os-1" data-show=".os-1-3" type="radio" name="mode">
-							   <i>Récupérer une demande de remboursement de frais déjà débuté (c'est un brouillon)</i>
-							</label>
-
-							<div class="box2 hide os-1 os-1-3">
-								<div class="text">
-									<p class="note"><strong>Note:</strong> Vous devez avoir votre code de récupération et votre adresse courriel.</p>
+							<!--  multiblocks parent -->
+							<div class="">
+								<!--  multiblocks  Reçu -->
+								<div class="multiblocks">
+									<div class="test"><!-- toto -->
+									<!--  sub-block Reçu  1 -->
+									<div class="sub-block">
+										<div class="header panel-heading-R">
+											<h4 aria-level="3"> <span class="number">1</span> - test </h4>
+													 	<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+															<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer test"><i class="icon-delete2"></i><span>Supprimer</span></a>
+										</div>
+										<div class="sub-cont">
+											<div class="control-group">
+												<label for="inp-t-1" class="obligatoire"> Nom du champ<span class="hors-ecran"> obligatoire</span></label>
+												<input id="inp-t-1" type="text" name="a">
+											</div>
+										</div>
+									</div>
+									<!--  / sub-block Reçu  1 -->
+								</div><!-- / toto -->
 								</div>
+								<!--  /multiblocks  Reçu -->
+								<!--  block boutons add  -->
+								<div class="btns3 autre">
+									<!--  Autre reçu de médicaments -->
+									<div class="box2">
+										<div class="radiobutton sp-xl inline">
+											 <h3 class="label" id="naRG-SG1-3">Autre reçu de médicaments</h3>
+											 <!--  role="group" -->
+											 <div class="control-group radiobuttons" role="group" aria-labelledby="naRG-SG1-3">
+															<label for="inp9" class="radiobutton">
+																 <input id="inp9" type="radio" name="mode" data-show=".os-72-1" data-hide=".os-72">
+																 <i>Différent du précédent</i>
+															</label>
+
+															<label for="inp8" class="radiobutton">
+																 <input id="inp8" type="radio" name="mode" data-show=".os-73-1" data-hide=".os-73">
+																 <i>Similaire au précedent</i>
+															</label>
+
+															<div class="similaire os-73-1 os-73 os-72 hide sp-s">
+																<p class="clarification">Copie modifiable du reçu précédent</p>
+															</div>
+											 </div>
+											 <!--  / role="group" -->
+										</div>
+								  </div>
+									<!--  / Autre reçu de médicaments -->
+									<a href="#" class="btn4 btn-add hide os-72-1 os-73" data-block=".block-test"><i class="icon-add"></i><span>Autre reçu différent</span></a>
+									<a href="#" class="btn4 btn-add hide os-73-1 os-72" data-block=".block-test"><i class="icon-add"></i><span>Autre reçu similaire</span></a>
+
+								</div>
+								<!--  / block boutons add  -->
 							</div>
-</div>
+							<!--  /multiblocks parent -->
 
-
-						<br>
-						<div class="btns3">
-							<a class="btn btn3 hide os-1 os-1-1" href="h/index.html">Accéder au service</a>
-							<a class="btn btn3 hide os-1 os-1-2" href="m/index.html">Accéder au service</a>
-							<a class="btn btn3 hide os-1 os-1-3" href="#">Récupérer un brouillon</a>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="btns">
+				<a role="button" class="btn btn7" href="1.html">Précédent</a>
+				<a role="button" class="btn btn3" href="3.html">Suivant</a>
+			</div>
 		</div>
-	</main>
+
+		<div class="btns">
+			<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+			<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+		</div>
+
+	 </form>
+ </main>
+
+<!-- ************* Block à dupliquer *********** -- >
+<!--  block-test  -->
+	<div class="block-test  hide">
+		<!--  sub-block Reçu  2 -->
+		<div class="sub-block">
+			<div class="header panel-heading-R">
+				<h4 aria-level="3">
+					 <span class="number">1</span> - test b </h4>
+
+						 <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
+			</div>
+			<div class="sub-cont">
+				<div class="control-group">
+
+				</div>
+			</div>
+		</div>
+		<!--  / sub-block Reçu  2 -->
+	</div>
+<!--  / block-test  -->
+
+<!-- ************* / Block à dupliquer *********** -- >
+
 
 	<footer class="container footer">
 		<div class="row no-gutters">
@@ -100,7 +186,7 @@
 			<div class="col right">
 				<span>Renseignements généraux : </span>
 				<span><a href="tel:18448380808">1 844 838-0808</a></span>
-				<img alt="CNESST" src="http://instynctdemo.com/cnesst/images/logo_footer.png">
+				<img alt="CNESST" src="../images/logo_footer.png">
 			</div>
 		</div>
 		<div class="row no-gutters bottom">
@@ -118,6 +204,7 @@
 
 	<script>
 		$(document).ready(function() {
+  $('#idForm')[0].reset();
 
 			$('body').on('focus',".datepicker", function(){
 
