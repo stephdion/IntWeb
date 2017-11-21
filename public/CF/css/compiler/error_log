@@ -1,0 +1,2 @@
+[24-Oct-2017 08:07:24 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/instcncz/public_html/cnesst/css/compiler/cssmin.inc.php on line 1617
+[24-Oct-2017 08:07:26 America/New_York] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/instcncz/public_html/cnesst/css/compiler/scss.inc.php on line 577

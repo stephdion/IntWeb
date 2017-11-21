@@ -90,39 +90,12 @@ h2{
     padding-left: 1rem ;
 }
 
-.autre{
-    border-top: 1px solid #414141;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-}
-
-.btns3 > div.autre {
-    margin: 1rem 1rem 0 1rem;
-}
-.autre .control-group p.clarification {
-    background-color: #fff;
-    border: 1px solid #006c08;
-    padding: 0.5rem 1rem !important;
-    margin: 0 0 0 0.5rem;
-    position: relative;
-}
-
-.autre .radiobutton h3.label {
-    position: relative;
-    font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 1.1rem;
-    color: #006a08;
-    padding: 0.3rem 0;
-}
-
-.autre  .btns3{
-    padding: 0rem;
-}
 
 /******** H Etape 2 ******/
 /******* en-tête de niveau 2 style résumé *******/
-.sub-block .panel-heading-R {
+.sub-block .panel-heading-R,
+.panel-heading-R
+ {
     position: relative;
     display: block;
     background-color: #5d5d5d !important;
@@ -150,7 +123,9 @@ padding: 0.95rem 1.5rem;
     position: relative;
     padding: 0.5rem 0.6rem !important;
 }
-.checkboxs .label {
+.checkboxs .label,
+p.label
+ {
     font-weight: bold;
 }
 .checkboxs label {
@@ -159,7 +134,6 @@ padding: 0.95rem 1.5rem;
 .checkboxs .radiobutton {
     margin-left: 1.4rem;
 }
-
 
 
 
@@ -244,10 +218,17 @@ padding: 0.95rem 1.5rem;
     vertical-align: middle;
     line-height: 1.2rem;
     border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
 }
 .btn-add:hover span {
     border-bottom: 1px solid #003d04;
+}
+.btn-add:hover span.naDetails
+ {
+   border-bottom: 1px solid transparent;
+}
+.btn-add:hover span span.naDetails span
+ {
+   border-bottom: 0px solid transparent;
 }
 
 .btn-add:hover,
@@ -502,6 +483,17 @@ h4 span.rft {
 .naDetails{
     font-weight: normal;
 }
+.btn-add .naDetails{
+    font-weight:bold ;
+}
+.btn-add .naDetails span{
+    font-size: 0.8rem !important;
+}
+
+h4 .naDetails{
+        font-size: 1.0rem !important;
+}
+
 .format{
     margin-top: 0.5rem;
     margin-left: 0.1rem;
@@ -509,11 +501,6 @@ h4 span.rft {
 
 /******* note lié (clarification)  ********/
 
-.btns3 {
-    text-align: center;
-    padding: 0.7rem 0 1.5rem 0;
-    color: #414141;
-}
 
 .control-group h4{
     display: block;
@@ -575,9 +562,156 @@ h4 span.rft {
 
 /******* /note lié (clarification) ********/
 
+.autre{
+
+}
+
+.etape2H .autre {
+  border-left: 2px solid #919191;
+  border-right: 2px solid #919191;
+  border-bottom: 2px solid #919191;
+}
+
+.btns3 > div.autre {
+    margin: 0;
+}
+
+.autre .control-group p.clarification {
+    background-color: #fff;
+    border: 1px solid #006c08;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0 0 0.5rem;
+    position: relative;
+}
+
+.autre .radiobutton h3.label {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #006a08;
+    padding: 0.3rem 0;
+}
+
+
+.autre  .btns3{
+    padding: 0;
+}
+.autre .sp-xl {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .btn3 .radiobutton {
     text-align: left;
+
 }
+
+.btns3 {
+  text-align: center;
+  padding: 0.7rem 0 1.5rem 0;
+  color: #414141;
+  /*border: 2px solid #919191;*//*T2*/
+
+}
+
+.autre .btns3{
+    margin: 0;
+}
+
+/****** bouton d'action *******/
+
+.btn3,
+.btn7,
+.btn9,
+.btn10
+ {
+   line-height: 1.25rem;
+   height: 2.7rem;
+}
+
+
+.btns2 {
+    text-align: center;
+    background: inherit;
+    padding: 1.5rem;
+    border-top: 0;
+    color: #414141;
+}
+
+
+.btn3:hover
+ {
+  color: #ffffff;
+  border-color: #003d04;
+  background: #003d04;
+}
+.btn3 {
+  background: #006c08;
+  color: #fff;
+  /* Button V4 */
+}
+.btn3:after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  right: 6%;
+  margin-top: -6.5px;
+  background-image: url('../images/icone-cnesst-icone-fleche-hover.png');
+  background-size: 9px;
+  width: 9px;
+  height: 13px;
+}
+.btn3:hover:after {
+  background-image: url('../images/icone-cnesst-icone-fleche-hover.png');
+}
+
+
+.btn7,
+.btn9
+ {
+  border: 2px solid #006c08;
+  color: #006c08;
+  font-weight: 700;
+  /*background: #f0f0f0;*//* couleur prévu dans les normes graphiques: semble disabled sur fond gris... */
+  line-height: 1.25rem;
+}
+
+.btn7:hover, .btn7:focus,
+.btn9:hover, .btn9:focus,
+.btn10:hover, .btn10:focus
+ {
+  color: #003d04 !important;
+  border-color: #003d04;
+  background: #dbdbdb;
+}
+
+.btn9 span {
+    display: inline-block;
+    line-height: 1.25rem;
+    vertical-align: top;
+    color: #006c08;
+}
+
+.btn9 i {
+    position: relative;
+      left: -2px;
+      top: -0.3rem;
+      vertical-align: top;
+      margin-right: 2px;
+}
+
+.icon-download {
+    background-image: url('../images/icone-cnesst-ordinateur-fleche.png');
+    background-size: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block;
+}
+/****** bouton d'action *******/
 
 
 /*******  file ********/
@@ -863,6 +997,15 @@ div.strong {
 
 h2.main-title {
   margin-left: 1rem;
+}
+
+
+.datepicker-dropdown.datepicker-orient-bottom::before {
+    border-bottom: 6px solid #414141;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom::after {
+    border-bottom: 6px solid #414141;
 }
 
 /******* @media  ********/

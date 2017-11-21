@@ -47,7 +47,7 @@
 		</div>
   </header>
 
-  <main class="container">
+  <main class="container  etape2H">
    <form id="idForm">
 
     <!-- Barre d'étape -->
@@ -69,7 +69,7 @@
         </div>
 
         <div class="infobox5 sp-xl">
-          <p>Les frais doivent être regroupés par date et par la raison du déplacement. Si vous avez eu des frais pour des raisons différentes à une même date, vous pouvez faire plusieurs demandes différentes ayant la même date.
+          <p>Les frais doivent être regroupés par date.
           </p>
         </div>
         <!-- class="form-cont sp-xl" -->
@@ -86,7 +86,7 @@
                 <!-- header panel -->
                 <div class="header panel-heading-R">
 
-                  <h4 aria-level="2"><span class="number">1</span> - Date <span class="date-icon"><input aria-label="date du jour 1" id="inpD1" class="datepicker form-control" value="" type="text"></span></h4>
+                  <h4 aria-level="2"><span class="number">1</span> - Date des frais<span class="date-icon"><input aria-label="date des frais jour 1" id="dateFrais-1" class="datepicker form-control dateFrais" value="" type="text"></span></h4>
                   <!-- <button type="button" class="btn4a btn-delete hide"  ><i class="icon-delete2"></i><span>Supprimer</span></button> -->
                   <!-- TODO: Ne pas afficher le bouton suivant si une seule date -->
                   <a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer les dépenses pour cette date"><i class="icon-delete2"></i><span>Supprimer</span></a>
@@ -114,7 +114,7 @@
 
                         <label for="inp4" class="checkbox">
               										   <input id="inp4" type="checkbox" name="mode" value="create" data-hide=".os-1">
-              										   <i>Visite médicale</i>
+              										   <i>Visite médicale (Ex: médecin, spécialiste, examen)</i>
               										</label>
 
                         <label for="inp5" class="checkbox">
@@ -135,7 +135,7 @@
                 <!-- Type de frais réclamés pour cette journée Nu:17-11-16 14:30-->
                 <div class="box2">
 
-                  <h4 aria-level="3">Type de frais réclamés pour cette journée<span class="hors-ecran"> obligatoire</span></h4>
+                  <h4 aria-level="3">Type de frais réclamés pour cette journée <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
 
                   <div class="text">
 
@@ -160,7 +160,7 @@
               															 - Afficher la note suivante
               															 - Lier explicitement la note au champ comme description accessible.
               									-->
-                        <p id="dabrFH-1" class="clarification">Les frais d’hébergement pour plusieurs nuitées consécutives doivent être entrés la première journée du séjour <span class="dval">(<span class="inpD1Val">xxxx-xx-xx</span>)</span>
+                        <p id="dabrFH-1" class="clarification">Les frais d’hébergement pour plusieurs nuitées consécutives doivent être entrés la première journée du séjour <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></span>
                         </p>
                       </div>
                       <div>
@@ -274,7 +274,7 @@
                   <!-- /Frais de déplacement (Choix) -->
                   <!--  Transport en commun Nu:17-11-16 14:30 -->
                   <div class="box2 hide os-6-1 os-6 os-2">
-                    <h4 aria-level="3">Transport en commun</h4>
+                    <h4 aria-level="3">Transport en commun <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <div class="text">
 
 
@@ -312,7 +312,7 @@
                       </div>
 
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Ajouter un déplacement en Transport en commun </span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Ajouter un déplacement en Transport en commun <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></span></a>
                       </div>
                     </div>
                   </div>
@@ -320,7 +320,7 @@
 
                   <!--  Voiture  NU:ok -->
                   <div class="box2 hide os-7-1 os-7 os-2">
-                    <h4 aria-level="3">Voiture<span class="hide os-7b-1 os-7b"> avec autorisation</span></h4>
+                    <h4 aria-level="3">Voiture<span class="hide os-7b-1 os-7b"> avec autorisation</span> <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <div class="text">
                       <!--  multiblocks -->
                       <div class="multiblocks">
@@ -361,7 +361,7 @@
 
                                     <!-- Attestation médicale -->
                                     <div id="nbrKMq1" class="control-group radiobutton inline required hide">
-                                      <i class="label" id="naRG-SG1-5">Avez-vous une attestation médicale indiquant votre incapacité à utiliser les transports en commun?</i>
+                                      <i class="label" id="naRG-SG1-5">Avez-vous obtenu une autorisation de la CNESST pour utiliser votre voiture afin de vous rendre à plus de 100 km de votre résidence?</i>
                                       <div class="radiobuttons note-ON-N" role="group" aria-labelledby="naRG-SG1-5">
 
                                         <label for="inpSG1_25" class="radiobutton">
@@ -378,8 +378,7 @@
                                       </div>
                                       <div class="note-ON-N hide os-SG1-26-1 os-SG1-25 os-SG1-23 os-SG1-24">
                                         <p class="clarification sp-s">
-                                          Si vous choisissez de vous rendre à plus de 100 km de chez vous pour recevoir des soins ou subir des examens qui peuvent vous être fournis dans un rayon de 100 km et moins de votre domicile, vos frais vous seront remboursés jusqu’à un maximum de 200 km
-                                          pour l’aller et le retour.
+                                          Sans autorisation, seul les 200 premiers kilomètre parcourus seront remboursables.
                                         </p>
                                       </div>
 
@@ -467,16 +466,50 @@
                       <!--  / multiblocks -->
                       <!-- Ajouter un déplacement (Voiture) -->
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-voiture"><i class="icon-add"></i><span>Ajouter un déplacement en voiture</span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-voiture"><i class="icon-add"></i><span>Ajouter un déplacement en voiture <span class="dateFrais-1-span  naDetails hide"> le <span class="dateFrais-1-val"></span></span></span></a>
                       </div>
                       <!-- / Ajouter un déplacement (Voiture) -->
                     </div>
                   </div>
                   <!--  / Voiture -->
 
+									<!-- Stationnement ou péage NU:ok-->
+									<div class="box2 hide os-7-1 os-7 os-2">
+									  <h4 aria-level="3">Stationnement ou péage <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
+									  <div class="text">
+									    <div class="multiblocks">
+									      <!-- sub-block Stationnement ou péage  -->
+									      <div class="sub-block">
+									        <div class="header">
+									          <h4 aria-level="3">Stationnement ou péage <span class="number">1</span></h4>
+									          <!-- <button type="button" class="btn4a btn-delete hide" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+									          <a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce stationnement ou péage"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+									        </div>
+									        <div class="sub-cont">
+
+									          <div class="control-group">
+									            <label for="inp36b" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+									            <input id="inp36b" type="text" name="a" class="amount"> $
+									          </div>
+
+									        </div>
+									      </div>
+									      <!-- / sub-block Stationnement ou péage  -->
+									    </div>
+
+									    <div class="btns3">
+									      <a href="#" class="btn4 btn-add" data-block=".block-stationnement"><i class="icon-add"></i><span>Ajouter un stationnement ou un payage <span class="dateFrais-1-span naDetails hide"> le <span class="dateFrais-1-val"></span></span></span></a>
+									    </div>
+
+									  </div>
+									</div>
+									<!-- /Stationnement ou péage -->
+
+
                   <!-- Taxis avec autorisation NU:ok-->
                   <div class="box2 hide os-8-1 os-8 os-2">
-                    <h4 aria-level="3">Taxis avec autorisation</h4>
+                    <h4 aria-level="3">Taxis avec autorisation <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <div class="text">
                       <div class="multiblocks">
                         <!-- sub-block Taxis  -->
@@ -516,7 +549,7 @@
                       </div>
 
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-taxi"><i class="icon-add"></i><span>Ajouter un déplacement en taxis</span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-taxi"><i class="icon-add"></i><span>Ajouter un déplacement en taxis <span class="dateFrais-1-span naDetails hide"> le <span class="dateFrais-1-val"></span></span></span></a>
                       </div>
 
                     </div>
@@ -565,7 +598,7 @@
                       </div>
 
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-ambulance"><i class="icon-add"></i><span>Ajouter un déplacement en ambulance</span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-ambulance"><i class="icon-add"></i><span>Ajouter un déplacement en ambulance <span class="dateFrais-1-span naDetails hide"> le <span class="dateFrais-1-val"></span></span></span></a>
                       </div>
                     </div>
                   </div>
@@ -573,7 +606,7 @@
 
                   <!-- Avion NU:ok-->
                   <div class="box2 hide os-10-1 os-10 os-2">
-                    <h4 aria-level="3">Avion</h4>
+                    <h4 aria-level="3">Avion <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <div class="text">
                       <div class="multiblocks">
                         <!-- sub-block Avion  -->
@@ -611,7 +644,7 @@
                       </div>
 
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-avion"><i class="icon-add"></i><span>Ajouter un déplacement en avion</span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-avion"><i class="icon-add"></i><span>Ajouter un déplacement en avion <span class="dateFrais-1-span  naDetails hide"> le <span class="dateFrais-1-val"></span></span><</span>/a>
                       </div>
 
                     </div>
@@ -620,7 +653,7 @@
 
                   <!-- Autre moyen de transport NU:ok-->
                   <div class="box2 hide os-11-1 os-11 os-2">
-                    <h4 aria-level="3">Autre moyen de transport</h4>
+                    <h4 aria-level="3">Autre moyen de transport <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <div class="text">
                       <!-- sub-block Autre moyen de transport  -->
                       <div class="multiblocks">
@@ -663,7 +696,7 @@
                       </div>
                       <!-- / sub-block Autre moyen de transport  -->
                       <div class="btns3">
-                        <a href="#" class="btn4 btn-add" data-block=".block-autre"><i class="icon-add"></i><span>Ajouter un déplacement autre</span></a>
+                        <a href="#" class="btn4 btn-add" data-block=".block-autre"><i class="icon-add"></i><span>Ajouter un déplacement autre <span class="dateFrais-1-span  naDetails hide"> le <span class="dateFrais-1-val"></span></span></span></a>
                       </div>
 
                     </div>
@@ -674,7 +707,7 @@
 
                 <!-- Frais d'hébergement -->
                 <div class="box2 hide os-3-1 os-3">
-                  <h4 aria-level="3">Frais d'hébergement</h4>
+                  <h4 aria-level="3">Frais d'hébergement <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                   <!-- text NU:ok -->
                   <div class="text">
                     <!-- Frais d'hébergement NU:ok-->
@@ -708,7 +741,7 @@
                       <div class="hide os-5-1 os-5 os-3">
                         <!-- Nombre de nuitées  Hôtel-->
                         <div class="control-group">
-                          <label for="nbrNH-1" class="obligatoire"> Nombre de nuitées consécutives à cet hôtel<span class="hors-ecran"> obligatoire</span></label>
+                          <label for="nbrNH-1" class="obligatoire"> Nombre de nuitées consécutives à cet hôtel <span class="dateFrais-1-span  naDetails hide"> débutant le <span class="dateFrais-1-val"></span></span><span class="hors-ecran"> obligatoire</span></label>
                           <input id="nbrNH-1" type="number" min="1" name="a" class="nbrNH amount" value="">
                         </div>
                         <!-- / Nombre de nuitées  Hôtel-->
@@ -725,7 +758,7 @@
 
                         <!-- Montant total pour allocation-->
                         <div class="hide-nbrNH-1 control-group hide">
-                          <label for="nbrNH-1-M">Montant total pour allocation <span class="naDetails">(<span class="nbrNH-1-Val">0</span> * 5,85)</span>
+                          <label for="nbrNH-1-M">Montant total pour allocation <span class="naDetails"> (<span class="nbrNH-1-Val">0</span> * 5,85)</span>
                             </label>
                           <input readonly id="nbrNH-1-M" type="text" name="a" class="amount-readonly" value=""> $
                         </div>
@@ -787,13 +820,13 @@
                       <!-- Ami - Parent -->
                       <div class="hide os-5-2 os-5 os-3">
                         <div class="control-group">
-                          <label for="nbrNA-1" class="obligatoire"> Nombre de nuitées consécutives chez un parent ou un ami</label>
+                          <label for="nbrNA-1" class="obligatoire"> Nombre de nuitées consécutives chez un parent ou un ami <span class="dateFrais-1-span  naDetails hide"> débutant le <span class="dateFrais-1-val"></span></span></label>
                           <input id="nbrNA-1" type="number" min="1" name="a" class="nbrNA amount">
                         </div>
 
                         <!-- Montant total (Ami ou prarent)-->
                         <div class="hide-nbrNA-1 control-group">
-                          <label for="nbrNA-1-M">Montant total<span class="naDetails">(<span class="nbrNA-1-Val">0</span> * 22,25)</span></label>
+                          <label for="nbrNA-1-M">Montant total<span class="naDetails"> (<span class="nbrNA-1-Val">0</span> * 22,25)</span></label>
                           <input readonly id="nbrNA-1-M" type="text" name="a" class="amount-readonly" value=""> $
                         </div>
                         <!-- /Montant total (Ami ou prarent)-->
@@ -814,7 +847,7 @@
                 <div class="hide os-4-1 os-4">
                   <!-- Repas 2-->
                   <div class="box2 hide os-2-1 os-3-1">
-                    <h4 aria-level="3">Repas</h4>
+                    <h4 aria-level="3">Repas <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                     <!-- text NU:ok-->
                     <div class="text">
 
@@ -895,32 +928,38 @@
               </div>
               <!-- sub-block -->
               <!-- / **********  Jour 1 ********** -->
-
+							<div class="header panel-heading-R">
+								<h4 aria-level="3">
+									 Autre date</h4>
+							</div>
+<div class="btns3  autre">
               <!-- Autre frais de déplacement, de repas ou d'hébergement -->
-              <div class="box2 autre">
+
+              <div class="box2">
                 <div class="radiobutton  sp-xl inline">
-                  <h3 class="label" id="naRG14">Autre frais de déplacement, de repas ou d'hébergement</h3>
+                  <!--<h3 class="label" id="naRG14">Autre date</h3>-->
+									<p class="label" id="naRG14">Ajouter des frais de déplacement, de repas ou d'hébergement pour une autre date</p>
 
                   <div class="radiobuttons control-group" role="group" aria-labelledby="naRG14">
 
                     <label for="inp72" class="radiobutton">
                    <input id="inp72" type="radio" name="m28" data-show=".os-72-1" data-hide=".os-72">
-                   <i>Différent du précédent</i>
+                   <i>Frais différents</i>
                    </label>
 
                     <label for="inp73" class="radiobutton">
                    <input id="inp73" type="radio" name="m28" data-show=".os-73-1" data-hide=".os-73">
-                   <i>Similaire au précedent</i>
+                   <i>Frais similaires à ceux de la date précédente <span class="dateFrais-1-span naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></i>
                     </label>
                     <div class="similaire os-73-1 os-73 os-72 hide sp-s">
-                      <p class="clarification">Copie modifiable des frais précédents</p>
+                      <p class="clarification">Permet de dupliquer la demande précédente et de modifier au besoin certaines informations.</p>
                     </div>
                     <div class="btns3 hide os-72-1 os-73">
                       <!-- TODO au click:
                           - Dupliquer le block Date vièrge
                           - Afficher bouton Supprimer sur première date
                    -->
-                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais différents</span></a>
+                      <a href="#" class="btn4 btn-add" data-block=".block-date"><i class="icon-add"></i><span>Ajouter une date</span></a>
 
                     </div>
                     <div class="btns3 hide os-73-1 os-72">
@@ -928,34 +967,39 @@
                       - Dupliquer le block Date idem sauf date + autres à détreminer
                       - Afficher bouton Supprimer sur première date
                  -->
-                      <a href="#" class="btn4 btn-add" data-block=".block-transport"><i class="icon-add"></i><span>Autres frais similaires</span></a>
+                      <a href="#" class="btn4 btn-add" data-block=".block-date"><i class="icon-add"></i><span>Ajouter une date</span></a>
                     </div>
 
                   </div>
                 </div>
               </div>
               <!-- / Autre frais de déplacement, de repas ou d'hébergement -->
-
+</div>
           </div>
           <!-- / class="content" -->
-          <!-- Boutons précédent - Suivant -->
-          <div class="btns">
-            <a role="button" class="btn btn7" href="1.html">Précédent</a>
-            <a role="button" class="btn btn3" href="3.html">Suivant</a>
-          </div>
-          <!-- Boutons précédent - Suivant -->
+
         </div>
         <!-- / class="form-cont sp-xl" -->
-        <!-- Brouillons -->
-        <div class="btns">
-          <a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
-          <a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
-        </div>
-        <!-- Brouillons -->
+
       </div>
       <!-- id="idform" -->
+
+			<!-- Boutons précédent - Suivant -->
+			<div class="btns">
+				<a role="button" class="btn btn7" href="1.html">Précédent</a>
+				<a role="button" class="btn btn3" href="3.html">Suivant</a>
+			</div>
+			<!-- Boutons précédent - Suivant -->
+
     </div>
     <!-- / class="strong" -->
+		<!-- Brouillons -->
+		<div class="btns">
+			<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+			<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+		</div>
+		<!-- Brouillons -->
+
   </form>
 </main>
 
@@ -1157,6 +1201,31 @@
   </div>
   <!--  / block-voiture-->
 
+	<!--  block-stationnement NU:ok-->
+	<div class="hide block-stationnement">
+	      <!-- sub-block Stationnement ou péage  -->
+	      <div class="sub-block">
+	        <div class="header">
+	          <h4 aria-level="3">Stationnement ou péage <span class="number">1</span></h4>
+	          <!-- <button type="button" class="btn4a btn-delete hide" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
+	          <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce stationnement ou payage"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+	        </div>
+	        <div class="sub-cont">
+
+	          <div class="control-group">
+	            <label for="inp36c" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+	            <input id="inp36c" type="text" name="a" class="amount"> $
+	          </div>
+
+	        </div>
+	      </div>
+	      <!-- / sub-block stationnement  -->
+	    </div>
+
+
+
+
   <!--  block-taxi NU:ok-->
   <div class="hide block-taxi">
 
@@ -1165,7 +1234,7 @@
       <div class="header">
         <h4 aria-level="3">Déplacement <span class="number">1</span></h4>
         <!-- <button type="button" class="btn4a btn-delete" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></button> -->
-        <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce déplacement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+        <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce taxis"><i class="icon-delete2"></i><span>Supprimer</span></a>
 
       </div>
       <div class="sub-cont">
@@ -1630,7 +1699,35 @@
       /********** / souper  ***********/
       /****** // Déjeuner - Diner - Souper ******/
 
+			/********** date de frais ***********/
+			$( ".dateFrais" ).on('blur',function() {
+			    /* Récupérer le no du id (-x) */
+			    var id = $( this ).attr("id");
+			    var value = $( this ).val();
+			    var no = idx(id,2);
 
+			    var date = value.split("-");
+			    var annee= date[0];
+			    var mois= date[1];
+			    var jour= date[2];
+
+			    var d = new Date();
+			    var a = d.getFullYear();
+			    var m = 1+d.getMonth();
+			    var j = d.getDate();
+
+			    if (!value){
+			      /* Si la date est égale ou inférieur à la date du jour, afficher la date dans les zones approprié  */
+			      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+			    } else if (annee < a || (annee == a && mois <= m && jour <= j)){
+			      $( ".dateFrais-"+no+"-span" ).removeClass( "hide" );
+			      $( ".dateFrais-"+no+"-val" ).text(value);
+			    } else {
+			      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+			    }
+
+			  });
+			/********** / date de frais ***********/
 
 
 

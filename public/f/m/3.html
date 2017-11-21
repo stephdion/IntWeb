@@ -104,7 +104,7 @@
 
 
 								<div class="os-1-1 os-1 hide">
-									<p class="clarification"><strong>Note:</strong> Les frais de vêtements doivent être regroupés par reçu.</p>
+									<p class="clarification">Les frais de vêtements doivent être regroupés par reçu.</p>
 								</div>
 
 							</div>
@@ -116,9 +116,9 @@
 									<!--  sub-block Reçu  1 -->
 									<div class="sub-block">
 										<div class="header panel-heading-R">
-											<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 1" id="inp" type="text" class="datepicker form-control" value=""></span></h4>
+											<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 1" id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
 											<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
-											<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+											<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 
@@ -127,7 +127,7 @@
 													<div class="header">
 														<h4 aria-level="3">Vêtement <span class="number">1</span></h4>
 														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier Vêtement s'il y a plus d'un vetement. -->
-														<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce vêtement"><i class="icon-delete2"></i><span>Supprimer</span></a>
+														<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce vêtement"><i class="icon-delete2"></i><span>Supprimer</span></a>
 													</div>
 													<div class="sub-cont">
 
@@ -207,11 +207,11 @@
 											</div>
 
 											<div class="btns3">
-												<a href="#" class="btn4 btn-add" data-block=".block-vêtement"><i class="icon-add"></i><span>Ajouter un vêtement</span></a>
+												<a href="#" class="btn4 btn-add" data-block=".block-vêtement"><i class="icon-add"></i><span>Ajouter un vêtement  <span class="dateFrais-1-span  naDetails hide"> sur le reçu du <span class="dateFrais-1-val"></span></span></span></a>
 											</div>
 
 											<div class="control-group">
-												<h4 id="naRG-4" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
+												<h4 id="naRG-4" class="obligatoire">Copie du reçu <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
 												<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
 												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
@@ -237,20 +237,19 @@
 
 
 					</div>
-					<div class="btns">
-						<a role="button" class="btn btn7" href="2.html">Précédent</a>
-						<a role="button" class="btn btn3" href="4.html">Suivant</a>
-					</div>
-				</div>
 
-				<div class="btns">
-					<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
-					<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
 				</div>
 
 			</div>
+			<div class="btns">
+				<a role="button" class="btn btn7" href="2.html">Précédent</a>
+				<a role="button" class="btn btn3" href="4.html">Suivant</a>
+			</div>
 		</div>
-
+		<div class="btns">
+			<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
+			<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
+		</div>
 	 </form>
  </main>
 
@@ -345,7 +344,7 @@
 
 		<div class="sub-block">
 			<div class="header panel-heading-R">
-				<h4 aria-level="3"><span class="number">2</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 2" id="inp" type="text" class="datepicker form-control" value=""></span></h4>
+				<h4 aria-level="3"><span class="number">2</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 2" id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
 				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
@@ -358,8 +357,7 @@
 						<div class="sub-cont">
 
 							<div class="control-group">
-								<label for="inp24" class="obligatoire"> Description du vêtement<span class="hors-ecran"> obligatoire</span></label>
-								<p class="clarification"><span class="naDetails">(Ex.: Salopette, pantalon.)</span></p>
+								<label for="inp24" class="obligatoire"> Description du vêtement<span class="naDetails">(Ex.: Salopette, pantalon.)</span><span class="hors-ecran"> obligatoire</span></label>
 								<input id="inp24" type="text" name="a">
 							</div>
 
@@ -435,11 +433,11 @@
 				</div>
 
 				<div class="btns3">
-					<a href="#" class="btn4 btn-add" data-block=".block-vêtement"><i class="icon-add"></i><span>Ajouter un vêtement</span></a>
+					<a href="#" class="btn4 btn-add" data-block=".block-vêtement"><i class="icon-add"></i><span>Ajouter un vêtement <span class="dateFrais-2-span  naDetails hide"> sur le reçu du <span class="dateFrais-2-val"></span></span></a>
 				</div>
 
 				<div class="control-group">
-					<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
+					<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu  <span class="dateFrais-2-span  naDetails hide"> (<span class="dateFrais-2-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
 					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
 					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
@@ -487,6 +485,81 @@
 	<script>
 		$(document).ready(function() {
   $('#idForm')[0].reset();
+
+	function idx(id,x) {
+	        var t = id.split("-");
+	        var prefixe= t[0];
+	        var index= t[t.length-1];
+	        var inpText = prefixe+"-"+index;
+	        var valeur = $( "#"+inpText ).val();
+	        var idCible = prefixe+"-"+index+"-val";
+	        var valeurCible = $( "#"+idCible ).val();
+
+	       var a=0;
+
+	        switch (x) {
+	          case 1:
+	              /*Retourne la valeur de l'index avant le premier séparateur (_)*/
+	              a = prefixe;
+	              break;
+	          case 2:
+	               /*Retourne la valeur de l'index après le dernier séparateur (_)*/
+	              a = index;
+	              break;
+	          case 3:
+	              /*Retourne le id de du champ dont on veut la valeur*/
+	              a = inpText;
+	              break;
+	          case 4:
+	              /*Retourne le valeur du champ texte dont on veut la valeur*/
+	              a = valeur;
+	              break;
+	          case 5:
+	              /*Retourne le id de du champ dont on veut modifier la valeur*/
+	              a = idCible;
+	              break;
+	          case 6:
+	              /*Retourne la valeur actuel du champ dont on veut modifier la valeur*/
+	              a = valeurCible;
+	              break;
+	          default:
+	             a = 0;
+	      }
+	        return a;
+	      }
+
+
+
+	/********** date de frais ***********/
+
+	$( ".dateFrais" ).on('blur',function() {
+	    /* Récupérer le no du id (-x) */
+	    var id = $( this ).attr("id");
+	    var value = $( this ).val();
+	    var no = idx(id,2);
+
+	    var date = value.split("-");
+	    var annee= date[0];
+	    var mois= date[1];
+	    var jour= date[2];
+
+	    var d = new Date();
+	    var a = d.getFullYear();
+	    var m = 1+d.getMonth();
+	    var j = d.getDate();
+
+	    if (!value){
+	      /* Si la date est égale ou inférieur à la date du jour, afficher la date dans les zones approprié  */
+	      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+	    } else if (annee < a || (annee == a && mois <= m && jour <= j)){
+	      $( ".dateFrais-"+no+"-span" ).removeClass( "hide" );
+	      $( ".dateFrais-"+no+"-val" ).text(value);
+	    } else {
+	      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+	    }
+
+	  }).keyup();
+	/********** / date de frais ***********/
 
 			$('body').on('focus',".datepicker", function(){
 

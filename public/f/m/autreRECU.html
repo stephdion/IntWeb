@@ -1,0 +1,79 @@
+<!--  block-recu2b -->
+  <div class="block-recu2 hide">
+
+    <!--  sub-block Reçu  2b -->
+    <div class="sub-block">
+      <div class="header panel-heading-R">
+        <h4 aria-level="3">
+           <span class="number">1</span> - Reçu b du <span class="date-icon">
+             <input aria-label="date du reçu numéro 1" id="inp-SG2-3" type="text" class="datepicker form-control" value=""></span></h4>
+
+             <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
+      </div>
+      <div class="sub-cont">
+        <!--  multiblocks  Médicament 3-->
+        <div class="multiblocks">
+          <!--  sub-block Médicament 3 -->
+          <div class="sub-block">
+
+            <div class="header">
+              <h4 aria-level="3">Médicament <span class="number">1</span></h4>
+              <a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+            </div>
+
+            <div class="sub-cont">
+              <div class="control-group">
+                <label for="inp-SG3-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
+                <input id="inp-SG3-4" type="text" name="a">
+              </div>
+
+              <div class="control-group">
+                <label for="inp-SG3-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+                <input id="inp-SG3-5" type="text" name="a" class="amount"> $
+              </div>
+
+
+              <div class="control-group">
+                <label for="inp-SG3-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
+                <input id="inp-SG3-6" type="text" name="a">
+              </div>
+
+            </div>
+
+          </div>
+          <!--  / sub-block Médicament 3 -->
+        </div>
+        <!--  / multiblocks Médicament 3-->
+
+        <!--
+        TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
+              Actuellement, on duplique tous les ids d'un block à chaque ajout!
+        -->
+        <div class="btns3">
+          <a role="button"	href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament</span></a>
+        </div>
+
+        <!--  Copie du reçu -->
+        <div class="control-group">
+          <h4 id="naRG-SG3-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
+          <p id="daRG-SG3-2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
+          <div class="file" role="group" aria-labelledby="naRG-SG3-2" aria-describedby="daRG-SG3-2">
+            <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
+            <label for="inp-SG3-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+            <input id="inp-SG3-7" type="file" name="file">
+            <a role="button" id="inp-SG3-7b" aria-labelledby="inp-SG3-7b inp-SG3-7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
+            <div class="detail"><i class="icon-file"></i><span></span></div>
+          </div>
+        </div>
+        <!--  Copie du reçu -->
+
+
+      </div>
+    </div>
+    <!--  / sub-block Reçu  2 -->
+
+
+
+  </div>
+<!--  / block-recu2b -->
