@@ -1,3 +1,17 @@
+
+/******* 2017-11-21 *******/
+:focus{
+ outline: 2px solid #5e89eb;
+  outline-offset: 2px;
+  text-decoration: none;
+  -moz-outline-radius: 3px;
+  -webkit-transition: all 0.10s ease-in-out;
+  -moz-transition: all 0.10s ease-in-out;
+  -ms-transition: all 0.10s ease-in-out;
+  -o-transition: all 0.10s ease-in-out;
+}
+
+
 .hide2,
 .hide3,
 .hide4,
