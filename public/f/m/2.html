@@ -183,40 +183,38 @@
 								</div>
 								<!--  /multiblocks  Reçu -->
 
-
+								<div class="btns3 autre control-group">
 								<!--  Autre reçu de médicaments -->
+								<div class="autre text">
+								<h3 class="hors-ecran">Autre reçu de médicaments</h3>
+									<div class="radiobutton required inline">
+										 <i id="naRG-AF">Avez-vous d'autre reçu de frais de médicaments?</i>
+										 <div class="radiobuttons" role="group" aria-labelledby="naRG-AF">
 
-								<div class="btns3 autre">
-									<!--  Autre reçu de médicaments -->
-									<div class="box2">
-									<div class="radiobutton sp-xl inline">
-										 <h3 class="label" id="naRG-SG1-3">Autre reçu de médicaments</h3>
-										 <div class="control-group radiobuttons" role="group" aria-labelledby="naRG-SG1-3">
-
-											<label for="inp9" class="radiobutton">
-												 <input id="inp9" type="radio" name="mode" data-show=".os-72-1" data-hide=".os-72">
-												 <i>Médicaments différents du reçu précédent</i>
+											<label for="inp-AF-72" class="radiobutton">
+												 <input id="inp-AF-72" data-show=".os-72-1" type="radio" name="mode">
+												 <i>Oui</i>
 											</label>
 
-											<label for="inp8" class="radiobutton">
-												 <input id="inp8" type="radio" name="mode" data-show=".os-73-1" data-hide=".os-73">
-												 <i>Médicaments identiques ou similaires à ceux du reçu précédent</i>
+											<label for="inp-AF-73" class="radiobutton">
+												 <input id="inp-AF-73" data-hide=".os-73" type="radio" name="mode">
+												 <i>Non</i>
 											</label>
-
-											<div class="similaire os-73-1 os-73 os-72 hide sp-s">
-												<p class="clarification">Permet de dupliquer le reçu précédent et de modifier au besoin certaines informations.</p>
-											</div>
 
 										 </div>
-
+									</div>
+									<div class="hide os-72-1 os-73 sp-s">
+										<p class="clarification">Vous pouvez ajouter un nouveau reçu ou dupliquer les informations du reçu précédent et les modifier au besoin.</p>
 									</div>
 								</div>
 									<!--  / Autre reçu de médicaments -->
+									<!-- Ajouter un reçu-->
+											<a href="#" class="hide btn4 btn-add  os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter un reçu</span></a>
+											<a href="#" class="hide btn4 btn-add  os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer le reçu</span></a>
+									</div>
+									<!-- / Ajouter un reçu-->
 
-									<a href="#" class="btn4 btn-add hide os-72-1 os-73" data-block=".block-recu"><i class="icon-add"></i><span>Autre reçu différent</span></a>
-									<a href="#" class="btn4 btn-add hide os-73-1 os-72" data-block=".block-recu"><i class="icon-add"></i><span>Autre reçu similaire</span></a>
 
-								</div>
 							</div>
 
 
@@ -237,7 +235,7 @@
 			</div>
 		</div>
 
-		<div class="btns">
+		<div class="btns brouillons">
 			<a role="button" class="btn btn4a" href="#"><i class="icon-save"></i> Enregistrer en brouillon</a>
 			<a role="button" class="btn btn4a" href="#"><i class="icon-delete"></i> Supprimer le brouillon</a>
 		</div>
@@ -380,11 +378,17 @@
 	</footer>
 
 
-	<!-- script -->
-  <script src="http://instynctdemo.com/cnesst/js/jquery.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>
+	<!-- script
+
+	<script src="http://instynctdemo.com/cnesst/js/jquery.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>-->
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/dp/bootstrap-datepicker.min.js"></script>
+	<script src="../js/dp/bootstrap-datepicker.fr.min.js"></script>
+	<script src="../js/jquery.qtip.min.js"></script>
 
 	<script>
 		$(document).ready(function() {

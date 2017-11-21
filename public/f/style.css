@@ -224,9 +224,13 @@ p.label
  background-color: inherit !important;
  border:0;
  color: #006c08;
- padding: 0 0 0 0;
+ padding: 0.5rem 0 0.5rem 0;
  margin-top: 1rem;
+ width: 49.5%;
+ border: 1px solid transparent;
+ min-width: 20rem;
 }
+
 
 .btn-add span {
     vertical-align: middle;
@@ -235,6 +239,7 @@ p.label
 }
 .btn-add:hover span {
     border-bottom: 1px solid #003d04;
+
 }
 .btn-add:hover span.naDetails
  {
@@ -248,9 +253,8 @@ p.label
 .btn-add:hover,
 .btn-add:focus{
  color: #003d04;
- border:0;
+ border: 0;
 }
-
 
 .btn-add .icon-add {
     background-image: url('images/ic_Ajouter.svg');
@@ -576,14 +580,25 @@ h4 .naDetails{
 
 /******* /note lié (clarification) ********/
 
-.autre{
+.brouillons{
+    margin: 1.5vw 0;
+}
 
+.autre{
+    position: relative;
+    top: -0.8rem !important;
+}
+
+.etape2H .autre .text{
+  background: #f7f7f7;
+  padding: 1rem;
+  color: #414141;
 }
 
 .etape2H .autre {
-  border-left: 2px solid #919191;
+/*  border-left: 2px solid #919191;
   border-right: 2px solid #919191;
-  border-bottom: 2px solid #919191;
+  border-bottom: 2px solid #919191;*/
 }
 
 .btns3 > div.autre {
@@ -611,6 +626,11 @@ h4 .naDetails{
 .autre  .btns3{
     padding: 0;
 }
+
+.autre  .btn-add{
+    margin-top: 0;
+}
+
 .autre .sp-xl {
     margin: 0;
     padding: 0;

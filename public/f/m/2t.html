@@ -61,7 +61,7 @@
 
 				<div class="step-info">
 					<p class="number">2</p>
-					<h2 aria-level="1">Titre</h2>
+					<h2 aria-level="1">Médicaments</h2>
 				</div>
 
 				<div class="form-cont sp-xl">
@@ -75,66 +75,159 @@
 
 						<div class="box2">
 
-							<!--  multiblocks parent -->
-							<div class="">
+							<div class="text control-group">
+
+								<div class="radiobutton required inline">
+								   <i id="naRG1">Avez-vous des frais de médicaments?</i>
+								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+
+										<label for="inp1" class="radiobutton">
+										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										   <i>Oui</i>
+										</label>
+
+										<label for="inp2" class="radiobutton">
+										   <input id="inp2" data-hide=".os-1" type="radio" name="mode">
+										   <i>Non</i>
+										</label>
+
+								   </div>
+
+								</div>
+
+
+								<div class="os-1-1 os-1 hide">
+									<p class="clarification">Les frais de médicaments doivent être regroupés par reçu. </p>
+								</div>
+
+							</div>
+
+
+							<div class="hide os-1-1 os-1">
 								<!--  multiblocks  Reçu -->
 								<div class="multiblocks">
-									<div class="test"><!-- toto -->
 									<!--  sub-block Reçu  1 -->
 									<div class="sub-block">
 										<div class="header panel-heading-R">
-											<h4 aria-level="3"> <span class="number">1</span> - test </h4>
+											<h4 aria-level="3">
+												 <span class="number">1</span> - Reçu du <span class="date-icon">
+													 <input aria-label="date du reçu numéro 1" id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
 													 	<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
-															<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer test"><i class="icon-delete2"></i><span>Supprimer</span></a>
+															<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
-											<div class="control-group">
-												<label for="inp-t-1" class="obligatoire"> Nom du champ<span class="hors-ecran"> obligatoire</span></label>
-												<input id="inp-t-1" type="text" name="a">
+											<!--  multiblocks  Médicament 1-->
+											<div class="multiblocks">
+												<!--  sub-block Médicament 1 -->
+												<div class="sub-block">
+
+													<div class="header">
+														<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+														<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier Médicament s'il y a plus d'un médicament. -->
+														<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+													</div>
+
+													<div class="sub-cont">
+														<div class="control-group">
+															<label for="inp-SG1-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
+															<input id="inp-SG1-4" type="text" name="a">
+														</div>
+
+														<div class="control-group">
+															<label for="inp-SG1-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+															<input id="inp-SG1-5" type="text" name="a" class="amount"> $
+														</div>
+
+
+														<div class="control-group">
+															<label for="inp-SG1-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
+															<input id="inp-SG1-6" type="text" name="a">
+														</div>
+
+													</div>
+
+												</div>
+												<!--  / sub-block Médicament 1 -->
 											</div>
+											<!--  / multiblocks Médicament 1-->
+
+											<!--
+											TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
+														Actuellement, on duplique tous les ids d'un block à chaque ajout!
+											-->
+											<div class="btns3">
+												<a role="button"	href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament <span class="dateFrais-1-span  naDetails hide"> sur le reçu du <span class="dateFrais-1-val"></span></span></span></a>
+											</div>
+
+ 											<!--  Copie du reçu -->
+											<div class="control-group">
+												<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
+												<p id="daR-SG1-G2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
+												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daR-SG1-G2">
+													<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
+													<label for="inp-SG1-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+													<input id="inp-SG1-7" type="file" name="file">
+													<a role="button" id="inp-SG1-7b" aria-labelledby="inp-SG1-7b inp-SG1-7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
+													<div class="detail"><i class="icon-file"></i><span></span></div>
+												</div>
+											</div>
+											<!--  Copie du reçu -->
+
+
 										</div>
 									</div>
 									<!--  / sub-block Reçu  1 -->
-								</div><!-- / toto -->
+
+
 								</div>
 								<!--  /multiblocks  Reçu -->
-								<!--  block boutons add  -->
-								<div class="btns3 autre">
-									<!--  Autre reçu de médicaments -->
-									<div class="box2">
-										<div class="radiobutton sp-xl inline">
-											 <h3 class="label" id="naRG-SG1-3">Autre reçu de médicaments</h3>
-											 <!--  role="group" -->
-											 <div class="control-group radiobuttons" role="group" aria-labelledby="naRG-SG1-3">
-															<label for="inp9" class="radiobutton">
-																 <input id="inp9" type="radio" name="mode" data-show=".os-72-1" data-hide=".os-72">
-																 <i>Différent du précédent</i>
-															</label>
 
-															<label for="inp8" class="radiobutton">
-																 <input id="inp8" type="radio" name="mode" data-show=".os-73-1" data-hide=".os-73">
-																 <i>Similaire au précedent</i>
-															</label>
+								<!--  Autre reçu de médicaments -->
+								<div class="box2 btns3 autre control-group">
 
-															<div class="similaire os-73-1 os-73 os-72 hide sp-s">
-																<p class="clarification">Copie modifiable du reçu précédent</p>
-															</div>
-											 </div>
-											 <!--  / role="group" -->
-										</div>
+								  <div class="autre text">
+								    <h3 class="hors-ecran">Autre reçu de médicaments</h3>
+								    <div class="radiobutton required inline">
+								      <i id="naRG-AF">Avez-vous d'autre reçu de frais de médicaments?</i>
+								      <div class="radiobuttons" role="group" aria-labelledby="naRG-AF">
+
+								        <label for="inp-AF-72" class="radiobutton">
+																						 <input id="inp-AF-72" data-show=".os-72-1" type="radio" name="mode">
+																						 <i>Oui</i>
+																					</label>
+
+								        <label for="inp-AF-73" class="radiobutton">
+																						 <input id="inp-AF-73" data-hide=".os-73" type="radio" name="mode">
+																						 <i>Non</i>
+																					</label>
+
+								      </div>
+								    </div>
+								    <div class="hide os-72-1 os-73 sp-s">
+								      <p class="clarification">Vous pouvez ajouter un nouveau reçu ou dupliquer les informations du reçu précédent et les modifier au besoin.</p>
+								    </div>
 								  </div>
-									<!--  / Autre reçu de médicaments -->
-									<a href="#" class="btn4 btn-add hide os-72-1 os-73" data-block=".block-test"><i class="icon-add"></i><span>Autre reçu différent</span></a>
-									<a href="#" class="btn4 btn-add hide os-73-1 os-72" data-block=".block-test"><i class="icon-add"></i><span>Autre reçu similaire</span></a>
-
+								  <!--  / Autre reçu de médicaments -->
+								  <!-- Ajouter un reçu-->
+								  <a href="#" class="btn4 btn-add  os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter un reçu</span></a>
+								  <a href="#" class="btn4 btn-add  os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer le reçu</span></a>
+								  <!-- / Ajouter un reçu-->
 								</div>
-								<!--  / block boutons add  -->
+								<!--  /Autre reçu de médicaments -->
+
 							</div>
-							<!--  /multiblocks parent -->
+
 
 						</div>
+
+
 					</div>
+
 				</div>
+
+
+
 			</div>
 
 			<div class="btns">
@@ -151,28 +244,118 @@
 	 </form>
  </main>
 
-<!-- ************* Block à dupliquer *********** -- >
-<!--  block-test  -->
-	<div class="block-test  hide">
+<!--  block-medicament 2-->
+	<div class="block-medicament hide">
+		<!--  sub-block Médicament 2 -->
+		<div class="sub-block">
+
+			<div class="header">
+				<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+				<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+			</div>
+
+			<div class="sub-cont">
+				<div class="control-group">
+					<label for="inp-SG2-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
+					<input id="inp-SG2-4" type="text" name="a">
+				</div>
+
+				<div class="control-group">
+					<label for="inp-SG2-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+					<input id="inp-SG2-5" type="text" name="a" class="amount"> $
+				</div>
+
+
+				<div class="control-group">
+					<label for="inp-SG2-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
+					<input id="inp-SG2-6" type="text" name="a">
+				</div>
+
+			</div>
+
+		</div>
+		<!--  / sub-block Médicament 2 -->
+	</div>
+<!--  / block-medicament 2-->
+<!--  block-recu -->
+	<div class="block-recu hide">
+
 		<!--  sub-block Reçu  2 -->
 		<div class="sub-block">
 			<div class="header panel-heading-R">
 				<h4 aria-level="3">
-					 <span class="number">1</span> - test b </h4>
+					 <span class="number">1</span> - Reçu du <span class="date-icon">
+						 <input aria-label="date du reçu numéro 1" id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
 
 						 <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
-				<div class="control-group">
+				<!--  multiblocks  Médicament 3-->
+				<div class="multiblocks">
+					<!--  sub-block Médicament 3 -->
+					<div class="sub-block">
 
+						<div class="header">
+							<h4 aria-level="3">Médicament <span class="number">1</span></h4>
+							<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+
+						</div>
+
+						<div class="sub-cont">
+							<div class="control-group">
+								<label for="inp-SG3-4" class="obligatoire"> Nom du médicament<span class="hors-ecran"> obligatoire</span></label>
+								<input id="inp-SG3-4" type="text" name="a">
+							</div>
+
+							<div class="control-group">
+								<label for="inp-SG3-5" class="obligatoire"> Montant<span class="hors-ecran"> obligatoire</span></label>
+								<input id="inp-SG3-5" type="text" name="a" class="amount"> $
+							</div>
+
+
+							<div class="control-group">
+								<label for="inp-SG3-6" class="obligatoire"> Nom du médecin<span class="hors-ecran"> obligatoire</span></label>
+								<input id="inp-SG3-6" type="text" name="a">
+							</div>
+
+						</div>
+
+					</div>
+					<!--  / sub-block Médicament 3 -->
 				</div>
+				<!--  / multiblocks Médicament 3-->
+
+				<!--
+				TODO 	Script pour incrémenter les ids à chaque reproduction d'un block
+							Actuellement, on duplique tous les ids d'un block à chaque ajout!
+				-->
+				<div class="btns3">
+					<a role="button"	href="#" class="btn4 btn-add" data-block=".block-medicament"><i class="icon-add"></i><span>Ajouter un médicament <span class="dateFrais-2-span  naDetails hide"> sur le reçu du <span class="dateFrais-2-val"></span></span></span></a>
+				</div>
+
+				<!--  Copie du reçu -->
+				<div class="control-group">
+					<h4 id="naRG-SG3-2" class="obligatoire">Copie du reçu<span class="hors-ecran"> obligatoire</span></h4>
+					<p id="daRG-SG3-2">Veuillez joindre une copie du reçu. <span class="format">(Document PDF, image, photo ou autre)</span></p>
+					<div class="file" role="group" aria-labelledby="naRG-SG3-2" aria-describedby="daRG-SG3-2">
+						<!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
+						<label for="inp-SG3-7" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
+						<input id="inp-SG3-7" type="file" name="file">
+						<a role="button" id="inp-SG3-7b" aria-labelledby="inp-SG3-7b inp-SG3-7" href="#" class="btn-remove" aria-label="Supprimer le document "><i class="icon-remove"></i></a>
+						<div class="detail"><i class="icon-file"></i><span></span></div>
+					</div>
+				</div>
+				<!--  Copie du reçu -->
+
+
 			</div>
 		</div>
 		<!--  / sub-block Reçu  2 -->
-	</div>
-<!--  / block-test  -->
 
-<!-- ************* / Block à dupliquer *********** -- >
+
+
+	</div>
+<!--  / block-recu -->
 
 
 	<footer class="container footer">
@@ -196,15 +379,100 @@
 	</footer>
 
 
-	<!-- script -->
-  <script src="http://instynctdemo.com/cnesst/js/jquery.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
-  <script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>
+	<!-- script
+
+	<script src="http://instynctdemo.com/cnesst/js/jquery.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
+	<script src="http://instynctdemo.com/cnesst/js/jquery.qtip.min.js"></script>-->
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/dp/bootstrap-datepicker.min.js"></script>
+	<script src="../js/dp/bootstrap-datepicker.fr.min.js"></script>
+	<script src="../js/jquery.qtip.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
   $('#idForm')[0].reset();
+
+
+	function idx(id,x) {
+	        var t = id.split("-");
+	        var prefixe= t[0];
+	        var index= t[t.length-1];
+	        var inpText = prefixe+"-"+index;
+	        var valeur = $( "#"+inpText ).val();
+	        var idCible = prefixe+"-"+index+"-val";
+	        var valeurCible = $( "#"+idCible ).val();
+
+	       var a=0;
+
+	        switch (x) {
+	          case 1:
+	              /*Retourne la valeur de l'index avant le premier séparateur (_)*/
+	              a = prefixe;
+	              break;
+	          case 2:
+	               /*Retourne la valeur de l'index après le dernier séparateur (_)*/
+	              a = index;
+	              break;
+	          case 3:
+	              /*Retourne le id de du champ dont on veut la valeur*/
+	              a = inpText;
+	              break;
+	          case 4:
+	              /*Retourne le valeur du champ texte dont on veut la valeur*/
+	              a = valeur;
+	              break;
+	          case 5:
+	              /*Retourne le id de du champ dont on veut modifier la valeur*/
+	              a = idCible;
+	              break;
+	          case 6:
+	              /*Retourne la valeur actuel du champ dont on veut modifier la valeur*/
+	              a = valeurCible;
+	              break;
+	          default:
+	             a = 0;
+	      }
+	        return a;
+	      }
+
+
+
+	/********** date de frais ***********/
+
+	$( ".dateFrais" ).on('blur',function() {
+	    /* Récupérer le no du id (-x) */
+	    var id = $( this ).attr("id");
+	    var value = $( this ).val();
+	    var no = idx(id,2);
+
+	    var date = value.split("-");
+	    var annee= date[0];
+	    var mois= date[1];
+	    var jour= date[2];
+
+	    var d = new Date();
+	    var a = d.getFullYear();
+	    var m = 1+d.getMonth();
+	    var j = d.getDate();
+
+	    if (!value){
+	      /* Si la date est égale ou inférieur à la date du jour, afficher la date dans les zones approprié  */
+	      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+	    } else if (annee < a || (annee == a && mois <= m && jour <= j)){
+	      $( ".dateFrais-"+no+"-span" ).removeClass( "hide" );
+	      $( ".dateFrais-"+no+"-val" ).text(value);
+	    } else {
+	      $( ".dateFrais-"+no+"-span" ).addClass( "hide" );
+	    }
+
+	  }).keyup();
+	/********** / date de frais ***********/
+
+
+
 
 			$('body').on('focus',".datepicker", function(){
 
