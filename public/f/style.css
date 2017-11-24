@@ -1,6 +1,6 @@
 
 /******* 2017-11-21 *******/
-:focus{
+input:focus{
  outline: 2px solid #5e89eb;
   outline-offset: 2px;
   text-decoration: none;
@@ -230,6 +230,14 @@ p.label
  border: 1px solid transparent;
  min-width: 20rem;
 }
+.etape2H .btn-add{
+ width: 90%;
+}
+
+.sub-block .btn-add {
+    width: 90% !important;
+    background-color: yellow !important;
+}
 
 
 .btn-add span {
@@ -255,6 +263,8 @@ p.label
  color: #003d04;
  border: 0;
 }
+
+
 
 .btn-add .icon-add {
     background-image: url('images/ic_Ajouter.svg');
@@ -578,7 +588,7 @@ h4 .naDetails{
   left: 38%;
 }
 
-/******* /note lié (clarification) ********/
+/******* /note lié 2 (clarification) ********/
 
 .brouillons{
     margin: 1.5vw 0;
@@ -586,7 +596,7 @@ h4 .naDetails{
 
 .autre{
     position: relative;
-    top: -0.8rem !important;
+    top: -0.4rem !important;
 }
 
 .etape2H .autre .text{
@@ -961,11 +971,12 @@ margin-top: -0.05rem;
 
 .infobox5 {
     background: inherit;
-    color: #414141;
+    color: #000;
     padding: 0;
     border-radius: 0.4rem;
     line-height: 140%;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 p.obligatoire::before {

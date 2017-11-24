@@ -439,20 +439,20 @@ h1 span.soustitre{
 
 
 #myNavbar2 .im_Mon_Profil a{
-  background-image: url("images/ic_Mon_Profil.svg");
+  background-image: url('images/ic_Mon_Profil.svg');
   border-right: solid 2px #878787;
   padding-right: 2.4rem;
 }
 #myNavbar2 .im_Deconnection a{
-  background-image: url("images/ic_Deconnection.svg");
+  background-image: url('images/ic_Deconnection.svg');
 }
 #myNavbar2 .im_Mon_Profil a:hover,
 #myNavbar2 .im_Mon_Profil a:focus{
-  background-image: url("images/ic_Mon_Profil_over.svg");
+  background-image: url('images/ic_Mon_Profil_over.svg');
 }
 #myNavbar2 .im_Deconnection a:hover,
 #myNavbar2 .im_Deconnection a:focus{
-  background-image: url("images/ic_Deconnection_over.svg");
+  background-image: url('images/ic_Deconnection_over.svg');
 }
 
 #myNavbar2 a:hover,
@@ -519,19 +519,19 @@ h1 span.soustitre{
     padding-bottom: 1rem;
 }
 #myNavbar .im_Service_en_ligne a {
-    background: url("images/ic_Services_en_ligne.svg") no-repeat top left;
+    background: url('images/ic_Services_en_ligne.svg') no-repeat top left;
 }
 #myNavbar .im_Mon_Dossier a {
-    background: url("images/ic_Mon_Dossier.svg") no-repeat top left;
+    background: url('images/ic_Mon_Dossier.svg') no-repeat top left;
 }
 #myNavbar .im_Mes_Documents a {
-    background: url("images/ic_Mes_Documents.svg") no-repeat top left;
+    background: url('images/ic_Mes_Documents.svg') no-repeat top left;
 }
 #myNavbar .im_Mes_Depot_direct a {
-    background: url("images/ic_Mes_Depot_direct.svg") no-repeat top left;
+    background: url('images/ic_Mes_Depot_direct.svg') no-repeat top left;
 }
 #myNavbar .im_Ma_Messagerie a {
-    background: url("images/ic_Ma_Messagerie.svg") no-repeat top left;
+    background: url('images/ic_Ma_Messagerie.svg') no-repeat top left;
 }
 
 #barre-bas-header{

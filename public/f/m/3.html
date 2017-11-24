@@ -78,16 +78,16 @@
 							<div class="text control-group">
 
 								<div class="radiobutton required inline sp-s">
-								   <i id="naRG1">Avez-vous des frais de vêtements endommagés suite à l'événement?</i>
-								   <div class="radiobuttons" role="group" aria-labelledby="naRG1">
+								   <i id="na-G-1">Avez-vous des frais de vêtements endommagés suite à l'événement?</i>
+								   <div class="radiobuttons" role="group" aria-labelledby="na-G-1">
 
-										<label for="inp1" class="radiobutton">
-										   <input id="inp1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp-1-G-1" class="radiobutton">
+										   <input id="inp-1-G-1" data-show=".os-1-1" data-hide=".os-1" type="radio" name="R-G-1">
 										   <i>Oui</i>
 										</label>
 
-										<label for="inp2" class="radiobutton">
-										   <input id="inp2" data-hide=".os-1" type="radio" name="mode">
+										<label for="inp-2-G-1" class="radiobutton">
+										   <input id="inp-2-G-1" data-hide=".os-1" type="radio" name="R-G-1">
 										   <i>Non</i>
 										</label>
 
@@ -106,16 +106,25 @@
 							<div class="hide os-1-1 os-1">
 								<!--  multiblocks  Reçu -->
 								<div class="multiblocks">
-									<!--  sub-block Reçu  1 -->
+									<!--  multiblocks sub-block Reçu  1 -->
 									<div class="sub-block">
 										<div class="header panel-heading-R">
-											<h4 aria-level="3"><span class="number">1</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 1" id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
+										<h4 aria-level="2">Reçu #<span class="number">1</span><span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
 											<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
 											<a role="button" href="#" class="btn4a btn-delete hide" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 
 											<div class="multiblocks">
+
+												<div class="control-group">
+				                  <label for="dateFrais-1" class="obligatoire">Date</label>
+				                  <div class="date-icon">
+				                    <input id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value="">
+				                  </div>
+				                </div>
+
+												<!-- Reçu  1 (SB-1) -->
 												<div class="sub-block">
 													<div class="header">
 														<h4 aria-level="3">Vêtement <span class="number">1</span></h4>
@@ -124,92 +133,96 @@
 													</div>
 													<div class="sub-cont">
 
+														<!-- Description du vêtement -->
 														<div class="control-group">
 															<label for="inp3" class="obligatoire"> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span></label>
 															<input id="inp3" type="text" name="a">
 														</div>
+														<!-- / Description du vêtement -->
 
+														<!-- Avez-vous dû remplacer le vêtement? (GR-V-SB-1)-->
 														<div class="radiobutton required inline sp-s">
-														   <i id="naRG2c">Avez-vous du remplacer le vêtement?</i>
-														   <div class="radiobuttons" role="group" aria-labelledby="naRG2c">
+														   <i id="na-GR-V-SB-1">Avez-vous dû remplacer le vêtement?</i>
+														   <div class="radiobuttons" role="group" aria-labelledby="na-GR-V-SB-1">
 
-																<label for="inp4" class="radiobutton">
-																   <input id="inp4" data-show="#os-2" type="radio" name="mode2">
+																<label for="inp-1-GR-V-SB-1" class="radiobutton">
+																   <input id="inp-1-GR-V-SB-1"  data-show=".os-G3-S" data-hide=".os-inp4-s" type="radio" name="R-GR-V-SB-1">
 																   <i>Oui</i>
 																</label>
 
-																<label for="inp5" class="radiobutton">
-																   <input id="inp5" data-hide="#os-2" type="radio" name="mode2">
+																<label for="inp-2-GR-V-SB-1" class="radiobutton">
+																   <input id="inp-2-GR-V-SB-1" data-show=".os-inp4-s" data-hide=".os-2-h"  type="radio" name="R-GR-V-SB-1">
 																   <i>Non</i>
 																</label>
 
 														   </div>
-															 <div class="sous-question-montant control-group hide" id="os-2">
-	 															<label for="inp6" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-	 															<input id="inp6" type="text" name="a" class="amount"> $
+															 <div class="sous-question-montant control-group hide os-G3-S os-2-h" id="os-2">
+	 															<label for="inp-3-V-SB-1" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+	 															<input id="inp-3-V-SB-1" type="text" name="a" class="amount"> $
 	 														</div>
 														</div>
+														<!-- / Avez-vous dû remplacer le vêtement? (G-V-SB-1)-->
 
-
-
-
-														<div class="control-group">
-															<label class="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></label>
-															<label for="inp7" class="checkbox">
-															   <input id="inp7" type="checkbox" name="mode8" value="create" data-show="#os-3" data-hide="#os-3">
+														<!-- Types de frais (GC-T-SB-1)-->
+														<div class="hide control-group os-inp4-s">
+															<label class="obligatoire">Types de frais<span class="hors-ecran"> obligatoire</span></label>
+															<label for="inp-1-GC-T-SB-1" class="checkbox">
+															   <input id="inp-1-GC-T-SB-1" type="checkbox" name="mode8" value="create" data-show="#os-3" data-hide="#os-3">
 															   <i>Nettoyage</i>
 															</label>
 															<div class="sous-question-montant control-group hide" id="os-3">
-																<label for="inp8" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-																<input id="inp8" type="text" name="a" class="amount"> $
+																<label for="inp-2-GC-T-SB-1" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+																<input id="inp-2-GC-T-SB-1" type="text" name="a" class="amount"> $
 															</div>
-															<label for="inp9" class="checkbox">
-															   <input id="inp9" type="checkbox" name="mode8" value="create" data-show="#os-4" data-hide="#os-4">
+															<label for="inp-3-GC-T-SB-1" class="checkbox">
+															   <input id="inp-3-GC-T-SB-1" type="checkbox" name="mode8" value="create" data-show=".os-4" data-hide=".os-4">
 															   <i>Réparation</i>
 															</label>
-															<div class="sous-question-montant control-group hide" id="os-4">
-																<label for="inp10" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-																<input id="inp10" type="text" name="a" class="amount"> $
+															<div class="sous-question-montant control-group hide os-4" id="os-4">
+																<label for="inp-4-GC-T-SB-1" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+																<input id="inp-4-GC-T-SB-1" type="text" name="a" class="amount"> $
 															</div>
 														</div>
+														<!-- /Types de frais (GC-T-SB-1)-->
 
+														<!-- Raison des dommages causés au vêtement (GR-D-SB-1)-->
+														<div class="hide os-G3-S os-4 os-2-h radiobutton required sp-s">
+														   <i id="na-GR-D-SB-1">Raison des dommages causés au vêtement</i>
+														   <div class="radiobuttons" role="group" aria-labelledby="na-GR-D-SB-1">
 
-														<div class="radiobutton required sp-s">
-														   <i id="naRG3">Raison des dommages causés au vêtement</i>
-														   <div class="radiobuttons" role="group" aria-labelledby="naRG3">
-
-																<label for="inp11" class="radiobutton">
-																   <input id="inp11" type="radio" name="mode9">
+																<label for="inp-1-GR-D-SB-1" class="radiobutton">
+																   <input id="inp-1-GR-D-SB-1" type="radio" name="R-GR-D-SB-1">
 																   <i>À la suite d'un accident de travail</i>
 																</label>
 
-																<label for="inp12" class="radiobutton">
-																   <input id="inp12" type="radio" name="mode9">
+																<label for="inp-2-GR-D-SB-1" class="radiobutton">
+																   <input id="inp-2-GR-D-SB-1" type="radio" name="R-GR-D-SB-1">
 																   <i>Par le port d'une prothèse ou d'une orthèse</i>
 																</label>
 
 														   </div>
 
 														</div>
-
+														<!-- / Raison des dommages causés au vêtement (GR-D-SB-1)-->
 
 													</div>
 
 												</div>
 
 											</div>
-
+											<!-- Ajouter (SB-1)-->
 											<div class="btns3">
 												<a role="button" href="#" class="btn4 btn-add" data-block=".block-vêtement"><i class="icon-add"></i>
 													<span>Ajouter un vêtement  <span class="dateFrais-1-span  naDetails hide"> sur le reçu du <span class="dateFrais-1-val"></span></span></span>
 												</a>
 											</div>
+											<!-- / Ajouter (SB-1)-->
 
 											<div class="control-group">
-												<h4 id="naRG-4" class="obligatoire">Copie du reçu <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
-												<p id="daRG-SG1-2b">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
+												<h4 id="na-G-4" class="obligatoire">Copie du reçu <span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
+												<p id="da-G-4">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
-												<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2b">
+												<div class="file" role="group" aria-labelledby="na-G-4" aria-describedby="da-G-4">
   <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 													<label for="inp13" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 													<input id="inp13" type="file" name="file">
@@ -227,16 +240,16 @@
 								<div class="autre text">
 								<h3 class="hors-ecran">Autre reçu de vêtement</h3>
 									<div class="radiobutton required inline">
-										 <i id="naRG-AF">Avez-vous d'autre reçu de frais de vêtement?</i>
-										 <div class="radiobuttons" role="group" aria-labelledby="naRG-AF">
+										 <i id="na-G-AF">Avez-vous d'autre reçu de frais de vêtement?</i>
+										 <div class="radiobuttons" role="group" aria-labelledby="na-G-AF">
 
-											<label for="inp-AF-72" class="radiobutton">
-												 <input id="inp-AF-72" data-show=".os-72-1" type="radio" name="mode">
+											<label for="inp-1-G-AF" class="radiobutton">
+												 <input id="inp-1-G-AF" data-show=".os-72-1" type="radio" name="r-G-AF">
 												 <i>Oui</i>
 											</label>
 
-											<label for="inp-AF-73" class="radiobutton">
-												 <input id="inp-AF-73" data-hide=".os-73" type="radio" name="mode">
+											<label for="inp-2-G-AF" class="radiobutton">
+												 <input id="inp-2-G-AF" data-hide=".os-73" type="radio" name="r-G-AF">
 												 <i>Non</i>
 											</label>
 
@@ -285,23 +298,25 @@
 			</div>
 			<div class="sub-cont">
 
-
+				<!-- Description du vêtement -->
 				<div class="control-group">
 					<label for="inp14" class="obligatoire"> Description du vêtement <span class="naDetails">(Ex.: Salopette, pantalon.)</span><span class="hors-ecran"> obligatoire</span></label>
 					<input id="inp14" type="text" name="a">
 				</div>
+				<!-- Description du vêtement -->
 
+				<!-- Avez-vous dû remplacer le vêtement? (G-1-SB-2)-->
 				<div class="radiobutton required inline sp-s">
-				   <i id="naRG6">Avez-vous du remplacer le vêtement?</i>
-				   <div class="radiobuttons" role="group" aria-labelledby="naRG6">
+				   <i id="na-G-6">Avez-vous dû remplacer le vêtement?</i>
+				   <div class="radiobuttons" role="group" aria-labelledby="na-G-6">
 
-						<label for="inp15" class="radiobutton">
-						   <input id="inp15" data-show="#os-_N_-2" type="radio" name="mode2">
+						<label for="inp-1-G-6" class="radiobutton">
+						   <input id="inp-1-G-6" data-show="#os-_N_-2" type="radio" name="r-G-6">
 						   <i>Oui</i>
 						</label>
 
-						<label for="inp16" class="radiobutton">
-						   <input id="inp16" data-hide="#os-_N_-2" type="radio" name="mode2">
+						<label for="inp-2-G-6" class="radiobutton">
+						   <input id="inp-2-G-6" data-hide="#os-_N_-2" type="radio" name="r-G-6">
 						   <i>Non</i>
 						</label>
 
@@ -311,50 +326,49 @@
 	 					<input id="inp17" type="text" name="a" class="amount"> $
 	 				</div>
 				</div>
+				<!-- / Avez-vous dû remplacer le vêtement? -->
 
-
-
-
-				<div class="control-group" role="group" aria-labelledby="naRG-1">
-					<i id="naRG-1" class="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></i>
-					<label for="inp18" class="checkbox">
-					   <input id="inp18" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
+				<!-- Types de frais -->
+				<div class="control-group" role="group" aria-labelledby="na-G-7">
+					<i id="na-G-7" class="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></i>
+					<label for="inp-1-G-7" class="checkbox">
+					   <input id="inp-1-G-7" type="checkbox" name="mode8" value="create" data-show="#os-_N_-3" data-hide="#os-_N_-3">
 					   <i>Nettoyage</i>
 					</label>
 					<div class="sub-box control-group hide" id="os-_N_-3">
-						<label for="inp19" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-						<input id="inp19" type="text" name="a" class="amount"> $
+						<label for="inp-2-G-7" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+						<input id="inp-2-G-7" type="text" name="a" class="amount"> $
 					</div>
-					<label for="inp20" class="checkbox">
-					   <input id="inp20" type="checkbox" name="mode8" value="create" data-show="#os-_N_-4" data-hide="#os-_N_-4">
+					<label for="inp-3-G-7" class="checkbox">
+					   <input id="inp-3-G-7" type="checkbox" name="mode8" value="create" data-show="#os-_N_-4" data-hide="#os-_N_-4">
 					   <i>Réparation</i>
 					</label>
 					<div class="sous-question-montant control-group hide" id="os-_N_-4">
-						<label for="inp21" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-						<input id="inp21" type="text" name="a" class="amount"> $
+						<label for="inp-4-G-7" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+						<input id="inp-4-G-7" type="text" name="a" class="amount"> $
 					</div>
 				</div>
+				<!-- / Types de frais -->
 
-
-				<!-- G -->
+				<!-- Raison des dommages causés au vêtement -->
 				<div class="radiobutton required">
-				   <i id="naRG7">Raison des dommages causés au vêtement</i>
-				   <div class="radiobuttons" role="group" aria-labelledby="naRG7">
+				   <i id="na-G-8">Raison des dommages causés au vêtement</i>
+				   <div class="radiobuttons" role="group" aria-labelledby="na-G-8">
 
-						<label for="inp22" class="radiobutton">
-						   <input id="inp22" type="radio" name="mode9">
+						<label for="inp-1-G-8" class="radiobutton">
+						   <input id="inp-1-G-8" type="radio" name="R-G-8">
 						   <i>À la suite d'un accident de travail</i>
 						</label>
 
-						<label for="inp23" class="radiobutton">
-						   <input id="inp23" type="radio" name="mode9">
+						<label for="inp-2-G-8" class="radiobutton">
+						   <input id="inp-2-G-8" type="radio" name="R-G-8">
 						   <i>Par le port d'une prothèse ou d'une orthèse</i>
 						</label>
 
 				   </div>
 
 				</div>
-				<!-- /G -->
+				<!-- / Raison des dommages causés au vêtement -->
 
 
 			</div>
@@ -366,48 +380,61 @@
 
 		<div class="sub-block">
 			<div class="header panel-heading-R">
-				<h4 aria-level="3"><span class="number">2</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 2" id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
+				<!--<h4 aria-level="3"><span class="number">2</span> - Reçu du <span class="date-icon"><input aria-label="date du reçu numéro 2" id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
+				-->
+				<h4 aria-level="2">Reçu #<span class="number">1</span><span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
+
 				<a role="button" href="#" class="btn4a btn-delete" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 
 				<div class="multiblocks">
+
+					<div class="control-group">
+            <label for="dateFrais-2" class="obligatoire">Date</label>
+            <div class="date-icon">
+              <input id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value="">
+            </div>
+          </div>
+
 					<div class="sub-block">
 						<div class="header">
 							<h4 aria-level="3">Vêtement <span class="number">1</span></h4>
 						</div>
 						<div class="sub-cont">
 
+							<!-- Description du vêtement -->
 							<div class="control-group">
 								<label for="inp24" class="obligatoire"> Description du vêtement<span class="naDetails">(Ex.: Salopette, pantalon.)</span><span class="hors-ecran"> obligatoire</span></label>
 								<input id="inp24" type="text" name="a">
 							</div>
+							<!-- Description du vêtement -->
 
+							<!-- Avez-vous dû remplacer le vêtement? (G-1-SB-3)-->
 							<div class="radiobutton required inline sp-s">
-							   <i id="naRG2">Avez-vous du remplacer le vêtement?</i>
+							   <i id="na-G-9">Avez-vous dû remplacer le vêtement?</i>
 							   <p class="clarification">(Prescriptions, compléments d'information)</p>
-							   <div class="radiobuttons" role="group" aria-labelledby="naRG2">
+							   <div class="radiobuttons" role="group" aria-labelledby="na-G-9">
 
-									<label for="inp25" class="radiobutton">
-									   <input id="inp25" data-show="#os-_N_-2" type="radio" name="mode2">
+									<label for="inp-1-G-9" class="radiobutton">
+									   <input id="inp-1-G-9" data-show="#os-_N_-2" type="radio" name="r-G-9">
 									   <i>Oui</i>
 									</label>
 
-									<label for="inp26" class="radiobutton">
-									   <input id="inp26" data-hide="#os-_N_-2" type="radio" name="mode2">
+									<label for="inp-2-G-9" class="radiobutton">
+									   <input id="inp-2-G-9" data-hide="#os-_N_-2" type="radio" name="r-G-9">
 									   <i>Non</i>
 									</label>
 
 							   </div>
 								 <div class="sous-question-montant control-group hide" id="os-_N_-3c">
-	 								<label for="inp27" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
-	 								<input id="inp27" type="text" name="a" class="amount"> $
+	 								<label for="inp-3-G-9" class="obligatoire"> Montant <span class="naDetails">(avant taxes)</span><span class="hors-ecran"> obligatoire</span></label>
+	 								<input id="inp-3-G-9" type="text" name="a" class="amount"> $
 	 							</div>
 							</div>
+							<!-- / Avez-vous dû remplacer le vêtement? -->
 
-
-
-
+							<!-- Types de frais -->
 							<div class="control-group">
 								<label class="obligatoire"> Types de frais<span class="hors-ecran"> obligatoire</span></label>
 								<label for="inp28" class="checkbox">
@@ -427,26 +454,27 @@
 									<input id="inp31" type="text" name="a" class="amount"> $
 								</div>
 							</div>
+							<!-- / Types de frais -->
 
-
+							<!-- Raison des dommages causés au vêtement -->
 							<div class="radiobutton required sp-s">
-							   <i id="naRG2b">Raison des dommages causés au vêtement</i>
-							   <div class="radiobuttons" role="group" aria-labelledby="naRG2b">
+							   <i id="na-G-10">Raison des dommages causés au vêtement</i>
+							   <div class="radiobuttons" role="group" aria-labelledby="na-G-10">
 
-									<label for="inp32" class="radiobutton">
-									   <input id="inp32" type="radio" name="mode9">
+									<label for="inp-1-G-10" class="radiobutton">
+									   <input id="inp-1-G-10" type="radio" name="r-G-10">
 									   <i>À la suite d'un accident de travail</i>
 									</label>
 
-									<label for="inp33" class="radiobutton">
-									   <input id="inp33" type="radio" name="mode9">
+									<label for="inp-2-G-10" class="radiobutton">
+									   <input id="inp-2-G-10" type="radio" name="r-G-10">
 									   <i>Par le port d'une prothèse ou d'une orthèse</i>
 									</label>
 
 							   </div>
 
 							</div>
-
+							<!-- / Raison des dommages causés au vêtement -->
 
 						</div>
 
@@ -460,10 +488,10 @@
 				</div>
 
 				<div class="control-group">
-					<h4 id="naRG-SG1-2" class="obligatoire">Copie du reçu  <span class="dateFrais-2-span  naDetails hide"> (<span class="dateFrais-2-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
+					<h4 id="na-G-SG1-2" class="obligatoire">Copie du reçu  <span class="dateFrais-2-span  naDetails"> (<span class="dateFrais-2-val"></span>)</span><span class="hors-ecran"> obligatoire</span></h4>
 					<p id="daRG-SG1-2">Veuillez joindre une copie du reçu. (Document PDF, image, photo ou autre)</p>
 
-					<div class="file" role="group" aria-labelledby="naRG-SG1-2" aria-describedby="daRG-SG1-2">
+					<div class="file" role="group" aria-labelledby="na-G-SG1-2" aria-describedby="daRG-SG1-2">
   <!-- TODO modifier le style du label par JavScript au focus sur le bouton non visible -->
 						<label for="inp34" class="file-btn"><i class="icon-attach"></i><span>Parcourir</span></label>
 						<input id="inp34" type="file" name="file">

@@ -1,0 +1,330 @@
+body{
+	background: #ffffff;
+}
+.component{
+	background: #ffffff;
+	margin: 50px 0;
+	padding: 30px 0;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+.component:hover{
+	border-top: 1px dashed #999;
+	border-bottom: 1px dashed #999;
+}
+
+
+
+.folder-content{
+	width: 100%;
+	text-align: center;
+	padding: 10rem 1rem;
+}
+.folder-content h3{
+	color: #111;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+.folder-content img{
+	display: block;
+	margin: 0 auto 2rem auto;
+	max-width: 154px;
+}
+
+.folder-list{
+	width: 100%;
+	max-width: 400px;
+	display: inline-block;
+	text-align: center;
+}
+.folder-list li{
+	display: block;
+	line-height: 1.5rem;
+}
+.folder-list li a{
+	display: block;
+	padding: 1.5rem;
+	margin: 0.3rem;
+	background: #eee;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+}
+.folder-list li a:hover{
+	background: #ddd;
+}
+
+
+
+/*****************/
+
+.sub-block .header a.btn4a
+{
+		border: 2px solid #006c08;
+		background: #f0f0f0;
+		color: #006c08;
+		background-image: url('../../images/ic_Supprimer.svg');
+		background-position: 1rem center;
+		background-repeat: no-repeat;
+		background-size: 2.5rem;
+		height: 5rem;
+		margin-right: -0.5rem;
+		z-index: 100;
+		padding: 0.2rem 3.2rem 0.2rem 0.8rem;
+		width: auto;
+		min-width: 5rem;
+		min-height: 5rem;
+		line-height: 2.0rem;
+
+}
+
+/****** test sub-block ******/
+
+.sub-block .sub-block {
+		margin: 0 0 0 0;
+		border-left: 0px;
+		border-right: 0px;
+		border-bottom: 1px solid #414141;
+}
+
+.sub-block .sub-cont {
+		padding: 2rem 3rem;
+}
+
+.sub-block .sub-block .header {
+		position: relative;
+		background: inherit;
+		color: #fff;
+		font-size: 1px;
+		line-height: 1px;
+		padding: 0;
+		border: 0;
+}
+
+.sub-cont .sub-block .header a.btn4a,
+.sub-block .sub-block .header a.btn4a
+ {
+		border: 0;
+		background: inherit;
+		color: #006c08;
+		background-image: url('../../images/ic_Supprimer2.svg');
+		background-position: 0.3rem center;
+		background-repeat: no-repeat;
+		background-size: 2.6rem;
+		height: 4.4rem;
+		width: auto;
+		min-width: 4.4rem;
+		padding: 0;
+		line-height: 3.8rem;
+		margin-top: -0.8rem;
+		margin-right: -5.8rem;
+		display: block;
+}
+
+.sub-block .sub-block .header a.btn4a{
+	margin-right: -3.4rem;
+}
+
+.sub-cont .sub-block .header a.btn4a:hover,
+.sub-cont .sub-block .header a.btn4a:focus,
+.sub-block .sub-block .header a.btn4a:hover,
+.sub-block .sub-block .header a.btn4a:focus
+	{
+		background-image: url('../../images/ic_Supprimer2_hover.svg');
+}
+
+.sub-block .sub-block .sub-cont {
+		padding: 0 0 1rem 0;
+}
+
+
+.icon-remove  {
+	background-image: url('../../images/ic_Supprimer2.svg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 2.6rem;
+}
+a:hover .icon-remove ,
+a:focus .icon-remove{
+		background-image: url('../../images/ic_Supprimer2_hover.svg') !important;
+		background-position: center center !important;
+}
+/****** /test sub-block ******/
+/**** masquer l'icône inline *****/
+.sub-block .header a.btn4a i{display: none;}
+
+
+.sub-block .header a.btn4a span{
+	margin: 0 0 0 4rem;
+line-height: 3.4rem;
+		display: none;
+}
+
+.sub-block .header a.btn4a:hover span{
+		/*display: inline-block;;*/
+}
+
+.sub-cont .sub-block .header a.btn4a span,
+.sub-block .sub-block .header a.btn4a span
+{
+		display: none;/**/
+}
+
+/******* /Boutons *********/
+
+/******* en-tête de niveau 2 style résumé *******/
+.sub-block .panel-heading-R,
+.panel-heading-R
+ {
+		position: relative;
+		display: block;
+		background-color: #5d5d5d !important;
+		color: #fff;
+		/*font-size: 2.4rem;*/
+		font-weight: normal;
+		font-size: 2.2rem;
+line-height: 2.4rem;
+padding: 1.9rem 3.0rem;
+}
+.panel-heading-R h2{
+		/*background-color: inherit;
+		color: inherit;
+		font-size: 2.4rem;
+		line-height: inherit;
+		font-weight: inherit;
+		padding: 0;*/
+}
+.panel-heading-R .control-group {
+		position: relative;
+		padding: 1rem 2rem;
+		font-size: 2.4rem;
+}
+
+
+
+
+
+	/****** test sub-block ******/
+
+.sub-block .sub-block {
+    margin: 0 0 0 0;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #414141;
+}
+
+.sub-block .sub-cont {
+    padding: 2rem 3rem;
+}
+
+.sub-block .sub-block .header {
+    position: relative;
+    background: inherit;
+    color: #fff;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.sub-cont .sub-block .header a.btn4a,
+.sub-block .sub-block .header a.btn4a
+ {
+    border: 0;
+    background: inherit;
+    color: #006c08;
+    background-image: url('../../images/ic_Supprimer2.svg');
+    background-position: 0.6rem center;
+    background-repeat: no-repeat;
+    background-size: 2.6rem;
+    height: 4.4rem;
+    width: auto;
+    min-width: 4.4rem;
+    padding: 0;
+    line-height: 3.8rem;
+    margin-top: -0.8rem;
+    margin-right: -5.8rem;
+    display: block;
+}
+
+.sub-block .sub-block .header a.btn4a{
+  margin-right: -3.4rem;
+}
+
+.sub-cont .sub-block .header a.btn4a:hover,
+.sub-cont .sub-block .header a.btn4a:focus,
+.sub-block .sub-block .header a.btn4a:hover,
+.sub-block .sub-block .header a.btn4a:focus
+  {
+    background-image: url('../../images/ic_Supprimer2_hover.svg');
+}
+
+.sub-block .sub-block .sub-cont {
+    padding: 0 0 1rem 0;
+}
+
+
+.icon-remove  {
+  background-image: url('../../images/ic_Supprimer2.svg');
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  background-size: 2.6rem;
+}
+a:hover .icon-remove ,
+a:focus .icon-remove
+ {
+    background-image: url('../../images/ic_Supprimer2_hover.svg') !important;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 2.6rem;
+}
+/****** /test sub-block ******/
+
+
+body .datepicker, body .datepicker * {
+  border-radius: 0 !important;
+  text-transform: capitalize;
+}
+body .datepicker.dropdown-menu {
+  background: #414141;
+  color: #eee;
+  padding: 10px;
+}
+body .datepicker table tr td span.active.active, body .datepicker table tr td span.active.disabled, body .datepicker table tr td span.active.disabled.active, body .datepicker table tr td span.active.disabled.disabled, body .datepicker table tr td span.active.disabled:active, body .datepicker table tr td span.active.disabled:hover, body .datepicker table tr td span.active.disabled:hover.active, body .datepicker table tr td span.active.disabled:hover.disabled, body .datepicker table tr td span.active.disabled:hover:active, body .datepicker table tr td span.active.disabled:hover:hover, body .datepicker table tr td span.active.disabled:hover[disabled], body .datepicker table tr td span.active.disabled[disabled], body .datepicker table tr td span.active:active, body .datepicker table tr td span.active:hover, body .datepicker table tr td span.active:hover.active, body .datepicker table tr td span.active:hover.disabled, body .datepicker table tr td span.active:hover:active, body .datepicker table tr td span.active:hover:hover, body .datepicker table tr td span.active:hover[disabled], body .datepicker table tr td span.active[disabled], body .datepicker table tr td.active.active, body .datepicker table tr td.active.disabled, body .datepicker table tr td.active.disabled.active, body .datepicker table tr td.active.disabled.disabled, body .datepicker table tr td.active.disabled:active, body .datepicker table tr td.active.disabled:hover, body .datepicker table tr td.active.disabled:hover.active, body .datepicker table tr td.active.disabled:hover.disabled, body .datepicker table tr td.active.disabled:hover:active, body .datepicker table tr td.active.disabled:hover:hover, body .datepicker table tr td.active.disabled:hover[disabled], body .datepicker table tr td.active.disabled[disabled], body .datepicker table tr td.active:active, body .datepicker table tr td.active:hover, body .datepicker table tr td.active:hover.active, body .datepicker table tr td.active:hover.disabled, body .datepicker table tr td.active:hover:active, body .datepicker table tr td.active:hover:hover, body .datepicker table tr td.active:hover[disabled], body .datepicker table tr td.active[disabled] {
+  background: #53a01b;
+}
+body .datepicker .datepicker-switch:hover, body .datepicker .next:hover, body .datepicker .prev:hover, body .datepicker tfoot tr th:hover, body .datepicker table tr td span.focused, body .datepicker table tr td span:hover, body .datepicker table tr td.day.focused, body .datepicker table tr td.day:hover {
+  background: #555;
+}
+body .datepicker-dropdown.datepicker-orient-top:before {
+  display: none !important;
+}
+body .datepicker-dropdown.datepicker-orient-top:after {
+  border-top: 1rem solid #414141;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  bottom: -1rem;
+  left: 1.5rem;
+}
+body .datepicker.dropdown-menu thead th.datepicker-switch {
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+body .datepicker .next, body .datepicker .prev {
+  color: #53a01b;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.datepicker.datepicker-inline td, .datepicker.datepicker-inline th, .datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
+    padding: 0.4rem 0.5rem;
+}
+
+
+.datepicker-dropdown.datepicker-orient-bottom::before {
+    border-bottom: 6px solid #414141;
+}
+
+.datepicker-dropdown.datepicker-orient-bottom::after {
+    border-bottom: 6px solid #414141;
+}

@@ -69,7 +69,7 @@
         </div>
 
         <div class="infobox5 sp-xl">
-          <p>Les frais doivent être regroupés par date.
+          <p>Cette étape vous permet d'inscrire vos frais de déplacements, d'hébergements et de repas à différentes dates. Nous vous invitons à inscrire vos frais par date.
           </p>
         </div>
         <!-- class="form-cont sp-xl" -->
@@ -86,9 +86,7 @@
                 <!-- header panel -->
                 <div class="header panel-heading-R">
 
-                  <h4 aria-level="2"><span class="number">1</span> - Date des frais<span class="date-icon"><input aria-label="date des frais jour 1" id="dateFrais-1" class="datepicker form-control dateFrais" value="" type="text"></span></h4>
-                  <!-- <button type="button" class="btn4a btn-delete hide"  ><i class="icon-delete2"></i><span>Supprimer</span></button> -->
-                  <!-- TODO: Ne pas afficher le bouton suivant si une seule date -->
+                  <h4 aria-level="2">Frais jour <span class="number">1</span><span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                   <a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer les dépenses pour cette date"><i class="icon-delete2"></i><span>Supprimer</span></a>
 
                 </div>
@@ -96,6 +94,17 @@
                 <!-- Raison du déplacement Nu:17-11-16 14:30 -->
                 <div class="box2">
                   <div class="text">
+
+
+										<div class="control-group">
+		                  <label for="dateFrais-1" class="obligatoire">Première date pour laquelle vous avez des frais de déplacement, de rapas ou d'hébergement</label>
+		                  <div class="date-icon">
+		                    <input id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value="">
+		                  </div>
+		                </div>
+
+
+
                     <div class="control-group checkboxs">
 
                       <i class="label obligatoire" id="naRG1">Raison du déplacement<span class="hors-ecran"> obligatoire</span></i>
@@ -244,7 +253,7 @@
 
                         <label for="inp15" class="checkbox">
                                            <input id="inp15" type="checkbox" name="mode92" data-show=".os-8-1" data-hide=".os-8">
-                                           <i>Taxi avec autorisation</i>
+                                           <i>Taxi avec autorisation de la CNESST de ne pas utiliser le transport en commun</i>
                                         </label>
 
                         <label for="inp16" class="checkbox">
@@ -335,6 +344,71 @@
                           <!--  / header sub-cont-->
                           <!--  sub-cont-->
                           <div class="sub-cont">
+
+														<!-- Lieu de départ et d'arrivée -->
+													 <div>
+															 <!-- Lieu de départ Nu:17-11-16 14:30-->
+															 <div class="radiobutton required_">
+																 <i class="label obligatoire" id="naRG6">Lieu de départ<span class="hors-ecran"> obligatoire</span></i>
+																 <div class="radiobuttons" role="group" aria-labelledby="naRG6">
+
+																	 <label for="inp28" class="radiobutton">
+																													 <input id="inp28" type="radio" name="mode62" data-hide=".os-12">
+																													 <i>Résidence personnelle</i>
+																											 </label>
+
+																	 <label for="inp29" class="radiobutton">
+																													 <input id="inp29" type="radio" name="mode62" data-hide=".os-12">
+																													 <i>Clinique ou hôpital</i>
+																											 </label>
+
+																	 <label for="inp30" class="radiobutton">
+																														 <input id="inp30" type="radio" name="mode62" data-show=".os-12-1" data-hide=".os-12">
+																														 <i>Autre</i>
+																											 </label>
+																	 <div class="control-group sous-question-precisez os-12 os-12-1 hide">
+																		 <label for="inp31" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
+																		 <input id="inp31" type="text" name="a">
+																	 </div>
+																 </div>
+
+															 </div>
+															 <!-- /Lieu de départ -->
+
+															 <!-- Lieu d'arrivée Nu:17-11-16 14:30-->
+															 <div class="radiobutton required_">
+																 <i class="label obligatoire" id="naRG7">Lieu d'arrivée<span class="hors-ecran"> obligatoire</span></i>
+																 <!-- role="group" -->
+																 <div class="radiobuttons" role="group" aria-labelledby="naRG7">
+
+																	 <label for="inp32" class="radiobutton">
+																													 <input id="inp32" type="radio" name="mode63" data-hide=".os-13">
+																													 <i>Résidence personnelle</i>
+																											 </label>
+
+																	 <label for="inp33" class="radiobutton">
+																													 <input id="inp33" type="radio" name="mode63" data-hide=".os-13">
+																													 <i>Clinique ou hôpital</i>
+																											 </label>
+
+																	 <label for="inp34" class="radiobutton">
+																													 <input id="inp34" type="radio" name="mode63" data-show=".os-13-1" data-hide=".os-13">
+																													 <i>Autre</i>
+																											 </label>
+
+																	 <div class="control-group sous-question-precisez os-13 os-13-1 hide">
+																		 <label for="inp35" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
+																		 <input id="inp35" type="text" name="a">
+																	 </div>
+
+																 </div>
+																 <!-- / role="group" -->
+															 </div>
+															 <!-- /Lieu d'arrivée -->
+													 </div>
+													 <!-- /Lieu de départ et d'arrivée -->
+
+
                             <!-- Distance parcourue  Nu:17-11-16 14:30-->
                             <div>
                               <div class="control-group">
@@ -398,65 +472,11 @@
                              <!-- /Frais d'utilisation demandés  -->
 
 
-                            <!-- Lieu de départ Nu:17-11-16 14:30-->
-                            <div class="radiobutton required_">
-                              <i class="label obligatoire" id="naRG6">Lieu de départ<span class="hors-ecran"> obligatoire</span></i>
-                              <div class="radiobuttons" role="group" aria-labelledby="naRG6">
 
-                                <label for="inp28" class="radiobutton">
-                              													<input id="inp28" type="radio" name="mode62" data-hide=".os-12">
-                              													<i>Résidence personnelle</i>
-                              											</label>
+														<!-- Lieu de départ et d'arrivée old -->
+														<!-- /Lieu de départ et d'arrivée old -->
 
-                                <label for="inp29" class="radiobutton">
-                              													<input id="inp29" type="radio" name="mode62" data-hide=".os-12">
-                              													<i>Clinique ou hopital</i>
-                              											</label>
-
-                                <label for="inp30" class="radiobutton">
-                              														<input id="inp30" type="radio" name="mode62" data-show=".os-12-1" data-hide=".os-12">
-                              														<i>Autre</i>
-                              											</label>
-                                <div class="control-group sous-question-precisez os-12 os-12-1 hide">
-                                  <label for="inp31" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
-                                  <input id="inp31" type="text" name="a">
-                                </div>
-                              </div>
-
-                            </div>
-                            <!-- /Lieu de départ -->
-
-                            <!-- Lieu d'arrivé Nu:17-11-16 14:30-->
-                            <div class="radiobutton required_">
-                              <i class="label obligatoire" id="naRG7">Lieu d'arrivé<span class="hors-ecran"> obligatoire</span></i>
-                              <!-- role="group" -->
-                              <div class="radiobuttons" role="group" aria-labelledby="naRG7">
-
-                                <label for="inp32" class="radiobutton">
-                              													<input id="inp32" type="radio" name="mode63" data-hide=".os-13">
-                              													<i>Résidence personnelle</i>
-                              											</label>
-
-                                <label for="inp33" class="radiobutton">
-                              													<input id="inp33" type="radio" name="mode63" data-hide=".os-13">
-                              													<i>Clinique ou hopital</i>
-                              											</label>
-
-                                <label for="inp34" class="radiobutton">
-                              													<input id="inp34" type="radio" name="mode63" data-show=".os-13-1" data-hide=".os-13">
-                              													<i>Autre</i>
-                              											</label>
-
-                                <div class="control-group sous-question-precisez os-13 os-13-1 hide">
-                                  <label for="inp35" class="obligatoire"> Precisez<span class="hors-ecran"> obligatoire</span></label>
-                                  <input id="inp35" type="text" name="a">
-                                </div>
-
-                              </div>
-                              <!-- / role="group" -->
-                            </div>
-                            <!-- /Lieu d'arrivé -->
-                          </div>
+													</div>
                           <!-- / sub-cont-->
 
 
@@ -856,19 +876,19 @@
                         <!-- Heure de départ -->
                         <!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
                         <div class="control-group first-child">
-                          <label for="repHD-1" class="obligatoire"> Heure de départ<span class="hors-ecran"> obligatoire</span></label>
+                          <label for="repHD-1" class="obligatoire"> Heure de départ de votre premier déplacement de la journée<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHD" id="repHD-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
                         <!-- / Heure de départ -->
-                        <!-- Heure d'arrivée -->
-                        <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
+                        <!-- Heure d'arrivéee -->
+                        <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivéee-->
                         <div class="control-group inpW5">
-                          <label for="repHA-1" class="obligatoire"> Heure d'arrivée<span class="hors-ecran"> obligatoire</span></label>
+                          <label for="repHA-1" class="obligatoire"> Heure d'arrivéee de votre dernier déplacement de la journée<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHA" id="repHA-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
-                        <!-- / Heure d'arrivée -->
+                        <!-- / Heure d'arrivéee -->
                       </div>
                       <!-- /heures -->
 
@@ -932,31 +952,33 @@
 							<div class="btns3 autre control-group">
 
 							  <div class="autre text">
-							    <h3 class="hors-ecran">frais de déplacement, de repas ou d'hébergement</h3>
+							    <h3 class="hors-ecran">Autres frais</h3>
 							    <div class="radiobutton required inline">
-							      <i id="naRG-AF">Avez-vous d'autre frais de déplacement, de repas ou d'hébergement pour une autre date?</i>
+							      <i id="naRG-AF">Avez-vous des frais de déplacement, de repas ou d'hébergement pour une autre date?</i>
 							      <div class="radiobuttons" role="group" aria-labelledby="naRG-AF">
 
 							        <label for="inp-AF-72" class="radiobutton">
-																					 <input id="inp-AF-72" data-show=".os-72-1" type="radio" name="mode">
+																					 <input id="inp-AF-72" data-show=".os-72-1" data-hide=".os-72"  type="radio" name="mode">
 																					 <i>Oui</i>
 																				</label>
 
 							        <label for="inp-AF-73" class="radiobutton">
-																					 <input id="inp-AF-73" data-hide=".os-73" type="radio" name="mode">
+																					 <input id="inp-AF-73" data-show=".os-73-1" data-hide=".os-73"   type="radio" name="mode">
 																					 <i>Non</i>
 																				</label>
 
 							      </div>
 							    </div>
-							    <div class="hide os-72-1 os-73 sp-s">
-							      <p class="clarification">Vous pouvez ajouter une nouvelle date ou dupliquer les informations de la date précédent et les modifier au besoin.</p>
-							    </div>
+							    <div class="hide os-73-1 os-72 sp-s">
+							      <!--<p class="clarification">Vous pouvez ajouter une nouvelle date ou dupliquer les informations de la date précédent et les modifier au besoin.</p>-->
+										<p class="clarification">Si vous avez d'autres types de frais, veuillez d'abord compléter cette demande.</p>
+
+									</div>
 							  </div>
 							  <!--  / Autre reçu de médicaments -->
 							  <!-- Ajouter un reçu-->
-							  <a href="#" class="hide btn4 btn-add os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter date</span></a>
-							  <a href="#" class="hide btn4 btn-add btn-dupliquer os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer la date précédente</span></a>
+							  <a href="#" class="hide btn4 btn-add os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter une date</span></a>
+							  <!--<a href="#" class="hide btn4 btn-add btn-dupliquer os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer la date précédente</span></a>-->
 							  <!-- / Ajouter un reçu-->
 							</div>
 							<!--  /Autre reçu de médicaments -->
@@ -1041,10 +1063,73 @@
 
       </div>
       <div class="sub-cont">
-        <div class="control-group">
+
+				<!-- Lieu de départ et d'arrivée-->
+				<div>
+						<!-- Lieu de départ -->
+						<div class="radiobutton required">
+							<i class="label" id="naRG-SG1-6">Lieu de départ</i>
+							<div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-6">
+
+								<label for="inpSG1_28" class="radiobutton">
+																						 <input id="inpSG1_28" type="radio" name="modeSG1_62" data-hide=".os-SG1-12">
+																						 <i>Résidence personnelle</i>
+																					</label>
+
+								<label for="inpSG1_29" class="radiobutton">
+																						 <input id="inpSG1_29" type="radio" name="modeSG1_62" data-hide=".os-SG1-12">
+																						 <i>Clinique ou hôpital</i>
+																					</label>
+
+								<label for="inpSG1_30" class="radiobutton">
+																						 <input id="inpSG1_30" type="radio" name="modeSG1_62" data-show=".os-SG1-12-1" data-hide=".os-SG1-12">
+																						 <i>Autre</i>
+																					</label>
+								<div class="control-group sous-question-precisez os-SG1-12 os-SG1-12-1 hide">
+									<label for="inpSG1_31" class="obligatoire"> Precisez</label>
+									<input id="inpSG1_31" type="text" name="a">
+								</div>
+							</div>
+
+						</div>
+						<!-- /Lieu de départ -->
+
+						<!-- Lieu d'arrivée -->
+						<div class="radiobutton required">
+							<i class="label" id="naRG-SG1-7">Lieu d'arrivée</i>
+							<div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-7">
+
+								<label for="inpSG1_32" class="radiobutton">
+																						 <input id="inpSG1_32" type="radio" name="modeSG1_63" data-hide=".os-SG1-13">
+																						 <i>Résidence personnelle</i>
+																					</label>
+
+								<label for="inpSG1_33" class="radiobutton">
+																						 <input id="inpSG1_33" type="radio" name="modeSG1_63" data-hide=".os-SG1-13">
+																						 <i>Clinique ou hôpital</i>
+																					</label>
+
+								<label for="inpSG1_34" class="radiobutton">
+																						 <input id="inpSG1_34" type="radio" name="modeSG1_63" data-show=".os-SG1-13-1" data-hide=".os-SG1-13">
+																						 <i>Autre</i>
+																					</label>
+
+								<div class="control-group sous-question-precisez os-SG1-13 os-SG1-13-1 hide">
+									<label for="inpSG1_35" class="obligatoire"> Precisez</label>
+									<input id="inpSG1_35" type="text" name="a">
+								</div>
+
+							</div>
+						</div>
+						<!-- /Lieu d'arrivée -->
+				</div>
+				<!-- Lieu de départ et d'arrivée-->
+				<!-- Distance parcourue -->
+				<div class="control-group">
           <label for="inpSG1_22" class="obligatoire"> Distance parcourue<span class="hors-ecran"> obligatoire</span></label>
           <input id="inpSG1_22" type="text" name="a" class="amount" value="150"> km
         </div>
+				<!-- /Distance parcourue -->
         <!-- Aller - retour -->
         <div class="radiobutton inline">
 
@@ -1061,7 +1146,7 @@
           </div>
 
         </div>
-        <!-- Aller - retour -->
+        <!-- /Aller - retour -->
 
         <!-- TODO :
 		     - Afficher la question si >= 100km aller simple ou >=200km-->
@@ -1123,63 +1208,10 @@
         </div>
         <!-- /Voiture avec autorisation de la CNESST (os-SG1-7b-1 os-SG1-7b)-->
 
-        <!-- Lieu de départ -->
-        <div class="radiobutton required">
-          <i class="label" id="naRG-SG1-6">Lieu de départ</i>
-          <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-6">
-
-            <label for="inpSG1_28" class="radiobutton">
-		                                     <input id="inpSG1_28" type="radio" name="modeSG1_62" data-hide=".os-SG1-12">
-		                                     <i>Résidence personnelle</i>
-		                                  </label>
-
-            <label for="inpSG1_29" class="radiobutton">
-		                                     <input id="inpSG1_29" type="radio" name="modeSG1_62" data-hide=".os-SG1-12">
-		                                     <i>Clinique ou hopital</i>
-		                                  </label>
-
-            <label for="inpSG1_30" class="radiobutton">
-		                                     <input id="inpSG1_30" type="radio" name="modeSG1_62" data-show=".os-SG1-12-1" data-hide=".os-SG1-12">
-		                                     <i>Autre</i>
-		                                  </label>
-            <div class="control-group sous-question-precisez os-SG1-12 os-SG1-12-1 hide">
-              <label for="inpSG1_31" class="obligatoire"> Precisez</label>
-              <input id="inpSG1_31" type="text" name="a">
-            </div>
-          </div>
+<!-- Lieu de départ et d'arrivée old-->
+<!-- Lieu de départ et d'arrivée old-->
 
         </div>
-        <!-- /Lieu de départ -->
-
-        <!-- Lieu d'arrivé -->
-        <div class="radiobutton required">
-          <i class="label" id="naRG-SG1-7">Lieu d'arrivé</i>
-          <div class="radiobuttons" role="group" aria-labelledby="naRG-SG1-7">
-
-            <label for="inpSG1_32" class="radiobutton">
-		                                     <input id="inpSG1_32" type="radio" name="modeSG1_63" data-hide=".os-SG1-13">
-		                                     <i>Résidence personnelle</i>
-		                                  </label>
-
-            <label for="inpSG1_33" class="radiobutton">
-		                                     <input id="inpSG1_33" type="radio" name="modeSG1_63" data-hide=".os-SG1-13">
-		                                     <i>Clinique ou hopital</i>
-		                                  </label>
-
-            <label for="inpSG1_34" class="radiobutton">
-		                                     <input id="inpSG1_34" type="radio" name="modeSG1_63" data-show=".os-SG1-13-1" data-hide=".os-SG1-13">
-		                                     <i>Autre</i>
-		                                  </label>
-
-            <div class="control-group sous-question-precisez os-SG1-13 os-SG1-13-1 hide">
-              <label for="inpSG1_35" class="obligatoire"> Precisez</label>
-              <input id="inpSG1_35" type="text" name="a">
-            </div>
-
-          </div>
-        </div>
-        <!-- /Lieu d'arrivé -->
-      </div>
     </div>
     <!-- / sub-block Voiture -->
   </div>
@@ -1555,11 +1587,11 @@
 
       /* Fonction permettant d'afficher ou non les messages (description accessible) liés au champs Déjeuner, Diner ou Souper
 
-      Les messages ne doivent s'afficher que si l'utilisateur donne le focus à un champs Montant pour un repas auquel il ne devrait pas avoir droit si les informations entrée au niveau des heures de départ et d'arrivée sont exacte.
+      Les messages ne doivent s'afficher que si l'utilisateur donne le focus à un champs Montant pour un repas auquel il ne devrait pas avoir droit si les informations entrée au niveau des heures de départ et d'arrivéee sont exacte.
 
       Si l'utilisateur n'entre aucune information dans le champ, on supprime le message à la sortie du champ.
 
-      Important pour les lecteur d'écran: remplir la zone de message avant l'arrivée au focus sur le champ lié et vide la zone du message si non pertinent.
+      Important pour les lecteur d'écran: remplir la zone de message avant l'arrivéee au focus sur le champ lié et vide la zone du message si non pertinent.
 
       */
       function heure(v, x, y) {
@@ -1623,15 +1655,15 @@
         })
         .keyup();
       /********** /heure de départ  ***********/
-      /********** heure d'arrivée  ***********/
+      /********** heure d'arrivéee  ***********/
       $("#repHA-1")
         .on("keyup change", function() {
           var valeur = $(this).val();
          var index = idx("repHA-1", 2);
-          var a = heure(valeur, index, 2); /*2 pour tester l'heure de d'arrivé*/
+          var a = heure(valeur, index, 2); /*2 pour tester l'heure de d'arrivée*/
         })
         .keyup();
-      /********** / heure d'arrivée  ***********/
+      /********** / heure d'arrivéee  ***********/
 
       /********** Déjeuner  ***********/
       $("#repDj-1")

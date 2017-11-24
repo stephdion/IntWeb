@@ -69,7 +69,7 @@
         </div>
 
         <div class="infobox5 sp-xl">
-          <p>Les frais doivent être regroupés par date.
+          <p>Cette étape vous permet d'inscrire vos frais de déplacements, d'hébergements et de repas à différentes dates. Nous vous invitons à inscrire vos frais par date.
           </p>
         </div>
         <!-- class="form-cont sp-xl" -->
@@ -86,9 +86,7 @@
                 <!-- header panel -->
                 <div class="header panel-heading-R">
 
-                  <h4 aria-level="2"><span class="number">1</span> - Date des frais<span class="date-icon"><input aria-label="date des frais jour 1" id="dateFrais-1" class="datepicker form-control dateFrais" value="" type="text"></span></h4>
-                  <!-- <button type="button" class="btn4a btn-delete hide"  ><i class="icon-delete2"></i><span>Supprimer</span></button> -->
-                  <!-- TODO: Ne pas afficher le bouton suivant si une seule date -->
+                  <h4 aria-level="2">Frais jour <span class="number">1</span><span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
                   <a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer les dépenses pour cette date"><i class="icon-delete2"></i><span>Supprimer</span></a>
 
                 </div>
@@ -96,6 +94,17 @@
                 <!-- Raison du déplacement Nu:17-11-16 14:30 -->
                 <div class="box2">
                   <div class="text">
+
+
+										<div class="control-group">
+		                  <label for="dateFrais-1" class="obligatoire">Première date pour laquelle vous avez des frais de déplacement, de rapas ou d'hébergement</label>
+		                  <div class="date-icon">
+		                    <input id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value="">
+		                  </div>
+		                </div>
+
+
+
                     <div class="control-group checkboxs">
 
                       <i class="label obligatoire" id="naRG1">Raison du déplacement<span class="hors-ecran"> obligatoire</span></i>
@@ -856,7 +865,7 @@
                         <!-- Heure de départ -->
                         <!-- TODO Si lendemain d'un jour avec hébergement: ne pas afficher Heure de départ -->
                         <div class="control-group first-child">
-                          <label for="repHD-1" class="obligatoire"> Heure de départ<span class="hors-ecran"> obligatoire</span></label>
+                          <label for="repHD-1" class="obligatoire"> Heure de départ de votre premier déplacement de la journée<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHD" id="repHD-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
@@ -864,7 +873,7 @@
                         <!-- Heure d'arrivée -->
                         <!-- TODO Si hébergement le même jour: ne pas afficher Heure de d'arrivée-->
                         <div class="control-group inpW5">
-                          <label for="repHA-1" class="obligatoire"> Heure d'arrivée<span class="hors-ecran"> obligatoire</span></label>
+                          <label for="repHA-1" class="obligatoire"> Heure d'arrivée de votre dernier déplacement de la journée<span class="hors-ecran"> obligatoire</span></label>
                           <input class="heure repHA" id="repHA-1" type="time" name="a">
                           <div class="format"><span class="naDetails">(hh:mm)</span></div>
                         </div>
@@ -932,31 +941,33 @@
 							<div class="btns3 autre control-group">
 
 							  <div class="autre text">
-							    <h3 class="hors-ecran">frais de déplacement, de repas ou d'hébergement</h3>
+							    <h3 class="hors-ecran">Autres frais</h3>
 							    <div class="radiobutton required inline">
-							      <i id="naRG-AF">Avez-vous d'autre frais de déplacement, de repas ou d'hébergement pour une autre date?</i>
+							      <i id="naRG-AF">Avez-vous des frais de déplacement, de repas ou d'hébergement pour une autre date?</i>
 							      <div class="radiobuttons" role="group" aria-labelledby="naRG-AF">
 
 							        <label for="inp-AF-72" class="radiobutton">
-																					 <input id="inp-AF-72" data-show=".os-72-1" type="radio" name="mode">
+																					 <input id="inp-AF-72" data-show=".os-72-1" data-hide=".os-72"  type="radio" name="mode">
 																					 <i>Oui</i>
 																				</label>
 
 							        <label for="inp-AF-73" class="radiobutton">
-																					 <input id="inp-AF-73" data-hide=".os-73" type="radio" name="mode">
+																					 <input id="inp-AF-73" data-show=".os-73-1" data-hide=".os-73"   type="radio" name="mode">
 																					 <i>Non</i>
 																				</label>
 
 							      </div>
 							    </div>
-							    <div class="hide os-72-1 os-73 sp-s">
-							      <p class="clarification">Vous pouvez ajouter une nouvelle date ou dupliquer les informations de la date précédent et les modifier au besoin.</p>
-							    </div>
+							    <div class="hide os-73-1 os-72 sp-s">
+							      <!--<p class="clarification">Vous pouvez ajouter une nouvelle date ou dupliquer les informations de la date précédent et les modifier au besoin.</p>-->
+										<p class="clarification">Si vous avez d'autres types de frais, veuillez d'abord compléter cette demande.</p>
+
+									</div>
 							  </div>
 							  <!--  / Autre reçu de médicaments -->
 							  <!-- Ajouter un reçu-->
-							  <a href="#" class="hide btn4 btn-add os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter date</span></a>
-							  <a href="#" class="hide btn4 btn-add btn-dupliquer os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer la date précédente</span></a>
+							  <a href="#" class="hide btn4 btn-add os-72-1 os-73 pull-left" data-block=".block-recu"><i class="icon-add"></i><span>Ajouter une date</span></a>
+							  <!--<a href="#" class="hide btn4 btn-add btn-dupliquer os-72-1 os-73 pull-right" data-block=".block-recu"><i class="icon-add"></i><span>Dupliquer la date précédente</span></a>-->
 							  <!-- / Ajouter un reçu-->
 							</div>
 							<!--  /Autre reçu de médicaments -->

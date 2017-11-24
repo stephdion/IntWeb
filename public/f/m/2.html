@@ -109,15 +109,23 @@
 									<!--  sub-block Reçu  1 -->
 									<div class="sub-block">
 										<div class="header panel-heading-R">
-											<h4 aria-level="3">
-												 <span class="number">1</span> - Reçu du <span class="date-icon">
-													 <input aria-label="date du reçu numéro 1" id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
-													 	<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
-															<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+										<h4 aria-level="2">Reçu #<span class="number">1</span><span class="dateFrais-1-span  naDetails hide"> (<span class="dateFrais-1-val"></span>)</span></h4>
+											<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+											<a role="button" href="#" class="btn4a btn-delete hide" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 										</div>
 										<div class="sub-cont">
 											<!--  multiblocks  Médicament 1-->
 											<div class="multiblocks">
+
+												<div class="control-group">
+				                  <label for="dateFrais-1" class="obligatoire">Date</label>
+				                  <div class="date-icon">
+				                    <input id="dateFrais-1" type="text" class="datepicker form-control dateFrais" value="">
+				                  </div>
+				                </div>
+
+
+
 												<!--  sub-block Médicament 1 -->
 												<div class="sub-block">
 
@@ -282,21 +290,29 @@
 		<!--  sub-block Reçu  2 -->
 		<div class="sub-block">
 			<div class="header panel-heading-R">
-				<h4 aria-level="3">
-					 <span class="number">1</span> - Reçu du <span class="date-icon">
-						 <input aria-label="date du reçu numéro 1" id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value=""></span></h4>
-
-						 <a role="button" class="btn4a btn-delete" href="#"><i class="icon-delete2"></i><span>Supprimer</span></a>
+			<h4 aria-level="2">Reçu #<span class="number">1</span><span class="dateFrais-2-span  naDetails hide"> (<span class="dateFrais-2-val"></span>)</span></h4>
+				<!-- TODO : Ajuster le script pour afficher le bouton Supprimer sur le premier reçu s'il y a plus d'un reçu. -->
+				<a role="button" href="#" class="btn4a btn-delete" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 			</div>
 			<div class="sub-cont">
 				<!--  multiblocks  Médicament 3-->
 				<div class="multiblocks">
+
+
+					<div class="control-group">
+						<label for="dateFrais-2" class="obligatoire">Date</label>
+						<div class="date-icon">
+							<input id="dateFrais-2" type="text" class="datepicker form-control dateFrais" value="">
+						</div>
+					</div>
+
+
 					<!--  sub-block Médicament 3 -->
 					<div class="sub-block">
 
 						<div class="header">
 							<h4 aria-level="3">Médicament <span class="number">1</span></h4>
-							<a role="button" class="btn4a btn-delete" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
+							<a role="button" class="btn4a btn-delete hide" href="#" aria-label="Supprimer ce reçu"><i class="icon-delete2"></i><span>Supprimer</span></a>
 
 						</div>
 

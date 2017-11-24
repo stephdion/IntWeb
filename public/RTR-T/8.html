@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Étape 8 - Résumé - Réclamation du travailleur - CNESST</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<!-- <link rel="stylesheet" href="cnesst/js/bootstrap-reboot.min.css"> -->
+	<link rel="stylesheet" href="cnesst/js/bootstrap-grid.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="cnesst/css/components.scss?compile=true">-->
+	<link rel="stylesheet" type="text/css" href="cnesst/css/components.css">
+  <link rel="stylesheet" type="text/css" href="cnesst/css/components2.css">
+	<link rel="stylesheet" type="text/css" href="cnesst/css/styleguide.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.standalone.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="cnesst/css/cnesst.css">
+</head>
+<body>
+	<header class="container header-v1" aria-labelledby="naHeader">
+    <a id="skip" href="#content">Passer la navigation. Accéder directement au contenu</a>
+		<div class="row no-gutters">
+			<div class="col-auto">
+				<div class="logo">
+					<img src="images/logo.png" alt="C N E S S T">
+				</div>
+			</div>
+		    <div class="col align-self-end">
+		    	<nav class="top-menu" id="nav2">
+		    		<ul>
+		    			<li>
+			    			<a href="#">
+			    				<img alt="" src="images/icone-cnesst-icone-fleche-retour.png">
+			    				<span>Retour à Mon espace travailleur</span>
+			    			</a>
+		    			</li>
+		    			<li>
+			    			<a href="#">
+			    				<img alt="" src="images/icone-cnesst-icone-connexion.png">
+			    				<span>Me déconnecter</span>
+			    			</a>
+		    			</li>
+		    		</ul>
+		    	</nav>
+		    </div>
+		</div>
+		<div class="no-menu">
+			<div id="naHeader">Réclamation du travailleur</div>
+		</div>
+	</header>
+
+	<main class="container" id="content">
+  <form id="idForm">
+
+
+<nav id="navEtape" aria-label="Liste des étapes à compléter">
+<ul class="nav nav-wizard">
+		<li class="completed first-child-completed"><a role="button" href="1.html"><i>1</i><span class="hors-ecran">Collecte <br/>d'information</span></a></li>
+		<li class="completed"><a role="button" href="2.html"><i>2</i><span class="hors-ecran">Identification</span></a></li>
+		<li class="completed"><a role="button" href="3.html"><i>3</i><span class="hors-ecran">Renseignements ​<br/>sur l'événement</span></a></li>
+		<li class="completed"><a role="button" href="4.html"><i>4</i><span class="hors-ecran">Arrêt et retour <br/>au travail</span></a></li>
+		<li class="completed"><a role="button" href="5.html"><i>5</i><span class="hors-ecran">Indemnité de remplacement <br/>du revenu</span></a></li>
+		<li class="completed"><a role="button" href="6.html"><i>6</i><span class="hors-ecran">Transmettre <br/>des documents</span></a></li>
+		<li class="completed"><a role="button" href="7.html"><i>7</i><span class="hors-ecran">Autorisation</span></a></li>
+		<li class="active last-child"><a role="button" href="8.html"><i>8</i><span>R&eacute;sum&eacute;</span></a></li>
+	</ul>
+</nav>
+	<div class="strong">
+		<div class="mcl2">
+		<div class="step-info">
+
+			<h1 id="h1"><span class="number">8</span><span class="h1">R&eacute;sum&eacute;</span></h1>
+			<div class="text">
+				<p>V&eacute;rifiez les renseignements qui seront transmise &agrave; la CNESST.</p>
+			</div>
+		</div>
+<!-- Étape 1 (1 de 2 ) -->
+			<div class="form-cont resume" id="etape-1">
+				<div class="header">
+					<h2 id="etape-1-titre">1 - Collecte d'information (1 de 2)</h2>
+					<a id="btnMe1" role="button" href="1.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1 etape-1-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+	          <div class="text">
+	            <div class="radiobutton inline">
+	              <i id="naRG1">Est-ce que l'événement est lié à un accident du travail ou à une maladie professionnelle déjà déclarée?</i>
+	              <div class="radiobuttons" role="radiogroup" aria-labelledby="naRG1">
+
+	                <label for="inp1" class="radiobutton">
+										 <input id="inp1" readonly  data-hide="#option-2" data-show="#option-1" type="text" name="mode" value="Oui">
+										 <i>Oui</i>
+									</label>
+                   <label for="inp2" class="radiobutton hide">
+										 <input id="inp2" disabled data-hide="#option-1" data-show="#option-2" type="radio" name="mode" value="non">
+										 <i>Non</i>
+									</label>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div id="option-1" class="box2 sp-s">
+	          <h2>Événement</h2>
+	          <div class="text">
+	            <div class="control-group">
+	              <label for="inp3">Date de l'événement</label>
+	              <p class="clarification">(Récidive, rechute ou aggravation.)</p>
+	              <div class="">
+                <input readonly  id="inp3" type="text" class="form-control" value="2017-10-23">
+	              </div>
+
+	            </div>
+	            <div class="control-group">
+	              <label for="inp4"> Date à laquelle la lésion professionnelle a été déclarée la première fois
+								</label>
+	              <div class="">
+	                <input readonly id="inp4" type="text" class="form-control" value="lorem ipsum">
+	              </div>
+	            </div>
+	            <div class="control-group readonly">
+	              <label for="inp5"> Numéro de dossier à la CNESST</label>
+	              <input readonly id="inp5" type="text" name="montant" data-characters="9" value="lorem ipsum">
+	            </div>
+	          </div>
+	        </div>
+	        <div id="option-2" class="box2 sp-s">
+	          <h2>Événement</h2>
+	          <div class="text">
+	            <div class="control-group readonly">
+	              <label for="inp6"> Date d'événement d'origine</label>
+	              <p class="clarification">(Date de votre accident du travail ou de votre maladie professionnelle)</p>
+	              <div class="">
+	                <input readonly id="inp6" type="text" class="form-control" value="2017-08-01">
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="box2 sp-s">
+	          <h2>Numéro d'identification</h2>
+	          <div class="text">
+	            <div class="control-group readonly">
+	              <label for="inp7"> Numéro d'assurance maladie (NAM)</label>
+	              <input readonly id="inp7" type="text" name="montant" data-characters="12" value="lorem ipsum">
+	            </div>
+	            <div class="control-group readonly">
+	              <label for="inp8"> Numéro d'assurance sociale (NAS)</label>
+	              <input readonly id="inp8" type="text" name="montant" data-characters="9" value="lorem ipsum">
+	            </div>
+	          </div>
+	        </div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-1-ancre" role="button" href="#etape-1" class="btn-haut"
+aria-label="Haut de section" aria-labelledby="etape-1-ancre etape-1-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+
+<!-- / Étape 1 (1 de 2 ) -->
+<!-- Étape 1 (2 de 2 ) -->
+			<div class="form-cont" id="etape-1b">
+				<div class="header">
+					<h2 id="etape-1b-titre">1 - Collecte d'information (2 de 2)</h2>
+					<a id="btnMe1b" role="button" href="1b.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe1b etape-1b-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-1b-ancre" role="button" href="#etape-1b" class="btn-haut"
+aria-label="Haut de section" aria-labelledby="etape-1b-ancre etape-1b-titre">
+	<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+
+<!-- / Étape 1 (2 de 2 ) -->
+<!-- Étape 2 -->
+			<div class="form-cont" id="etape-2">
+				<div class="header">
+					<h2 id="etape-2-titre">2 - Identification</h2>
+					<a id="btnMe2" role="button" href="2.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe2 etape-2-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+			<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-2-ancre" role="button" href="#etape-2" class="btn-haut"
+			aria-label="Haut de section" aria-labelledby="etape-2-ancre etape-2-titre">
+				<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 2 -->
+<!-- Étape 3 -->
+			<div class="form-cont" id="etape-3">
+				<div class="header">
+					<h2 id="etape-3-titre">3 - Renseignements sur l'événement</h2>
+					<a id="btnMe3" role="button" href="3.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe3 etape-3-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-3-ancre" href="#etape-3" class="btn-haut" aria-label="Haut de section"
+aria-labelledby="etape-3 etape-3-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 3 -->
+<!-- Étape 4 -->
+			<div class="form-cont" id="etape-4">
+				<div class="header">
+					<h2 id="etape-4-titre">4 - Arrêt et retour au travail</h2>
+					<a id="btnMe4" role="button" href="4.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe4 etape-4-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-4-ancre" href="#etape-4" class="btn-haut" aria-label="Haut de section"
+aria-labelledby="etape-4 etape-4-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 4 -->
+<!-- Étape 5 -->
+			<div class="form-cont" id="etape-5">
+				<div class="header">
+					<h2 id="etape-5-titre">5 - Indemnité de remplacement du revenu</h2>
+					<a id="btnMe5" role="button" href="5.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe5 etape-5-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-5-ancre" href="#etape-5" class="btn-haut" aria-label="Haut de section"
+aria-labelledby="etape-5 etape-2-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 5 -->
+<!-- Étape 6 -->
+			<div class="form-cont" id="etape-6">
+				<div class="header">
+					<h2 id="etape-6-titre">6 - Transmettre des documents</h2>
+					<a id="btnMe6" role="button" href="6.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe6 etape-6-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-6-ancre" href="#etape-6" class="btn-haut"
+aria-label="Haut de section" aria-labelledby="etape-6 etape-6-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 6 -->
+<!-- Étape 7 -->
+			<div class="form-cont" id="etape-7">
+				<div class="header">
+					<h2 id="etape-7-titre">7 - Autorisation</h2>
+					<a id="btnMe7" role="button" href="7.html" class="edit" aria-label="Modifier l'étape" aria-labelledby="btnMe7 etape-7-titre">Modifier</a>
+				</div>
+				<div class="content">
+					<div class="box2">
+						<h3 class="h2">À venir...</h3>
+					</div>
+				</div>
+			</div>
+<!--TODO: Au clic sur le lien, donner le focus au bouton Modifier de la section-->
+<a id="etape-7-ancre" href="#etape-7" class="btn-haut"
+aria-label="Haut de section" aria-labelledby="etape-7 etape-2-titre">
+<span class="icon-haut center-block"><i class="icon-haut"></i></span><span>Haut</span></a>
+<!-- / Étape 7 -->
+
+			<!-- TODO Créer un script pour ajouter par programmation un attribut tabindex="-1" dans ie pour NVDA (bug) sur les nom et description accessible n'ayant pas rôle natif-->
+			<!-- TODO Ajouter une détection au survol des éléments ayant un tabindex="-1", leur ajouter au survol une classe outlineOffOver-->
+			<div class="btns2">
+				<p id="daTransmettre" class="clarification jsTnada">En cliquant sur <strong>transmettre</strong>, vous certifiez que les renseignements sont exacts.</p>
+				<a role="button" class="btn btn7" href="7.html">Pr&eacute;c&eacute;dent</a>
+				<a role="button" class="btn btn4" href="9.html" aria-describedby="daTransmettre">Transmettre</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	</form>
+</main>
+
+			<footer class="container footer">
+				<div class="row no-gutters">
+					<div class="col">
+						<ul class="footer-menu">
+							<li><a href="#" target="_blank">Accessibilit&eacute;
+		            <img
+		                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+		                 src="images/blank.svg">
+		            </a></li>
+		          <li><a href="#" target="_blank">Politique de confidentialit&eacute;
+		            <img
+		                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+		                 src="images/blank.svg">
+		            </a></li>
+								<!-- Pas de plan du site dans une PES -->
+								<!--
+		          <li><a href="#" target="_blank">Plan du site
+		            <img
+		                 alt="Ce lien s’ouvrira dans une nouvelle fenêtre"
+		                 src="images/blank.svg">
+		            </a></li>
+							-->
+						</ul>
+					</div>
+					<div class="col right">
+						<p>
+		          <span>Renseignements g&eacute;n&eacute;raux : </span>
+		          <span>
+								<a href="tel:18448380808"
+								aria-label="Téléphone Renseignements généraux 1 844 838-0808">
+								1&nbsp;844&nbsp;838-0808</a></span>
+		        </p>
+						<img alt="C N E S S T" src="images/logo_footer.png">
+					</div>
+				</div>
+				<div class="row no-gutters bottom">
+					&copy; CNESST, 2017
+				</div>
+
+			</footer>
+
+
+
+
+
+			<script src="cnesst/js/jquery.min.js"></script>
+			<script src="cnesst/js/dp/bootstrap-datepicker.min.js"></script>
+			<script src="cnesst/js/dp/bootstrap-datepicker.fr.min.js"></script>
+			<script src="cnesst/js/jquery.qtip.min.js"></script>
+
+			<script>
+				$( function() {
+					$( ".datepicker" ).datepicker({
+						format: "yyyy-mm-dd",
+		    			language: 'fr'
+					});
+				});
+
+
+
+
+				$(document).ready(function() {
+						$('#idForm')[0].reset();
+				    $(".amount").keydown(function (e) {
+				        // Allow: backspace, delete, tab, escape, enter and .
+				        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+				             // Allow: Ctrl/cmd+A
+				            (e.keyCode == 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+				             // Allow: Ctrl/cmd+C
+				            (e.keyCode == 67 && (e.ctrlKey === true || e.metaKey === true)) ||
+				             // Allow: Ctrl/cmd+X
+				            (e.keyCode == 88 && (e.ctrlKey === true || e.metaKey === true)) ||
+				             // Allow: home, end, left, right
+				            (e.keyCode >= 35 && e.keyCode <= 39)) {
+				                 // let it happen, don't do anything
+				                 return;
+				        }
+				        // Ensure that it is a number and stop the keypress
+				        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+				            e.preventDefault();
+				        }
+				    });
+
+
+				    $('[title!=""]').qtip({
+				    	content: {
+				    		button: true
+				    	},
+					    show: {
+					        event: 'click',
+
+					    },
+					    hide: {
+					        event: 'click'
+					    }
+				    });
+
+					$('.hasTooltip').each(function() { // Notice the .each() loop, discussed below
+					    $(this).qtip({
+					    	content: {
+					    		button: true,
+					            text: $(this).next('div').html() // Use the "div" element next to this for the content
+					    	},
+						    show: {
+						        event: 'click',
+
+						    },
+						    hide: {
+						        event: 'click'
+						    }
+					    });
+					});
+
+
+				    $('[data-hide!=""]').on('click', function(event) {
+				    	$($(this).data('hide')).addClass('hide');
+
+				    	// $($(this).data('hide')).find('input[type="radio"]').prop('checked', false);
+				    	$($(this).data('hide')).each(function(index, el) {
+				    		// $(el).find('input[type="radio"]').eq(0).trigger('click');
+				    		$(el).find('input[type="radio"]').prop('checked', false);
+				    	});
+				    });
+
+				    $('[data-show!=""]').on('click', function(event) {
+				    	$($(this).data('show')).removeClass('hide');
+				    });
+
+				    $('[data-characters!=""]').keyup(function(){
+					        var text = $(this).val();
+					        var maxlength = $(this).data('characters');
+
+					        if(maxlength > 0)
+					        {
+					                $(this).val(text.substr(0, maxlength));
+					        }
+					});
+
+				});
+			</script>
+
+		</body>
+		</html>
